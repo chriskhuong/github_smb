@@ -20,3 +20,9 @@ branch_test = true;
 
 branch_test2 = true; 
 
+//One thing that hasn't been checked
+//yet is, what  it and how do we
+//deal with merge conflicts?
+
+branch_test3 = true; 
+back_to_master = true; 
