@@ -9,7 +9,8 @@
         "ed1972ab-512d-43f8-9a03-07cfb0674d9f",
         "d56a5b4f-39ad-47fb-a0e8-b8f948cf22cf",
         "701ed53f-2e7e-4018-8181-f6c7ae21ee7a",
-        "069711bd-9f0f-4113-8576-498c7e9500f4"
+        "069711bd-9f0f-4113-8576-498c7e9500f4",
+        "89cb081a-f524-489e-b0e6-c549a6201478"
     ],
     "filterType": "GMScript",
     "folderName": "TEST_SVN",
