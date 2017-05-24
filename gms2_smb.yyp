@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "069711bd-9f0f-4113-8576-498c7e9500f4",
-            "Value": {
-                "id": "ec603f22-4952-46c1-9fd4-3d543ada4513",
-                "resourcePath": "scripts\\Chris_Test_Script5\\Chris_Test_Script5.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "06b6a659-b0fa-400b-a138-1fb63c1af7dc",
             "Value": {
                 "id": "0ab87066-c77a-4b17-b78b-ebced97c066e",
@@ -863,14 +855,6 @@
             }
         },
         {
-            "Key": "51fdca98-99bc-485d-8b51-c428333f7d41",
-            "Value": {
-                "id": "6098581a-8c8f-4272-816d-41a2aef7e699",
-                "resourcePath": "sprites\\spr_bg_ground_Sakura4\\spr_bg_ground_Sakura4.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "520c30d6-d44d-4281-9b16-e290db94826e",
             "Value": {
                 "id": "54af408a-5981-4da1-8455-dc32e088828d",
@@ -1215,14 +1199,6 @@
             }
         },
         {
-            "Key": "701ed53f-2e7e-4018-8181-f6c7ae21ee7a",
-            "Value": {
-                "id": "facb6ab7-8aed-41cb-a6f4-f47ca9c58553",
-                "resourcePath": "scripts\\Chris_Test_Script4\\Chris_Test_Script4.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "70355696-1232-4038-8a5a-5e0e10913120",
             "Value": {
                 "id": "11b779f4-47c1-4ac8-a08e-ca6551c71ae9",
@@ -1315,14 +1291,6 @@
             "Value": {
                 "id": "4cb894e0-f7bb-41ca-9bdc-cb7e617281d6",
                 "resourcePath": "scripts\\scr_loadGame\\scr_loadGame.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "79e08d0f-9722-40bd-ba01-d4319d8907e4",
-            "Value": {
-                "id": "65ae7c45-05b9-4f59-b6f8-3f4c926bcee4",
-                "resourcePath": "scripts\\Hey_throw\\Hey_throw.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1476,14 +1444,6 @@
                 "id": "8adffef7-e9b1-4e77-ad71-6b93accd2e26",
                 "resourcePath": "sprites\\spr_mio_idle_down\\spr_mio_idle_down.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "89cb081a-f524-489e-b0e6-c549a6201478",
-            "Value": {
-                "id": "aaf2c3fc-f6ae-4b8a-ab3e-2e414a024e15",
-                "resourcePath": "scripts\\Chris_Test_Script6\\Chris_Test_Script6.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1943,14 +1903,6 @@
             }
         },
         {
-            "Key": "ae298965-8e9b-42d8-93b6-f7de9a7d342c",
-            "Value": {
-                "id": "41457d93-8906-4847-96dd-1a62855e39b7",
-                "resourcePath": "views\\ae298965-8e9b-42d8-93b6-f7de9a7d342c.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "b01a8ac3-8715-423f-9fdd-74f5227354a6",
             "Value": {
                 "id": "ac4acb45-545a-4b95-9ead-6f375eb60c25",
@@ -2199,14 +2151,6 @@
             }
         },
         {
-            "Key": "cababd28-a764-46f1-823a-85e139aeec51",
-            "Value": {
-                "id": "3f4d6f93-1e8c-4189-a014-3353a75c4cb2",
-                "resourcePath": "scripts\\Chris_Test_Script\\Chris_Test_Script.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "cb2335eb-bea7-48e0-afde-e86e05962d47",
             "Value": {
                 "id": "98c3f784-3cef-47d7-ab16-364a87f7f63d",
@@ -2316,14 +2260,6 @@
                 "id": "496d80bc-b958-4b3e-8f77-380271b04343",
                 "resourcePath": "tilesets\\floor_virtual_tileset\\floor_virtual_tileset.yy",
                 "resourceType": "GMTileSet"
-            }
-        },
-        {
-            "Key": "d56a5b4f-39ad-47fb-a0e8-b8f948cf22cf",
-            "Value": {
-                "id": "ef4642a5-3cdf-4bb3-8131-e832df47f22a",
-                "resourcePath": "scripts\\Chris_Test_Script3\\Chris_Test_Script3.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -2588,14 +2524,6 @@
                 "id": "5d962e62-eb91-4bb0-8d7d-73698d82c8e9",
                 "resourcePath": "sprites\\spr_side_shoot_pistol\\spr_side_shoot_pistol.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "ed1972ab-512d-43f8-9a03-07cfb0674d9f",
-            "Value": {
-                "id": "fc13d7cf-d026-4d24-a4c6-e9a7ee6746b7",
-                "resourcePath": "scripts\\Chris_Test_Script2\\Chris_Test_Script2.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -2943,14 +2871,7 @@
         "43885ac6-6024-4564-bd87-e81f4ccac029",
         "404e4861-cb7c-4b5f-9662-a4d89152ef30",
         "7c385ae6-4a09-414a-8be4-700920fe3014",
-        "1e1f1673-2699-4b30-874d-7f62f13979a4",
-        "79e08d0f-9722-40bd-ba01-d4319d8907e4",
-        "cababd28-a764-46f1-823a-85e139aeec51",
-        "ed1972ab-512d-43f8-9a03-07cfb0674d9f",
-        "d56a5b4f-39ad-47fb-a0e8-b8f948cf22cf",
-        "701ed53f-2e7e-4018-8181-f6c7ae21ee7a",
-        "069711bd-9f0f-4113-8576-498c7e9500f4",
-        "89cb081a-f524-489e-b0e6-c549a6201478"
+        "1e1f1673-2699-4b30-874d-7f62f13979a4"
     ],
     "tutorial": ""
 }
