@@ -15398,7 +15398,7 @@
                     "grid_x": 32,
                     "grid_y": 32,
                     "hierarchyFrozen": false,
-                    "hierarchyVisible": false,
+                    "hierarchyVisible": true,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -15410,7 +15410,7 @@
                     "m_serialiseFrozen": false,
                     "name": "bg_Decals",
                     "userdefined_depth": false,
-                    "visible": false,
+                    "visible": true,
                     "prev_tileheight": 32,
                     "prev_tilewidth": 32,
                     "tiles": {
