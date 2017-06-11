@@ -1,8 +1,8 @@
 {
-    "id": "24ebbf8b-e1dc-4a29-8e1d-1b96450e7f1b",
+    "id": "92c8ec3c-2c85-4a42-90f8-e364129121c0",
     "modelName": "GMFolder",
     "mvc": "1.1",
-    "name": "24ebbf8b-e1dc-4a29-8e1d-1b96450e7f1b",
+    "name": "92c8ec3c-2c85-4a42-90f8-e364129121c0",
     "children": [
         "6115bd2f-cc36-4d68-a33d-7d50a25c4f48",
         "09a40f79-2a23-4945-9bdf-4fb296fc91da",
@@ -13,7 +13,7 @@
         "2dd3c9f1-7646-4881-b07b-003938a19963",
         "619fbd9a-c652-47c9-b869-bdef347a282a"
     ],
-    "filterType": "GMSprite",
+    "filterType": "",
     "folderName": "Props",
     "isDefaultView": false,
     "localisedFolderName": ""
