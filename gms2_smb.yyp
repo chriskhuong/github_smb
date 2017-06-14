@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "764591e9-6b24-47b4-a126-132a5ea8a3c9",
+            "Value": {
+                "id": "0a2fb17e-cae2-4258-aef4-38a7a11c02d1",
+                "resourcePath": "sprites\\spr_Terrain_Water0\\spr_Terrain_Water0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "768557bf-157c-4361-8627-fdcbe36e2d2c",
             "Value": {
                 "id": "110bdf3c-b711-4d16-884a-0ff178e16496",
@@ -1791,14 +1799,6 @@
             }
         },
         {
-            "Key": "a2638055-c8c2-438f-b8bf-b0f8eb8dfe79",
-            "Value": {
-                "id": "adb1ab66-5a26-4e2e-b999-c2be1f236bb3",
-                "resourcePath": "sprites\\spr_Water_Test\\spr_Water_Test.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a396c8cd-dc3b-4731-9a1c-0310210543a4",
             "Value": {
                 "id": "7f21bce4-52b7-499f-b37d-7acdc170e49d",
@@ -2284,6 +2284,14 @@
                 "id": "80f54a8d-432d-4216-b644-3bb2659a202b",
                 "resourcePath": "views\\d03caca8-5419-47c9-ba1e-3dd661de1be7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d04b9688-e760-4611-af7a-3d44c2b4171c",
+            "Value": {
+                "id": "1675806f-7c5c-4294-9bd7-cfef0f3b115f",
+                "resourcePath": "tilesets\\tileset_Terrain_Water\\tileset_Terrain_Water.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
