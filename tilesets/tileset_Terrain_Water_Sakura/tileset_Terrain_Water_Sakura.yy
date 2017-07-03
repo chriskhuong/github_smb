@@ -2,7 +2,7 @@
     "id": "d04b9688-e760-4611-af7a-3d44c2b4171c",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tileset_Terrain_Water",
+    "name": "tileset_Terrain_Water_Sakura",
     "auto_tile_sets": [
         {
             "id": "c7ab65c1-c717-4b5a-b499-6f3ccf4d0863",
