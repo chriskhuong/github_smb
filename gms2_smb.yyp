@@ -1703,6 +1703,14 @@
             }
         },
         {
+            "Key": "977639d6-3cd7-40f3-8408-ca77eaa1a23e",
+            "Value": {
+                "id": "cf25b353-0502-4458-b13f-39751a6bebef",
+                "resourcePath": "datafiles_yy\\tiled_base.tmx.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "9a0ceb19-5ebd-431d-b6e0-8254f0d46549",
             "Value": {
                 "id": "347c5a5b-ad7a-4b63-82a6-79c1d407c784",
