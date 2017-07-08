@@ -1927,6 +1927,14 @@
             }
         },
         {
+            "Key": "ad70d6b2-8406-426b-b6ba-f40414c11409",
+            "Value": {
+                "id": "bc6cb4a2-70ad-4d1b-90de-1b0563057b46",
+                "resourcePath": "views\\ad70d6b2-8406-426b-b6ba-f40414c11409.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ad8afff3-1d5e-4d8c-82bb-3835d7a9b3ca",
             "Value": {
                 "id": "7db03fdc-a6c5-4cad-8c12-c4f3fc9ce89f",
@@ -2420,6 +2428,14 @@
                 "id": "eb88bfd0-ccc4-4ccb-a0bb-668632c1b67a",
                 "resourcePath": "sprites\\spr_play_temp_01\\spr_play_temp_01.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "de177be5-ce1f-4b9f-906a-27bd90d1f0dc",
+            "Value": {
+                "id": "bb678014-e9f8-4e2a-9f94-b0c83a43a98c",
+                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourceType": "GMFont"
             }
         },
         {
