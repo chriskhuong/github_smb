@@ -15,7 +15,7 @@
         "51fdca98-99bc-485d-8b51-c428333f7d41"
     ],
     "filterType": "GMSprite",
-    "folderName": "spr_Tilesets",
+    "folderName": "group_spr_Tilesets_Test",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

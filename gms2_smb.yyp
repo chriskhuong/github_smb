@@ -151,10 +151,18 @@
             }
         },
         {
+            "Key": "08bcd17e-8520-4c33-b013-da27e4162775",
+            "Value": {
+                "id": "15d2cd1a-abd5-4230-9f46-729be11247ab",
+                "resourcePath": "tilesets\\tileset_Sakura_Decal\\tileset_Sakura_Decal.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "09a40f79-2a23-4945-9bdf-4fb296fc91da",
             "Value": {
                 "id": "5664f5b5-d007-4303-a9af-ade28c11a403",
-                "resourcePath": "sprites\\spr_Bush1\\spr_Bush1.yy",
+                "resourcePath": "sprites\\spr_Bush_2\\spr_Bush_2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -172,6 +180,14 @@
                 "id": "31685cd7-5d10-44ba-a8ff-b016bf627a48",
                 "resourcePath": "views\\0a530175-3618-44d8-8f9d-0e6eba925833.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0ac554ad-1036-4296-8542-c9cd2e796ac7",
+            "Value": {
+                "id": "8bb3b890-e645-4637-aaa3-d33356b0aa05",
+                "resourcePath": "sprites\\spr_Tree_0\\spr_Tree_0.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -267,6 +283,14 @@
             "Value": {
                 "id": "1cccfb30-cad7-4e94-9f82-90053c1f11bb",
                 "resourcePath": "sprites\\spr_britney_run_side\\spr_britney_run_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "160f5ea2-76d5-4585-aaac-c721ab79ea23",
+            "Value": {
+                "id": "c2d14532-b496-4093-b900-33c1b965b9a6",
+                "resourcePath": "sprites\\spr_tileset_Sakura_River\\spr_tileset_Sakura_River.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -556,6 +580,14 @@
                 "id": "2a05f372-214b-4021-a36e-485557bb9bf5",
                 "resourcePath": "objects\\obj_sniperBullet\\obj_sniperBullet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "33c70ca0-88d9-4394-84a8-9161ebc912c5",
+            "Value": {
+                "id": "5edf83d1-6272-4125-928a-0f5cb4e0541b",
+                "resourcePath": "sprites\\spr_tileset_Sakura_Ocean\\spr_tileset_Sakura_Ocean.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -887,6 +919,14 @@
             }
         },
         {
+            "Key": "534fbc10-05c7-4f37-97c7-73e6e443219c",
+            "Value": {
+                "id": "f5a146b9-3ecf-4154-975a-5ed046999fcd",
+                "resourcePath": "tilesets\\tileset_Sakura_Ocean\\tileset_Sakura_Ocean.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "547c59e7-b81f-4d11-88cb-2059f478a390",
             "Value": {
                 "id": "4b9a07fe-4d22-4b55-b22f-0cc6e9f865c6",
@@ -978,7 +1018,7 @@
             "Key": "5a9fe820-97b5-4d3e-984d-cd86fff79666",
             "Value": {
                 "id": "aca5866b-8265-4052-82a6-0cd297bd2b74",
-                "resourcePath": "sprites\\spr_Rock0\\spr_Rock0.yy",
+                "resourcePath": "sprites\\spr_Rock_0\\spr_Rock_0.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1066,7 +1106,7 @@
             "Key": "6115bd2f-cc36-4d68-a33d-7d50a25c4f48",
             "Value": {
                 "id": "f599b1e9-9c51-4c0d-854d-ec37c56eb4bd",
-                "resourcePath": "sprites\\spr_Bush0\\spr_Bush0.yy",
+                "resourcePath": "sprites\\spr_Bush_0\\spr_Bush_0.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1215,10 +1255,26 @@
             }
         },
         {
+            "Key": "6d75b41c-cd42-47d4-99d3-83d9b5d61d8b",
+            "Value": {
+                "id": "b7742abb-a562-47db-9af2-3515d77179a8",
+                "resourcePath": "views\\6d75b41c-cd42-47d4-99d3-83d9b5d61d8b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6e01660e-f2fd-4faa-a48a-2e3f86fa8c9d",
             "Value": {
                 "id": "db90294f-4be0-4acd-bf89-79d44aac673c",
                 "resourcePath": "sprites\\spr_cam\\spr_cam.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6fb7ee2c-8dc1-4cbc-b655-dbcc992d501c",
+            "Value": {
+                "id": "9babe545-5428-40c8-b07d-5e4207825378",
+                "resourcePath": "sprites\\spr_Mushroom_3\\spr_Mushroom_3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1335,6 +1391,14 @@
             }
         },
         {
+            "Key": "783e5260-09cd-4cda-a0db-928f026f59a5",
+            "Value": {
+                "id": "97d864db-a0a8-49d2-8d97-4bdd142cc21a",
+                "resourcePath": "sprites\\spr_Mushroom_1\\spr_Mushroom_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7ba22088-1316-4bba-b7fe-5ab49cf8e3e9",
             "Value": {
                 "id": "af2205df-f15f-47fa-b0bd-04ce0cfca1a9",
@@ -1394,7 +1458,7 @@
             "Key": "7eaf2812-dce9-4a5c-9209-c546a9175ac0",
             "Value": {
                 "id": "daf41033-39ca-454d-b48d-2dbe6fe30135",
-                "resourcePath": "sprites\\spr_Tree1\\spr_Tree1.yy",
+                "resourcePath": "sprites\\spr_Bush_3\\spr_Bush_3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1519,6 +1583,14 @@
             }
         },
         {
+            "Key": "8b30534a-89d5-4e0d-8c44-b6015ceb74ec",
+            "Value": {
+                "id": "80e6274e-ec0e-4f15-9e12-1a4811598d1f",
+                "resourcePath": "sprites\\spr_Tree_2\\spr_Tree_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b84a7fe-c27a-4cb4-bbb5-490e26219577",
             "Value": {
                 "id": "e6ab124f-d203-400c-b1ba-042c20ea6e37",
@@ -1580,6 +1652,22 @@
                 "id": "507058ef-e01b-4789-bd8f-126605dcb9c7",
                 "resourcePath": "objects\\obj_EndPoint\\obj_EndPoint.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8f9130f4-5751-42ee-a498-2a1918e30f2d",
+            "Value": {
+                "id": "20688a91-1e44-46be-a24e-6cd07163d5b1",
+                "resourcePath": "views\\8f9130f4-5751-42ee-a498-2a1918e30f2d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "902cbbe4-b0be-4b51-8b8a-3e1dcca65e6a",
+            "Value": {
+                "id": "481af2ea-38a4-47a4-a37e-d5c23dd29bf0",
+                "resourcePath": "sprites\\spr_tileset_Sakura_Terrain\\spr_tileset_Sakura_Terrain.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1911,6 +1999,14 @@
             }
         },
         {
+            "Key": "a9282472-f893-42ab-a9db-b75074faa260",
+            "Value": {
+                "id": "e780836a-05f2-4e1f-a650-0089a1219efb",
+                "resourcePath": "tilesets\\tileset_Sakura_Terrain\\tileset_Sakura_Terrain.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "a92cf146-3ca2-418e-b531-f13c2410ebeb",
             "Value": {
                 "id": "aabdeed4-54fd-4b23-a788-29d064ec80f7",
@@ -1980,6 +2076,14 @@
                 "id": "ac4acb45-545a-4b95-9ead-6f375eb60c25",
                 "resourcePath": "objects\\obj_StartPoint\\obj_StartPoint.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b0f3219f-31f3-4a73-babc-076965959fe1",
+            "Value": {
+                "id": "661a39a1-ddf3-4c87-82b3-656dd490df85",
+                "resourcePath": "sprites\\spr_Mushroom_0\\spr_Mushroom_0.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2095,6 +2199,14 @@
             }
         },
         {
+            "Key": "bbf60b48-2429-4244-99dc-ce8e7c403106",
+            "Value": {
+                "id": "9d59b781-bc50-477b-ac8e-86b1000b5259",
+                "resourcePath": "tilesets\\tileset_Sakura_River\\tileset_Sakura_River.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "bc0257cd-6f06-4eea-8977-0a534b5f3fc5",
             "Value": {
                 "id": "84663308-c972-4627-a0b2-77c4444f2d72",
@@ -2188,6 +2300,14 @@
                 "id": "4af5cca4-0e6d-4e63-9acb-c363791c221c",
                 "resourcePath": "notes\\notes.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "c4728507-2830-498f-b63f-21adfe7cfab7",
+            "Value": {
+                "id": "57e858ac-f843-4e20-af30-c9b477c085bc",
+                "resourcePath": "sprites\\spr_Mushroom_2\\spr_Mushroom_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2324,6 +2444,14 @@
                 "id": "e37db396-7231-4f37-bec5-52aa75ce9f9f",
                 "resourcePath": "views\\d0d755ad-ed41-4ca5-b84a-0a9b8d4972ca.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d31dd108-7674-4149-a742-4a17ef9e4b3d",
+            "Value": {
+                "id": "1f694214-3d45-460b-be6c-36eb5f32ff81",
+                "resourcePath": "sprites\\spr_tileset_Sakura_Decal\\spr_tileset_Sakura_Decal.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2506,7 +2634,7 @@
             "Key": "df75da9d-5769-4ef3-81ef-87d0507d79c2",
             "Value": {
                 "id": "44e2723a-e2ce-4c20-97fe-9f1a4fe95a73",
-                "resourcePath": "sprites\\spr_Tree0\\spr_Tree0.yy",
+                "resourcePath": "sprites\\spr_Bush_1\\spr_Bush_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2580,6 +2708,14 @@
                 "id": "a6da120a-8d76-49e1-b9f2-f06bf389d2b4",
                 "resourcePath": "scripts\\scr_enemy_idleState\\scr_enemy_idleState.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e780aaac-364c-4266-9f32-aaa85b36c083",
+            "Value": {
+                "id": "0b5e0afd-a398-45a2-8e83-3cb978500ce4",
+                "resourcePath": "sprites\\spr_Tree_1\\spr_Tree_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
