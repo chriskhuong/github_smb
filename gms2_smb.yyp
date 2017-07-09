@@ -1199,6 +1199,14 @@
             }
         },
         {
+            "Key": "6ca8cfa0-e29e-484b-80ce-eeb772a0bdb9",
+            "Value": {
+                "id": "9d7b8a4e-5906-4632-9662-76728ac11fc3",
+                "resourcePath": "views\\6ca8cfa0-e29e-484b-80ce-eeb772a0bdb9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6d1bbcfd-f4c5-40ba-9795-4541a7761277",
             "Value": {
                 "id": "b3273a0e-64a4-4792-8d84-74c15a9db7b4",
@@ -1252,6 +1260,14 @@
                 "id": "f6791a04-6a7e-4489-a39d-ea130c6dece3",
                 "resourcePath": "scripts\\scr_enemy_movement\\scr_enemy_movement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7340e262-7030-4485-87db-570c215227f9",
+            "Value": {
+                "id": "8f1a222d-cd16-4004-a2f5-5eccf7e8298d",
+                "resourcePath": "objects\\obj_terrain_tester\\obj_terrain_tester.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1516,6 +1532,14 @@
                 "id": "4da9c012-2951-4370-b5a3-e1f9f3cf6942",
                 "resourcePath": "sprites\\spr_britney_death\\spr_britney_death.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8d618b9c-537e-467e-a010-913006c28ef1",
+            "Value": {
+                "id": "4922d85d-f779-451a-a254-f07996c872f7",
+                "resourcePath": "objects\\obj_solidParent\\obj_solidParent.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,19 +1,10 @@
 {
-    "id": "7340e262-7030-4485-87db-570c215227f9",
+    "id": "8d618b9c-537e-467e-a010-913006c28ef1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_terrain_tester",
+    "name": "obj_solidParent",
     "eventList": [
-        {
-            "id": "9f5bd288-4ba3-4dcd-9aeb-aa59599b7e5b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "7340e262-7030-4485-87db-570c215227f9"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",

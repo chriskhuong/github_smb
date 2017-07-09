@@ -20,4 +20,3 @@ damage = instance_create(x + xoffset, y + yoffset, boom);   //returns the id of 
         
 damage.creator = creat;    //tells the damage object that the player created the damage object so it doesn't damage themg
 damage.damage = dmg;    //now the damage variable is equal to the ID of the damage object
-

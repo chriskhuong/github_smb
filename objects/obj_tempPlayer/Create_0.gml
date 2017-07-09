@@ -8,6 +8,8 @@ event_inherited();  //allows the object to inherit the create event of the paren
 
 ///Set fixed rotation
 
+
+tag = "player";
 //hp = 20;
 spd = 1.5;
 hspd = 0;

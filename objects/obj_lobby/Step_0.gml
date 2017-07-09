@@ -2,7 +2,7 @@
 
 gp_num = gamepad_get_device_count();
 
-for (var i = 0; i < gp_num; i++;)
+for (var i = 0; i < gp_num && i < max_controller_lobby; i++;)
    {
 		if (gamepad_is_connected(i))
 			{
@@ -15,11 +15,11 @@ for (var i = 0; i < gp_num; i++;)
 						var pO = instance_create_depth(0, 0, -5000, obj_input_test);
 						pO.dvc = ds_list_find_index(lobby_queue, i);
 						pO.keyboard = false;
-				 		
+						
 						var p = instance_create_depth(64, ((i+1) * 64), -5000, obj_lobby_tester);
 						
 						p.dvc = i;
-						p.spd = (i+1) * 1.5;
+						p.spd = 4;
 						p.image_index = i + 1;
 						p.image_speed = 10;
 					}

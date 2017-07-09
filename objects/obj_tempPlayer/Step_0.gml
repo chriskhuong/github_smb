@@ -2,7 +2,7 @@
 
 //event_inherited();  //allows the object to inherit the create event of the parent
 
-depth = -y;
+depth = -y - 26;
 scr_characterData(character);
 //scr_weaponArray(character);
 
