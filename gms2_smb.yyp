@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "21d05db0-bbee-470a-83b1-a2c33d39f00b",
+            "Value": {
+                "id": "c72c737f-ef8b-4b27-b23c-30979ad9de8c",
+                "resourcePath": "sprites\\sprite145\\sprite145.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "226c04cc-3172-461c-9bcf-54fa6c654ad8",
             "Value": {
                 "id": "8d2d9563-1ea3-4fb6-bc27-50cc5e060cde",
@@ -1623,6 +1631,14 @@
             }
         },
         {
+            "Key": "879ed01d-e83d-4a9b-83fe-c0018c30f456",
+            "Value": {
+                "id": "14f1fa80-93d2-4f26-9483-c84368393cb1",
+                "resourcePath": "views\\879ed01d-e83d-4a9b-83fe-c0018c30f456.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "880f343f-24f4-4bc0-8d3f-d742460ffd13",
             "Value": {
                 "id": "8adffef7-e9b1-4e77-ad71-6b93accd2e26",
@@ -2263,6 +2279,14 @@
             }
         },
         {
+            "Key": "b6d3df37-b0a3-4390-9da0-3c49ca407e09",
+            "Value": {
+                "id": "d2893f23-1ba1-4892-bd59-1b1d167e0f46",
+                "resourcePath": "sprites\\sprite144\\sprite144.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b7a8bd89-ef5c-4e3a-affc-ba07450841e9",
             "Value": {
                 "id": "5966047a-11df-47de-ab26-54e03ed7f4db",
@@ -2604,6 +2628,14 @@
                 "id": "496d80bc-b958-4b3e-8f77-380271b04343",
                 "resourcePath": "tilesets\\floor_virtual_tileset\\floor_virtual_tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "d5b930bf-2e6a-4f2c-a04e-e277d1af6e49",
+            "Value": {
+                "id": "5d818235-249c-445c-a5da-950109cd2599",
+                "resourcePath": "views\\d5b930bf-2e6a-4f2c-a04e-e277d1af6e49.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
