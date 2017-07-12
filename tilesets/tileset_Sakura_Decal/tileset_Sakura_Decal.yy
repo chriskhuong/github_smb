@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "tileset_Sakura_Decal",
     "auto_tile_sets": [
-        
+        {
+            "id": "125f0878-99e9-4830-8e41-5daae47c80b7",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "terrain_Blossoms",
+            "tiles": [
+                129,
+                133,
+                132,
+                121,
+                125,
+                128,
+                131,
+                120,
+                124,
+                123,
+                130,
+                122,
+                137,
+                136,
+                138,
+                0
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,

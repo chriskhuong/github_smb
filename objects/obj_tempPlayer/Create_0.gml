@@ -25,9 +25,10 @@ attacked = false;   //melee_attacked = false;
 character = JO;
 weapons = 1;
 image_speed = .25;
-
+passive_items = 0;
+active_items[0] = 0;
 ability = ABILITY;
-
+global.active_slot = 0;
 //right_key = keyboard_check(vk_right) || keyboard_check(ord('D'));
 //left_key = keyboard_check(vk_left) || keyboard_check(ord('A'));
 //up_key = keyboard_check(vk_up) || keyboard_check(ord('W'));
