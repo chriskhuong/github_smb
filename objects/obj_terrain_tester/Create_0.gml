@@ -4,7 +4,7 @@ global.ground_layer = layer_create(-1);
 global.ground_tilemap_grass = layer_tilemap_create(global.ground_layer, 0, 0, tset_Prototype, room_width, room_height);
 */
 
-var lay_id = layer_get_id("bg_Grass");
+var lay_id = layer_get_id("bg_Terrain");
 Layer = layer_tilemap_get_id(lay_id);
 TilemapWidth = tilemap_get_width(Layer);
 TilemapHeight = tilemap_get_height(Layer);
@@ -17,6 +17,12 @@ var lay_id2 = layer_get_id("bg_Dirt");
 Layer2 = layer_tilemap_get_id(lay_id2);
 TilemapWidth2 = tilemap_get_width(Layer2);
 TilemapHeight2 = tilemap_get_height(Layer2);
+
+var lay_id3 = layer_get_id("bg_Dirt"); 
+Layer3 = layer_tilemap_get_id(lay_id3); 
+//TilemapWidth3 = tilemap_get_width(Layer3); 
+//TilemapHeight3 = tilemap_get_height(Layer3); 
+
 //TilesPlaced2 = 0;
 //TilesToPlace2 = 1;
 
@@ -51,14 +57,18 @@ for (i = 0; i < roomx; i++)
 	{
 		for (j = 0; j < roomy; j++)
 			{
+				//Grass
 				Tilemap = tilemap_get(Layer, i, j);
 				coin = choose(0, 1, 2, 3);
-				if (coin == 1)
-					{
-						TileToPlace = tile_set_index(Tilemap, choose(random_range(45, 48), random_range(60, 63), random_range(75, 78)));
-						tilemap_set(Layer, TileToPlace, i, j);
-					}
-					
+				if (Tilemap == 35)
+				{
+					if (coin == 1)
+						{
+							TileToPlace = tile_set_index(Tilemap, choose(random_range(25, 27), random_range(50, 52), random_range(75, 77), random_range(100, 102)));
+							tilemap_set(Layer, TileToPlace, i, j);
+						}
+				}
+				//?
 				Tilemap2 = tilemap_get(Layer2, i, j);
 				if (Tilemap2 == 136)
 					{
@@ -70,6 +80,18 @@ for (i = 0; i < roomx; i++)
 								//tilemap_set(Layer, TilesToPlace, room_width, room_height);
 							}
 					}
+				//Dirt
+				Tilemap3 = tilemap_get(Layer3, i, j);
+				
+				if (Tilemap3 == 192)
+				{
+					coin = choose(0, 1, 2, 3);
+					if (coin == 1)
+						{
+							TileToPlace3 = tile_set_index(Tilemap3, choose(random_range(190, 193), random_range(215, 218), random_range(240, 243)));
+							tilemap_set(Layer3, TileToPlace3, i, j);
+						}
+				}
 			}
 	}
 		
