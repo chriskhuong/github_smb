@@ -63,7 +63,16 @@ if (obj_input.grenade_key && weaponArray[1, 13] > 0)
         script_execute(scr_grenade);
         show_debug_message("GRENADE!!!!!"); //temp
     }
+	
+//show_debug_message(string(obj_tempPlayer.active_items[0]));
 
+if (obj_input.active_items_key && obj_tempPlayer.active_items[0] != noone)
+    {
+        image_index = 0;
+		var p = instance_create_depth(x - 50, y - 50, depth, obj_tempPlayer.active_items[0]);
+		obj_tempPlayer.active_items[0] = noone;
+		p.creator = id;
+    }
         
 /////////////////FIRING/////////////////
 /* wtf wtf wtf wtf wtf */
