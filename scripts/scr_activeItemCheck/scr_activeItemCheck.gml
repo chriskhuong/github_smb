@@ -5,8 +5,7 @@
 //bush = obj_tempPlayer.active_items[0].obj_active_pickup_bush;
 //shrub = obj_tempPlayer.active_items[0].obj_active_pickup_shrub;
 // check to see which one is actually in the list and create the item that is stored in the global.val
-/*if(obj_tempPlayer.active_items[0])
+if(obj_tempPlayer.active_items[0] != noone)
 {
-		instance_create(obj_tempPlayer.x,obj_tempPlayer.y,global.val); 
+		instance_create(obj_tempPlayer.x,obj_tempPlayer.y,obj_tempPlayer.active_items[0]); 
 }
-*/
