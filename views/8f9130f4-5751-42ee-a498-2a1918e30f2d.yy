@@ -10,7 +10,7 @@
         "08bcd17e-8520-4c33-b013-da27e4162775"
     ],
     "filterType": "GMTileSet",
-    "folderName": "group_tileset_Sakura",
+    "folderName": "Sakura",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
