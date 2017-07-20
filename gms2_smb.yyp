@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "0d70d8d4-2ec0-4c23-bb91-42f48a6c8545",
+            "Value": {
+                "id": "08ba725f-fe07-49db-9697-581eec7567a1",
+                "resourcePath": "sprites\\spr_bg_ground_Sakura\\spr_bg_ground_Sakura.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0ebdbc16-e237-4d3d-a95a-04ea49731892",
             "Value": {
                 "id": "d4d145bc-4598-4d8e-a049-efb8fa56ad09",
@@ -383,6 +391,14 @@
             }
         },
         {
+            "Key": "21d05db0-bbee-470a-83b1-a2c33d39f00b",
+            "Value": {
+                "id": "c72c737f-ef8b-4b27-b23c-30979ad9de8c",
+                "resourcePath": "sprites\\sprite145\\sprite145.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "226c04cc-3172-461c-9bcf-54fa6c654ad8",
             "Value": {
                 "id": "8d2d9563-1ea3-4fb6-bc27-50cc5e060cde",
@@ -436,6 +452,14 @@
                 "id": "a45827ac-294e-4168-b9ae-6a409a361771",
                 "resourcePath": "sprites\\spr_melee_fist\\spr_melee_fist.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2783f675-5a2a-4cf1-9901-cc363bb6dff2",
+            "Value": {
+                "id": "f10421f3-2c2a-40e0-8160-5de74b82d167",
+                "resourcePath": "rooms\\rm_Tiles_Test\\rm_Tiles_Test.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2103,6 +2127,14 @@
             }
         },
         {
+            "Key": "aabc8aaf-628f-40c3-ba35-150e9c366f49",
+            "Value": {
+                "id": "cdf3254b-e9e0-4342-bcdc-83bdd5b247fe",
+                "resourcePath": "views\\2783f675-5a2a-4cf1-9901-cc363bb6dff2-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "aae10904-2c60-45ad-9ecd-f7cccf83230d",
             "Value": {
                 "id": "78ca1574-9a3c-46ff-9991-6a02ed6dbcb7",
@@ -2115,6 +2147,14 @@
             "Value": {
                 "id": "233489fa-61eb-4746-84c9-25fae64a0591",
                 "resourcePath": "sprites\\spr_mio_idle_side\\spr_mio_idle_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "abf097c0-1bad-40f1-966e-3c8bf0b4de1e",
+            "Value": {
+                "id": "31f9a8f5-2310-44eb-bb24-7985c2620c00",
+                "resourcePath": "sprites\\spr_bg_ground_Sakura2\\spr_bg_ground_Sakura2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2231,6 +2271,14 @@
             }
         },
         {
+            "Key": "b6d3df37-b0a3-4390-9da0-3c49ca407e09",
+            "Value": {
+                "id": "d2893f23-1ba1-4892-bd59-1b1d167e0f46",
+                "resourcePath": "sprites\\sprite144\\sprite144.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b7a8bd89-ef5c-4e3a-affc-ba07450841e9",
             "Value": {
                 "id": "5966047a-11df-47de-ab26-54e03ed7f4db",
@@ -2247,6 +2295,14 @@
             }
         },
         {
+            "Key": "b87fac4a-5fda-4d33-954f-2a21e5b6c1fb",
+            "Value": {
+                "id": "7218e642-b239-4b47-ad17-3f73ef2c9de5",
+                "resourcePath": "sprites\\spr_props_Sakura\\spr_props_Sakura.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b93335b7-43cd-48b8-8a40-dbcdb0357ac4",
             "Value": {
                 "id": "8933aa0c-e64d-4345-979d-38f172d3c75c",
@@ -2259,6 +2315,14 @@
             "Value": {
                 "id": "f7d12994-73f5-461c-beeb-ff477b2a158b",
                 "resourcePath": "sprites\\spr_maid_attack_up_01\\spr_maid_attack_up_01.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba4b1cb1-d8b3-4321-a435-7d8962c7f389",
+            "Value": {
+                "id": "4b7356ad-2b89-4b96-be0c-bc28b255d211",
+                "resourcePath": "sprites\\spr_bg_ground_Sakura2b\\spr_bg_ground_Sakura2b.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3027,6 +3091,14 @@
             "Value": {
                 "id": "354f3fd3-0356-4a02-b826-0a081e175a1e",
                 "resourcePath": "sprites\\spr_melee_broom\\spr_melee_broom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f5c51430-3383-4e03-b2d2-3166b56bfe52",
+            "Value": {
+                "id": "e5e3ab51-53be-474d-80eb-250e5d87ef48",
+                "resourcePath": "sprites\\spr_bg_ground_Sakura3\\spr_bg_ground_Sakura3.yy",
                 "resourceType": "GMSprite"
             }
         },
