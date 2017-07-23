@@ -1,0 +1,2 @@
+colliding = false;
+canCollide = true;
