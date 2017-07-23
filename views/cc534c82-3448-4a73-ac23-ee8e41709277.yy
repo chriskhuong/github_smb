@@ -15,7 +15,8 @@
         "2719b56d-309d-424e-834e-679c016a61eb",
         "9f50835c-ca67-47e9-bbca-b3b3a4b71231",
         "6ae0ea42-280e-4796-9eff-161ee75e6a8f",
-        "d9f0cea0-835f-4f3a-b534-5aef0a531ba2"
+        "d9f0cea0-835f-4f3a-b534-5aef0a531ba2",
+        "7cdc3d59-3742-4368-a735-0f23c401f396"
     ],
     "filterType": "GMObject",
     "folderName": "group_obj_Sakura_Props",
