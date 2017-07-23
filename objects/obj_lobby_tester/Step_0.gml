@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-scr_getInput(dvc);
+//scr_getInput(dvc);
 
-
+//scr_move_state(dvc);
+script_execute(state);
+/*
 //Get direction
 dir = point_direction(0, 0, xaxis, yaxis);
 
@@ -26,5 +28,6 @@ hspd = lengthdir_x(len, dir);
 vspd = lengthdir_y(len, dir);
 
 //Move
-x += hspd;
-y += vspd;
+phy_position_x += hspd;
+phy_position_y += vspd;
+*/

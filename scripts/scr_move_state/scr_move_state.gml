@@ -1,33 +1,33 @@
 ///scr_move_state
-
-scr_get_input();
-
+argument0 = dvc;
+scr_getInput(dvc);
+/*
 //Move Right
-if (key_right)
+if (right_key)
     {
-        x += spd;
+        phy_position_x += spd;
     }
 
 //Move Left
-if (key_left)
+if (left_key)
     {
-        x -= spd;
+        phy_position_x -= spd;
     }
 
 //Move Down
-if (key_down)
+if (down_key)
     {
-        y += spd;
+        phy_position_y += spd;
     }
 
 //Move Up
-if (key_up)
+if (up_key)
     {
-        y -= spd;
+        phy_position_y -= spd;
     }
     
 //Stop Animating
-if (!key_right && !key_left && !key_up && !key_down)
+if (!right_key && !left_key && !up_key && !down_key)
     {
         //image_speed = 0;
         //image_index = 0; //animation frame *useful for dust kick-up*
@@ -43,4 +43,64 @@ if(mouse_shoot)
     {
         obj_game_camera.target_state = scr_mouseTargeting_state;
     }
+*/
+
+//Get direction
+dir = point_direction(0, 0, xaxis, yaxis); //(x1, y1, x2, y2);
+
+//Get the length
+if (xaxis == 0 && yaxis == 0)   //we're NOT moving
+    {
+        len = 0;
+        movement = IDLE;
+    }
+    
+else    //we're moving
+    {
+        //scr_getFace(); //took this out because is was overriding the player targeting direction
+        len = spd;
+    }
+
+//Get the h and v speed
+
+//this fixes the speed of any  movement
+hspd = lengthdir_x(len, dir);
+vspd = lengthdir_y(len, dir);
+
+//Move
+phy_position_x += hspd;
+phy_position_y += vspd;
+
+/*
+//Control the sprite
+
+image_speed = sign(len) * .2;
+if (len == 0)
+	{
+		image_index = 0;
+	}
+
+//VERTICAL
+if (vspd > 0)
+	{
+		sprite_index = spr_player_down;
+		//facing = DOWN;
+	}
+else if (vspd < 0)
+	{
+		sprite_index = spr_player_up;
+		//facing = UP;
+		
+//HORIZONTAL
+if (hspd > 0)
+	{
+		sprite_index = spr_player_right;
+		//facing = RIGHT;
+	}
+else if (hspd < 0)
+	{
+		sprite_index = spr_player_left;
+		//facing = LEFT;
+	}
+	}
 */

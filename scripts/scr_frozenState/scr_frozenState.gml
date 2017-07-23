@@ -1,2 +1,2 @@
 ///scr_frozenState()
-image_blend = c_aqua;
+image_blend = c_blue;
