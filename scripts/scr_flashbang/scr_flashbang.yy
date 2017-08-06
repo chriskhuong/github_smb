@@ -1,8 +1,8 @@
 {
-    "id": "701ed53f-2e7e-4018-8181-f6c7ae21ee7a",
+    "id": "222548da-c21f-4542-8e90-8221037d66a8",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "script68",
+    "name": "scr_flashbang",
     "IsCompatibility": false,
     "IsDnD": false
 }

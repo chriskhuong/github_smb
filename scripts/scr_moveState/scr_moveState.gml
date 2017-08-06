@@ -64,7 +64,7 @@ if (obj_input.grenade_key && weaponArray[1, 13] > 0)
         show_debug_message("GRENADE!!!!!"); //temp
     }
 	
-//show_debug_message(string(obj_tempPlayer.active_items[0]));
+//show_debug_message(string(obj_tempPlayer.passive_items[0]));
 
 if (obj_input.active_items_key && obj_tempPlayer.active_items[0] != noone)
     {

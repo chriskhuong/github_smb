@@ -1,5 +1,6 @@
 if (other.id != creator)
     {
+	
         other.hp -= 1;
         
         //Apply the knockback

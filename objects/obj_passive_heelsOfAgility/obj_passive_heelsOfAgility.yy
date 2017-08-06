@@ -1,28 +1,28 @@
 {
-    "id": "6378e2bc-dfe2-4e4e-ac5d-c61ddf18fcf2",
+    "id": "e61de38e-e6aa-4972-9b24-33d3bc659dc4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_active_pickup_shrub",
+    "name": "obj_passive_heelsOfAgility",
     "eventList": [
         {
-            "id": "4e59c394-a26c-4a67-84d6-4e14d8283ebe",
+            "id": "cca2bcc3-8c16-482d-b67b-65042ac4eea3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "6378e2bc-dfe2-4e4e-ac5d-c61ddf18fcf2"
+            "m_owner": "e61de38e-e6aa-4972-9b24-33d3bc659dc4"
         },
         {
-            "id": "5795981e-f208-46f0-8041-bf328fbb453f",
+            "id": "6597c720-53f6-4cd7-aa9b-aa98df634e24",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "6378e2bc-dfe2-4e4e-ac5d-c61ddf18fcf2"
+            "m_owner": "e61de38e-e6aa-4972-9b24-33d3bc659dc4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -40,35 +40,35 @@
     "physicsShape": 1,
     "physicsShapePoints": [
         {
-            "id": "c708ca4b-9e79-4ac5-ba6c-26a48f22dca2",
+            "id": "5fdf2b47-398e-4aff-9e9d-774380d2df56",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": -16,
-            "y": -16
+            "x": 0,
+            "y": 0
         },
         {
-            "id": "7255fe3e-90ff-4d83-993a-e499a0583ca8",
+            "id": "ffded6de-fb05-4e57-9073-6b006908ad5e",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 32,
-            "y": -16
+            "y": 0
         },
         {
-            "id": "425b91e5-d420-4dfb-a083-4946628e8569",
+            "id": "97903286-11f0-481b-96f0-bfd941f8cd7e",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 32,
             "y": 32
         },
         {
-            "id": "4b9620e1-9412-4998-81aa-e0364d44ca74",
+            "id": "3db3fa1a-38da-4592-88d1-41f63d1a5316",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": -16,
+            "x": 0,
             "y": 32
         }
     ],
-    "physicsStartAwake": false,
+    "physicsStartAwake": true,
     "solid": false,
     "spriteId": "19304b3b-5646-454c-9068-499001582179",
     "visible": true
