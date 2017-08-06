@@ -15,7 +15,7 @@ else
         boom = obj_damage;
     }
 
-damage = instance_create(x + xoffset, y + yoffset, boom);   //returns the id of the object created, so we assign it to a local variable
+damage = instance_create_depth(x + xoffset, y + yoffset, depth, boom);   //returns the id of the object created, so we assign it to a local variable
 
         
 damage.creator = creat;    //tells the damage object that the player created the damage object so it doesn't damage themg

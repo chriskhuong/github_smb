@@ -22,6 +22,6 @@ phy_position_x += hspd;
 phy_position_y += vspd;
 
 //Create the dash effect    //var dash is a temporary variable
-var dash = instance_create(x, y, obj_dashEffect); //we can alter the properties of the object after creation
+var dash = instance_create_depth(x, y, depth, obj_dashEffect); //we can alter the properties of the object after creation
 dash.sprite_index = sprite_index; //assigns the player's current sprite index to the created instance
 dash.image_index = image_index; //assigns the player's current image index to the created instance

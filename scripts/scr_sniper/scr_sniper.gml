@@ -1,7 +1,7 @@
 ///scr_sniper()
-var Laser = instance_create(obj_tempGun.x + lengthdir_x(obj_tempGun.LenX, obj_tempGun.image_angle) - lengthdir_y(obj_tempGun.LenY, obj_tempGun.image_angle), 
+var Laser = instance_create_depth(obj_tempGun.x + lengthdir_x(obj_tempGun.LenX, obj_tempGun.image_angle) - lengthdir_y(obj_tempGun.LenY, obj_tempGun.image_angle), 
                             obj_tempGun.y + lengthdir_y(obj_tempGun.LenX, obj_tempGun.image_angle) + lengthdir_x(obj_tempGun.LenY, obj_tempGun.image_angle), 
-                            obj_sniperBullet);
+                            depth, obj_sniperBullet);
 
 //move laser into collision
 do

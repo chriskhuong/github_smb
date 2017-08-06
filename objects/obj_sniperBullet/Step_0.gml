@@ -8,7 +8,7 @@ if collision_line(obj_sniperBullet.LV_StartX, obj_sniperBullet.LV_StartY, x, y, 
             {
                 bang = obj_enemyParent.id
                 damage = 50;
-                var hit = instance_create(bang.x, bang.y, obj_damage);
+                var hit = instance_create_depth(bang.x, bang.y, depth, obj_damage);
                 hit.damage = damage;
             }
     }

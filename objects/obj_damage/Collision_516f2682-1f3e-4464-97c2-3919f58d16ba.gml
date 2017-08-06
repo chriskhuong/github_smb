@@ -1,6 +1,6 @@
 ///Damage all lifeforms
 
-if (other.id != creator)
+if (other.tag != creator)
     {
         other.hp -= damage;
         

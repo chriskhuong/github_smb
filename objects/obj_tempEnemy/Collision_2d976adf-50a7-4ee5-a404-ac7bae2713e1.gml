@@ -10,7 +10,7 @@ if (state != scr_enemy_stallState)  //make sure we don't damage the player in th
         var ydir = lengthdir_y (1, dir);
         
         //create a damage object
-        var damage = instance_create(other.x + xdir, other.y + ydir, obj_damage);
+        var damage = instance_create_depth(other.x + xdir, other.y + ydir, depth, obj_damage);
         
         //tell the object who created it, so it doesn't injur it's creator
         damage.creator = id;

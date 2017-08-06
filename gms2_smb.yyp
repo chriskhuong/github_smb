@@ -2959,6 +2959,14 @@
             }
         },
         {
+            "Key": "f844af22-e81c-448d-b8e0-e8fc2469ebae",
+            "Value": {
+                "id": "3611bfa4-1a82-4607-9880-774e211961a2",
+                "resourcePath": "scripts\\scr_attack_state\\scr_attack_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f87e2b50-2730-4e95-b9d2-560fd0d2cb72",
             "Value": {
                 "id": "13ab5fa6-c0b1-4475-be5b-45f9caf2bfb3",
@@ -3130,6 +3138,7 @@
         "5b2a57f3-4b59-49aa-9452-ffe7bae1befe",
         "925c5c03-ffa7-4051-9312-4961dee480e8",
         "dbdbc781-12d5-4679-a1b7-dc82cd2284fb",
+        "f844af22-e81c-448d-b8e0-e8fc2469ebae",
         "4958333c-4782-4fbf-93a8-1974f3e6b8ec",
         "50746aff-dc41-47ee-bdd2-188b8f5a021a",
         "43885ac6-6024-4564-bd87-e81f4ccac029",

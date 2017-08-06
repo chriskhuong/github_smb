@@ -4,6 +4,12 @@
 
 //scr_move_state(dvc);
 script_execute(state);
+
+if (!gamepad_is_connected(dvc))
+	{
+		instance_destroy();
+	}
+
 /*
 //Get direction
 dir = point_direction(0, 0, xaxis, yaxis);

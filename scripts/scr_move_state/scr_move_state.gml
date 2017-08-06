@@ -1,6 +1,18 @@
 ///scr_move_state
 argument0 = dvc;
 scr_getInput(dvc);
+
+if (dash_key)
+	{
+		state = scr_dashState;
+		alarm[0] = room_speed/5;
+	}
+
+if (attack_key)
+	{
+		image_index = 0;
+		state = scr_attackState;
+	}
 /*
 //Move Right
 if (right_key)

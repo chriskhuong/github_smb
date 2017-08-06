@@ -28,7 +28,7 @@ room_persistent = false;
 room_start_action = NEW_ROOM;
 
 //Create the input object
-instance_create(0, 0, obj_input);
+instance_create_depth(0, 0, depth, obj_input);
 
 
 

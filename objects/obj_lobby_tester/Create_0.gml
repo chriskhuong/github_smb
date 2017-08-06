@@ -11,6 +11,9 @@ len = 0;    //length
 xaxis = 0;
 yaxis = 0;
 dir = 0;
+attacked = false;
+image_speed = 0;
+face = RIGHT;
 
 state = scr_move_state;
 

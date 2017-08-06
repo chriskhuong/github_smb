@@ -4,7 +4,7 @@
 
 if (scr_chance(1))
     {
-        instance_create(x + random_range(-10, 10), y + random_range(-10, 10), obj_expr);
+        instance_create_depth(x + random_range(-10, 10), y + random_range(-10, 10), depth, obj_expr);
     }
 
 var inst;
@@ -15,7 +15,7 @@ with(instance_nearest(608, 288, obj_tempWall))
         
     }
 
-inst = instance_create(608, 288, obj_door);
+inst = instance_create_depth(608, 288, depth, obj_door);
         with (inst)
             {
                 new_room = rm_temp;

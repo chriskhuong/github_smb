@@ -13,7 +13,7 @@ if (hp <= 0)
             {
                 instance_destroy();  
             }
-        instance_create(irandom_range(x-sprite_width/2, x+sprite_width/2), irandom_range(y-sprite_height/2, y+sprite_height/2),obj_tempPlayer);
+        instance_create_depth(irandom_range(x-sprite_width/2, x+sprite_width/2), irandom_range(y-sprite_height/2, y+sprite_height/2), depth, obj_tempPlayer);
         p_lives -= 1;
         hp = maxHp;
     }
@@ -41,6 +41,7 @@ if (obj_input.pause_key)
                     {
                         obj_target.persistent = false;
                     }
+				
                 previous_room = room;
                 room_persistent = true;
                 room_goto(rm_pause);

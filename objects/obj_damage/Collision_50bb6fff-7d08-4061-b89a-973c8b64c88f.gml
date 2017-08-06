@@ -1,6 +1,6 @@
 ///Damage Player
 
-if (other.id != creator)
+if (other.tag != creator)
     {
         obj_playerStats.hp -= damage;
         

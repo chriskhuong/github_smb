@@ -14,7 +14,7 @@ while (!collision && distance_to_point(temp_x, temp_y) < room_width)
         collision = (position_meeting(temp_x, temp_y, obj_tempWall));
     }
 
-var shot = instance_create(temp_x, temp_y, obj_shot);
+var shot = instance_create_depth(temp_x, temp_y, depth, obj_shot);
 shot.start_x = start_x;
 shot.start_y = start_y;
 
@@ -24,7 +24,7 @@ if(collision_line(start_x, start_y, temp_x, temp_y, obj_enemyParent, false, true
         damage = 50;
         show_debug_message(string(hitpoint[0]) + " " + string(hitpoint[1]));
         
-        var hit = instance_create(hitpoint[0], hitpoint[1], obj_damage);
+        var hit = instance_create_depth(hitpoint[0], hitpoint[1], depth, obj_damage);
         hit.creator = id;
         hit.damage = damage;
         /*

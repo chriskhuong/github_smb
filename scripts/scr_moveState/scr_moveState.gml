@@ -17,7 +17,7 @@ if (obj_input.dash_key)   //remember to change this to whatever input you put sp
                     {
                         if (!instance_exists(dialog))   //if the dialog variable doesn't hold a dialog object
                             {
-                                dialog = instance_create(x + xOffset, y + yOffset, obj_dialog); //then we create a dialog object
+                                dialog = instance_create_depth(x + xOffset, y + yOffset, depth, obj_dialog); //then we create a dialog object
                                 dialog.text = text; //sets the dialog's text. the speaker is telling the dialog box what to say
                             }
                         else    //if it does exist

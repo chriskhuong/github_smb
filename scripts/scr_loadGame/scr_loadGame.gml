@@ -24,7 +24,7 @@ with(obj_playerStats)
             }
         else
             {
-                instance_create(player_xstart, player_ystart, obj_tempPlayer);
+                instance_create_depth(player_xstart, player_ystart, depth, obj_tempPlayer);
             }
         hp = save_data[? "hp"];
         maxHp = save_data[? "maxHp"];

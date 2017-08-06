@@ -10,4 +10,12 @@ script_execute(state);
 script_execute(target_state);
 
 sprite_index = sprite[facing, movement];
-
+/*
+if (!persistent)
+	{
+		for (i = 0; i < ds_list_size(children); i++)
+			{
+				children[i] = !persistent;
+			}
+	}
+*/

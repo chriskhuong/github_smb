@@ -2,7 +2,7 @@
 
 if (instance_number(obj_teatime) < 1)
     {
-        var teatime = instance_create(x, y, obj_teatime);
+        var teatime = instance_create_depth(x, y, depth, obj_teatime);
         teatime.creator = id;
         
     }

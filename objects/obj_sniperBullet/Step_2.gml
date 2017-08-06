@@ -1,2 +1,2 @@
-instance_create(x, y, obj_EndPoint);
+instance_create_depth(x, y, depth, obj_EndPoint);
 

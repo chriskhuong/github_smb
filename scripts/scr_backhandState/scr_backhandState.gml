@@ -40,7 +40,7 @@ switch (facing)    //change facing to image_index
 
 if (/*image_index >= 1 &&*/ attacked == false)   //used >= rather than == to avoid jumps in decimals
     {
-        var damage = instance_create(x + attack_x, y + attack_y, obj_damage);   //returns the id of the object created, so we assign it to a local variable
+        var damage = instance_create_depth(x + attack_x, y + attack_y, depth, obj_damage);   //returns the id of the object created, so we assign it to a local variable
                                                                                 //now the damage variable is equal to the ID of the damage object
         
         damage.creator = id;    //tells the damage object that the player created the damage object so it doesn't damage them

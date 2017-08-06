@@ -1,6 +1,6 @@
 ///scr_attackState
 
-//image_speed = .5;
+image_speed = .5;
 
 movement = ATTACK;
 
@@ -34,7 +34,14 @@ switch (facing)    //change facing to image_index
 
 if (image_index >= 1 && attacked == false)   //used >= rather than == to avoid jumps in decimals
     {
-        creator = id;
+	/*
+		//if (friendlyFire == true)
+			{
+				creator = id;
+			}
+		else
+	*/	
+        creator = tag;
         damage = id.dmg;
         scr_damage(attack_x, attack_y, creator, damage);
         attacked = true;

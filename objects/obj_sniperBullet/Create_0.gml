@@ -10,5 +10,5 @@ show_debug_message(string(LV_StartX) + " " + string(LV_StartY));
 
 /////DEBUGGING SHIT///////
 
-instance_create(LV_StartX, LV_StartY, obj_StartPoint);
+instance_create_depth(LV_StartX, LV_StartY, depth, obj_StartPoint);
 

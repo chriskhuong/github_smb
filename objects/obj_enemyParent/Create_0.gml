@@ -6,4 +6,4 @@ spd = 1;
 origSpd = spd;
 tempSpd = spd/3;
 
-
+tag = "enemy";
