@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00725664-42e4-46dd-9f2e-2ce1492cd79d",
+            "Value": {
+                "id": "0abf8cb7-9323-4923-a3f5-007dc87a107a",
+                "resourcePath": "sprites\\spr_Coin\\spr_Coin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "016cef63-e3d5-426c-b921-3834f653c73b",
             "Value": {
                 "id": "cb459521-3feb-4a7d-8373-2a3e2f4ee0b7",
@@ -428,6 +436,14 @@
                 "id": "a45827ac-294e-4168-b9ae-6a409a361771",
                 "resourcePath": "sprites\\spr_melee_fist\\spr_melee_fist.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "278f03f9-0b5c-41da-9dc7-da3ddf2aefa8",
+            "Value": {
+                "id": "302768f7-2681-4357-b118-cff5ec131713",
+                "resourcePath": "objects\\obj_ExplosionGen\\obj_ExplosionGen.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1487,14 +1503,6 @@
             }
         },
         {
-            "Key": "7e8ce1f7-1447-41fc-ba75-a3d7e789c911",
-            "Value": {
-                "id": "7320b7e9-8e6b-497b-a1fc-0d2ccb886725",
-                "resourcePath": "objects\\obj_TerrainGen\\obj_TerrainGen.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7e99f59b-e0d6-4f35-ab76-50995da6ebfd",
             "Value": {
                 "id": "6d57ac86-b4d4-467a-8134-fcc3602c22e1",
@@ -1823,6 +1831,14 @@
             }
         },
         {
+            "Key": "97c93005-1ece-416d-88b6-b1331e38acf0",
+            "Value": {
+                "id": "5f898aaa-7029-421d-a53d-19bab170cf14",
+                "resourcePath": "objects\\obj_SmokeGen\\obj_SmokeGen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9a8a7f47-7cc4-4478-ab28-8976b2264aae",
             "Value": {
                 "id": "afeba66d-57d6-44b7-947c-185e6769b9bc",
@@ -2071,6 +2087,14 @@
             }
         },
         {
+            "Key": "acabe654-f5b6-49d5-8375-523a3c5b32df",
+            "Value": {
+                "id": "f31078db-1bc8-4b2f-b136-39a687b8d13b",
+                "resourcePath": "objects\\obj_FireGen\\obj_FireGen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "acbdb0f2-f3d2-4042-87bc-19ecdbfedc94",
             "Value": {
                 "id": "e81abdd6-e7d2-4d9c-9dff-33454ad9433e",
@@ -2271,6 +2295,14 @@
             }
         },
         {
+            "Key": "bf785c40-ed67-4fca-ae08-002f81973e16",
+            "Value": {
+                "id": "326e85f6-5293-470f-b1e8-a05d2dacdfaa",
+                "resourcePath": "sprites\\spr_effect_Fire\\spr_effect_Fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bfd0557c-7eeb-4528-9aff-0714d1d285fe",
             "Value": {
                 "id": "563c57fc-86a4-47a2-b455-4b4f6a4b87a6",
@@ -2355,6 +2387,14 @@
             "Value": {
                 "id": "77bd74c2-c427-42e6-9003-7b5224d13161",
                 "resourcePath": "sprites\\spr_reload_assault\\spr_reload_assault.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c69e5764-6744-4c82-b658-9bd080fef90e",
+            "Value": {
+                "id": "402002b7-a836-4d1b-8c40-631c0fb213dd",
+                "resourcePath": "sprites\\spr_effect_Explosion\\spr_effect_Explosion.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2700,6 +2740,14 @@
                 "id": "5877b10f-dc86-4a58-991f-94601edca42b",
                 "resourcePath": "scripts\\scr_MP3player\\scr_MP3player.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e08914d4-5028-4576-9489-a7cb96cd81d6",
+            "Value": {
+                "id": "8b66e9a8-d45e-48e1-82e8-9fdc321f0555",
+                "resourcePath": "rooms\\rm_Particles_Test\\rm_Particles_Test.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
