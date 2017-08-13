@@ -66,14 +66,29 @@ if (obj_input.grenade_key && weaponArray[1, 13] > 0)
 	
 //show_debug_message(string(obj_tempPlayer.passive_items[0]));
 
-if (obj_input.active_items_key && obj_tempPlayer.active_items[0] != noone)
+if (obj_input.active_items_key && obj_tempPlayer.weaponArray[0,14] != noone)
     {
-        image_index = 0;
-		var p = instance_create_depth(x - 50, y - 50, depth, obj_tempPlayer.active_items[0]);
+        /*image_index = 0;
+		//script_execute(scr_smokeGrenade);
+		switch (active_items[0])
+		{
+		    case obj_active_smokeGrenade: 
+			script_execute(scr_smokeGrenade());
+			break;
+			case obj_active_Rpotion:
+			obj_playerStats.hp += 1;
+			show_debug_message(active_items[0]);
+			break;
+		    default: 
+			break;
+		}
 		obj_tempPlayer.active_items[0] = noone;
-		p.creator = id;
+		*/
+		script_execute(scr_revertEnhancements);
+		script_execute(obj_tempPlayer.weaponArray[0, 15]);
+		obj_tempPlayer.weaponArray[0,14] = noone;
     }
-        
+  
 /////////////////FIRING/////////////////
 /* wtf wtf wtf wtf wtf */
 

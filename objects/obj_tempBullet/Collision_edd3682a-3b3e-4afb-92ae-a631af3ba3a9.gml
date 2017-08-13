@@ -1,7 +1,7 @@
 if (other.id != creator)
     {
-	
-        other.hp -= 1;
+		bulletdmg = 1;
+        other.hp -= bulletdmg;
         
         //Apply the knockback
         

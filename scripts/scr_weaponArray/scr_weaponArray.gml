@@ -41,6 +41,11 @@ obj_tempPlayer.weaponArray[0, 9] = 12;  //Reload
 obj_tempPlayer.weaponArray[0, 10] = 24  //MaxAmmo
 obj_tempPlayer.weaponArray[0, 11] = 12; //ClipAmmo TAKE
 obj_tempPlayer.weaponArray[0, 12] = 24  //MaxAmmo TAKE
+//obj_tempPlayer.weaponArray[0, 13] = scr_grenade();
+obj_tempPlayer.weaponArray[0, 14] = noone; // the item
+obj_tempPlayer.weaponArray[0, 15] = noone; // the script for the item
+
+
 //obj_tempPlayer.weaponArray[0, 8] = 1; //Damage output
 /*Temporary
 obj_tempPlayer.weaponArray[0, 4] = obj_tempBullet;
