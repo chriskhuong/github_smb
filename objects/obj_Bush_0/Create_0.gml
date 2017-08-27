@@ -5,6 +5,12 @@ depth = -y;
 //image_blend = make_colour_hsv(random_range(160, 170), 255, 255); 
 //image_blend = make_color_rgb(random_range(200,255), random_range(200, 255), random_range(200, 255));
 image_blend = make_color_rgb(random_range(225, 255), random_range(200, 250), 0); 
+//consider more scale variations!
+/*
+image_xscale = random_range(.8, 1.2); 
+image_yscale = random_range(.8, 1.2); 
+*/
+
 //selected = false; 
 //image_speed 0; 
 
