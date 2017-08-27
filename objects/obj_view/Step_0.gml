@@ -1,11 +1,11 @@
 ///Move %10 towards the player
 var xTo, yTo;
 
-if (instance_exists(obj_tempPlayer))
+if (instance_exists(obj_playerTracker))
     {
-        move_towards_point(obj_tempPlayer.x, obj_tempPlayer.y, 0)
-        xTo = obj_tempPlayer.x;
-        yTo = obj_tempPlayer.y;
+        move_towards_point(obj_playerTracker.x, obj_playerTracker.y, 0)
+        xTo = obj_playerTracker.x;
+        yTo = obj_playerTracker.y;
     }
 else
     {
@@ -35,3 +35,10 @@ if (shake < 0)
         shake = 0;
     }
 
+///////////////
+/*
+var i;
+for (i = 0; i < instance_number(obj_tempPlayer1); i++)
+	{
+		players[i] = instance_find(obj_tempPlayer1, i);
+	}

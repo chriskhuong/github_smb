@@ -1,11 +1,16 @@
 ///scr_sniperHitScan
 
-var temp_dir = obj_tempGun.dir;
-var temp_x = x + lengthdir_x(obj_tempGun.LenX, obj_tempGun.image_angle) - lengthdir_y(obj_tempGun.LenY, obj_tempGun.image_angle);
-var temp_y = y + lengthdir_y(obj_tempGun.LenX, obj_tempGun.image_angle) + lengthdir_x(obj_tempGun.LenY, obj_tempGun.image_angle);
+var temp_dir = myGun.dir;
+var temp_x = x + lengthdir_x(myGun.LenX, myGun.image_angle) - lengthdir_y(myGun.LenY, myGun.image_angle);
+var temp_y = y + lengthdir_y(myGun.LenX, myGun.image_angle) + lengthdir_x(myGun.LenY, myGun.image_angle);
 var start_x = temp_x;
 var start_y = temp_y;
-var collision = (position_meeting(temp_x, temp_y, obj_tempWall));
+var collision = noone; 
+
+if (instance_exists(obj_tempWall))
+	{
+		collision = (position_meeting(temp_x, temp_y, obj_tempWall));
+	}
 
 while (!collision && distance_to_point(temp_x, temp_y) < room_width)
     {

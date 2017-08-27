@@ -4,9 +4,9 @@ scr_get_depth();
 
 if (instance_exists(creator))
     {
-        phy_position_x = creator.x + lengthdir_x(rng, obj_tempGun.image_angle);
-        phy_position_y = creator.y + lengthdir_y(rng, obj_tempGun.image_angle);
+        x = creator.x + lengthdir_x(rng, creator.myGun.image_angle);
+        y = creator.y + lengthdir_y(rng, creator.myGun.image_angle);
     }
     
-phy_rotation = -obj_tempGun.image_angle;
+image_angle = creator.myGun.image_angle;
 

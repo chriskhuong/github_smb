@@ -41,8 +41,13 @@ if (image_index >= 1 && attacked == false)   //used >= rather than == to avoid j
 			}
 		else
 	*/	
-        creator = tag;
-        damage = id.dmg;
-        scr_damage(attack_x, attack_y, creator, damage);
+		//
+		var D = instance_create_depth(attack_x, attack_y, depth, obj_damage);
+		D.creator = id;
+		D.creatorTag = tag;
+        D.damage = id.dmg;
+		
+		//show_debug_message("Damage :" + string(dmg));
+        //var dmgOBJ = scr_damage(attack_x, attack_y, creatorTag, damage);
         attacked = true;
     }

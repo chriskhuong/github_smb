@@ -3,7 +3,11 @@
 //image_speed = .5;
 
 movement = ATTACK;
-obj_view.shake = 15;
+if(instance_exists(obj_view))
+	{
+		obj_view.shake = 15;
+	}
+
 
 var attack_x = 0;
 var attack_y = 0;
@@ -43,6 +47,6 @@ if (/*image_index >= 1 &&*/ attacked == false)   //used >= rather than == to avo
         var damage = instance_create_depth(x + attack_x, y + attack_y, depth, obj_damage);   //returns the id of the object created, so we assign it to a local variable
                                                                                 //now the damage variable is equal to the ID of the damage object
         
-        damage.creator = id;    //tells the damage object that the player created the damage object so it doesn't damage them
-        damage.damage = ((obj_tempPlayer.dmg)*2);
+        damage.creator = tag;    //tells the damage object that the player created the damage object so it doesn't damage them
+        damage.damage = (dmg*2);
     }

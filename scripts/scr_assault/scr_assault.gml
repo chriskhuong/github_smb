@@ -1,11 +1,14 @@
 ///scr_assault()
 //might not even need this
+
+var bullet_spd = 10;
 //fuck...what am I even doing...
-var p = instance_create_depth(obj_tempGun.x + lengthdir_x(obj_tempGun.LenX, obj_tempGun.image_angle) - lengthdir_y(obj_tempGun.LenY, obj_tempGun.image_angle), obj_tempGun.y + lengthdir_y(obj_tempGun.LenX, obj_tempGun.image_angle) + lengthdir_x(obj_tempGun.LenY, obj_tempGun.image_angle), depth, obj_tempBullet);
-var xforce = lengthdir_x(obj_tempGun.LenX, (obj_tempGun.image_angle+3)) - lengthdir_y(obj_tempGun.LenY, (obj_tempGun.image_angle+3));
-var yforce = lengthdir_y(obj_tempGun.LenX, (obj_tempGun.image_angle+3)) + lengthdir_x(obj_tempGun.LenY, (obj_tempGun.image_angle+3));
-p.creator = id;
+var xforce = lengthdir_x(myGun.LenX, myGun.image_angle) - lengthdir_y(myGun.LenY, myGun.image_angle);
+var yforce = lengthdir_y(myGun.LenX, myGun.image_angle) + lengthdir_x(myGun.LenY, myGun.image_angle);
+var p = instance_create_depth(myGun.x + lengthdir_x(myGun.LenX, myGun.image_angle) - lengthdir_y(myGun.LenY, myGun.image_angle), myGun.y + lengthdir_y(myGun.LenX, myGun.image_angle) + lengthdir_x(myGun.LenY, myGun.image_angle), depth, obj_tempBullet);
+p.creator = tag;
 with (p)
     {
-        physics_apply_impulse(x, y, xforce, yforce);
+		move_towards_point(x + xforce, y + yforce, bullet_spd);
+        //physics_apply_impulse(x, y, xforce, yforce);
     }

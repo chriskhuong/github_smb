@@ -7,8 +7,8 @@ rng = 48; //how clost the shield is to the player
 
 if (creator != noone)
     {
-        phy_position_x = creator.x + lengthdir_x(rng, obj_tempGun.image_angle);
-        phy_position_y = creator.y + lengthdir_y(rng, obj_tempGun.image_angle);
+        x = creator.x + lengthdir_x(rng, creator.myGun.image_angle);
+        y = creator.y + lengthdir_y(rng, creator.myGun.image_angle);
     }
 
 alarm[0] = room_speed * 5;

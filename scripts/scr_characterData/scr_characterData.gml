@@ -10,6 +10,7 @@ switch(character){
         ///////BRITNEY
         
         dmg = 1;
+		hp = 4;
         
         //moving
         sprite[RIGHT, MOVE] = spr_maid_run_side;
@@ -18,10 +19,10 @@ switch(character){
         sprite[DOWN, MOVE] = spr_maid_run_down;
         
         //idle
-        sprite[RIGHT, IDLE] = spr_maid_idle_side;
-        sprite[UP, IDLE] = spr_maid_idle_up;
-        sprite[LEFT, IDLE] = spr_maid_idle_side;
-        sprite[DOWN, IDLE] = spr_maid_idle_down;
+        sprite[RIGHT, IDLE] = spr_britney_idle_side;
+        sprite[UP, IDLE] = spr_britney_idle_up;
+        sprite[LEFT, IDLE] = spr_britney_idle_side;
+        sprite[DOWN, IDLE] = spr_britney_idle_down;
         
         //attacking
         sprite[RIGHT, ATTACK] = spr_maid_attack_side_01;
@@ -40,7 +41,8 @@ switch(character){
         ///////JO
         
         dmg = 3;
-        
+        hp = 4;
+		
         //moving
         sprite[RIGHT, MOVE] = spr_jo_temp;
         sprite[UP, MOVE] = spr_jo_temp;
@@ -71,7 +73,8 @@ switch(character){
         ///////MIO
         
         dmg = 4;
-        
+        hp = 3;
+		
         //moving
         sprite[RIGHT, MOVE] = spr_mio_temp;
         sprite[UP, MOVE] = spr_mio_temp;
@@ -79,10 +82,10 @@ switch(character){
         sprite[DOWN, MOVE] = spr_mio_temp;
         
         //idle
-        sprite[RIGHT, IDLE] = spr_mio_temp;
-        sprite[UP, IDLE] = spr_mio_temp;
-        sprite[LEFT, IDLE] = spr_mio_temp;
-        sprite[DOWN, IDLE] = spr_mio_temp;
+        sprite[RIGHT, IDLE] = spr_mio_idle_side;
+        sprite[UP, IDLE] = spr_mio_idle_up;
+        sprite[LEFT, IDLE] = spr_mio_idle_side;
+        sprite[DOWN, IDLE] = spr_mio_idle_down;
         
         //attacking
         sprite[RIGHT, ATTACK] = spr_melee_sword;
@@ -102,7 +105,8 @@ switch(character){
         ///////ANNA
         
         dmg = 5;
-        
+        hp = 5;
+		
         //moving
         sprite[RIGHT, MOVE] = spr_anna_temp;
         sprite[UP, MOVE] = spr_anna_temp;
@@ -133,6 +137,7 @@ switch(character){
         ///////SEBASTIAN
         
         dmg = 3;
+		hp = 4;
         
         //moving
         sprite[RIGHT, MOVE] = spr_sebastian_temp;

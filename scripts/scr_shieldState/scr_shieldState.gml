@@ -5,7 +5,7 @@ var rng = 48;   //KEEP THIS NUMBER IN MIND
 
 if (instance_number(obj_shield) < 1)
     {
-        var shield = instance_create_depth((x + lengthdir_x(rng, obj_tempGun.image_angle)), y + lengthdir_y(rng, obj_tempGun.image_angle), depth, obj_shield);
-        shield.creator = id;
-        shield.phy_rotation = -obj_tempGun.image_angle;
+        var s = instance_create_depth((x + lengthdir_x(rng, myGun.image_angle)), y + lengthdir_y(rng, myGun.image_angle), depth, obj_shield);
+        s.creator = id;
+        s.image_angle = -myGun.image_angle;
     }

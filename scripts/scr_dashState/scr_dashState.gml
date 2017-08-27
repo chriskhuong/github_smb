@@ -18,8 +18,8 @@ hspd = lengthdir_x(len, dir);
 vspd = lengthdir_y(len, dir);
 
 //Move
-phy_position_x += hspd;
-phy_position_y += vspd;
+x += hspd;
+y += vspd;
 
 //Create the dash effect    //var dash is a temporary variable
 var dash = instance_create_depth(x, y, depth, obj_dashEffect); //we can alter the properties of the object after creation

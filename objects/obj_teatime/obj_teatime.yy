@@ -44,7 +44,7 @@
     "physicsGroup": 0,
     "physicsKinematic": false,
     "physicsLinearDamping": 0.1,
-    "physicsObject": true,
+    "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": true,
     "physicsShape": 0,
@@ -67,5 +67,5 @@
     "physicsStartAwake": true,
     "solid": false,
     "spriteId": "f7220ce0-8390-4494-b784-ab0cbd35d082",
-    "visible": false
+    "visible": true
 }

@@ -1,15 +1,21 @@
 ///scr_sniper()
-var Laser = instance_create_depth(obj_tempGun.x + lengthdir_x(obj_tempGun.LenX, obj_tempGun.image_angle) - lengthdir_y(obj_tempGun.LenY, obj_tempGun.image_angle), 
-                            obj_tempGun.y + lengthdir_y(obj_tempGun.LenX, obj_tempGun.image_angle) + lengthdir_x(obj_tempGun.LenY, obj_tempGun.image_angle), 
+var Laser = instance_create_depth(myGun.x + lengthdir_x(myGun.LenX, myGun.image_angle) - lengthdir_y(myGun.LenY, myGun.image_angle), 
+                            myGun.y + lengthdir_y(myGun.LenX, myGun.image_angle) + lengthdir_x(myGun.LenY, myGun.image_angle), 
                             depth, obj_sniperBullet);
 
+var collision = noone;
+if (instance_exists(obj_tempWall))
+	{
+		collision = obj_tempWall;
+	}
+	
 //move laser into collision
 do
     {
-        Laser.x += lengthdir_x(1, obj_tempGun.dir);
-        Laser.y += lengthdir_y(1, obj_tempGun.dir);
+        Laser.x += lengthdir_x(1, myGun.dir);
+        Laser.y += lengthdir_y(1, myGun.dir);
     }
 //until it meets a collision_circle
-until (collision_point(Laser.x, Laser.y, obj_tempWall, true, true)); // || collision_point(Laser.x, Laser.y, obj_enemyParent, true, true));
+until (collision_point(Laser.x, Laser.y, collision, true, true)); // || collision_point(Laser.x, Laser.y, obj_enemyParent, true, true));
 
 

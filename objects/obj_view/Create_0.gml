@@ -4,9 +4,11 @@ cam_scale = 1;
 max_scale = 2;
 
 //cam_distance = 96; //WTF is this even for??
-if (instance_exists(obj_tempPlayer))
+instance_create_depth(x, y, depth, obj_playerTracker);
+
+if (instance_exists(obj_playerTracker))
     {
-        x = obj_tempPlayer.x;
-        y = obj_tempPlayer.y;
+        x = obj_playerTracker.x;
+        y = obj_playerTracker.y;
     }
 

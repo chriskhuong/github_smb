@@ -1,8 +1,8 @@
 ///Damage Player
 
-if (other.tag != creator)
+if (other.tag != creator.tag)
     {
-        obj_playerStats.hp -= damage;
+        obj_playerStats1.hp -= damage;
         
         //Apply the knockback
         if (instance_exists(creator)) //if the creator exists
@@ -15,9 +15,9 @@ if (other.tag != creator)
             }
         var xforce = lengthdir_x(knockback, dir);
         var yforce = lengthdir_y(knockback, dir);
-        with (other)
+        /*with (other)
             {
                 physics_apply_impulse(x, y, xforce, yforce);    //applies the impulse to the 'other' object
-            }
+            */
     }
 

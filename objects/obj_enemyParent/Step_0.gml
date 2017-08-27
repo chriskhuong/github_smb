@@ -2,7 +2,7 @@
 
 event_inherited();
 
-if (place_meeting(phy_position_x, phy_position_y, obj_teatime))
+if (place_meeting(x, y, obj_teatime))
     {
         spd = tempSpd;
     }

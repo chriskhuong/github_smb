@@ -47,6 +47,6 @@ if (image_index >= 3 && attacked == false)
 					break;
 			}
 			
-		var damage = scr_damage(xx, yy, character, 10);
+		//var damage = scr_damage(xx, yy, creator.tag, 10);
 		attacked = true;
 	}

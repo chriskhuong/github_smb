@@ -4722,7 +4722,7 @@
         "id": "d8cef290-eafa-4a10-9fb2-836076363e82",
         "modelName": "GMRoomPhysicsSettings",
         "mvc": "1.0",
-        "PhysicsWorld": true,
+        "PhysicsWorld": false,
         "PhysicsWorldGravityX": 0,
         "PhysicsWorldGravityY": 0,
         "PhysicsWorldPixToMeters": 0.1,

@@ -8,7 +8,7 @@
 
 var rng = 90; //range from player
 var minRng = 45; //how close the cursor should get to the player
-var dir = point_direction(obj_target.x, obj_target.y, obj_target.creator.x, (obj_target.creator.y + 8));    //gets the direction
+var dir = point_direction(myTarget.x, myTarget.y, creator.x, (creator.y + 8));    //gets the direction
 var playDir = point_direction(0, 0, obj_input.xaxis, obj_input.yaxis);  //gets the player moving direction
 var tarDir = point_direction(0, 0, obj_input.xaim, obj_input.yaim);   //gets the targeting direction
 var len = obj_target.spd;
