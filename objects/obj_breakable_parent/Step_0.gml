@@ -1,4 +1,5 @@
-///Inherit obj_lifeFormParent events
 
-//event_inherited();
+///Inherit obj_lifeFormParent events
+event_inherited();
+
 

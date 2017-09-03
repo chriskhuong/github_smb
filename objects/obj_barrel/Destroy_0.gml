@@ -1,2 +1,2 @@
-instance_create_depth(x,y,depth,obj_breakable_parent);
-
+/// @description Insert description here
+event_inherited();
