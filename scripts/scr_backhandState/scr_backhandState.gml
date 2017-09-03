@@ -17,26 +17,28 @@ switch (facing)    //change facing to image_index
         //Do Something
         case RIGHT:
             image_xscale = -1;
-            image_speed = 4;
-            attack_x = 32;
-            attack_y = 16;
+            image_speed = 1;
+            attack_x = x + 32;
+            attack_y = y + 16;
             break;
         
         case UP:
-            image_speed = 4;
-            attack_y = -32;
+            image_speed = 1;
+			attack_x = x;
+            attack_y = y - 32;
             break;
 
         case LEFT:
             image_xscale = 1;
-            image_speed = 4;
-            attack_x = -32;
-            attack_y = 16;
+            image_speed = 1;
+            attack_x = x - 32;
+            attack_y = y + 16;
             break;
                 
         case DOWN:
-            image_speed = 4;
-            attack_y = 40;
+            image_speed = 1;
+			attack_x = x;
+            attack_y = y + 40;
             break;
         
     }
@@ -44,9 +46,10 @@ switch (facing)    //change facing to image_index
 
 if (/*image_index >= 1 &&*/ attacked == false)   //used >= rather than == to avoid jumps in decimals
     {
-        var damage = instance_create_depth(x + attack_x, y + attack_y, depth, obj_damage);   //returns the id of the object created, so we assign it to a local variable
-                                                                                //now the damage variable is equal to the ID of the damage object
-        
-        damage.creator = tag;    //tells the damage object that the player created the damage object so it doesn't damage them
-        damage.damage = (dmg*2);
+        var D = instance_create_depth(attack_x, attack_y, depth, obj_damage);
+		D.creator = id;
+		D.creatorTag = tag;
+        D.damage = (id.dmg * 2);
+		
+        attacked = true;
     }

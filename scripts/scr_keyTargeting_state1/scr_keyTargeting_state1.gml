@@ -33,6 +33,7 @@ vspd = lengthdir_y(len, tarDir);
 myTarget.x += hspd;
 myTarget.y += vspd;
 
+/* //probably doubled up the speed when moving
 // temporary aiming controls
 if (creator.xaxis != 0) //horizontal
     {
@@ -43,7 +44,7 @@ if (creator.yaxis != 0) //vertical
     {
         myTarget.y += vspd
     }
-
+*/
     
 /*
 //fuck these controls

@@ -34,8 +34,8 @@ weaponArray[0, 2] = spr_down_shoot_pistol; //Sprite Index
 weaponArray[0, 3] = 10; //Rate of Fire
 weaponArray[0, 4] = scr_pistol;
 weaponArray[0, 5] = 6; //Muzzle Offset //(for bullet creation)
-weaponArray[0, 6] = 50; //x Offset //(for gun placement)
-weaponArray[0, 7] = -15; //y Offset //(for gun placement)
+weaponArray[0, 6] = 0; //x Offset //(for gun placement)
+weaponArray[0, 7] = 15; //y Offset //(for gun placement)
 weaponArray[0, 8] = 12;  //ClipAmmo I'm about to duplicate this shit
 weaponArray[0, 9] = 12;  //Reload
 weaponArray[0, 10] = 24  //MaxAmmo
@@ -65,7 +65,7 @@ switch(character){
         weaponArray[1, 4] = scr_assault; //Ammo Index
         weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
         weaponArray[1, 6] = 0; //x Offset //(for gun placement)
-        weaponArray[1, 7] = -15; //y Offset //(for gun placement)
+        weaponArray[1, 7] = 15; //y Offset //(for gun placement)
         weaponArray[1, 8] = 24;  //ClipAmmo
         weaponArray[1, 9] = 24;  //Reload
         weaponArray[1, 10] = 72;  //MaxAmmo
@@ -89,7 +89,7 @@ switch(character){
         weaponArray[1, 4] = scr_pistol; //Ammo Index
         weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
         weaponArray[1, 6] = 0; //x Offset //(for gun placement)
-        weaponArray[1, 7] = -15; //y Offset //(for gun placement)
+        weaponArray[1, 7] = 15; //y Offset //(for gun placement)
         weaponArray[1, 8] = 24;  //ClipAmmo
         weaponArray[1, 9] = 24;  //Reload
         weaponArray[1, 10] = 48;  //MaxAmmo
@@ -106,23 +106,23 @@ switch(character){
         //////MIO
         
         //SMG
-        obj_tempPlayer1.weaponArray[1, 0] = "Sub Machine Gun"; //Name
-        obj_tempPlayer1.weaponArray[1, 1] = spr_side_shoot_smg; //Sprite Index
-        obj_tempPlayer1.weaponArray[1, 2] = spr_down_shoot_smg; //Sprite Index
-        obj_tempPlayer1.weaponArray[1, 3] = 1; //Rate of Fire
-        obj_tempPlayer1.weaponArray[1, 4] = scr_smg; //Ammo Index
-        obj_tempPlayer1.weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
-        obj_tempPlayer1.weaponArray[1, 6] = 0; //x Offset //(for gun placement)
-        obj_tempPlayer1.weaponArray[1, 7] = -15; //y Offset //(for gun placement)
-        obj_tempPlayer1.weaponArray[1, 8] = 32;  //ClipAmmo
-        obj_tempPlayer1.weaponArray[1, 9] = 32;  //Reload
-        obj_tempPlayer1.weaponArray[1, 10] = 96;  //MaxAmmo
-        obj_tempPlayer1.weaponArray[1, 11] = 32;  //ClipAmmo TAKE
-        obj_tempPlayer1.weaponArray[1, 12] = 96;  //MaxAmmo TAKE
-        obj_tempPlayer1.weaponArray[1, 15] = 0;  //Grenade Ammo
-        obj_tempPlayer1.weaponArray[1, 16] = 0;  //Grenade Max
-		obj_tempPlayer1.weaponArray[1, 13] = -18;	//LenX
-		obj_tempPlayer1.weaponArray[1, 14] = 0;	//LenY
+        weaponArray[1, 0] = "Sub Machine Gun"; //Name
+        weaponArray[1, 1] = spr_side_shoot_smg; //Sprite Index
+        weaponArray[1, 2] = spr_down_shoot_smg; //Sprite Index
+        weaponArray[1, 3] = 1; //Rate of Fire
+        weaponArray[1, 4] = scr_smg; //Ammo Index
+        weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
+        weaponArray[1, 6] = 0; //x Offset //(for gun placement)
+        weaponArray[1, 7] = 15; //y Offset //(for gun placement)
+        weaponArray[1, 8] = 32;  //ClipAmmo
+        weaponArray[1, 9] = 32;  //Reload
+        weaponArray[1, 10] = 96;  //MaxAmmo
+        weaponArray[1, 11] = 32;  //ClipAmmo TAKE
+        weaponArray[1, 12] = 96;  //MaxAmmo TAKE
+        weaponArray[1, 15] = 0;  //Grenade Ammo
+        weaponArray[1, 16] = 0;  //Grenade Max
+		weaponArray[1, 13] = -18;	//LenX
+		weaponArray[1, 14] = 0;	//LenY
         //obj_tempPlayer1.weaponArray[0, 8] = 2; //Damage output
         break;
         
@@ -137,7 +137,7 @@ switch(character){
         weaponArray[1, 4] = scr_sniperHitScan; //Ammo Index
         weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
         weaponArray[1, 6] = 0; //x Offset //(for gun placement)
-        weaponArray[1, 7] = -15; //y Offset //(for gun placement)
+        weaponArray[1, 7] = 15; //y Offset //(for gun placement)
         weaponArray[1, 8] = 4;  //ClipAmmo
         weaponArray[1, 9] = 4;  //Reload
         weaponArray[1, 10] = 16;  //MaxAmmo
@@ -160,7 +160,7 @@ switch(character){
         weaponArray[1, 4] = scr_shotgun; //Ammo Index
         weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
         weaponArray[1, 6] = 0; //x Offset //(for gun placement)
-        weaponArray[1, 7] = -15; //y Offset //(for gun placement)
+        weaponArray[1, 7] = 15; //y Offset //(for gun placement)
         weaponArray[1, 8] = 12;  //ClipAmmo
         weaponArray[1, 9] = 1;  //Reload
         weaponArray[1, 10] = 24;  //MaxAmmo

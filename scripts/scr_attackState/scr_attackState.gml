@@ -1,6 +1,6 @@
 ///scr_attackState
 
-image_speed = .5;
+image_speed = 1.5;
 
 movement = ATTACK;
 
@@ -12,27 +12,29 @@ switch (facing)    //change facing to image_index
         //Do Something
         case RIGHT:
             image_xscale = -1;
-            attack_x = 32;
-            attack_y = 16;
+            attack_x = x + 32;
+            attack_y = y + 16;
             break;
         
         case UP:
-            attack_y = -32;
+			attack_x = x;
+            attack_y = y - 32;
             break;
 
         case LEFT:
             image_xscale = 1;
-            attack_x = -32;
-            attack_y = 16;
+            attack_x = x - 32;
+            attack_y = y + 16;
             break;
                 
         case DOWN:
-            attack_y = 40;
+			attack_x = x;
+            attack_y = y + 40;
             break;
         
     }
 
-if (image_index >= 1 && attacked == false)   //used >= rather than == to avoid jumps in decimals
+if (image_index >= 3 && attacked == false)   //used >= rather than == to avoid jumps in decimals
     {
 	/*
 		//if (friendlyFire == true)

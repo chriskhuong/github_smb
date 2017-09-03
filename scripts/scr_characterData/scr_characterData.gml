@@ -13,10 +13,10 @@ switch(character){
 		hp = 4;
         
         //moving
-        sprite[RIGHT, MOVE] = spr_maid_run_side;
-        sprite[UP, MOVE] = spr_maid_run_up;
-        sprite[LEFT, MOVE] = spr_maid_run_side;
-        sprite[DOWN, MOVE] = spr_maid_run_down;
+        sprite[RIGHT, MOVE] = spr_britney_run_side;
+        sprite[UP, MOVE] = spr_britney_run_up;
+        sprite[LEFT, MOVE] = spr_britney_run_side;
+        sprite[DOWN, MOVE] = spr_britney_run_down;
         
         //idle
         sprite[RIGHT, IDLE] = spr_britney_idle_side;
@@ -25,10 +25,10 @@ switch(character){
         sprite[DOWN, IDLE] = spr_britney_idle_down;
         
         //attacking
-        sprite[RIGHT, ATTACK] = spr_maid_attack_side_01;
-        sprite[UP, ATTACK] = spr_maid_attack_up_01;
-        sprite[LEFT, ATTACK] = spr_maid_attack_side_01;
-        sprite[DOWN, ATTACK] = spr_maid_attack_down_01;
+        sprite[RIGHT, ATTACK] = spr_britney_melee_side;
+        sprite[UP, ATTACK] = spr_britney_melee_up;
+        sprite[LEFT, ATTACK] = spr_britney_melee_side;
+        sprite[DOWN, ATTACK] = spr_britney_melee_down;
         
         /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
         //SPECIAL
@@ -76,10 +76,10 @@ switch(character){
         hp = 3;
 		
         //moving
-        sprite[RIGHT, MOVE] = spr_mio_temp;
-        sprite[UP, MOVE] = spr_mio_temp;
-        sprite[LEFT, MOVE] = spr_mio_temp;
-        sprite[DOWN, MOVE] = spr_mio_temp;
+        sprite[RIGHT, MOVE] = spr_mio_run_side;
+        sprite[UP, MOVE] = spr_mio_run_up;
+        sprite[LEFT, MOVE] = spr_mio_run_side;
+        sprite[DOWN, MOVE] = spr_mio_run_down;
         
         //idle
         sprite[RIGHT, IDLE] = spr_mio_idle_side;
@@ -88,10 +88,10 @@ switch(character){
         sprite[DOWN, IDLE] = spr_mio_idle_down;
         
         //attacking
-        sprite[RIGHT, ATTACK] = spr_melee_sword;
-        sprite[UP, ATTACK] = spr_melee_sword2;
-        sprite[LEFT, ATTACK] = spr_melee_sword;
-        sprite[DOWN, ATTACK] = spr_melee_sword2;
+        sprite[RIGHT, ATTACK] = spr_mio_melee_side;
+        sprite[UP, ATTACK] = spr_mio_melee_up;
+        sprite[LEFT, ATTACK] = spr_mio_melee_side;
+        sprite[DOWN, ATTACK] = spr_mio_melee_down;
         
         /*
         /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /

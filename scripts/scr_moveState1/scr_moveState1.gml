@@ -50,16 +50,16 @@ if (creator.attack_key)
     {
         image_index = 0;
         state = scr_attackState;
-        alarm[2] = 5;  //after implementing actual animations remove this line and uncomment the code in the 'Animation End' event
+        //alarm[2] = 5;  //after implementing actual animations remove this line and uncomment the code in the 'Animation End' event
     }
 
 //////////////////GRENADES!!!!!///////////////////
 //NOTE: refer to the //FIRING// section when adding more details such as timing between grenade tosses
 
-if (creator.grenade_key && weaponArray[1, 13] > 0)
+if (creator.grenade_key && weaponArray[1, 15] > 0)
     {
         image_index = 0;
-        weaponArray[1, 13] -= 1;
+        weaponArray[1, 15] -= 1;
         script_execute(scr_grenade);
         show_debug_message("GRENADE!!!!!"); //temp
     }
@@ -168,11 +168,11 @@ if (hspd > 0)
     {
         if (facing == LEFT)
             {
-                image_speed = -0.25;
+                image_speed = -1;
             }
 		else
 			{
-				image_speed = 0.25;
+				image_speed = 1;
 			}
         //right sprite movement animation
         //sprite_index = spr_testChar;    //remove this when implementing actual sprite_work
@@ -188,11 +188,11 @@ else if (hspd < 0)
     {
         if (facing == RIGHT)
             {
-                image_speed = -0.25;
+                image_speed = -1;
             }
 		else
 			{
-				image_speed = 0.25;
+				image_speed = 1;
 			}
         //left sprite movement animation
         //sprite_index = spr_testChar;    //remove this when implementing actual sprite_work
@@ -208,11 +208,11 @@ if (vspd > 0)
     {
         if (facing == UP)
             {
-                image_speed = -.25;
+                image_speed = -1;
             }
 		else
 			{
-				image_speed = .25;
+				image_speed = 1;
 			}
 			
 		if (collision_zoneY)
@@ -224,11 +224,11 @@ else if (vspd < 0)
     {
         if (facing == DOWN)
             {
-                image_speed = -.25;
+                image_speed = -1;
             }
 		else
 			{
-				image_speed = .25;
+				image_speed = 1;
 			}
 			
 		if (collision_zoneY)

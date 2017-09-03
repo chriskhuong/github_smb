@@ -1,5 +1,5 @@
-x = creator.x;
-y = creator.y + 11;
+x = creator.x + creator.weaponArray[weapon, 6];
+y = creator.y + creator.weaponArray[weapon, 7];
 
 LenX = -creator.weaponArray[weapon, 13];
 LenY = -creator.weaponArray[weapon, 14];
