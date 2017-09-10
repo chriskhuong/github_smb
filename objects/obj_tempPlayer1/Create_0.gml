@@ -28,7 +28,6 @@ image_speed = .25;
 //passive_items[0] = noone;
 ability = ABILITY;
 ultimate = noone;
-global.active_slot = 0;
 spd_buff = spd+1;
 currency = 0;
 
@@ -53,6 +52,7 @@ myTarget.creator = id;
 myGun = instance_create_depth(x - 5, y + 11, depth, obj_tempGun1);
 myGun.creator = id;
 myStats = instance_create_depth(x, y, depth, obj_playerStats1);
+myStats.creator = id;
 myStats.maxHp = hp;
 
 

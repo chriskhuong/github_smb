@@ -2031,6 +2031,14 @@
             }
         },
         {
+            "Key": "8eb47724-dfa8-49a5-8c44-4834e8b55239",
+            "Value": {
+                "id": "6e679d91-ab29-4b10-9e76-2b94e17b5b5b",
+                "resourcePath": "objects\\obj_deadBody\\obj_deadBody.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8ef2ff24-450d-4c5f-8f30-7434d112fda7",
             "Value": {
                 "id": "507058ef-e01b-4789-bd8f-126605dcb9c7",
@@ -3311,6 +3319,14 @@
             }
         },
         {
+            "Key": "e23fb850-6ba4-40b6-b30e-345490504f03",
+            "Value": {
+                "id": "b78c752b-7a09-4ffe-9c05-b9b99d3f4cd0",
+                "resourcePath": "scripts\\scr_ghostState\\scr_ghostState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e284aaee-c08b-4c27-9ca7-3c799733805a",
             "Value": {
                 "id": "abd7e4c4-ca9d-450b-bc55-9facf3ef1c44",
@@ -3419,6 +3435,14 @@
             "Value": {
                 "id": "881a7ff1-a89e-4552-9488-3a3fec42fd24",
                 "resourcePath": "scripts\\scr_getInput\\scr_getInput.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "eb375ea8-634b-4b7c-9c78-02cb1c21f4fc",
+            "Value": {
+                "id": "48fc1ebe-ab49-41b2-b612-d50b9b56beb7",
+                "resourcePath": "scripts\\scr_reviveState\\scr_reviveState.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3835,6 +3859,8 @@
         "6b51310b-d137-400c-89ad-a2b0741be679",
         "89ff66de-aa11-412a-9e1f-a9652a6a98c1",
         "3d9ad88e-5d9a-47de-bbc6-668f4adf8cfc",
+        "e23fb850-6ba4-40b6-b30e-345490504f03",
+        "eb375ea8-634b-4b7c-9c78-02cb1c21f4fc",
         "6d1bbcfd-f4c5-40ba-9795-4541a7761277",
         "d7b68cd8-4495-452a-9fe0-ac58c6f44c15",
         "eb0f101b-b836-41ab-a312-6605b1735057",

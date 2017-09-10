@@ -1,4 +1,4 @@
-///void Awake
+/*///void Awake
 
 event_inherited();  //allows the object to inherit the create event of the parent
 
@@ -59,4 +59,4 @@ ammoMax = obj_tempPlayer.weaponArray[obj_tempGun.weapon, 10];
 fireRate = obj_tempPlayer.weaponArray[obj_tempGun.weapon, 3];
 currentAmmo = ammoMax;
 
-
+*/

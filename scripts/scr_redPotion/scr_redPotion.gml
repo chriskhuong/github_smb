@@ -1,5 +1,5 @@
 image_index = 0;
-if(obj_playerStats.hp < obj_playerStats.maxHp)
+if(myStats.hp < myStats.maxHp)
 {
-	obj_playerStats.hp += 1;
+	myStats.hp += 1;
 }

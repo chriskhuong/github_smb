@@ -1,2 +1,2 @@
-obj_playerStats.attack += 1;
-show_debug_message(obj_playerStats.attack);
+myStats.attack += 1;
+show_debug_message(myStats.attack);

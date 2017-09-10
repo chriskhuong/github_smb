@@ -9,3 +9,10 @@ if (state == (scr_attackState))
 
 /* */
 /*  */
+/*
+if(state == (scrAliveState))
+{
+	state = scr_moveState;
+	obj_playerStats.hp += 5;
+}
+*/

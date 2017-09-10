@@ -1,7 +1,7 @@
 ///Control the stats
 if (hp <= 0)
     {
-        with(obj_tempPlayer1)
+       /* with(obj_tempPlayer1)
             {
                 instance_destroy(); 
             }
@@ -13,9 +13,16 @@ if (hp <= 0)
             {
                 instance_destroy();  
             }
-        instance_create_depth(irandom_range(x-sprite_width/2, x+sprite_width/2), irandom_range(y-sprite_height/2, y+sprite_height/2), depth, obj_tempPlayer);
-        p_lives -= 1;
+        instance_create_depth(irandom_range(x-sprite_width/2, x+sprite_width/2), irandom_range(y-sprite_height/2, y+sprite_height/2), depth, obj_tempPlayer1);
+        */
+		
+		dead = instance_create_depth(creator.x, creator.y, creator.depth, obj_deadBody);
+		//dead.Mycreator = creator;
+		dead.sprite_index = creator.sprite_index;
+		dead.image_index = creator.image_index;
+		p_lives -= 1;
         hp = maxHp;
+		creator.state = scr_ghostState;
     }
     
 //stamina regen

@@ -1,4 +1,5 @@
-///Set the player state back to normal
+/*///Set the player state back to normal
 
 state = scr_moveState;
 
+*/
