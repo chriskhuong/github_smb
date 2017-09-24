@@ -1223,6 +1223,14 @@
             }
         },
         {
+            "Key": "57f983eb-0129-4e08-babd-46925a51adb3",
+            "Value": {
+                "id": "f5343fef-aafa-4198-bc3d-6f080a00d7cc",
+                "resourcePath": "objects\\obj_gasBarrel\\obj_gasBarrel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "58945cc3-b8ae-4634-9ea7-60c973378c33",
             "Value": {
                 "id": "78c912f2-31cf-42ea-b2ca-3d19485f228a",
@@ -1780,6 +1788,14 @@
                 "id": "1550da12-be1f-4818-ab0b-abb8d9217fab",
                 "resourcePath": "scripts\\scr_get_char\\scr_get_char.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7c43168a-d6d7-4be4-9565-3a4771db0aa7",
+            "Value": {
+                "id": "f7536342-2033-41f4-8032-f3e5b6ae484e",
+                "resourcePath": "objects\\obj_crate\\obj_crate.yy",
+                "resourceType": "GMObject"
             }
         },
         {
