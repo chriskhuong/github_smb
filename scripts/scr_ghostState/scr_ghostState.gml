@@ -1,6 +1,6 @@
 ///scr_ghostState()
-image_blend = c_gray;
-image_alpha= .5;
+//image_blend = c_gray;
+//image_alpha= .5;
 var rng = 90; //range from player
 var deadDir = point_direction(x,y, myStats.dead.x,myStats.dead.y); 
 

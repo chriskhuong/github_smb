@@ -1,4 +1,8 @@
 /// @Ghost State
 
 //state = scr_ghostState;
-myStats.hp -= 5;
+if (state != scr_ghostState)
+	{
+		shader_enabled = true;
+		myStats.hp -= 5;
+	}

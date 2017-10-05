@@ -44,22 +44,22 @@ switch(character){
         hp = 4;
 		
         //moving
-        sprite[RIGHT, MOVE] = spr_jo_temp;
-        sprite[UP, MOVE] = spr_jo_temp;
-        sprite[LEFT, MOVE] = spr_jo_temp;
-        sprite[DOWN, MOVE] = spr_jo_temp;
+        sprite[RIGHT, MOVE] = spr_jo_run_side;
+        sprite[UP, MOVE] = spr_jo_run_up;
+        sprite[LEFT, MOVE] = spr_jo_run_side;
+        sprite[DOWN, MOVE] = spr_jo_run_down;
         
         //idle
-        sprite[RIGHT, IDLE] = spr_jo_temp;
-        sprite[UP, IDLE] = spr_jo_temp;
-        sprite[LEFT, IDLE] = spr_jo_temp;
-        sprite[DOWN, IDLE] = spr_jo_temp;
+        sprite[RIGHT, IDLE] = spr_jo_idle_side;
+        sprite[UP, IDLE] = spr_jo_idle_up;
+        sprite[LEFT, IDLE] = spr_jo_idle_side;
+        sprite[DOWN, IDLE] = spr_jo_idle_down;
         
         //attacking
-        sprite[RIGHT, ATTACK] = spr_melee_broom;
-        sprite[UP, ATTACK] = spr_melee_broom2;
-        sprite[LEFT, ATTACK] = spr_melee_broom;
-        sprite[DOWN, ATTACK] = spr_melee_broom2;
+        sprite[RIGHT, ATTACK] = spr_jo_melee_side;
+        sprite[UP, ATTACK] = spr_jo_melee_up;
+        sprite[LEFT, ATTACK] = spr_jo_melee_side;
+        sprite[DOWN, ATTACK] = spr_jo_melee_down;
         
         /*
         /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /

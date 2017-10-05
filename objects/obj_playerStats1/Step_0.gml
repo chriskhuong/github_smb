@@ -18,6 +18,7 @@ if (hp <= 0)
 		
 		dead = instance_create_depth(creator.x, creator.y, creator.depth, obj_deadBody);
 		//dead.Mycreator = creator;
+		dead.image_xscale = image_xscale;
 		dead.sprite_index = creator.sprite_index;
 		dead.image_index = creator.image_index;
 		p_lives -= 1;
