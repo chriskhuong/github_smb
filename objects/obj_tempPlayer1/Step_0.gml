@@ -19,6 +19,3 @@ if (!persistent)
 			}
 	}
 */
-
-if shader_enabled
-	show_debug_message("I HATE EVERYTHING!!!")

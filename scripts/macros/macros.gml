@@ -20,3 +20,4 @@
 #macro KEY 1
 #macro ABILITY 0
 #macro ULTIMATE 1
+#macro DEAD 2

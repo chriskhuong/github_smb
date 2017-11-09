@@ -6,7 +6,7 @@ event_inherited();  //allows the object to inherit the create event of the paren
 //act as public variables
 
 ///Set fixed rotation
-
+shadow_var = 4;
 creator = noone;
 tag = "player";
 //hp = 20;
@@ -44,7 +44,8 @@ state = scr_moveState1;
 //get character's information
 scr_characterData(character);
 scr_weaponArray1(character);
-
+var_sprite_width = sprite_get_width(character * 2);
+var_sprite_height = sprite_get_height(character * 2);
 
 //prototyping target creation, not sure about any other options
 myTarget = instance_create_depth(x, y, depth, obj_target1);
@@ -73,7 +74,7 @@ var_resolution_y = camera_get_view_height(0);
 uni_wave_amount = shader_get_uniform(shd_wave, "wave_amount");
 var_wave_amount = 50; //higher = more waves
 uni_wave_distortion = shader_get_uniform(shd_wave, "wave_distortion");
-var_wave_distortion = 500;
+var_wave_distortion = 1000;
 uni_wave_speed = shader_get_uniform(shd_wave, "wave_speed");
 var_wave_speed = 5.0; //higher = faster
 shader_enabled = false;

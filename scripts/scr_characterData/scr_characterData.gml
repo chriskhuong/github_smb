@@ -175,6 +175,7 @@ switch(character){
 special[BRITNEY, ABILITY] = scr_teatimeState;  //change to teatime
 timer[BRITNEY, ABILITY] = 15;
 //special[BRITNEY, ULTIMATE];
+//special[BRITNEY, DEAD] = 
 
 //JO
 special[JO, ABILITY] = scr_dashState;

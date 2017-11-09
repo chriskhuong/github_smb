@@ -3,6 +3,6 @@
 //state = scr_ghostState;
 if (state != scr_ghostState)
 	{
-		shader_enabled = true;
+		//shader_enabled = true;
 		myStats.hp -= 5;
 	}

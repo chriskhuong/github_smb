@@ -1,6 +1,8 @@
 ///Initialize the slime
 event_inherited();  //allows the object to inherit the create event of the parent
 
+shadow_var = 2;
+
 image_speed = .1;
 spd = 1;
 state = scr_enemy_idleState;

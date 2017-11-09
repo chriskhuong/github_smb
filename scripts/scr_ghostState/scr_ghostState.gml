@@ -3,6 +3,7 @@
 //image_alpha= .5;
 var rng = 90; //range from player
 var deadDir = point_direction(x,y, myStats.dead.x,myStats.dead.y); 
+alive = false;
 
 if (point_distance(x,y, myStats.dead.x, myStats.dead.y) > rng)
     {

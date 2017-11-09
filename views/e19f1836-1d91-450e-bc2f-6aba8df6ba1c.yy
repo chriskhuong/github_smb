@@ -15,7 +15,10 @@
         "a0ed408e-486c-4743-a79b-e7d932649b49",
         "678dff52-5456-435b-bb08-d09484442083",
         "748a0dd0-039c-48d4-b5b5-534068f95c16",
-        "b4b5cc7a-629c-4fcb-8eaf-bb5c73853254"
+        "b4b5cc7a-629c-4fcb-8eaf-bb5c73853254",
+        "06316cf2-9862-417e-9453-ebc79ea1f00d",
+        "42b37890-a7f5-4908-9374-21ac879ce8aa",
+        "b390d143-306e-46bd-91b3-567fa9270274"
     ],
     "filterType": "GMObject",
     "folderName": "TESTING",
