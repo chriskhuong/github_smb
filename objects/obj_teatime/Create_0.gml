@@ -1,5 +1,7 @@
 ///Initialize the teatime object
 
+image_alpha = .25;
+
 spd = 1;
 
 creator = noone;    //noone is GameMaker specific keyword for no object

@@ -9,6 +9,7 @@ levelColor[l] = c_blue;		//the color of the level
 levelNeeds[l, 0] = -1;		//what the level needs to be available, -1 means always available
 levelX[l] = 64;
 levelY[l] = 160;
+levelRoom[l] = New_Testing_Room;
 l++;
 
 levelName[l] = "b";
@@ -25,6 +26,31 @@ levelX[l] = 200;
 levelY[l] = 160;
 l++;
 
+levelName[l] = "d";
+levelColor[l] = c_orange;
+levelNeeds[l, 0] = 1;	
+levelX[l] = 250;
+levelY[l] = 160;
+l++;
+
+levelName[l] = "c";
+levelColor[l] = c_purple;
+levelNeeds[l, 0] = 2;
+levelNeeds[l, 1] = 3;
+levelX[l] = 230;
+levelY[l] = 230;
+l++;
+
+/*
+levelName[l] = "c";
+levelColor[l] = c_green;
+levelNeeds[l, 0] = 1;
+levelNeeds[l, 1] = 3;
+levelNeeds[l, 2] = 4;
+levelX[l] = 330;
+levelY[l] = 160;
+l++;
+*/
 #endregion,
 
 #region Layout the levels

@@ -17,13 +17,14 @@ if (hp <= 0)
         */
 		
 		dead = instance_create_depth(creator.x, creator.y, creator.depth, obj_deadBody);
-		//dead.Mycreator = creator;
-		dead.image_xscale = image_xscale;
-		dead.sprite_index = creator.sprite_index;
-		dead.image_index = creator.image_index;
-		dead.start_height = creator.start_height
-		dead.start_width = creator.start_width 
-		dead.start_yoffset = creator.start_yoffset
+		dead.Mycreator = creator;
+		dead.image_xscale = creator.image_xscale;
+		dead.sprite_index = creator.special[creator.character, DEAD];
+		//dead.image_index = 0;
+		dead.image_speed = creator.image_speed;
+		dead.start_height = creator.start_height;
+		dead.start_width = creator.start_width;
+		dead.start_yoffset = creator.start_yoffset;
 		p_lives -= 1;
         hp = maxHp;
 		creator.state = scr_ghostState;
@@ -36,7 +37,8 @@ if (stamina < maxStamina && alarm[0] == -1)
     }
 
 //Pause the Game
-if (obj_input1.pause_key)
+/*
+if (obj_input1.pause_key && room != New_Testing_Room)
     {
         if (room != rm_pause)
             {
@@ -64,13 +66,17 @@ if (obj_input1.pause_key)
             }
         obj_input1.pause_key = false;
     }
-
+*/
 //Zoom View
 var zoom_speed = .1;
 view_zoom += obj_input1.zoom_in * zoom_speed;
 view_zoom -= obj_input1.zoom_out * zoom_speed;
 
-view_zoom = clamp(view_zoom, .1, view_maxZoom);
+if(room != New_Testing_Room)
+	{
+		view_zoom = .75;
+	}
+//clamp(view_zoom, .1, view_maxZoom);
 
 __view_set( e__VW.WView, 0, obj_resolutionManager.ideal_width/view_zoom );
 __view_set( e__VW.HView, 0, obj_resolutionManager.ideal_height/view_zoom );

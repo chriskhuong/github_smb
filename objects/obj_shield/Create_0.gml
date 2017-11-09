@@ -1,5 +1,7 @@
 ///Initialize the shield object
 
+image_alpha = .25;
+
 creator = noone;
 
 rng = 48; //how clost the shield is to the player

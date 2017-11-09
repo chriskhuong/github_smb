@@ -12,5 +12,7 @@ if (other.tag != creator)
             {
                 physics_apply_impulse(x, y, xforce, yforce);    //applies the impulse to the 'other' object
             }*/
+		audio_play_sound(snd_shot, 3, false);
+		instance_destroy();
     }
 

@@ -1,5 +1,5 @@
 ///Initialize the player
-
+creator = noone;
 //Get Real Stats
 maxHp = obj_tempPlayer1.hp;
 hp = maxHp;
@@ -11,6 +11,7 @@ maxExpr = 3;
 attack = 1; /**/
 level = 1;
 can_shoot = true;
+num = 0
 
 
 view_zoom = 1;

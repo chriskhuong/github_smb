@@ -172,7 +172,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Compatibility_Instances_Depth_0",
             "id": "d1755e71-460c-46f4-bc76-b5bfa8e2af78",
-            "depth": 0,
+            "depth": 100100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -264,7 +264,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "userdefined_depth": true,
+            "userdefined_depth": false,
             "visible": true
         },
         {

@@ -21,7 +21,8 @@
         "2697baed-7c61-455f-9a1a-7927598d9dc6",
         "213384f2-ab39-403a-90c5-c11e5b7526db",
         "7c43168a-d6d7-4be4-9565-3a4771db0aa7",
-        "57f983eb-0129-4e08-babd-46925a51adb3"
+        "57f983eb-0129-4e08-babd-46925a51adb3",
+        "cfbfd74f-ac6b-4f97-a778-421a0ef7d4a7"
     ],
     "filterType": "GMObject",
     "folderName": "group_Prototype",

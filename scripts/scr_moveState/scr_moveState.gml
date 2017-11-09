@@ -153,8 +153,8 @@ hspd = lengthdir_x(len, dir);
 vspd = lengthdir_y(len, dir);
 
 //Move
-phy_position_x += hspd;
-phy_position_y += vspd;
+x += hspd;
+y += vspd;
 
 //Control the sprite
 //image_speed = room_speed/60;

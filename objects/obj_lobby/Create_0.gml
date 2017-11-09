@@ -2,6 +2,7 @@
 lobby_queue = ds_list_create();
 actual_lobby = ds_list_create();
 cam = camera_get_active();
+ready = false;
 /*
 k = instance_create_depth(64, 64, -5000, obj_lobby_tester)
 k.image_index = 0;

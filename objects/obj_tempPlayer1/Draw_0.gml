@@ -6,6 +6,16 @@ if (!alive)
 	{
 		image_alpha = .5;
 	}
+	
+if (room == New_Testing_Room)
+	{
+		draw_text(x - (start_width/2), y + 30, special[character, NAME]);
+		if (confirmed)
+			{
+				draw_text(x - (start_width/2), y + 50, "READY!");
+			}
+	}
+	
 /*
 var_time_var += 0.04;
 

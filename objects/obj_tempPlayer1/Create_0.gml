@@ -5,12 +5,18 @@ event_inherited();  //allows the object to inherit the create event of the paren
 //Instance Variables
 //act as public variables
 
-///Set fixed rotation
-shadow_var = 4;
+//FOR CHARACTER SELECT ONLY/////
+confirmed = false;
+myCounter = noone;
+////////////////////////////////
+
+
+playerNum = 0;
+shadow_var = 16;
 creator = noone;
 tag = "player";
 //hp = 20;
-spd = 1.5;
+spd = 2.0//1.5;
 hspd = 0;
 vspd = 0;
 len = 0;    //length
@@ -21,7 +27,7 @@ facing = DOWN; //Remove this once we incorporate actual character sprites
 movement = MOVE;
 attacked = false;   //melee_attacked = false;
 //weapon_sprite = spr_maid_side_gun;
-character = ANNA;
+character = 0;
 weapons = 1;
 image_speed = .25;
 //passive_items = 0;
@@ -38,7 +44,7 @@ currency = 0;
 
 //state machine
 target_state = scr_keyTargeting_state1;
-state = scr_moveState1;
+state = scr_playerSelectState;
 
 
 //get character's information
@@ -55,6 +61,7 @@ myGun.creator = id;
 myStats = instance_create_depth(x, y, depth, obj_playerStats1);
 myStats.creator = id;
 myStats.maxHp = hp;
+myStats.num = playerNum;
 
 
 //gun variables

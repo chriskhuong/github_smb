@@ -20,6 +20,11 @@ with (obj_playerStats1)
                 maxStamina += 2
                 attack += 1;
             }*/
+			hp += 2;
+			if (hp > maxHp)
+				{
+					hp = maxHp;
+				}
     }
 
 /* */

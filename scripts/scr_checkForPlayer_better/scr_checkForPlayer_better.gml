@@ -1,11 +1,19 @@
 ///scr_checkForPlayer()
-if (instance_exists(obj_tempPlayer))
+if (instance_exists(obj_tempPlayer1) && obj_tempPlayer1.alive == true)
     {
-        var dis = point_distance(x, y, obj_tempPlayer.x, obj_tempPlayer.y)
+		myTarget = instance_nearest(x, y, obj_tempPlayer1)
+		/*
+		for(var i = 0; i < instance_number(obj_tempPlayer1); i += 1)
+			{
+				target[i] = instance_find(obj_tempPlayer1,i);
+			}
+		*/
+		
+        var dis = point_distance(x, y, myTarget.x, myTarget.y)
         if (dis < sight)
             {
                 state = scr_enemy_chaseState;
-                var dir = point_direction(x, y, obj_tempPlayer.x, obj_tempPlayer.y);
+                var dir = point_direction(x, y, myTarget.x, myTarget.y);
                 xaxis = lengthdir_x(1, dir);
                 yaxis = lengthdir_y(1, dir);
             }

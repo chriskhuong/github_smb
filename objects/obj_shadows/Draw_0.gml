@@ -15,13 +15,23 @@ var viewY = camera_get_view_y(view_camera[0]);
 var sx = 15;//(room_width/2) - mouse_x;
 var sy = 10;//(room_height/2) - mouse_y;
 
+if(keyboard_check_pressed(ord("L")))
+	{
+		mouse_toggle = !mouse_toggle;
+	}
+if(mouse_toggle)
+	{
+		sx = (room_width/2) - mouse_x; 
+		sy = (room_height/2) - mouse_y; 
+	}
+
 surface_set_target(shadowSurface);
 draw_clear_alpha(c_black, 0);
 
 gpu_set_fog(true, c_black, 0, 1);
 with(obj_lifeFormParent)
 	{	
-		var sprite = sprite_width/shadow_var;
+		var sprite = shadow_var * image_xscale;
 		
 		draw_sprite_pos(sprite_index, image_index,
 		x - (sprite) - viewX - sx,

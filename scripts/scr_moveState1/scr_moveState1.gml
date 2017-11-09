@@ -45,6 +45,16 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
             }
 }
 
+#region DEATH TESTING
+/*
+if (myStats.hp <= 0)
+	{
+		myStats.hp = 0;
+		state = scr_ghostState1;
+	}
+*/
+#endregion
+
 
 if (creator.attack_key)
     {
@@ -238,6 +248,7 @@ else if (vspd < 0)
     }
     
 ///////////TEMPORARY STUFF???/////////////////
+/*
 if (creator.switch_char_up)
     {
         if (character < 4)
@@ -262,6 +273,7 @@ else if (creator.switch_char_down)
             }
         scr_weaponArray1(character);
     }
+*/
 if (creator.switch_weapon)
     {
         with(myGun)

@@ -58,4 +58,5 @@ if (gamepad_is_connected(dvc))
         switch_weapon = gamepad_button_check_pressed(dvc, gp_padl) || gamepad_button_check_pressed(dvc, gp_padr);	//gp_shoulderlb));
         switch_char_up = gamepad_button_check_pressed(dvc, gp_padu); //TEMPORARY CHARACTER SWAP
         switch_char_down = gamepad_button_check_pressed(dvc, gp_padd); //TEMPORARY CHARACTER SWAP
+		temp_back = gamepad_button_check_pressed(dvc, gp_face2);
     }

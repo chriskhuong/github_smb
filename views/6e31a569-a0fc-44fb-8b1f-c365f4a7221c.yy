@@ -16,7 +16,8 @@
         "514b70d0-3c6e-4d67-a964-016511e30ede",
         "26a4a100-5463-4a98-9bb8-97b9521c63c4",
         "c0677220-c5d7-4375-9051-2f134f359063",
-        "26a8e4ee-b528-4906-8f82-d06ff12e9a05"
+        "26a8e4ee-b528-4906-8f82-d06ff12e9a05",
+        "d8554f2b-ae46-4b3b-9b10-be6f247bb734"
     ],
     "filterType": "GMScript",
     "folderName": "group_scr_Items",

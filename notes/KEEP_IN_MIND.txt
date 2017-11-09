@@ -1,6 +1,0 @@
-remove any keyboard input if we plan on porting to console
-
-POSSIBLE LEAKS:
-1.remove/clear existing surfaces
-2.remove audio generators
-3.look for any arrays used and check for errors
