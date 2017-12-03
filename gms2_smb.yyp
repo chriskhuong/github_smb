@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "4a1e1d37-54a7-4683-813f-0f378215ca12",
+            "Value": {
+                "id": "ffe130b8-0334-4602-932a-079306b040c2",
+                "resourcePath": "objects\\obj_anotherLight\\obj_anotherLight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ad5ccc5-0a8a-4311-b6eb-e7ac48cb91a8",
             "Value": {
                 "id": "ce89a8c0-0c69-4506-bdf7-cee744cc604c",
