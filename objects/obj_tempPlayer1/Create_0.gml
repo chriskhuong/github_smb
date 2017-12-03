@@ -8,6 +8,7 @@ event_inherited();  //allows the object to inherit the create event of the paren
 //FOR CHARACTER SELECT ONLY/////
 confirmed = false;
 myCounter = noone;
+once = false;
 ////////////////////////////////
 
 
@@ -64,13 +65,38 @@ myStats.maxHp = hp;
 myStats.num = playerNum;
 
 
-//gun variables
-currentClip = weaponArray[myGun.weapon, 8];
-clipReload = weaponArray[myGun.weapon, 9];
-ammoMax = weaponArray[myGun.weapon, 10];
-fireRate = weaponArray[myGun.weapon, 3];
-currentAmmo = ammoMax;
+#region gun variables
+gunName = 0;
+gunSpriteHorz = 0;
+gunSpriteVert = 0;
+gunRate = 0;
+gunScript = 0;
+bulletOffset = 0;
+gunXOffset = 0;
+gunYOffset = 0;
+clipAmmo = 0;
+reload = 0;
+maxAmmo = 0;
+gunLenX = 0;
+gunLenY = 0;
+//currentClip = weaponArray[myGun.weapon, 8];
+//clipReload = weaponArray[myGun.weapon, 9];
+//ammoMax = weaponArray[myGun.weapon, 10];
+//fireRate = weaponArray[myGun.weapon, 3];
+//currentAmmo = ammoMax;
 
+#endregion
+
+#region palette stuff
+
+current_pal=0;
+my_pal_sprite=spr_BritneyPAL;
+
+///Override stuff.
+override_surface=noone;
+override_pal_index=1;
+
+#endregion
 
 #region Shader Details
 uni_time = shader_get_uniform(shd_wave, "time");

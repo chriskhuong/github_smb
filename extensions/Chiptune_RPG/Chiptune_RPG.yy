@@ -1,10 +1,24 @@
 {
-    "id": "fc3609b0-26cc-46aa-8c10-1090746ada19",
+    "id": "bc303a6e-cf50-4d46-b590-4b80f3f95740",
     "modelName": "GMExtension",
     "mvc": "1.0",
-    "name": "Tension_Builder",
+    "name": "Chiptune_RPG",
     "IncludedResources": [
-        "Sounds\\Tension_Builder___defGames"
+        "Sounds\\bgmBattle01",
+        "Sounds\\bgmBattle02",
+        "Sounds\\bgmBattle03",
+        "Sounds\\bgmDungeon01",
+        "Sounds\\bgmDungeon02",
+        "Sounds\\bgmMatildasBow",
+        "Sounds\\bgmSceneHappy",
+        "Sounds\\bgmSceneMystery",
+        "Sounds\\bgmSceneSad",
+        "Sounds\\bgmSongForFlorence",
+        "Sounds\\bgmTheme",
+        "Sounds\\bgmTown01",
+        "Sounds\\bgmTown02",
+        "Sounds\\bgmTown03",
+        "Sounds\\bgmTown04"
     ],
     "androidPermissions": [
         
@@ -15,10 +29,10 @@
     "androidinject": "",
     "androidmanifestinject": "",
     "androidsourcedir": "",
-    "author": "",
+    "author": "Wormintheworks",
     "classname": "",
     "copyToTargets": -1,
-    "date": "2017-54-01 03:04:11",
+    "date": "2017-41-02 05:12:29",
     "description": "",
     "extensionName": "",
     "files": [
@@ -39,7 +53,7 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
-    "packageID": "com.defGames.TensionBuilder",
+    "packageID": "com.wormintheworks.chiptune",
     "productID": "",
     "sourcedir": "",
     "version": "1.0.0"

@@ -3,6 +3,13 @@ event_inherited();  //allows the object to inherit the create event of the paren
 
 shadow_var = 16;
 
+start_yoffset = sprite_yoffset + 16;
+
+image_speed = room_speed * 3;
+
+up = spr_slime_run_up;
+side = spr_slime_run_left;
+
 hp = 3;
 
 while(place_meeting(x, y, obj_lifeFormParent))
@@ -11,7 +18,7 @@ while(place_meeting(x, y, obj_lifeFormParent))
 		y = random(room_height);
 	}
 
-image_speed = .1;
+
 spd = 2;
 state = scr_checkForPlayer;//scr_enemy_idleState;
 alarm[0] = room_speed * irandom_range(2, 5);    //grants enemy stop and go wandering

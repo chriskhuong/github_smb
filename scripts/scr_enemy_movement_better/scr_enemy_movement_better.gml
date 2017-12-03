@@ -6,6 +6,17 @@ var vspd = lengthdir_y(spd, dir); //same as above
 /////////might change the below line once we incorporate actual enemy sprites
 //if (hspd != 0)
 //{image_xscale = sign(hspd); //returns a 1 or a -1 depending on which way it's facing horizontally}
-        
+
+if(vspd < 0)
+			{
+				sprite_index = up;
+			}
+		else
+			{
+				sprite_index = side;
+			}
+			
+image_xscale = sign(-hspd);
+
 x += hspd;
 y += vspd;
