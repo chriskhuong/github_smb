@@ -7,3 +7,17 @@ THINGS TO UNCOMMENT
 1.obj_player's animation end
 
 search for an alternative to physics_apply_impulse function so we don't have to use physics
+
+FOR PLAYER LOBBY USE A LIST INSTEAD OF AN ARRAY for easy object removal and Array Re-ordering
+
+Fix collisions
+
+Update player input
+
+Set up some sort of color select interface for the characters
+
+have color select also change the target color
+
+get rid of the actual arm objects and incorporate them into the actual player, same with the target
+
+pistols not properly shooting from their gun offset, other guns are

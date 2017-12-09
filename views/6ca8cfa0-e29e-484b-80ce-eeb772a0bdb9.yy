@@ -10,7 +10,9 @@
         "a36e1cb3-6354-4347-b40b-50c3cb01829e",
         "b8285727-fc1a-4007-9430-e5e010131ec1",
         "9d69e463-5f72-4505-95a3-d42c18866b7b",
-        "41f1bfc9-dd77-4d72-8b1a-94e76f10740e"
+        "41f1bfc9-dd77-4d72-8b1a-94e76f10740e",
+        "0cc87e8b-7528-4133-81ed-5e1bef17ebdc",
+        "16d86ccc-1491-4960-a7cf-1ed530b0d06b"
     ],
     "filterType": "GMScript",
     "folderName": "TESTING",
