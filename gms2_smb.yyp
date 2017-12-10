@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "01b35dfa-018a-4074-b458-2df9465fcd4c",
+            "Value": {
+                "id": "a7d83d68-c9a7-443a-87af-cb89752fd9f7",
+                "resourcePath": "objects\\obj_input2\\obj_input2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "01bef766-5234-4307-9a0c-b8a41554438f",
             "Value": {
                 "id": "a8e618cd-70c4-44ee-b194-1f5bce5fe7a6",
@@ -823,6 +831,14 @@
             }
         },
         {
+            "Key": "2d3ba8c6-8f3e-4d37-a0e8-aca67071a1bd",
+            "Value": {
+                "id": "92900c1b-7cce-44c6-bf9e-7cf68c2d81fd",
+                "resourcePath": "scripts\\scr_keyTargeting_state2\\scr_keyTargeting_state2.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2eca4268-173d-424e-98b9-142b624032d0",
             "Value": {
                 "id": "0c021257-6db0-4e27-901f-38edf09a38b1",
@@ -1003,6 +1019,14 @@
             "Value": {
                 "id": "546ce671-a9a2-48f3-8ecd-d6960dfdc2ba",
                 "resourcePath": "scripts\\@__view_set\\__view_set.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "38fdac67-8d75-4d55-8cc8-a7007662db2c",
+            "Value": {
+                "id": "8119533c-328b-41e6-ab73-950faf0f59a1",
+                "resourcePath": "scripts\\scr_gunControl\\scr_gunControl.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3079,6 +3103,14 @@
             }
         },
         {
+            "Key": "b713e704-9b8a-4450-b71f-dd0253c11f2f",
+            "Value": {
+                "id": "cc86262b-081a-4a93-9a25-0912ede15803",
+                "resourcePath": "objects\\obj_playerStats2\\obj_playerStats2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b7a8bd89-ef5c-4e3a-affc-ba07450841e9",
             "Value": {
                 "id": "5966047a-11df-47de-ab26-54e03ed7f4db",
@@ -4476,6 +4508,7 @@
         "41f1bfc9-dd77-4d72-8b1a-94e76f10740e",
         "0cc87e8b-7528-4133-81ed-5e1bef17ebdc",
         "16d86ccc-1491-4960-a7cf-1ed530b0d06b",
+        "2d3ba8c6-8f3e-4d37-a0e8-aca67071a1bd",
         "66d2bd59-1613-48d7-9170-2367ef042911",
         "01681787-d873-4b7f-b423-0619e8fab1fd",
         "d6225ca0-02be-4bd3-a85e-7342fbf4c7f2",
@@ -4486,7 +4519,8 @@
         "af7fb6d8-9826-4676-b85a-1ae173f7bcf4",
         "0ac59313-0faa-4348-beac-7b8d9834d7d2",
         "e65efc5b-a2d5-4d6d-b0f0-3567b7a226fd",
-        "c73c7849-c235-45d2-b5c8-2138e2a246ac"
+        "c73c7849-c235-45d2-b5c8-2138e2a246ac",
+        "38fdac67-8d75-4d55-8cc8-a7007662db2c"
     ],
     "tutorial": ""
 }

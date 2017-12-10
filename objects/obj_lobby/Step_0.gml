@@ -17,7 +17,7 @@ for (var i = 0; i < gp_num && i < max_controller_lobby; i++)
 						//show_debug_message("My controller is " + string(i+1));
 						var xSpot = ((i + 1) * ((xCam/2) / 2.5));
 						var ySpot = (yCam/2);
-						var pO = instance_create_depth(xSpot, ySpot, depth, obj_input1);
+						var pO = instance_create_depth(xSpot, ySpot, depth, obj_input2);
 						pO.dvc = ds_list_find_index(lobby_queue, i);
 						pO.char = i + 1;
 						pO.keyboard = false;

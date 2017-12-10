@@ -17,7 +17,7 @@ if (room != New_Testing_Room)
 				x = irandom_range(obj_spawnZone.x-obj_spawnZone.sprite_width/2, obj_spawnZone.x+obj_spawnZone.sprite_width/2);
 				y = irandom_range(obj_spawnZone.y-obj_spawnZone.sprite_height/2, obj_spawnZone.y+obj_spawnZone.sprite_height/2);
 			}
-		state = scr_moveState1;
+		state = scr_moveState2;
 	}
 
 if (confirmed == false)

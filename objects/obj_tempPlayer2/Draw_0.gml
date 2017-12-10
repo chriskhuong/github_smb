@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
+//event_inherited();
 if (!alive)
 	{
 		image_alpha = .5;
@@ -15,12 +15,33 @@ if (room == New_Testing_Room)
 				draw_text(x - (start_width/2), y + 50, "READY!");
 			}
 	}
-	
-///Draw With Unlimited Palette Swap     
-pal_swap_set(my_pal_sprite,current_pal,false);
-draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-pal_swap_reset();
 
+switch(gunOver){
+	
+	case true:
+		///Draw With Unlimited Palette Swap     
+		pal_swap_set(my_pal_sprite,current_pal,false);
+		draw_sprite(sprite_index,image_index,x,y);
+		pal_swap_reset();
+		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, image_alpha);
+		break;
+		
+	case false:
+		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, image_alpha);
+		///Draw With Unlimited Palette Swap     
+		pal_swap_set(my_pal_sprite,current_pal,false);
+		draw_sprite(sprite_index,image_index,x,y);
+		pal_swap_reset();
+		break;
+		
+		default:
+		break;
+		
+}
+
+
+draw_sprite_ext(spr_target, 0, myTargetX, myTargetY, image_xscale, image_yscale, image_angle, image_blend, myTargetAlpha);
+//draw_circle(myGunX - 64, myGunY, 4, true);
 /*
 ///Draw Palette
 var _pal_scale=8;

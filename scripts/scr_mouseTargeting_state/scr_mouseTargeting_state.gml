@@ -17,5 +17,5 @@ if (obj_input1.fire_mouse)
 
 if (obj_input1.swap_mode)//(keyboard_check_pressed(vk_tab))
     {
-        target_state = scr_keyTargeting_state1;
+        target_state = scr_keyTargeting_state2;
     }

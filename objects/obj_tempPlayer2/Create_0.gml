@@ -29,6 +29,7 @@ movement = MOVE;
 attacked = false;   //melee_attacked = false;
 //weapon_sprite = spr_maid_side_gun;
 character = 0;
+weapon = 0;
 weapons = 1;
 image_speed = .25;
 //passive_items = 0;
@@ -44,7 +45,7 @@ currency = 0;
 //down_key = keyboard_check(vk_down) || keyboard_check(ord('S'));
 
 //state machine
-target_state = scr_keyTargeting_state1;
+target_state = scr_keyTargeting_state2;
 state = scr_playerSelectState2;
 
 
@@ -61,11 +62,19 @@ myTarget.creator = id;
 myGun = instance_create_depth(x - 5, y + 11, depth, obj_tempGun1);
 myGun.creator = id;
 */
-myStats = instance_create_depth(x, y, depth, obj_playerStats1);
+
+myStats = instance_create_depth(x, y, depth, obj_playerStats2);
 myStats.creator = id;
 myStats.maxHp = hp;
 myStats.num = playerNum;
 
+#region target
+
+myTargetX = x;
+myTargetY = y;
+myTargetAlpha = 1;
+
+#endregion
 
 #region gun variables
 /*
@@ -88,14 +97,23 @@ gunLenY = 0;
 //fireRate = weaponArray[myGun.weapon, 3];
 //currentAmmo = ammoMax;
 */
-weapon = 0;
 
-myGunX = x - 5;
-myGunY = y + 11;
-myGunDir = point_direction(myGunX, myGunY, myGunX + 64, myGunY);
-myGunAngle = gunDir;
+//myGunX = x - 5;
+//myGunY = y + 11;
+
+myGunX = x + weaponArray[weapon, 6];
+myGunY = y + weaponArray[weapon, 7];
+
+myGunXScale = 1;
+myGunYScale = 1;
+
+myGunSprite = weaponArray[weapon, 2];
+myGunDir = point_direction(myGunX, myGunY, myTargetX, myTargetY);
+myGunAngle = myGunDir;
 myGunLenX = -weaponArray[weapon, 13];
 myGunLenY = -weaponArray[weapon, 14];
+gunOver = true;
+myGunIndex = 0;
 
 #endregion
 
