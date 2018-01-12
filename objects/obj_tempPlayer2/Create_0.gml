@@ -1,7 +1,7 @@
 ///void Awake
 
 event_inherited();  //allows the object to inherit the create event of the parent
-
+//myColor = noone;
 //Instance Variables
 //act as public variables
 
@@ -9,15 +9,17 @@ event_inherited();  //allows the object to inherit the create event of the paren
 confirmed = false;
 myCounter = noone;
 once = false;
+alarm[11] = 1;
 ////////////////////////////////
 
-
+alive = true;
 playerNum = 0;
 shadow_var = 16;
 creator = noone;
 tag = "player";
 //hp = 20;
-spd = 2.0//1.5;
+spd = 150;//2.0//1.5;
+tarSpd = 2;
 hspd = 0;
 vspd = 0;
 len = 0;    //length
@@ -27,6 +29,7 @@ dir = 0;
 facing = DOWN; //Remove this once we incorporate actual character sprites
 movement = MOVE;
 attacked = false;   //melee_attacked = false;
+attackSequence = 0;
 //weapon_sprite = spr_maid_side_gun;
 character = 0;
 weapon = 0;
@@ -38,7 +41,7 @@ ability = ABILITY;
 ultimate = noone;
 spd_buff = spd+1;
 currency = 0;
-
+silo = true;
 //right_key = keyboard_check(vk_right) || keyboard_check(ord('D'));
 //left_key = keyboard_check(vk_left) || keyboard_check(ord('A'));
 //up_key = keyboard_check(vk_up) || keyboard_check(ord('W'));
@@ -63,10 +66,13 @@ myGun = instance_create_depth(x - 5, y + 11, depth, obj_tempGun1);
 myGun.creator = id;
 */
 
+/*
 myStats = instance_create_depth(x, y, depth, obj_playerStats2);
 myStats.creator = id;
 myStats.maxHp = hp;
 myStats.num = playerNum;
+*/
+//MAKES THIS^^^^
 
 #region target
 
@@ -121,6 +127,7 @@ myGunIndex = 0;
 
 current_pal=0;
 my_pal_sprite=spr_BritneyPAL;
+pal_swap_index_palette(my_pal_sprite);
 
 ///Override stuff.
 override_surface=noone;

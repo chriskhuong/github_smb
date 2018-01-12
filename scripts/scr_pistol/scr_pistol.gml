@@ -3,9 +3,10 @@
 var bullet_spd = 10;
 
 //fuck...what am I even doing...
-var xforce = lengthdir_x(myGun.LenX, myGun.image_angle) - lengthdir_y(myGun.LenY, myGun.image_angle);
-var yforce = lengthdir_y(myGun.LenX, myGun.image_angle) + lengthdir_x(myGun.LenY, myGun.image_angle);
-var p = instance_create_depth(myGun.x, myGun.y, depth, obj_tempBullet);
+var xforce = lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle);
+var yforce = lengthdir_y(myGunLenX, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle);
+var p = instance_create_depth(myGunX + lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle), myGunY + lengthdir_y(myGunLenX, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle), depth, obj_tempBullet);
+//var p = instance_create_depth(myGunX + lengthdir_x(myGunLenX, myGunAngle), myGunY - 5 + lengthdir_y(myGunLenX, myGunAngle), depth, obj_tempBullet);
 p.creator = tag;
 with (p)
 	{

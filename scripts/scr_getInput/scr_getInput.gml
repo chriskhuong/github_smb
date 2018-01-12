@@ -53,6 +53,7 @@ if (gamepad_is_connected(dvc))
         fire_key = gamepad_button_check(dvc, gp_shoulderrb);	//gp_face2)); //this is the right button ('B' on xbox);
         grenade_key = gamepad_button_check_pressed(dvc, gp_shoulderr);   //TEMPORARY
         grenade_release = gamepad_button_check_released(dvc, gp_shoulderr);   //TEMPORARY
+		SOMETHING = gamepad_button_check_pressed(dvc, gp_shoulderl);
         //swap_key = (gamepad_button_check_pressed(dvc, gp_face4)); //this is the top button ('Y' on xbox);
         reload = gamepad_button_check_pressed(dvc, gp_face3); //gp_select)); //TEMPORARY
         switch_weapon = gamepad_button_check_pressed(dvc, gp_padl) || gamepad_button_check_pressed(dvc, gp_padr);	//gp_shoulderlb));
@@ -60,3 +61,5 @@ if (gamepad_is_connected(dvc))
         switch_char_down = gamepad_button_check_pressed(dvc, gp_padd); //TEMPORARY CHARACTER SWAP
 		temp_back = gamepad_button_check_pressed(dvc, gp_face2);
     }
+
+return dvc;

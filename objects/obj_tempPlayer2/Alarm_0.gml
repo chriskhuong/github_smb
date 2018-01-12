@@ -1,4 +1,5 @@
 ///Set the player state back to normal
 
-state = scr_moveState1;
-
+show_debug_message("ALARM 0")
+state = scr_moveState2;
+attackSequence = 0;

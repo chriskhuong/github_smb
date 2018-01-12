@@ -11,25 +11,28 @@ var vw, vh, vb, vm,	// (view related)
 n = 0;
 with (argument0)
 	{
-		if (n == 0)
+		if(alive)
 			{
-				x1 = x;
-				x2 = x;
-				xm = x;
-				y1 = y;
-				y2 = y;
-				ym = y;
+				if (n == 0)
+					{
+						x1 = x;
+						x2 = x;
+						xm = x;
+						y1 = y;
+						y2 = y;
+						ym = y;
+					}
+				else
+					{
+						x1 = min(x1, x);
+						x2 = max(x2, x);
+						xm += x;
+						y1 = min(y1, y);
+						y2 = max(y2, y);
+						ym += y;
+					}
+				n += 1;
 			}
-		else
-			{
-				x1 = min(x1, x);
-				x2 = max(x2, x);
-				xm += x;
-				y1 = min(y1, y);
-				y2 = max(y2, y);
-				ym += y;
-			}
-		n += 1;
 	}
 
 if (n == 0)

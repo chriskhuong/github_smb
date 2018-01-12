@@ -5,6 +5,6 @@
 //Notice I've set it to persistent.  
 
 //First Init the System, specify the name of the pal swap shader in case you've changed it for some reason.
-pal_swap_init_system(shd_pal_swapper);
+pal_swap_init_system(shd_pal_swapper, true);
 
 

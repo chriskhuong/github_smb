@@ -2,6 +2,6 @@
 
 //after implementing actual animations remove this event and uncomment the code in the 'Animation End' event
 //sprite_index = spr_maid_front;  //Character_Sprite
-state = scr_moveState1;
+state = scr_moveState2;
 attacked = false;
 

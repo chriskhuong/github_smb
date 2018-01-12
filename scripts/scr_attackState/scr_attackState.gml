@@ -34,7 +34,7 @@ switch (facing)    //change facing to image_index
         
     }
 
-if (image_index >= 3 && attacked == false)   //used >= rather than == to avoid jumps in decimals
+if (image_index >= 2 && attacked == false)   //used >= rather than == to avoid jumps in decimals
     {
 	/*
 		//if (friendlyFire == true)
@@ -52,4 +52,14 @@ if (image_index >= 3 && attacked == false)   //used >= rather than == to avoid j
 		//show_debug_message("Damage :" + string(dmg));
         //var dmgOBJ = scr_damage(attack_x, attack_y, creatorTag, damage);
         attacked = true;
+		attackSequence++;
+		alarm[0] = room_speed;
     }
+
+//attackSequence++;
+//alarm[0] = room_speed;
+
+if (attackSequence + 1 > maxSequence)
+	{
+		attackSequence = 0;
+	}

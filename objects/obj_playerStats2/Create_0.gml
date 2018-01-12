@@ -1,6 +1,7 @@
 ///Initialize the player
+
 creator = noone;
-//Get Real Stats
+//False Stats
 maxHp = obj_tempPlayer2.hp;
 hp = maxHp;
 maxStamina = 10;
@@ -11,7 +12,9 @@ maxExpr = 3;
 attack = 1; /**/
 level = 1;
 can_shoot = true;
-num = 0
+num = 0;
+
+alarm[11] = 1;
 
 
 view_zoom = 1;
@@ -43,3 +46,7 @@ room_start_action = NEW_ROOM;
 
 /* */
 /*  */
+xCam = 0;
+yCam = 0;
+
+show_debug_message("Stats: " + string(num));

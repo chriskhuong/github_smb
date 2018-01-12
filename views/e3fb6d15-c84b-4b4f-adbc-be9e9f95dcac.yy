@@ -12,9 +12,7 @@
         "a73296e3-6e46-43ad-b58f-746787904c63",
         "1c6effe5-4d4e-4818-b2ab-385e777e901e",
         "48adc873-4102-42b6-93a3-71c55b42804a",
-        "f87e2b50-2730-4e95-b9d2-560fd0d2cb72",
-        "91b6b692-f5eb-4e1a-bb13-7f1074df8a93",
-        "ea4001e7-d08b-48c1-a27d-4cb7378c3873"
+        "8e610be7-c479-4ea9-b5e0-a96cda320f70"
     ],
     "filterType": "GMSprite",
     "folderName": "mio",

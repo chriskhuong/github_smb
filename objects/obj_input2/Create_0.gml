@@ -8,8 +8,8 @@ if (dvc == noone)
 	}
 
 scr_getInput(dvc);
+alarm[0] = 1;
 
-var myChar = instance_create_depth(x, y, depth, obj_tempPlayer2);
-myChar.creator = id;
-myChar.character = char;
-myChar.playerNum = dvc + 1;
+paused = false;
+delay = false;
+screenShot = -1;

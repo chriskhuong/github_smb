@@ -6,7 +6,7 @@ with (other)
     }
 
 //LevelUp code /*Will need to remove this for our current game no use of experience*/
-with (obj_playerStats1)
+with (obj_playerStats2)
     {/*
         obj_playerStats.expr += 1;
         if (expr >= maxExpr)

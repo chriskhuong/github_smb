@@ -15,7 +15,7 @@ if (hp <= 0)
             }
         instance_create_depth(irandom_range(x-sprite_width/2, x+sprite_width/2), irandom_range(y-sprite_height/2, y+sprite_height/2), depth, obj_tempPlayer1);
         */
-		
+		/*
 		dead = instance_create_depth(creator.x, creator.y, creator.depth, obj_deadBody);
 		dead.Mycreator = creator;
 		dead.image_xscale = creator.image_xscale;
@@ -25,9 +25,10 @@ if (hp <= 0)
 		dead.start_height = creator.start_height;
 		dead.start_width = creator.start_width;
 		dead.start_yoffset = creator.start_yoffset;
+		*/
 		p_lives -= 1;
         hp = maxHp;
-		creator.state = scr_ghostState;
+		creator.state = scr_ghostState1;
     }
     
 //stamina regen
@@ -67,6 +68,8 @@ if (obj_input1.pause_key && room != New_Testing_Room)
         obj_input1.pause_key = false;
     }
 */
+
+//show_debug_message(string(xCam) + " " + string(yCam));
 //Zoom View
 var zoom_speed = .1;
 view_zoom += obj_input2.zoom_in * zoom_speed;
@@ -77,7 +80,7 @@ if(room != New_Testing_Room)
 		view_zoom = .75;
 	}
 //clamp(view_zoom, .1, view_maxZoom);
-
+/*
 __view_set( e__VW.WView, 0, obj_resolutionManager.ideal_width/view_zoom );
 __view_set( e__VW.HView, 0, obj_resolutionManager.ideal_height/view_zoom );
-
+*/

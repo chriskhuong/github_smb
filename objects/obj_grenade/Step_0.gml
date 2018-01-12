@@ -16,5 +16,8 @@ if(z < 1)
                 zspeed = 0;
             }
     }
+
+
+
 scr_get_depth();
 

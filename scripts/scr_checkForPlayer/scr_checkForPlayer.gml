@@ -16,11 +16,9 @@ if (instance_exists(target) && target.alive == true)
         else
             {
                 scr_enemy_chooseNextState(); //NOTE we used parenthesis because we're just calling the script and not assigning it
-            }
+            }*/
     }
 else
     {
         scr_enemy_chooseNextState();
     }
-*/
-	}

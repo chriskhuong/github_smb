@@ -25,8 +25,6 @@ else if (myGunAngle < 225 && myGunAngle > 135)
     {
         myGunSprite = weaponArray[weapon, 1];
         facing = LEFT;
-        image_yscale = -1;
-        image_xscale = 1;
 		myGunXScale = 1;
 		myGunYScale = -1;
 		gunOver = true;
@@ -45,8 +43,6 @@ else
     {
         myGunSprite = weaponArray[weapon, 1];
         facing = RIGHT;
-        image_yscale = 1;
-        image_xscale = -1;
 		myGunXScale = 1;
 		myGunYScale = 1;
 		gunOver = true;

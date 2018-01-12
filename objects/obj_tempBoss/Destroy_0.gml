@@ -22,11 +22,4 @@ inst = instance_create_depth(608, 288, depth, obj_door);
                 new_x = 64;
                 new_y = 704;
             }
-
-
-
-
-
-
-action_end_sound(snd_Epic_Battle);
 */

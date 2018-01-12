@@ -1,8 +1,8 @@
 ///scr_sniperHitScan
 
-var temp_dir = myGun.dir;
-var temp_x = x + lengthdir_x(myGun.LenX, myGun.image_angle) - lengthdir_y(myGun.LenY, myGun.image_angle);
-var temp_y = y + lengthdir_y(myGun.LenX, myGun.image_angle) + lengthdir_x(myGun.LenY, myGun.image_angle);
+var temp_dir = myGunDir;
+var temp_x = myGunX + lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle);
+var temp_y = myGunY + lengthdir_y(myGunLenX, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle) - 5;
 var start_x = temp_x;
 var start_y = temp_y;
 var collision = noone; 

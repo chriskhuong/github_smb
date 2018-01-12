@@ -44,7 +44,7 @@ weaponArray[0, 12] = 24  //MaxAmmo TAKE
 //obj_tempPlayer1.weaponArray[0, 13] = scr_grenade();
 weaponArray[0, 15] = noone; // the item
 weaponArray[0, 16] = noone; // the script for the item
-weaponArray[0, 13] = -6;	//LenX
+weaponArray[0, 13] = -15;	//LenX
 weaponArray[0, 14] = 0;	//LenY
 
 

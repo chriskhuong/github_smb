@@ -1,7 +1,7 @@
 ///scr_checkForPlayer()
-if (instance_exists(obj_tempPlayer1) && obj_tempPlayer1.alive == true)
+if (instance_exists(obj_tempPlayer2) && obj_tempPlayer2.alive == true)
     {
-		myTarget = instance_nearest(x, y, obj_tempPlayer1)
+		myTarget = instance_nearest(x, y, obj_tempPlayer2)
 		/*
 		for(var i = 0; i < instance_number(obj_tempPlayer1); i += 1)
 			{

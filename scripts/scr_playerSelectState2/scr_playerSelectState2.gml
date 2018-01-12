@@ -5,19 +5,26 @@ var chosen = 1;
 	
 facing = DOWN;
 
-if (obj_lobby.ready && creator.pause_key)
+if (obj_lobby.ready && confirmed && creator.pause_key)
 	{
 		room_goto(rm_SurvivalMode);
 	}
 	
 if (room != New_Testing_Room)
 	{
-		if(instance_exists(obj_spawnZone))
+		if (confirmed)
+		{
+			if(instance_exists(obj_spawnZone))
+				{
+					x = irandom_range(obj_spawnZone.x-obj_spawnZone.sprite_width/2, obj_spawnZone.x+obj_spawnZone.sprite_width/2);
+					y = irandom_range(obj_spawnZone.y-obj_spawnZone.sprite_height/2, obj_spawnZone.y+obj_spawnZone.sprite_height/2);
+				}
+			state = scr_moveState2;
+		}
+		else
 			{
-				x = irandom_range(obj_spawnZone.x-obj_spawnZone.sprite_width/2, obj_spawnZone.x+obj_spawnZone.sprite_width/2);
-				y = irandom_range(obj_spawnZone.y-obj_spawnZone.sprite_height/2, obj_spawnZone.y+obj_spawnZone.sprite_height/2);
+				instance_destroy();
 			}
-		state = scr_moveState2;
 	}
 
 if (confirmed == false)
@@ -32,7 +39,6 @@ if (confirmed == false)
 	            {
 	                character = 0;
 	            }
-	        scr_weaponArray1(character);
 	    }
 	else if (creator.switch_char_down)
 	    {
@@ -44,12 +50,13 @@ if (confirmed == false)
 	            {
 	                character = 4;
 	            }
-	        scr_weaponArray1(character);
 	    }
 }
 
 if (creator.attack_key && !confirmed)
 	{
+		scr_characterData(character);
+		scr_weaponArray1(character);
 		confirmed = true;
 		myCounter = instance_create_depth(x, y, depth, obj_counter);
 		image_speed = chosen;

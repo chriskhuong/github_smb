@@ -1,20 +1,47 @@
 ///scr_ghostState()
 //image_blend = c_gray;
 //image_alpha= .5;
-ability = DEAD;
+//ability = DEAD;
 var rng = 90; //range from player
-var deadBody = instance_create_depth(x, y, depth, obj_deadBody);
-deadBody.creator = id;
-var deadDir = point_direction(x,y, deadBody.x,deadBody.y);
-deadBody.image_index = special[character, ability];
-alive = false;
+if (alive)
+	{
+		deadBody = instance_create_depth(x, y, depth, obj_deadBody);
+		deadBody.creator = id;
+		deadBody.sprite_index = special[character, DEAD];
+		deadBody.image_xscale = image_xscale;
+		//dead.image_index = 0;
+		deadBody.image_speed = image_speed;
+		deadBody.start_height = start_height;
+		deadBody.start_width = start_width;
+		deadBody.start_yoffset = start_yoffset
+		dx = deadBody.x;
+		dy = deadBody.y;
+		alive = false;
+		
+		if (instance_exists(obj_playerTracker))
+			{
+				obj_playerTracker.alarm[0] = 1;
+			}
+			
+		//var deadDir = point_direction(x,y, deadBody.x,deadBody.y);
+		
+		//if (point_distance(x,y, deadBody.x, deadBody.y) > rng)
+		//    {
+		//        x = deadBody.x - lengthdir_x(rng, deadDir);
+		//        y = deadBody.y - lengthdir_y(rng, deadDir);
+		//    }
+		//show_debug_message(string(deadBody.x) + " " + string(deadBody.y))
+		
+	}
 
-if (point_distance(x,y, deadBody.x, deadBody.y) > rng)
-    {
-        x = deadBody.x - lengthdir_x(rng, deadDir);
-        y = deadBody.y - lengthdir_y(rng, deadDir);
-    }
-
+var deadDir = point_direction(x, y, dx, dy);
+		
+if (point_distance(x,y, dx, dy) > rng)
+	{
+		x = dx - lengthdir_x(rng, deadDir);
+		y = dy - lengthdir_y(rng, deadDir);
+	}
+		
 //Get direction
 dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
 
@@ -28,7 +55,7 @@ if (creator.xaxis == 0 && creator.yaxis == 0)   //we're NOT moving
 else    //we're moving
     {
         //scr_getFace(); //took this out because is was overriding the player targeting direction
-        len = spd;
+        len = trueSpd;
     }
 
 //Get the h and v speed

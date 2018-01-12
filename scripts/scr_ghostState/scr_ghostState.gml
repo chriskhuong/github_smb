@@ -25,7 +25,7 @@ if (creator.xaxis == 0 && creator.yaxis == 0)   //we're NOT moving
 else    //we're moving
     {
         //scr_getFace(); //took this out because is was overriding the player targeting direction
-        len = spd;
+        len = trueSpd;
     }
 
 //Get the h and v speed

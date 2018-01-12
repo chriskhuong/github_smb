@@ -20,7 +20,7 @@ if(!argument[2])
     var texel_y = texture_get_texel_height(tex);
     var texel_hx = texel_x * 0.5;
     var texel_hy = texel_y * 0.5;
-    
+	
     shader_set_uniform_f(Pal_Texel_Size, texel_x, texel_y);
     shader_set_uniform_f(Pal_UVs, UVs[0] + texel_hx, UVs[1] + texel_hy, UVs[2] + texel_hx, UVs[3] + texel_hy);
     shader_set_uniform_f(Pal_Index, _pal_index);

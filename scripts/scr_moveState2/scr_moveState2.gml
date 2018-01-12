@@ -5,11 +5,13 @@
 attacked = false;
 movement = MOVE;
 
+#region Special Button
 if (creator.dash_key)   //remember to change this to whatever input you put special actions to
     {
         var xdir = lengthdir_x(8, facing*90)
         var ydir = lengthdir_y(8, facing*90)
         var speaker = instance_place(x + xdir, y + ydir, obj_speaker);
+		#region chat and other events
         if (speaker != noone)
             {
                 //talk to it
@@ -34,7 +36,7 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
                             }
                     }
             }
-            
+            #endregion
         else if (myStats.stamina >= 5)
             {
                 //dash
@@ -44,6 +46,8 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
                 myStats.alarm[0] = room_speed;
             }
 }
+
+#endregion
 
 #region DEATH TESTING
 /*
@@ -55,15 +59,57 @@ if (myStats.hp <= 0)
 */
 #endregion
 
-
+#region Melee
 if (creator.attack_key)
     {
-        image_index = 0;
+		var xdir = lengthdir_x(8, facing*90)
+        var ydir = lengthdir_y(8, facing*90)
+        var dead = instance_place(x + xdir, y + ydir, obj_tempPlayer2);
+		#region chat and other events
+        if (dead != noone)
+            {
+				show_debug_message("BOOGERS;")
+                //talk to it
+                with (dead)    //everything here is inside of the sign
+                    {
+                        if (!alive)   //if the dialog variable doesn't hold a dialog object
+                            {
+								//if (point_distance(x, y, dx, dy) <= 8)
+								//	{
+										alive = true;
+										state = scr_moveState2;
+										with (deadBody)
+											{
+												alarm[0] = 60;
+												alarm[1] = 30;
+											}
+								//	}
+								//else
+								//	{
+								//		move_towards_point(dx, dy, 5);
+								//	}
+								/*
+                                dialog = instance_create_depth(x + xOffset, y + yOffset, depth, obj_dialog); //then we create a dialog object
+                                dialog.text = text; //sets the dialog's text. the speaker is telling the dialog box what to say
+								*/
+                            }
+                    }
+			}
+			#endregion
+        //image_index = 0;
+		//attack
+	    image_index = 0;
+	    //sprite[@RIGHT, ATTACK] = rcombo[attacksequence];
+	    //sprite[@UP, ATTACK] = ucombo[attacksequence];
+	    //sprite[@LEFT, ATTACK] = lcombo[attacksequence];
+	    //sprite[@DOWN, ATTACK] = dcombo[attacksequence];
+
         state = scr_attackState;
         //alarm[2] = 5;  //after implementing actual animations remove this line and uncomment the code in the 'Animation End' event
     }
+#endregion
 
-//////////////////GRENADES!!!!!///////////////////
+#region Grenades
 //NOTE: refer to the //FIRING// section when adding more details such as timing between grenade tosses
 
 if (creator.grenade_key && weaponArray[1, 15] > 0)
@@ -73,7 +119,9 @@ if (creator.grenade_key && weaponArray[1, 15] > 0)
         script_execute(scr_grenade);
         show_debug_message("GRENADE!!!!!"); //temp
     }
-	
+#endregion
+
+#region Item stuff
 //show_debug_message(string(obj_tempPlayer.passive_items[0]));
 
 if (creator.active_items_key && weaponArray[0,14] != noone)
@@ -98,8 +146,9 @@ if (creator.active_items_key && weaponArray[0,14] != noone)
 		script_execute(weaponArray[0, 15]);
 		weaponArray[0,14] = noone;
     }
-  
-/////////////////FIRING/////////////////
+#endregion
+
+#region Firing
 /* wtf wtf wtf wtf wtf */
 
 var fireRate = weaponArray[weapon, 3];
@@ -139,7 +188,9 @@ else if(creator.reload && weaponArray[weapon, 11] == clipSize)
     {
         show_debug_message(string(weaponArray[weapon, 11]) + " " + string(clipReload));
     }
+#endregion
 
+#region Movement
 //Get direction
 dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
 
@@ -153,7 +204,7 @@ if (creator.xaxis == 0 && creator.yaxis == 0)   //we're NOT moving
 else    //we're moving
     {
         //scr_getFace(); //took this out because is was overriding the player targeting direction
-        len = spd;
+        len = trueSpd;
     }
 
 //Get the h and v speed
@@ -161,12 +212,36 @@ else    //we're moving
 //this fixes the speed of any  movement
 hspd = lengthdir_x(len, dir);
 vspd = lengthdir_y(len, dir);
-collision_zoneX = !place_free(x + hspd, y);
-collision_zoneY = !place_free(x, y + vspd);
+//collision_zoneX = !place_free(x + hspd, y);
+//collision_zoneY = !place_free(x, y + vspd);
 
-//Move
-x += hspd;
-y += vspd;
+//Collision check if free
+if (place_free(hspd, vspd))
+	{
+		//Move
+		x += hspd;
+		y += vspd;
+	}
+else
+	{
+		var sweepInterval = 10;
+		
+		for (var angle = sweepInterval; angle <= 90; angle += sweepInterval)
+			{
+				for (var multiplier = -1; multiplier <= 1; multiplier += 2)
+					{
+						var angleToCheck = dir + angle * multiplier;
+						hspd = lengthdir_x(len, angleToCheck);
+						vspd = lengthdir_y(len, angleToCheck);
+						if (place_free(hspd, vspd))
+							{
+								x += hspd;
+								y += vspd;
+								//exit;
+							}
+					}
+			}
+	}
 
 //Control the sprite
 
@@ -178,42 +253,48 @@ if (hspd > 0)
     {
         if (facing == LEFT)
             {
+				image_xscale = 1;
                 image_speed = -1;
             }
 		else
 			{
+				image_xscale = -1;
 				image_speed = 1;
 			}
         //right sprite movement animation
         //sprite_index = spr_testChar;    //remove this when implementing actual sprite_work
-        image_xscale = -1;
+        //image_xscale = -1;
         //facing = "right";
-		
-		if (collision_zoneX)
-			{
-				move_contact_solid(-dir, hspd);
-			}
+
     }
 else if (hspd < 0)
     {
         if (facing == RIGHT)
             {
+				image_xscale = -1;
                 image_speed = -1;
             }
 		else
 			{
+				image_xscale = 1;
 				image_speed = 1;
 			}
         //left sprite movement animation
         //sprite_index = spr_testChar;    //remove this when implementing actual sprite_work
-        image_xscale = 1;
+        //image_xscale = 1;
         //facing = "left";
-		
-		if (collision_zoneX)
-			{
-				move_contact_solid(-dir, -hspd);
-			}
     }
+else
+	{
+		if (facing == RIGHT)
+			{
+				image_xscale = -1;
+			}
+		else if (facing == LEFT)
+			{
+				image_xscale = 1;
+			}
+	}
 if (vspd > 0)
     {
         if (facing == UP)
@@ -223,11 +304,6 @@ if (vspd > 0)
 		else
 			{
 				image_speed = 1;
-			}
-			
-		if (collision_zoneY)
-			{
-				move_contact_solid(-dir, vspd);
 			}
     }
 else if (vspd < 0)
@@ -240,43 +316,13 @@ else if (vspd < 0)
 			{
 				image_speed = 1;
 			}
-			
-		if (collision_zoneY)
-			{
-				move_contact_solid(-dir, -vspd);
-			}
     }
-    
-///////////TEMPORARY STUFF???/////////////////
-/*
-if (creator.switch_char_up)
-    {
-        if (character < 4)
-            {
-                character++;
-            }
-        else
-            {
-                character = 0;
-            }
-        scr_weaponArray1(character);
-    }
-else if (creator.switch_char_down)
-    {
-        if (character > 0)
-            {
-                character--;
-            }
-        else
-            {
-                character = 4;
-            }
-        scr_weaponArray1(character);
-    }
-*/
+
+#endregion
+
 if (creator.switch_weapon)
     {
-		if (weapon < creator.weapons)
+		if (weapon < weapons)
 			{
 				weapon++;
 			}
@@ -285,3 +331,4 @@ if (creator.switch_weapon)
 				weapon = 0;
 			}
     }
+

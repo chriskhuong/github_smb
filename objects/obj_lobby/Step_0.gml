@@ -12,11 +12,11 @@ for (var i = 0; i < gp_num && i < max_controller_lobby; i++)
 					{
 						ds_list_add(lobby_queue, i);
 						//show_debug_message("Device " + string(i) + " connected");
-						xCam = camera_get_view_width(view_camera[0])
-						yCam = camera_get_view_height(view_camera[0])
+						//xCam = camera_get_view_width(view_camera[0])
+						//yCam = camera_get_view_height(view_camera[0])
 						//show_debug_message("My controller is " + string(i+1));
-						var xSpot = ((i + 1) * ((xCam/2) / 2.5));
-						var ySpot = (yCam/2);
+						var xSpot = ((i + 1) * ((view_w/2) / 2.5));
+						var ySpot = (view_h/2);
 						var pO = instance_create_depth(xSpot, ySpot, depth, obj_input2);
 						pO.dvc = ds_list_find_index(lobby_queue, i);
 						pO.char = i + 1;
@@ -37,7 +37,7 @@ for (var i = 0; i < gp_num && i < max_controller_lobby; i++)
 			
    }
 
-if (instance_number(obj_counter) == ds_list_size(lobby_queue) && instance_number(obj_counter) > 0)
+if (/*instance_number(obj_counter) == ds_list_size(lobby_queue) &&*/ instance_number(obj_counter) > 0)
 	{
 		ready = true;
 	}

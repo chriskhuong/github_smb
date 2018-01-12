@@ -11,7 +11,7 @@ if (len == 0)   //locks our dash to 90 degrees IF we're not moving
 
 //Get the h and v speed
 
-len = spd * 4;
+len = trueSpd * 4;
 
 //this fixes the speed of any angular movement
 hspd = lengthdir_x(len, dir);
@@ -23,5 +23,7 @@ y += vspd;
 
 //Create the dash effect    //var dash is a temporary variable
 var dash = instance_create_depth(x, y, depth, obj_dashEffect); //we can alter the properties of the object after creation
+dash.image_xscale = image_xscale;
+dash.image_yscale = image_yscale;
 dash.sprite_index = sprite_index; //assigns the player's current sprite index to the created instance
 dash.image_index = image_index; //assigns the player's current image index to the created instance
