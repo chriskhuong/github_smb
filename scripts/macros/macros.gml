@@ -8,6 +8,8 @@
 #macro MOVE 0
 #macro IDLE 1
 #macro ATTACK 2
+#macro STUN 3
+#macro DEAD 4
 #macro BRITNEY 0
 #macro JO 1
 #macro MIO 2
@@ -20,5 +22,4 @@
 #macro KEY 1
 #macro ABILITY 0
 #macro ULTIMATE 1
-#macro DEAD 2
-#macro NAME 3
+#macro NAME 2

@@ -1,5 +1,6 @@
 /// @description Initialize the player lobby and player number.... maybe
-global.fontAmmo = font_add_sprite_ext(spr_ammoCount,"0123456789/",true,0);
+global.fontAmmo = font_add_sprite_ext(spr_ammoCount," 0123456789/",false,-4);
+global.fontGrenade = font_add_sprite_ext(spr_count,"0123456789x",true,0);
 lobby_queue = ds_list_create();
 actual_lobby = ds_list_create();
 cam = camera_get_active();

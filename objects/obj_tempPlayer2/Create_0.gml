@@ -74,6 +74,21 @@ myStats.num = playerNum;
 */
 //MAKES THIS^^^^
 
+#region hit/hurtbox
+/*
+hurtbox = scr_hurtboxCreate(30, 53, -15, -21);
+
+//hitbox
+hitbox = -1;
+*/
+
+hit = false;
+hitStun = 0;
+hitBy = -1;
+knockback = 10;
+
+#endregion
+
 #region target
 
 myTargetX = x;

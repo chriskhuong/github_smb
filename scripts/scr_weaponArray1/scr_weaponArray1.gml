@@ -42,10 +42,11 @@ weaponArray[0, 10] = 24  //MaxAmmo
 weaponArray[0, 11] = 12; //ClipAmmo TAKE
 weaponArray[0, 12] = 24  //MaxAmmo TAKE
 //obj_tempPlayer1.weaponArray[0, 13] = scr_grenade();
-weaponArray[0, 15] = noone; // the item
-weaponArray[0, 16] = noone; // the script for the item
 weaponArray[0, 13] = -15;	//LenX
 weaponArray[0, 14] = 0;	//LenY
+weaponArray[0, 15] = noone; // the item
+weaponArray[0, 16] = noone; // the script for the item
+weaponArray[0, 17] = 0;	//spr_guns gun_index
 
 
 //obj_tempPlayer1.weaponArray[0, 8] = 1; //Damage output
@@ -71,10 +72,11 @@ switch(character){
         weaponArray[1, 10] = 72;  //MaxAmmo
         weaponArray[1, 11] = 24;  //ClipAmmo TAKE
         weaponArray[1, 12] = 72;  //MaxAmmo TAKE
-        weaponArray[1, 15] = 3;  //Grenade Ammo
-        weaponArray[1, 16] = 3;  //Grenade Max 
 		weaponArray[1, 13] = -18;	//LenX
 		weaponArray[1, 14] = 0;	//LenY       
+		weaponArray[1, 15] = 3;  //Grenade Ammo
+        weaponArray[1, 16] = 3;  //Grenade Max
+		weaponArray[1, 17] = 1;
         //obj_tempPlayer1.weaponArray[0, 8] = 2; //Damage output
         break;
         
@@ -98,7 +100,8 @@ switch(character){
         weaponArray[1, 15] = 5;  //Grenade Ammo
         weaponArray[1, 16] = 5;  //Grenade Max
 		weaponArray[1, 13] = -6;	//LenX
-		weaponArray[1, 14] = 0;	//LenY    
+		weaponArray[1, 14] = 0;	//LenY
+		weaponArray[1, 17] = 4;
         //obj_tempPlayer1.weaponArray[0, 8] = 1; //Damage output
         break;
 
@@ -123,6 +126,7 @@ switch(character){
         weaponArray[1, 16] = 0;  //Grenade Max
 		weaponArray[1, 13] = -18;	//LenX
 		weaponArray[1, 14] = 0;	//LenY
+		weaponArray[1, 17] = 3;
         //obj_tempPlayer1.weaponArray[0, 8] = 2; //Damage output
         break;
         
@@ -147,6 +151,7 @@ switch(character){
         weaponArray[1, 16] = 0;  //Grenade Max    
 		weaponArray[1, 13] = -20;	//LenX
         weaponArray[1, 14] = 0;	//LenY//obj_tempPlayer1.weaponArray[0, 8] = 5; //Damage output
+		weaponArray[1, 17] = 5;
         break;
     
     case SEBASTIAN:
@@ -170,6 +175,7 @@ switch(character){
         weaponArray[1, 16] = 2;  //Grenade Max
 		weaponArray[1, 13] = -34;	//LenX
 		weaponArray[1, 14] = 0;	//LenY
+		weaponArray[1, 17] = 2;
         //obj_tempPlayer1.weaponArray[0, 8] = 3; //Damage output
         break;
         

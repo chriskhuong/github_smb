@@ -68,11 +68,9 @@ if (creator.attack_key)
 		#region chat and other events
         if (dead != noone)
             {
-				show_debug_message("BOOGERS;")
-                //talk to it
-                with (dead)    //everything here is inside of the sign
+                with (dead)
                     {
-                        if (!alive)   //if the dialog variable doesn't hold a dialog object
+                        if (!alive)
                             {
 								//if (point_distance(x, y, dx, dy) <= 8)
 								//	{

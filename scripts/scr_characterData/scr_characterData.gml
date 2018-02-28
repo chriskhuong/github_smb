@@ -25,6 +25,12 @@ switch(character){
         sprite[LEFT, IDLE] = spr_britney_idle_side;
         sprite[DOWN, IDLE] = spr_britney_idle_down;
         
+		//REALLY STUPID HARDCODE, FIND A FIX
+		sprite[RIGHT, STUN] = spr_britney_hurt;
+		sprite[UP, STUN] = spr_britney_hurt;
+		sprite[LEFT, STUN] = spr_britney_hurt;
+		sprite[DOWN, STUN] = spr_britney_hurt;
+		
 		//combos
 		sCombo[0] = spr_britney_melee_side1;
 		sCombo[1] = spr_britney_melee_side2;
@@ -79,6 +85,12 @@ switch(character){
         sprite[LEFT, IDLE] = spr_jo_idle_side;
         sprite[DOWN, IDLE] = spr_jo_idle_down;
         
+		//REALLY STUPID HARDCODE, FIND A FIX
+		sprite[RIGHT, STUN] = spr_jo_hurt;
+		sprite[UP, STUN] = spr_jo_hurt;
+		sprite[LEFT, STUN] = spr_jo_hurt;
+		sprite[DOWN, STUN] = spr_jo_hurt;
+		
 		//combos
 		sCombo[0] = spr_jo_melee_side1;
 		sCombo[1] = spr_jo_melee_side2;
@@ -128,6 +140,12 @@ switch(character){
         sprite[LEFT, IDLE] = spr_mio_idle_side;
         sprite[DOWN, IDLE] = spr_mio_idle_down;
         
+		//REALLY STUPID HARDCODE, FIND A FIX
+		sprite[RIGHT, STUN] = spr_mio_hurt;
+		sprite[UP, STUN] = spr_mio_hurt;
+		sprite[LEFT, STUN] = spr_mio_hurt;
+		sprite[DOWN, STUN] = spr_mio_hurt;
+		
 		//combos
 		sCombo[0] = spr_mio_melee_side1;
 		sCombo[1] = spr_mio_melee_side2;
@@ -179,6 +197,12 @@ switch(character){
         sprite[LEFT, ATTACK] = spr_melee_fist;
         sprite[DOWN, ATTACK] = spr_melee_fist2;
         
+		
+		//REALLY STUPID HARDCODE, FIND A FIX
+		sprite[RIGHT, STUN] = spr_anna_temp;
+		sprite[UP, STUN] = spr_anna_temp;
+		sprite[LEFT, STUN] = spr_anna_temp;
+		sprite[DOWN, STUN] = spr_anna_temp;
         /*
         /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
         //SPECIAL
@@ -211,6 +235,12 @@ switch(character){
         sprite[LEFT, ATTACK] = spr_melee_shovel;
         sprite[DOWN, ATTACK] = spr_melee_shovel2;
         
+		//REALLY STUPID HARDCODE, FIND A FIX
+		sprite[RIGHT, STUN] = spr_sebastian_temp;
+		sprite[UP, STUN] = spr_sebastian_temp;
+		sprite[LEFT, STUN] = spr_sebastian_temp;
+		sprite[DOWN, STUN] = spr_sebastian_temp;
+		
         /*
         /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
         //SPECIAL
@@ -231,6 +261,7 @@ timer[BRITNEY, ABILITY] = 15;
 //special[BRITNEY, ULTIMATE];
 special[BRITNEY, DEAD] = spr_britney_death;
 special[BRITNEY, NAME] = "BRITNEY";
+
 
 //JO
 special[JO, ABILITY] = scr_dashState;
