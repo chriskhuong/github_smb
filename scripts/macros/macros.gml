@@ -23,3 +23,4 @@
 #macro ABILITY 0
 #macro ULTIMATE 1
 #macro NAME 2
+#macro FACE 3

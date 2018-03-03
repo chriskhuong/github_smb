@@ -4,7 +4,7 @@ if (other.tag != creator.tag)
     {
 		target = other.id;
         //obj_playerStats1.hp -= damage;
-		//target.myStats.hp -= damage;
+		target.myStats.hp -= damage;
 		target.hit = true;
 		with (other)
 			{

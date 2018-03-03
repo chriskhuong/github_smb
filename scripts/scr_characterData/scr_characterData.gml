@@ -261,7 +261,7 @@ timer[BRITNEY, ABILITY] = 15;
 //special[BRITNEY, ULTIMATE];
 special[BRITNEY, DEAD] = spr_britney_death;
 special[BRITNEY, NAME] = "BRITNEY";
-
+special[BRITNEY, FACE] = 0;
 
 //JO
 special[JO, ABILITY] = scr_dashState;
@@ -269,6 +269,7 @@ timer[JO, ABILITY] = room_speed/6;
 //special[JO, ULTIMATE]
 special[JO, DEAD] = spr_jo_death;
 special[JO, NAME] = "JO";
+special[JO, FACE] = 1;
 
 //MIO
 special[MIO, ABILITY] = scr_teleportState;
@@ -276,6 +277,7 @@ timer[MIO, ABILITY] = 2;
 //special[MIO, ULTIMATE]
 special[MIO, DEAD] = spr_mio_death;
 special[MIO, NAME] = "MIO";
+special[MIO, FACE] = 2;
 
 //ANNA
 special[ANNA, ABILITY] = scr_backhandState;  //change to backhand **TRY FIXING THIS SHIT SO WE DON'T NEED DUPLICATE SCRITPS**
@@ -283,6 +285,7 @@ timer[ANNA, ABILITY] = 2;
 //special[ANNA, ULTIMATE]
 special[ANNA, DEAD] = 0;
 special[ANNA, NAME] = "ANNA";
+special[ANNA, FACE] = 3;
 
 //SEBASTIAN
 special[SEBASTIAN, ABILITY] = scr_shieldState;  //change to shield thing
@@ -290,3 +293,4 @@ timer[SEBASTIAN, ABILITY] = room_speed/6;
 //special[SEBASTIAN, ULTIMATE]
 special[SEBASTIAN, DEAD] = 0;
 special[SEBASTIAN, NAME] = "SEBASTIAN";
+special[SEBASTIAN, FACE] = 4;
