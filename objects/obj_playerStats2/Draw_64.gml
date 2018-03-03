@@ -10,11 +10,11 @@ draw_set_halign(fa_right);
 //draw_set_color(merge_color(c_black, creator.myColor, .5))
 //NOTE: for enemy duplicate, remove this event;
 
-for(var i = 0; i < hp; i++)
+for(var i = 0; i < creator.hp; i++)
 {
 	draw_sprite(spr_hearts,0,(xSpot - 10)+(xoff*i),ySpot - 8);
 }
-draw_sprite(spr_portraits,0,xSpot - 70,ySpot - 15);
+draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,ySpot - 15);
 draw_sprite(spr_cooldowns,0,xSpot - 34, ySpot + 18);
 draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);
 draw_set_font(global.fontAmmo);
@@ -40,6 +40,8 @@ draw_set_font(global.fontGrenade);
 draw_text(xSpot + 23, ySpot + 28, creator.weaponArray[1, 15]);
 draw_sprite(spr_guns,creator.weaponArray[creator.weapon, 17],xSpot + 32, ySpot + 20);
 draw_set_color(c_white);
+
+draw_set_font(font1);
 /*
 if(instance_exists(creator.myWeapon))
 	{
