@@ -1431,6 +1431,14 @@
             }
         },
         {
+            "Key": "3d416fd5-da12-4971-936c-0e210e1c3805",
+            "Value": {
+                "id": "78801a18-78c9-460b-ab53-c3aaac18223b",
+                "resourcePath": "shaders\\shd_Outline\\shd_Outline.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "3d83c9ad-e1a1-4671-8ae3-67eefb3c9913",
             "Value": {
                 "id": "62107055-a892-4698-b908-dda6217049f6",

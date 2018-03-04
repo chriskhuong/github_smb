@@ -1,7 +1,15 @@
 ///Draw the stats
-
 //xCam = camera_get_view_width(view_camera[0])
 //yCam = camera_get_view_height(view_camera[0])
+//Heart Varibales
+var xEmpty = 0;
+var yEmpty = 0;
+var xFull = 0;
+var yFull = 0;
+var xHalf = 0;
+var yHalf = 0;
+
+
 
 var xSpot = (num * ((view_w/2) / 2.5));
 var ySpot = (view_h - 64);
@@ -9,11 +17,43 @@ var xoff = 16;
 draw_set_halign(fa_right);
 //draw_set_color(merge_color(c_black, creator.myColor, .5))
 //NOTE: for enemy duplicate, remove this event;
-
-for(var i = 0; i < creator.hp; i++)
+#region Health
+repeat(maxHp/2)
+{
+	if xEmpty == xoff*10
+	{
+		yEmpty = xoff;
+		xEmpty = 0;
+	}
+	draw_sprite(spr_hearts,2,(xSpot + xEmpty) - 10,ySpot - yEmpty - 8);
+	xEmpty += xoff;
+}
+repeat(floor(hp/2) + frac(hp/2)* 2)
+{
+	if (xHalf >= xoff * 10)
+	{
+		yFull = xoff;
+		xFull = 0;
+	}
+	draw_sprite(spr_hearts,1,(xSpot +xHalf)-10,ySpot - yHalf - 8)
+	xHalf +=xoff;
+}
+repeat(floor(hp/2))
+{
+	if xFull == xoff*10
+	{
+		yFull = xoff;
+		xFull = 0;
+	}	
+	draw_sprite(spr_hearts,0,(xSpot + xFull) - 10,ySpot - yFull - 8);
+	xFull += xoff;
+}
+#endregion
+/*
+for(var i = 0; i < hp/2; i++)
 {
 	draw_sprite(spr_hearts,0,(xSpot - 10)+(xoff*i),ySpot - 8);
-}
+}*/
 draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,ySpot - 15);
 draw_sprite(spr_cooldowns,0,xSpot - 34, ySpot + 18);
 draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);

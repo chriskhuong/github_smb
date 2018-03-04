@@ -10,7 +10,7 @@ switch(character){
         ///////BRITNEY
         
         dmg = 1;
-		hp = 4;
+		hp = 8;
         maxSequence = 6;
 		
         //moving
@@ -70,7 +70,7 @@ switch(character){
         ///////JO
         
         dmg = 3;
-        hp = 4;
+        hp = 8;
 		maxSequence = 4;
 		
         //moving
@@ -125,7 +125,7 @@ switch(character){
         ///////MIO
         
         dmg = 4;
-        hp = 3;
+        hp = 6;
 		maxSequence = 3;
 		
         //moving
@@ -177,7 +177,7 @@ switch(character){
         ///////ANNA
         
         dmg = 5;
-        hp = 5;
+        hp = 10;
 		
         //moving
         sprite[RIGHT, MOVE] = spr_anna_temp;
@@ -215,7 +215,7 @@ switch(character){
         ///////SEBASTIAN
         
         dmg = 3;
-		hp = 4;
+		hp = 8;
         
         //moving
         sprite[RIGHT, MOVE] = spr_sebastian_temp;
