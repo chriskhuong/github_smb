@@ -226,7 +226,7 @@
             "Key": "08d0c152-b3d4-4038-b143-f09ba3080681",
             "Value": {
                 "id": "dcf34232-5ef9-4ab7-a307-1cf31542992c",
-                "resourcePath": "sprites\\anna_hurt\\anna_hurt.yy",
+                "resourcePath": "sprites\\spr_anna_hurt\\spr_anna_hurt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "1d431d20-2a15-4279-8f2a-29914951ed0d",
+            "Value": {
+                "id": "751bdaf3-70f2-4b6c-a282-b6a0f579c760",
+                "resourcePath": "sprites\\spr_anna_melee_up2\\spr_anna_melee_up2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e1f1673-2699-4b30-874d-7f62f13979a4",
             "Value": {
                 "id": "3d240799-eba5-425e-8576-930a22f906a6",
@@ -1047,10 +1055,18 @@
             }
         },
         {
+            "Key": "2d499d7f-acbb-47be-988b-54e4c3e05c1a",
+            "Value": {
+                "id": "2d139968-eca9-482d-af68-90dcfd2617c7",
+                "resourcePath": "sprites\\spr_anna_melee_down1\\spr_anna_melee_down1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e109cd6-48f9-406a-b22f-24a27454e1f6",
             "Value": {
                 "id": "6a3415d3-c5a8-4efa-bc0a-78f4c21cfe8c",
-                "resourcePath": "sprites\\ghost_britney\\ghost_britney.yy",
+                "resourcePath": "sprites\\spr_ghost_britney\\spr_ghost_britney.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1170,7 +1186,7 @@
             "Key": "32bff715-9ccc-48bb-81a2-6799003669c8",
             "Value": {
                 "id": "c8e39235-0d84-4f87-8039-9177e4910e9e",
-                "resourcePath": "sprites\\anna_vodka_left\\anna_vodka_left.yy",
+                "resourcePath": "sprites\\spr_anna_vodka_side\\spr_anna_vodka_side.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1219,6 +1235,14 @@
             "Value": {
                 "id": "c5455bd1-4908-46fb-9406-8b90880dd126",
                 "resourcePath": "sprites\\spr_jo_hurt\\spr_jo_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3444762a-fc7f-4144-82e2-c448724503e5",
+            "Value": {
+                "id": "68d7f74a-ad3c-4697-b611-a9abbdde122e",
+                "resourcePath": "sprites\\spr_anna_melee_side1\\spr_anna_melee_side1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1279,6 +1303,14 @@
             }
         },
         {
+            "Key": "3775f486-4e5b-469c-98fe-e5eb329e2336",
+            "Value": {
+                "id": "65e6ad34-cd36-4a45-a0d0-f12c61ef2990",
+                "resourcePath": "sprites\\spr_anna_melee_side3\\spr_anna_melee_side3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "37a36194-f005-4f9b-a3f7-e8f1b7950125",
             "Value": {
                 "id": "a621ff7f-061f-4d19-a9c8-0ecfdd791281",
@@ -1330,7 +1362,7 @@
             "Key": "3955e52a-943f-4abc-a938-4ca88a5b0759",
             "Value": {
                 "id": "72c042ec-d6bc-40bc-bbc8-432c912375b7",
-                "resourcePath": "sprites\\anna_idle_down\\anna_idle_down.yy",
+                "resourcePath": "sprites\\spr_anna_idle_down\\spr_anna_idle_down.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1610,7 +1642,7 @@
             "Key": "42f03492-7c4e-46d2-b3e9-69c1f9cc7935",
             "Value": {
                 "id": "fc290956-98d0-499e-b763-c1e33e9e8514",
-                "resourcePath": "sprites\\anna_smash\\anna_smash.yy",
+                "resourcePath": "sprites\\spr_anna_smash\\spr_anna_smash.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1626,7 +1658,7 @@
             "Key": "43a57292-2777-4e6c-9251-7e54fb7a27af",
             "Value": {
                 "id": "357232a1-f299-4b70-b6e3-7d51aae36aba",
-                "resourcePath": "sprites\\anna_spawn\\anna_spawn.yy",
+                "resourcePath": "sprites\\spr_anna_spawn\\spr_anna_spawn.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1634,7 +1666,7 @@
             "Key": "43aa03dd-b093-4c6b-9d50-be182cafebcc",
             "Value": {
                 "id": "8166ae3e-504f-4b6f-8675-9468202f17a1",
-                "resourcePath": "sprites\\anna_melee_down\\anna_melee_down.yy",
+                "resourcePath": "sprites\\spr_anna_melee_down\\spr_anna_melee_down.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1666,7 +1698,7 @@
             "Key": "44ada58e-ed82-4657-b414-53cced72e078",
             "Value": {
                 "id": "aaaa0750-73d9-41bd-bf1c-9ad4f9eeea67",
-                "resourcePath": "sprites\\anna_death\\anna_death.yy",
+                "resourcePath": "sprites\\spr_anna_death\\spr_anna_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1706,7 +1738,7 @@
             "Key": "450627eb-d37d-4119-97be-a627df0f5354",
             "Value": {
                 "id": "990dfc5e-cc9c-4b98-920d-dce95e5c9c80",
-                "resourcePath": "sprites\\anna_run_up\\anna_run_up.yy",
+                "resourcePath": "sprites\\spr_anna_run_up\\spr_anna_run_up.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1930,7 +1962,7 @@
             "Key": "50c7385a-fee9-4b86-8636-7d30b7bb5241",
             "Value": {
                 "id": "07ab4c40-a68a-424b-b92b-23a5f2101e07",
-                "resourcePath": "sprites\\ghost_anna\\ghost_anna.yy",
+                "resourcePath": "sprites\\spr_ghost_anna\\spr_ghost_anna.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2063,6 +2095,14 @@
             }
         },
         {
+            "Key": "561e6bb3-3cc3-4cff-ba99-f0097824db31",
+            "Value": {
+                "id": "72bf7e3b-d3bc-4737-868c-6737daf58885",
+                "resourcePath": "views\\561e6bb3-3cc3-4cff-ba99-f0097824db31.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "572eca75-f9e2-4410-8621-d0f11beb4efe",
             "Value": {
                 "id": "9df34b56-eb94-4ad7-8214-4d4229235868",
@@ -2114,7 +2154,7 @@
             "Key": "58e95116-55fd-43f9-9359-cc00103f429e",
             "Value": {
                 "id": "ef60cf97-6488-45e3-85bd-9d8cfdc42c72",
-                "resourcePath": "sprites\\ghost_mio\\ghost_mio.yy",
+                "resourcePath": "sprites\\spr_ghost_mio\\spr_ghost_mio.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2263,10 +2303,18 @@
             }
         },
         {
+            "Key": "5f613669-36e6-45f0-94c6-9253c643faeb",
+            "Value": {
+                "id": "fcdc2bdb-2008-4991-be74-1eee1aad0b6d",
+                "resourcePath": "sprites\\spr_anna_run_down\\spr_anna_run_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5f796ffc-7a80-4cf2-b68f-1e26598643e1",
             "Value": {
                 "id": "387bda66-8515-458f-a811-3b03ecc02b3a",
-                "resourcePath": "sprites\\anna_idle_left\\anna_idle_left.yy",
+                "resourcePath": "sprites\\spr_anna_idle_side\\spr_anna_idle_side.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2324,6 +2372,14 @@
                 "id": "5ff8dc2b-a209-4ade-8fc7-abb17d108305",
                 "resourcePath": "scripts\\inputdog_find_inputmanager_child_by_gamepad\\inputdog_find_inputmanager_child_by_gamepad.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6296021f-77e3-4a77-af82-b22a78ca1f4f",
+            "Value": {
+                "id": "cf680a51-ad87-491c-80f3-a5c506b9f331",
+                "resourcePath": "sprites\\spr_anna_melee_up1\\spr_anna_melee_up1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2434,7 +2490,7 @@
             "Key": "6735cbf2-0e5b-496c-9786-c5f666d2d786",
             "Value": {
                 "id": "41b7e360-6eef-43d1-ac42-e43cdcd5d58d",
-                "resourcePath": "sprites\\anna_vodka_up\\anna_vodka_up.yy",
+                "resourcePath": "sprites\\spr_anna_vodka_up\\spr_anna_vodka_up.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2866,7 +2922,7 @@
             "Key": "78c5c58d-ea40-4d1c-936b-e2174635ff4a",
             "Value": {
                 "id": "9739f080-80cf-493a-8251-f3870ddf5d72",
-                "resourcePath": "sprites\\anna_melee_up\\anna_melee_up.yy",
+                "resourcePath": "sprites\\spr_anna_melee_up\\spr_anna_melee_up.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3004,6 +3060,14 @@
                 "id": "fa1ff82e-84db-49a1-9ef4-800d3bef127c",
                 "resourcePath": "views\\7e40bb21-19e7-4518-9c1c-d514e44a2aa2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7e6b8c60-29bf-4196-aca2-e615b7527aa7",
+            "Value": {
+                "id": "4d278784-46cd-43bf-9938-206912df2ad5",
+                "resourcePath": "sprites\\spr_anna_melee_down2\\spr_anna_melee_down2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4098,7 +4162,7 @@
             "Key": "afad32b8-6258-42f8-8d7e-fb5d4a9d82ac",
             "Value": {
                 "id": "5964fbc6-0243-431d-93d7-590a43792fe0",
-                "resourcePath": "sprites\\anna_victory\\anna_victory.yy",
+                "resourcePath": "sprites\\spr_anna_victory\\spr_anna_victory.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4220,6 +4284,14 @@
                 "id": "686e9c96-7658-4bfe-9d0d-93f5997f44ae",
                 "resourcePath": "objects\\obj_tempPlayer\\obj_tempPlayer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b5c2015a-86b2-47e3-8bdc-65fda5942521",
+            "Value": {
+                "id": "8b9edc73-2f3d-4a8b-8142-7fb6fc43b6ff",
+                "resourcePath": "sprites\\spr_anna_melee_up3\\spr_anna_melee_up3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4370,7 +4442,7 @@
             "Key": "bc9f5e30-a522-47e8-9ede-3cf807b2e5a2",
             "Value": {
                 "id": "30eae9bc-215b-4226-94e3-198ff6b995ac",
-                "resourcePath": "sprites\\anna_melee_qleft\\anna_melee_qleft.yy",
+                "resourcePath": "sprites\\spr_anna_melee_side\\spr_anna_melee_side.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4570,7 +4642,7 @@
             "Key": "c4a5bba2-a62b-4816-9e54-6c3d13e1b2bf",
             "Value": {
                 "id": "d4c31ddb-42de-4149-b671-b2a030479725",
-                "resourcePath": "sprites\\anna_run_left\\anna_run_left.yy",
+                "resourcePath": "sprites\\spr_anna_run_side\\spr_anna_run_side.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4783,6 +4855,14 @@
             }
         },
         {
+            "Key": "ce1d8ab6-48aa-4f08-8928-de94a04d7d13",
+            "Value": {
+                "id": "d2e1f8d0-37b6-45c4-9de1-4590546230ba",
+                "resourcePath": "sprites\\spr_anna_melee_down3\\spr_anna_melee_down3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ce23cae3-7a78-4b07-8ce5-9f30d0c7556d",
             "Value": {
                 "id": "f8275f00-a575-4160-b1f7-37b5909e8e8b",
@@ -4914,7 +4994,7 @@
             "Key": "d43d45e9-e856-40f4-a285-d596ac7a6258",
             "Value": {
                 "id": "518febeb-8317-4cf0-bf64-ee03036aa365",
-                "resourcePath": "sprites\\anna_idle_up\\anna_idle_up.yy",
+                "resourcePath": "sprites\\spr_anna_idle_up\\spr_anna_idle_up.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5847,10 +5927,18 @@
             }
         },
         {
+            "Key": "f9c10e79-87c6-4065-912c-6abe3d078430",
+            "Value": {
+                "id": "6aaef0dc-331e-46d6-b345-adc18cd88e25",
+                "resourcePath": "sprites\\spr_anna_melee_side2\\spr_anna_melee_side2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fa0ede77-ed30-4191-9363-33dd8bfd46b1",
             "Value": {
                 "id": "9205dd21-2152-4d3f-91e0-a2e0e6acdc6c",
-                "resourcePath": "sprites\\anna_vodka_down\\anna_vodka_down.yy",
+                "resourcePath": "sprites\\spr_anna_vodka_down\\spr_anna_vodka_down.yy",
                 "resourceType": "GMSprite"
             }
         },

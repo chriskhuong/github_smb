@@ -178,31 +178,44 @@ switch(character){
         
         dmg = 5;
         hp = 10;
+		maxSequence = 3;
 		
         //moving
-        sprite[RIGHT, MOVE] = spr_anna_temp;
-        sprite[UP, MOVE] = spr_anna_temp;
-        sprite[LEFT, MOVE] = spr_anna_temp;
-        sprite[DOWN, MOVE] = spr_anna_temp;
+        sprite[RIGHT, MOVE] = spr_anna_run_side;
+        sprite[UP, MOVE] = spr_anna_run_up;
+        sprite[LEFT, MOVE] = spr_anna_run_side;
+        sprite[DOWN, MOVE] = spr_anna_run_down;
         
         //idle
-        sprite[RIGHT, IDLE] = spr_anna_temp;
-        sprite[UP, IDLE] = spr_anna_temp;
-        sprite[LEFT, IDLE] = spr_anna_temp;
-        sprite[DOWN, IDLE] = spr_anna_temp;
+        sprite[RIGHT, IDLE] = spr_anna_idle_side;
+        sprite[UP, IDLE] = spr_anna_idle_up;
+        sprite[LEFT, IDLE] = spr_anna_idle_side;
+        sprite[DOWN, IDLE] = spr_anna_idle_down;
         
-        //attacking
-        sprite[RIGHT, ATTACK] = spr_melee_fist;
-        sprite[UP, ATTACK] = spr_melee_fist2;
-        sprite[LEFT, ATTACK] = spr_melee_fist;
-        sprite[DOWN, ATTACK] = spr_melee_fist2;
+        //combos
+		sCombo[0] = spr_anna_melee_side1;
+		sCombo[1] = spr_anna_melee_side2;
+		sCombo[2] = spr_anna_melee_side3;
+		
+		uCombo[0] = spr_anna_melee_up1;
+		uCombo[1] = spr_anna_melee_up2;
+		uCombo[2] = spr_anna_melee_up3;
+		
+		dCombo[0] = spr_anna_melee_down1;
+		dCombo[1] = spr_anna_melee_down2;
+		dCombo[2] = spr_anna_melee_down3;
         
+		//attacking
+        sprite[RIGHT, ATTACK] = sCombo[attackSequence];
+        sprite[UP, ATTACK] = uCombo[attackSequence];
+        sprite[LEFT, ATTACK] = sCombo[attackSequence];
+        sprite[DOWN, ATTACK] = dCombo[attackSequence];
 		
 		//REALLY STUPID HARDCODE, FIND A FIX
-		sprite[RIGHT, STUN] = spr_anna_temp;
-		sprite[UP, STUN] = spr_anna_temp;
-		sprite[LEFT, STUN] = spr_anna_temp;
-		sprite[DOWN, STUN] = spr_anna_temp;
+		sprite[RIGHT, STUN] = spr_anna_hurt;
+		sprite[UP, STUN] = spr_anna_hurt;
+		sprite[LEFT, STUN] = spr_anna_hurt;
+		sprite[DOWN, STUN] = spr_anna_hurt;
         /*
         /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
         //SPECIAL
