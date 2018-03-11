@@ -1,6 +1,6 @@
 ///Drop loot
 
-//instance_create(x, y, obj_expr);
+//instance_create(x, y, obj_health);
 
 /*
 if (scr_chance(.35))

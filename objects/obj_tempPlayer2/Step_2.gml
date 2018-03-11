@@ -24,5 +24,5 @@ if(hit)
 		//hspd = 15;//hitBy.xHit
 		len = knockback;//hitBy.yHit
 		hit = false;
-		state = scr_hitStun;
+		state = scr_hitStunState;
 	}
