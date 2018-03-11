@@ -10,10 +10,11 @@
         "2febc938-fec4-4c78-84b8-a176c3afbe58",
         "3befdaf4-6381-4fff-a779-3654712ef0a3",
         "bf785c40-ed67-4fca-ae08-002f81973e16",
-        "c69e5764-6744-4c82-b658-9bd080fef90e"
+        "c69e5764-6744-4c82-b658-9bd080fef90e",
+        "855c2912-793f-44fc-9feb-3a14b5dfc072"
     ],
     "filterType": "GMSprite",
-    "folderName": "group_spr_Environment",
+    "folderName": "Environment",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -22,7 +22,7 @@
         "94342bf7-2c38-46f0-ae31-5dcb4444c685"
     ],
     "filterType": "GMSprite",
-    "folderName": "group_Prototype_Sprites",
+    "folderName": "Prototype_Sprites",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

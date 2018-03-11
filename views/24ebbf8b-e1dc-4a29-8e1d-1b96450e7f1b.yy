@@ -25,12 +25,12 @@
         "783e5260-09cd-4cda-a0db-928f026f59a5",
         "c4728507-2830-498f-b63f-21adfe7cfab7",
         "6fb7ee2c-8dc1-4cbc-b655-dbcc992d501c",
-        "022c35be-42aa-427d-81d6-8f1148a0542b",
-        "0819d8a0-031b-4d76-8d00-c7f8c3d28027",
-        "dab20852-d0b8-42a1-a95d-eb12ed5a2b64"
+        "777910ed-b392-47ae-8d10-abe47c8a78f8",
+        "0fcb2cbb-b880-4352-b892-b7325b15a7c4",
+        "125605ff-7bcc-4154-8933-a36509633376"
     ],
     "filterType": "GMSprite",
-    "folderName": "group_spr_Props",
+    "folderName": "Props_Sakura",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -10,7 +10,7 @@
         "d31dd108-7674-4149-a742-4a17ef9e4b3d"
     ],
     "filterType": "GMSprite",
-    "folderName": "group_spr_Tilesets",
+    "folderName": "Tilesets",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
