@@ -4,6 +4,11 @@ var unchosen = .25;
 var chosen = 1;
 	
 facing = DOWN;
+myTargetX = x + 40;
+myTargetY = y
+
+creator.xaim = 0;
+creator.yaim = 0;
 
 if (obj_lobby.ready && confirmed && creator.pause_key)
 	{

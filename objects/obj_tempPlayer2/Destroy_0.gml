@@ -4,7 +4,3 @@ with(myStats)
 	{
 		instance_destroy();
 	}
-with(myGun)
-	{
-		instance_destroy();
-	}

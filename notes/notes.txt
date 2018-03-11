@@ -27,3 +27,11 @@ have color select also change the target color
 
 //ADVANCED BOSS TUTORIAL stopped at the fireball section, not the biggest fan of this tutorial though
 //this tutorial is seriously garbage, bad syntax
+
+//DEBUGGING
+show_debug_overlay(true);
+
+*Change collision checking on the bullets, instead of having all of the bullets check for a lifeform to hit, just have the lifeforms check for the bullets
+
+*sprite groups to keep texture swaps low
+

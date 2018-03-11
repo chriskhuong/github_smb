@@ -34,35 +34,14 @@ switch (facing)    //change facing to image_index
         
     }
 
-//create hitbox on the right frame
-/*
-if (image_index >= 2 && hitbox == -1 && attacked == false)
-	{
-		hitbox = scr_hitboxCreate(500, 500, attack_x, attack_y, 250, 3, 3, 45);
-		//var D = instance_create_depth(attack_x, attack_y, depth, obj_damage);
-		attacked = true;
-		attackSequence++;
-		alarm[0] = room_speed;
-	}
-*/
 
 if (image_index >= 2 && attacked == false)   //used >= rather than == to avoid jumps in decimals
     {
-	/*
-		//if (friendlyFire == true)
-			{
-				creator = id;
-			}
-		else
-	*/	
-		//
 		var D = instance_create_depth(attack_x, attack_y, depth, obj_damage);
 		D.creator = id;
 		D.creatorTag = tag;
         D.damage = id.dmg;
 		
-		//show_debug_message("Damage :" + string(dmg));
-        //var dmgOBJ = scr_damage(attack_x, attack_y, creatorTag, damage);
         attacked = true;
 		attackSequence++;
 		alarm[0] = room_speed;

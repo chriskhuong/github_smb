@@ -11,6 +11,7 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
         var xdir = lengthdir_x(8, facing*90)
         var ydir = lengthdir_y(8, facing*90)
         var speaker = instance_place(x + xdir, y + ydir, obj_speaker);
+		
 		#region chat and other events
         if (speaker != noone)
             {
@@ -37,6 +38,7 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
                     }
             }
             #endregion
+		
         else if (myStats.stamina >= 5)
             {
                 //dash
@@ -49,31 +51,24 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
 
 #endregion
 
-#region DEATH TESTING
-/*
-if (myStats.hp <= 0)
-	{
-		myStats.hp = 0;
-		state = scr_ghostState1;
-	}
-*/
-#endregion
 
 #region Melee
 if (creator.attack_key)
     {
+		state = scr_attackState;
+		image_index = 0;
+		
 		var xdir = lengthdir_x(8, facing*90)
         var ydir = lengthdir_y(8, facing*90)
         var dead = instance_place(x + xdir, y + ydir, obj_tempPlayer2);
-		#region chat and other events
+		#region interaction with dead body
         if (dead != noone)
             {
                 with (dead)
                     {
                         if (!alive)
                             {
-								//if (point_distance(x, y, dx, dy) <= 8)
-								//	{
+
 										alive = true;
 										state = scr_moveState2;
 										with (deadBody)
@@ -81,29 +76,11 @@ if (creator.attack_key)
 												alarm[0] = 60;
 												alarm[1] = 30;
 											}
-								//	}
-								//else
-								//	{
-								//		move_towards_point(dx, dy, 5);
-								//	}
-								/*
-                                dialog = instance_create_depth(x + xOffset, y + yOffset, depth, obj_dialog); //then we create a dialog object
-                                dialog.text = text; //sets the dialog's text. the speaker is telling the dialog box what to say
-								*/
                             }
                     }
 			}
 			#endregion
-        //image_index = 0;
-		//attack
-	    image_index = 0;
-	    //sprite[@RIGHT, ATTACK] = rcombo[attacksequence];
-	    //sprite[@UP, ATTACK] = ucombo[attacksequence];
-	    //sprite[@LEFT, ATTACK] = lcombo[attacksequence];
-	    //sprite[@DOWN, ATTACK] = dcombo[attacksequence];
 
-        state = scr_attackState;
-        //alarm[2] = 5;  //after implementing actual animations remove this line and uncomment the code in the 'Animation End' event
     }
 #endregion
 
@@ -208,17 +185,17 @@ else    //we're moving
 //Get the h and v speed
 
 //this fixes the speed of any  movement
-hspd = lengthdir_x(len, dir);
-vspd = lengthdir_y(len, dir);
-//collision_zoneX = !place_free(x + hspd, y);
-//collision_zoneY = !place_free(x, y + vspd);
+hspd = x + lengthdir_x(len, dir);
+vspd = y + lengthdir_y(len, dir);
+collision_zoneX = !place_free(x + hspd, y);
+collision_zoneY = !place_free(x, y + vspd);
 
 //Collision check if free
 if (place_free(hspd, vspd))
 	{
 		//Move
-		x += hspd;
-		y += vspd;
+		x = hspd;
+		y = vspd;
 	}
 else
 	{
@@ -229,13 +206,13 @@ else
 				for (var multiplier = -1; multiplier <= 1; multiplier += 2)
 					{
 						var angleToCheck = dir + angle * multiplier;
-						hspd = lengthdir_x(len, angleToCheck);
-						vspd = lengthdir_y(len, angleToCheck);
+						hspd = x + lengthdir_x(len, angleToCheck);
+						vspd = y + lengthdir_y(len, angleToCheck);
 						if (place_free(hspd, vspd))
 							{
-								x += hspd;
-								y += vspd;
-								//exit;
+								x = hspd;
+								y = vspd;
+								exit;
 							}
 					}
 			}
