@@ -1,21 +1,22 @@
-if(!obj_input2.paused) exit;
+
 
 var gwidth = global.view_width, gheight = global.view_height;
 
-var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid);
+var ds_grid = mainMenu_page[page], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
-var start_y = (gheight/3) - ((((ds_height-1)/2) * y_buffer)), start_x = gwidth/2.1;
+var start_y = (gheight/3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x = gwidth/2.1;
 
 // Draw pause menu "backgound"
-var c = c_black;
+var c = make_color_rgb(29,33,13);
 draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
+draw_sprite(spr_mainMenu,0,start_x/2,start_y/10)
 
 
 // Draw the elements on the left side
 draw_set_valign(fa_middle);
 draw_set_halign(fa_right);
 
-var leftTextXPos = start_x - x_buffer, leftTextYPos, xOff; 
+var leftTextXPos = start_x - x_buffer * 3, leftTextYPos, xOff; 
 
 var yy = 0; repeat(ds_height)
 {
@@ -32,7 +33,7 @@ var yy = 0; repeat(ds_height)
 }
 // Draw the dividing Line
 
-draw_line(start_x,start_y,start_x,leftTextYPos);
+//draw_line(start_x,start_y,start_x,leftTextYPos);
 
 // Draw Elements on the Right side
 draw_set_halign(fa_left);
@@ -44,7 +45,7 @@ yy= 0; repeat(ds_height)
 	rightTextYPosition = start_y + (yy*y_buffer);
 	switch(ds_grid[# 1, yy])
 	{
-		case menu_element_type.shift:
+		case mainMenu_element_type.shift:
 		var current_val = ds_grid [# 3, yy];
 		var current_array = ds_grid[# 4,yy];
 		var left_shift = "<< ";
@@ -59,7 +60,7 @@ yy= 0; repeat(ds_height)
 		draw_text_color(rightTextXPosition,rightTextYPosition,left_shift + current_array[current_val] + right_shift, c,c,c,c,1);
 		break;
 		
-		case menu_element_type.slider:
+		case mainMenu_element_type.slider:
 		var len = 64;
 		var current_val = ds_grid[# 3, yy];
 		var current_array = ds_grid[# 4, yy];
@@ -72,7 +73,7 @@ yy= 0; repeat(ds_height)
 		draw_text_color(rightTextXPosition + (len * 1.2), rightTextYPosition, string(floor(circle_pos*100))+"%",c,c,c,c,1);
 		break;
 		
-		case menu_element_type.toggle:
+		case mainMenu_element_type.toggle:
 		var current_val = ds_grid[# 3, yy];
 		var c1, c2;
 		c = c_white;
@@ -85,7 +86,7 @@ yy= 0; repeat(ds_height)
 		draw_text_color(rightTextXPosition + 32,rightTextYPosition,"OFF",c2,c2,c2,c2,1);
 		break;
 		
-		case menu_element_type.input:
+		case mainMenu_element_type.input:
 		
 		var current_val = ds_grid[# 3,yy];
 		var string_val;
@@ -106,4 +107,3 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
-

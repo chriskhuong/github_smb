@@ -13,7 +13,7 @@ global.key_up = vk_up;
 global.key_down = vk_down;
 
 
-display_set_gui_size(global.view_width, global.view_height);
+//display_set_gui_size(global.view_width, global.view_height);
 
 enum menu_page {
     main,

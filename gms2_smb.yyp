@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "16abf95f-01d1-41d5-b7f2-50f49ee96c8b",
+            "Value": {
+                "id": "a72af049-32be-4adc-8a78-5d9dcc509b79",
+                "resourcePath": "views\\16abf95f-01d1-41d5-b7f2-50f49ee96c8b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "16d86ccc-1491-4960-a7cf-1ed530b0d06b",
             "Value": {
                 "id": "55c1a13c-a774-4175-86ee-f3f307c1a61d",
@@ -2135,6 +2143,14 @@
             }
         },
         {
+            "Key": "52d41917-c109-4e4c-ab5c-2163c78c8cb0",
+            "Value": {
+                "id": "f2323407-d238-4e05-b0af-5472cf82d492",
+                "resourcePath": "sprites\\spr_mainMenu\\spr_mainMenu.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52def497-ff0b-4abf-803b-62d85b739dd8",
             "Value": {
                 "id": "4d0b930e-078b-4e04-9c3f-052ceafbb080",
@@ -2484,6 +2500,14 @@
                 "id": "5ff8dc2b-a209-4ade-8fc7-abb17d108305",
                 "resourcePath": "scripts\\inputdog_find_inputmanager_child_by_gamepad\\inputdog_find_inputmanager_child_by_gamepad.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6198fe00-456a-4be7-8eae-0b6f231713ff",
+            "Value": {
+                "id": "e037e339-b6cc-494e-8e6a-a8ebba6d1ad8",
+                "resourcePath": "views\\6198fe00-456a-4be7-8eae-0b6f231713ff.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3012,6 +3036,14 @@
                 "id": "4cb894e0-f7bb-41ca-9bdc-cb7e617281d6",
                 "resourcePath": "scripts\\scr_loadGame\\scr_loadGame.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "76fe952d-60c5-493f-a1b7-b2d0dea55c36",
+            "Value": {
+                "id": "64b03194-de23-418b-a73a-5385f6c0e02a",
+                "resourcePath": "objects\\obj_mainMenu\\obj_mainMenu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4295,6 +4327,14 @@
             }
         },
         {
+            "Key": "ac47a415-79b6-4d85-b810-c56a81697548",
+            "Value": {
+                "id": "34a7ff8c-e1bc-4ee7-a7be-6205f6efb61d",
+                "resourcePath": "scripts\\scr_playCredits\\scr_playCredits.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "acabe654-f5b6-49d5-8375-523a3c5b32df",
             "Value": {
                 "id": "f31078db-1bc8-4b2f-b136-39a687b8d13b",
@@ -4724,6 +4764,14 @@
                 "id": "fd7f67df-0c51-47fa-a259-edbb791c6d82",
                 "resourcePath": "sprites\\spr_maid_attack_up_02\\spr_maid_attack_up_02.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c05a676b-3832-4a7c-b843-fd6496f1e274",
+            "Value": {
+                "id": "4c0d3700-871f-4116-a769-4e5b5a5db353",
+                "resourcePath": "scripts\\scr_start_game\\scr_start_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5268,6 +5316,14 @@
                 "id": "8e23031a-d4c8-4636-8563-21492f7ac9d7",
                 "resourcePath": "scripts\\pal_swap_get_color_count\\pal_swap_get_color_count.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d657ece2-8630-4100-a4da-3b0eb5bdc0a4",
+            "Value": {
+                "id": "6966e202-db9f-474f-b504-8fff373a929a",
+                "resourcePath": "rooms\\rm_Main_Menu\\rm_Main_Menu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -6476,6 +6532,8 @@
         "3082943e-e584-4066-a80b-40a9038cef7f",
         "f0e0d4dd-49f3-46cd-92a2-36be7d4335b5",
         "223bff3c-e305-4d46-b575-763b5d1fe1fb",
+        "c05a676b-3832-4a7c-b843-fd6496f1e274",
+        "ac47a415-79b6-4d85-b810-c56a81697548",
         "b393a5ca-8bab-468c-b751-023e58384d5e",
         "9fb975ac-1aa6-4ec9-8090-62de88b8d6cd",
         "87370f8d-5985-460c-9fc9-825cbd7e5271",
