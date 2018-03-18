@@ -19,9 +19,10 @@ if (room == New_Testing_Room)
 		    {
 				current_pal--;
 			}
-		current_pal=wrap(current_pal,0,pal_swap_get_pal_count(my_pal_sprite)-1);
+			
+		current_pal=scr_wrap(current_pal,0,(pal_swap_get_pal_count(my_pal_sprite) - 1));
 		
-		myColor = pal_swap_get_pal_color(my_pal_sprite, current_pal, 17);
+		myColor = pal_swap_get_pal_color(my_pal_sprite, current_pal, 1);
 	}
 #endregion
 

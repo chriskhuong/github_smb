@@ -39,5 +39,5 @@ if (scr_chance(.25))
 	
 if (scr_chance(.25))
 	{
-		instance_create_depth(x + random_range(-4, 4), y + random_range(-4, 4),depth, obj_expr); //TEMP HEALTH
+		instance_create_depth(x + random_range(-4, 4), y + random_range(-4, 4),depth, obj_health); //TEMP HEALTH
 	}

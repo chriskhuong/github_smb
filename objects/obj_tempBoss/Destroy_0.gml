@@ -1,10 +1,10 @@
 ///Drop loot
 
-//instance_create(x, y, obj_expr);
+//instance_create(x, y, obj_health);
 /*
 if (scr_chance(1))
     {
-        instance_create_depth(x + random_range(-10, 10), y + random_range(-10, 10), depth, obj_expr);
+        instance_create_depth(x + random_range(-10, 10), y + random_range(-10, 10), depth, obj_health);
     }
 
 var inst;

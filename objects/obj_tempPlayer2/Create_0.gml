@@ -58,22 +58,6 @@ scr_weaponArray1(character);
 var_sprite_width = sprite_get_width(character * 2);
 var_sprite_height = sprite_get_height(character * 2);
 
-//prototyping target creation, not sure about any other options
-/*
-myTarget = instance_create_depth(x, y, depth, obj_target1);
-myTarget.creator = id;
-myGun = instance_create_depth(x - 5, y + 11, depth, obj_tempGun1);
-myGun.creator = id;
-*/
-
-/*
-myStats = instance_create_depth(x, y, depth, obj_playerStats2);
-myStats.creator = id;
-myStats.maxHp = hp;
-myStats.num = playerNum;
-*/
-//MAKES THIS^^^^
-
 #region hit/hurtbox
 /*
 hurtbox = scr_hurtboxCreate(30, 53, -15, -21);
@@ -141,12 +125,11 @@ myGunIndex = 0;
 #region palette stuff
 
 current_pal = 0;
-my_pal_sprite = spr_BritneyPAL;
+my_pal_sprite = spr_CLUT;
 pal_swap_index_palette(my_pal_sprite);
 
 ///Override stuff.
-override_surface=noone;
-override_pal_index=1;
+//override_surface=noone;
+//override_pal_index=1;
 
 #endregion
-
