@@ -1111,6 +1111,14 @@
             }
         },
         {
+            "Key": "2d777f1a-27bd-4cdb-b3df-00f2544eee0f",
+            "Value": {
+                "id": "76a1f44f-d386-43ec-8a78-7dd39f108aa1",
+                "resourcePath": "sprites\\spr_generic_explosion_2\\spr_generic_explosion_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e109cd6-48f9-406a-b22f-24a27454e1f6",
             "Value": {
                 "id": "6a3415d3-c5a8-4efa-bc0a-78f4c21cfe8c",
@@ -1148,6 +1156,14 @@
                 "id": "3f391297-f8a7-440f-860f-8e5cb6872a8a",
                 "resourcePath": "scripts\\scr_shieldState\\scr_shieldState.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2fdcf367-6fc8-4505-8ae3-23f44e40e300",
+            "Value": {
+                "id": "3c076495-cf33-4660-8393-72c29aa7a42d",
+                "resourcePath": "sprites\\spr_generic_explosion_1\\spr_generic_explosion_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3164,6 +3180,14 @@
                 "id": "a4bd040a-22cb-4d73-9110-22907e531de9",
                 "resourcePath": "scripts\\inputdog_load_default_gamepad_mapping\\inputdog_load_default_gamepad_mapping.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "81431bd3-01ed-48cf-8ba6-5003265bb281",
+            "Value": {
+                "id": "11d5a478-7aba-454c-be21-087a052b23ee",
+                "resourcePath": "sprites\\spr_generic_explosion_0\\spr_generic_explosion_0.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5579,6 +5603,14 @@
             "Value": {
                 "id": "4fafb345-3da1-4e57-b72d-c223907410ba",
                 "resourcePath": "sprites\\spr_Crate_2\\spr_Crate_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ea263090-e28f-433f-9faf-f798292ee047",
+            "Value": {
+                "id": "0f592832-095a-40ce-99e0-d636fd1f1513",
+                "resourcePath": "sprites\\spr_generic_explosion_3\\spr_generic_explosion_3.yy",
                 "resourceType": "GMSprite"
             }
         },
