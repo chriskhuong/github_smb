@@ -5,9 +5,9 @@
 if(!obj_input2.paused) exit;
 
 
-input_up_p = keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(0,gp_padu) || gamepad_button_check_pressed(0,gp_axislv);
-input_down_p = keyboard_check_pressed(global.key_down) || gamepad_button_check_pressed(0,gp_padd) || gamepad_button_check_pressed(0,gp_axislv);
-input_enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(0,gp_face1);
+input_up_p = keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(obj_input2.dvc,gp_padu) || gamepad_button_check_pressed(0,gp_axislv);
+input_down_p = keyboard_check_pressed(global.key_down) || gamepad_button_check_pressed(obj_input2.dvc,gp_padd) || gamepad_button_check_pressed(0,gp_axislv);
+input_enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(obj_input2.dvc,gp_face1);
 input_revert_p = keyboard_check_pressed(global.key_revert);
 
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid);

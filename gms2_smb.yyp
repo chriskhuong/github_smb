@@ -4735,6 +4735,14 @@
             }
         },
         {
+            "Key": "c683d37b-4abc-4903-a40c-39dd5bd2f0a2",
+            "Value": {
+                "id": "1db6ab04-d416-46ee-8a97-5aca0a6c59eb",
+                "resourcePath": "sprites\\spr_previewRevival\\spr_previewRevival.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c6855c85-11ee-4777-9138-a7cc4cfe6cdb",
             "Value": {
                 "id": "b23a137b-38e4-4f84-8b1e-e875b2db571d",

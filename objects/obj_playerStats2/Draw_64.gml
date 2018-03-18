@@ -55,7 +55,44 @@ for(var i = 0; i < hp/2; i++)
 	draw_sprite(spr_hearts,0,(xSpot - 10)+(xoff*i),ySpot - 8);
 }*/
 draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,ySpot - 15);
-draw_sprite(spr_cooldowns,0,xSpot - 34, ySpot + 18);
+
+// draw the sprite as a grey background
+draw_sprite_ext(spr_cooldowns,0,xSpot - 34, ySpot + 18,image_xscale,image_yscale,image_angle,-1,.3);
+/*var x1 = x - sprite_xoffset;
+var y1 = y - sprite_yoffset;
+var x2 = x + sprite_width;
+var y2 = y + sprite_height;
+draw_sprite_part(spr_cooldowns,0,x1,y1,x2,y2,xSpot - 34, ySpot + 18);
+*/
+
+
+/*
+if(stamina == maxStamina)
+{
+	draw_sprite(spr_cooldowns,0,xSpot - 34, ySpot + 18);	
+}
+if(stamina <= 8 && stamina > 6)
+{
+	draw_sprite_part(spr_cooldowns,0,4,8,24,25,xSpot - 30, ySpot + 30);
+}
+if(stamina <= 6 && stamina > 5)
+{
+	draw_sprite_part(spr_cooldowns,0,4,10,24,25,xSpot - 30, ySpot + 30);
+}
+if(stamina <= 5 && stamina > 4)
+{
+	draw_sprite_part(spr_cooldowns,0,4,14,24,25,xSpot - 30, ySpot + 30);
+}
+if(stamina <= 4 && stamina > 2)
+{
+	draw_sprite_part(spr_cooldowns,0,4,18,24,25,xSpot - 30, ySpot + 30);
+}
+if(stamina <= 2 && stamina > 0)
+{
+	draw_sprite_part(spr_cooldowns,0,4,22,24,25,xSpot - 30, ySpot + 30);
+}
+*/
+////////////////////////////////////////////////////////////////////////////////////////
 draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);
 //draw_set_font(global.fontAmmo);
 
