@@ -30,11 +30,11 @@ if (hp <= 0)
         hp = maxHp;
 		creator.state = scr_ghostState1;
     }
-    
+  
 //stamina regen
 if (stamina < maxStamina && alarm[0] == -1)
     {
-        stamina++;
+        stamina += .1;
     }
 
 //Pause the Game

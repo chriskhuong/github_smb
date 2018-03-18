@@ -9,9 +9,27 @@ var start_y = (gheight/3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x = g
 // Draw pause menu "backgound"
 var c = make_color_rgb(29,33,13);
 draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
-draw_sprite(spr_mainMenu,0,start_x/2,start_y/10)
-
-
+if(page != 2)
+draw_sprite(spr_mainMenu,0,start_x/2,start_y/10);
+if(page == 2)
+{
+	draw_sprite(spr_previewRevival,0,start_x/2,start_y/5);
+	if(menu_option[page] == 0)
+	{
+		draw_text(start_x,start_y, "Objective: Maid Brigade's military operations.");
+		draw_text(start_x,start_y + 20, "Destroy all enemies.");
+	}
+	if(menu_option[page] == 1)
+	{
+		draw_text(start_x,start_y, "Objective: Survive as long as you can in our");
+		draw_text(start_x,start_y + 20, "swarm of slimes.");	
+	}
+		if(menu_option[page] == 2)
+	{
+		draw_text(start_x,start_y, "Objective: Battle against other players in our");
+		draw_text(start_x,start_y + 20, "PVP game.");	
+	}
+}
 // Draw the elements on the left side
 draw_set_valign(fa_middle);
 draw_set_halign(fa_right);
@@ -23,7 +41,7 @@ var yy = 0; repeat(ds_height)
 	leftTextYPos = start_y + (yy*y_buffer);
 	c = c_white;
 	xOff = 0;
-	if(yy== menu_option[page])
+	if(yy == menu_option[page])
 	{
 		c = c_red;
 		xOff = -(x_buffer/2);
