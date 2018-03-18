@@ -4,18 +4,10 @@
     "mvc": "1.0",
     "name": "InputForPlayer3",
     "eventList": [
-        {
-            "id": "98363a30-776c-4902-a6a8-79efdb359dcf",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "4b477f27-6dbd-4831-bf69-0817489f4fe3"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
     "parentObjectId": "7370ef52-1d1f-45de-8df6-ca4f50aa08a4",
     "persistent": true,
     "physicsAngularDamping": 0.1,
@@ -32,6 +24,7 @@
         
     ],
     "physicsStartAwake": true,
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

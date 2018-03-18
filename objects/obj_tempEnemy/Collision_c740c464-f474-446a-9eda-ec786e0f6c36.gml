@@ -1,5 +1,5 @@
 ///Damage the player
-
+/*
 if (state != scr_enemy_stallState)  //make sure we don't damage the player in the stall state
     {
 		if (other.alive = true)

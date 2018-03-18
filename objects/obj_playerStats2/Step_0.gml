@@ -16,8 +16,8 @@ if (stamina < maxStamina && alarm[0] == -1)
 //show_debug_message(string(xCam) + " " + string(yCam));
 //Zoom View
 var zoom_speed = .1;
-view_zoom += obj_input2.zoom_in * zoom_speed;
-view_zoom -= obj_input2.zoom_out * zoom_speed;
+//view_zoom += obj_input2.zoom_in * zoom_speed;
+//view_zoom -= obj_input2.zoom_out * zoom_speed;
 
 if(room != New_Testing_Room)
 	{

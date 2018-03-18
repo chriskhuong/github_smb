@@ -5551,6 +5551,14 @@
             }
         },
         {
+            "Key": "e8d51b2c-e62a-4ba2-9ec1-d01d5c37f98b",
+            "Value": {
+                "id": "ff417482-5864-4439-bac0-4afbb03e241e",
+                "resourcePath": "scripts\\scr_addInputs\\scr_addInputs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e8dc6d61-6358-4e20-8728-0790c82d23e2",
             "Value": {
                 "id": "60e3bd34-379b-45bb-9f1c-9d36609daa00",
@@ -6193,6 +6201,7 @@
         "a02cf68c-8992-4070-a77a-e03d38ac0272",
         "d7b68cd8-4495-452a-9fe0-ac58c6f44c15",
         "eb0f101b-b836-41ab-a312-6605b1735057",
+        "e8d51b2c-e62a-4ba2-9ec1-d01d5c37f98b",
         "468d11ca-8c6d-4f69-994e-1ac7c2824306",
         "e5d5e3d7-71e5-49e9-aed9-accd8b02b8de",
         "76f3f1a3-587a-4e7e-813d-89da16a7b2cf",
@@ -6264,6 +6273,9 @@
         "af7fb6d8-9826-4676-b85a-1ae173f7bcf4",
         "0ac59313-0faa-4348-beac-7b8d9834d7d2",
         "e65efc5b-a2d5-4d6d-b0f0-3567b7a226fd",
+        "88624c51-1686-4eb4-8006-c760d0519fcf",
+        "9f19a5bd-1ef3-46f8-851f-ab5dc45908e0",
+        "4ddfe61a-42c0-44a5-b30e-ac385eee384a",
         "7ce54ea6-2d1b-4aad-b335-594946822d13",
         "ec2e642e-6086-4672-b9e1-8d739228c879",
         "c99dbb6a-abca-4e56-ab61-676f5bc6e7c0",
@@ -6308,10 +6320,7 @@
         "87370f8d-5985-460c-9fc9-825cbd7e5271",
         "2a6919d0-cc6d-4ae0-b9c7-f3bd1987c5ed",
         "2f69f51f-1f06-4908-bf4d-d1e13c21978e",
-        "953a39b0-a73e-449e-a21d-255e0bc683a0",
-        "88624c51-1686-4eb4-8006-c760d0519fcf",
-        "9f19a5bd-1ef3-46f8-851f-ab5dc45908e0",
-        "4ddfe61a-42c0-44a5-b30e-ac385eee384a"
+        "953a39b0-a73e-449e-a21d-255e0bc683a0"
     ],
     "tutorial": ""
 }

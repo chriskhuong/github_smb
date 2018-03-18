@@ -58,7 +58,7 @@ if (confirmed == false)
 	    }
 }
 
-if (creator.attack_key && !confirmed)
+if (creator.attack_key && obj_lobby.can_do && !confirmed)
 	{
 		scr_characterData(character);
 		scr_weaponArray1(character);
@@ -69,7 +69,7 @@ if (creator.attack_key && !confirmed)
 		myStats.hp = myStats.maxHp;
 	}
 
-if (creator.temp_back && confirmed)
+if (creator.cancel && confirmed)
 	{
 		confirmed = false;
 		if (instance_exists(myCounter))

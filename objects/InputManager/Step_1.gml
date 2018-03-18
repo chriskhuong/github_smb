@@ -1,4 +1,7 @@
 /// @description update inputs
+
+scr_getInput(playerSlot);
+
 ds_map_copy(inputsDownLastFrame, inputsDown);
 
 for(i=0; i<ds_list_size(inputs); i++)
@@ -16,7 +19,7 @@ for(i=0; i<ds_list_size(inputs); i++)
         ds_map_replace(inputsDown, INPUT, MAX);
     }
 }
-
+/*
 ///replays
 switch(replayMode)
 {
@@ -49,7 +52,7 @@ switch(replayMode)
     
         (last frame inputs are written as normal
               in the inputmanager begin step event)
-    */  
+   * /  
     
     // get the current inputs from the log
     var INPUTS_DOWN = lastInputsDown;
@@ -98,7 +101,7 @@ switch(replayMode)
     break;
 }
 replayFrame++;
-
+*/
 /* */
 ///apply and fade rumble
 if(gamepadSlot != -1)

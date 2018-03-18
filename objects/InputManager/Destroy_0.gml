@@ -10,5 +10,6 @@ ds_map_destroy(customGamepadInputs);
 ds_map_destroy(inputsDown);
 ds_map_destroy(inputsDownLastFrame);
 
+/*
 ds_map_destroy(replayLog);
-
+*/

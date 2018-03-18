@@ -46,6 +46,7 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
                 state = special[character, ability];  //sets the state to scr_dashState
                 alarm[0] = timer[character, ability];    //sets how long the scr_dashState is active
                 myStats.alarm[0] = room_speed;
+				
             }
 }
 
@@ -127,26 +128,32 @@ if (creator.active_items_key && weaponArray[0,14] != noone)
 /* wtf wtf wtf wtf wtf */
 
 var fireRate = weaponArray[weapon, 3];
-//var currentClip = weaponArray[obj_tempGun.weapon, 8]; 11
-var clipReload = weaponArray[weapon, 9];
-var ammoMax = weaponArray[weapon, 10];
-//var currentAmmo = weaponArray[obj_tempGun.weapon, 10]; 12;
+//var clipReload = weaponArray[weapon, 9];
+//var ammoMax = weaponArray[weapon, 10];
 
 //general shooting
-if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 11] > 0)
+if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 8] > 0)
     {
         script_execute(weaponArray[weapon, 4]);
         myStats.alarm[1] = fireRate;
         myStats.can_shoot = false;
-        weaponArray[weapon, 11] -= 1;
+		weaponArray[weapon, 8] = scr_approach(weaponArray[weapon, 8], 0, 1);
+		//show_debug_message(string(weaponArray[weapon, 11]));
+		/*
         show_debug_message(string(weaponArray[weapon, 11]) +  " " + 
         string(clipReload) +  " " +
         string(weaponArray[weapon, 12]));
+		*/
     }
-    
+/*   
 //SIZE OF CLIP
 var clipSize = weaponArray[weapon, 8];
-    
+*/
+if(creator.reload)
+	{
+		weaponArray[weapon, 8] = scr_approach(weaponArray[weapon, 8], weaponArray[weapon, 10], weaponArray[weapon, 9]);
+	}
+/*
 if (creator.reload && weaponArray[weapon, 11] != clipSize)
     {
         if (weaponArray[weapon, 12] > 0)
@@ -163,6 +170,7 @@ else if(creator.reload && weaponArray[weapon, 11] == clipSize)
     {
         show_debug_message(string(weaponArray[weapon, 11]) + " " + string(clipReload));
     }
+*/
 #endregion
 
 #region Movement

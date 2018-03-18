@@ -41,4 +41,3 @@ view_w = ideal_width;
 view_h = ideal_height;
 
 room_goto_next();
-

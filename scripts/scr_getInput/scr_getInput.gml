@@ -1,30 +1,28 @@
 ///scr_getInput(device)
+playerSlot = argument0;
 
-right_key = keyboard_check(ord("D"));
-left_key = keyboard_check(ord("A"));
-up_key = keyboard_check(ord("W"));
-down_key = keyboard_check(ord("S"));
-right_aim = keyboard_check(vk_right); //|| keyboard_check(ord('D'));
-left_aim = keyboard_check(vk_left); //|| keyboard_check(ord('A'));
-up_aim = keyboard_check(vk_up); //|| keyboard_check(ord('W'));
-down_aim = keyboard_check(vk_down); //|| keyboard_check(ord('S'));
-dash_key = keyboard_check_pressed(ord("Q"));    //change this variable to 'action' not everyone can dash
-attack_key = keyboard_check_pressed(ord("V")) || mouse_check_button(mb_right);  //change this variable to 'shoot' //come back to this
-pause_key = keyboard_check_pressed(vk_escape);
-fire_key = keyboard_check(vk_space);
-fire_mouse = mouse_check_button(mb_left);
-grenade_key = mouse_check_button_pressed(ord("G"));
-grenade_release = mouse_check_button_released(ord("G"));   //for my purposes which may not be used.
-//swap_key = keyboard_check_pressed(vk_tab);
-swap_mode = keyboard_check_pressed(ord("`")); //AIMING PURPOSES
-zoom_in = keyboard_check(vk_add);
-zoom_out = keyboard_check(vk_subtract);
-reload = keyboard_check(ord("R"));
-active_items_key = keyboard_check_pressed(ord("Z"));
-passive_items_key = keyboard_check_pressed(ord("V"));
-switch_weapon = keyboard_check_pressed(vk_tab);
-switch_char_up = keyboard_check_pressed(ord("N")); //TEMPORARY CHARACTER SWAP
-switch_char_down = keyboard_check_pressed(ord("M")); //TEMPORARY CHARACTER SWAP
+right_key		= inputdog_down("right",				playerSlot);	//keyboard_check(ord("D"));
+left_key		= inputdog_down("left",					playerSlot);	//keyboard_check(ord("A"));
+up_key			= inputdog_down("up",					playerSlot);	//keyboard_check(ord("W"));
+down_key		= inputdog_down("down",					playerSlot);	//keyboard_check(ord("S"));
+right_aim		= inputdog_down("aimright",				playerSlot);	//keyboard_check(vk_right); //|| keyboard_check(ord('D'));
+left_aim		= inputdog_down("aimleft",				playerSlot);	//keyboard_check(vk_left); //|| keyboard_check(ord('A'));
+up_aim			= inputdog_down("aimup",				playerSlot);	//keyboard_check(vk_up); //|| keyboard_check(ord('W'));
+down_aim		= inputdog_down("aimdown",				playerSlot);	//keyboard_check(vk_down); //|| keyboard_check(ord('S'));
+dash_key		= inputdog_pressed("dash_key",			playerSlot);	//keyboard_check_pressed(ord("Q"));    //change this variable to 'action' not everyone can dash
+attack_key		= inputdog_pressed("attack_key",		playerSlot);	//keyboard_check_pressed(ord("V")) || mouse_check_button(mb_right);  //change this variable to 'shoot' //come back to this
+cancel			= inputdog_pressed("cancel",			playerSlot);	//keyboard_check(ord("R"));
+reload			= inputdog_pressed("reload",			playerSlot);	//keyboard_check(ord("R"));
+action			= inputdog_pressed("action",			playerSlot);	//keyboard_check(ord("R"));
+pause_key		= inputdog_pressed("pause_key",			playerSlot);	//keyboard_check_pressed(vk_escape);
+fire_key		= inputdog_down("fire_key",				playerSlot);	//keyboard_check(vk_space);
+grenade_key		= inputdog_pressed("grenade_key",		playerSlot);	//mouse_check_button_pressed(ord("G"));
+ult_key			= inputdog_pressed("ultimate",			playerSlot);	//keyboard_check_pressed(ord("E"));
+swap_mode		= inputdog_pressed("swap_mode",			playerSlot);	//keyboard_check_pressed(ord("`")); //AIMING PURPOSES
+active_items_key= inputdog_pressed("active_items_key",	playerSlot);	//keyboard_check_pressed(ord("Z"));
+switch_weapon	= inputdog_pressed("switch_weapon",		playerSlot);	//keyboard_check_pressed(vk_tab);
+switch_char_up	= inputdog_pressed("switch_char_up",	playerSlot);	//keyboard_check_pressed(ord("N")); //TEMPORARY CHARACTER SWAP
+switch_char_down= inputdog_pressed("switch_char_down",	playerSlot);	//keyboard_check_pressed(ord("M")); //TEMPORARY CHARACTER SWAP
 //aiming
 
 //Get the axis
@@ -34,12 +32,15 @@ yaxis = (down_key - up_key);
 xaim = (right_aim - left_aim);
 yaim = (down_aim - up_aim);
 
+
+return playerSlot;
 //Variable for multiplayer joypad input
 
-dvc = argument0; //dvc is the device (the controller)
+//dvc = argument0; //dvc is the device (the controller)
 
 //Check for gamepad input
 //ALL INPUT IS TBD AFTER TESTING
+/*
 if (gamepad_is_connected(dvc))
     {
         gamepad_set_axis_deadzone(dvc, .35);
@@ -63,3 +64,4 @@ if (gamepad_is_connected(dvc))
     }
 
 return dvc;
+*/

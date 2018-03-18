@@ -15,7 +15,7 @@ if (room == New_Testing_Room)
 		    {
 				current_pal++;
 			}
-		if(creator.SOMETHING)
+		if(creator.ult_key)
 		    {
 				current_pal--;
 			}
