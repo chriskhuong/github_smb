@@ -246,9 +246,10 @@ switch(character){
 
 //Character Special Array
 //BRITNEY
-special[BRITNEY, ABILITY] = scr_teatimeState;  //change to teatime
+skill[BRITNEY, ABILITY] = scr_teatimeState;  //change to teatime
 timer[BRITNEY, ABILITY] = 15;
 //special[BRITNEY, ULTIMATE];
+special[BRITNEY, ABILITY] = spr_britney_death;
 special[BRITNEY, DEAD] = spr_britney_death;
 special[BRITNEY, STUN] = spr_britney_hurt;
 special[BRITNEY, GHOST] = spr_ghost_britney;
@@ -256,9 +257,10 @@ special[BRITNEY, NAME] = "BRITNEY";
 special[BRITNEY, FACE] = 0;
 
 //JO
-special[JO, ABILITY] = scr_dashState;
+skill[JO, ABILITY] = scr_dashState;
 timer[JO, ABILITY] = room_speed/6;
 //special[JO, ULTIMATE]
+special[JO, ABILITY] = spr_jo_death;
 special[JO, DEAD] = spr_jo_death;
 special[JO, STUN] = spr_jo_hurt;
 special[JO, GHOST] = spr_jo_hurt;
@@ -266,9 +268,10 @@ special[JO, NAME] = "JO";
 special[JO, FACE] = 1;
 
 //MIO
-special[MIO, ABILITY] = scr_teleportState;
+skill[MIO, ABILITY] = scr_teleportState;
 timer[MIO, ABILITY] = 2;
 //special[MIO, ULTIMATE]
+special[MIO, ABILITY] = spr_mio_death;
 special[MIO, DEAD] = spr_mio_death;
 special[MIO, STUN] = spr_mio_hurt;
 special[MIO, GHOST] = spr_ghost_mio;
@@ -276,9 +279,10 @@ special[MIO, NAME] = "MIO";
 special[MIO, FACE] = 2;
 
 //ANNA
-special[ANNA, ABILITY] = scr_backhandState;  //change to backhand **TRY FIXING THIS SHIT SO WE DON'T NEED DUPLICATE SCRITPS**
+skill[ANNA, ABILITY] = scr_backhandState;  //change to backhand **TRY FIXING THIS SHIT SO WE DON'T NEED DUPLICATE SCRITPS**
 timer[ANNA, ABILITY] = 2;
 //special[ANNA, ULTIMATE]
+special[ANNA, ABILITY] = spr_anna_death;
 special[ANNA, DEAD] = spr_anna_death;
 special[ANNA, STUN] = spr_anna_hurt;
 special[ANNA, GHOST] = spr_ghost_anna;
@@ -286,7 +290,7 @@ special[ANNA, NAME] = "ANNA";
 special[ANNA, FACE] = 3;
 
 //SEBASTIAN
-special[SEBASTIAN, ABILITY] = scr_shieldState;  //change to shield thing
+skill[SEBASTIAN, ABILITY] = scr_shieldState;  //change to shield thing
 timer[SEBASTIAN, ABILITY] = room_speed/6;
 //special[SEBASTIAN, ULTIMATE]
 special[SEBASTIAN, DEAD] = 0;

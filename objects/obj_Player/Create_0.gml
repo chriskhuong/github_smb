@@ -54,7 +54,8 @@ states_array[sStun]		= scr_hitStunState;
 states_array[sDead]		= -1;
 states_array[sGhost]	= scr_ghostState;
 states_array[sReload]	= scr_reloadState;
-states_array[sAbility]	= special[character, ability];
+						//special[character, ability];
+states_array[sAbility]	= scr_abilityState;
 
 //state machine
 target_state = scr_keyTargeting_state2;

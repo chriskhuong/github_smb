@@ -184,7 +184,6 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
 
 if (creator.attack_key)
     {
-		//image_index = 0;
 		state = sAttack;
 		
 		//Will probably scrap this VVV

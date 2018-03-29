@@ -2,7 +2,7 @@
 
 if (state != scr_enemy_stallState)  //make sure we don't damage the player in the stall state
     {
-		if (other.alive == true && other.state != scr_hitStunState)
+		if (other.alive == true && other.hit == false)
 			{	
 				other.myStats.hp -= 1;
 				other.hit = true;

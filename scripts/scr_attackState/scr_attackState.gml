@@ -4,7 +4,7 @@
 
 myState = "Attack";
 myGunAlpha = 0;
-image_speed = 1;
+image_speed = 2;
 movement = ATTACK
 
 var attack_x = 0;
@@ -42,6 +42,7 @@ switch(facing)
 
 if (attacked == false)
 	{
+		image_index = 0;
 		var D = instance_create_depth(attack_x, attack_y, depth, obj_damage);
 		D.creator = id;
 		D.tag = tag;
