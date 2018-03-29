@@ -56,7 +56,7 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
 #region Melee
 if (creator.attack_key)
     {
-		state = scr_attackState;
+		state = scr_attackState2;
 		image_index = 0;
 		
 		var xdir = lengthdir_x(8, facing*90)
@@ -152,6 +152,7 @@ var clipSize = weaponArray[weapon, 8];
 if(creator.reload)
 	{
 		weaponArray[weapon, 8] = scr_approach(weaponArray[weapon, 8], weaponArray[weapon, 10], weaponArray[weapon, 9]);
+		weaponArray[weapon, 10] = scr_approach(weaponArray[weapon, 10], 0, weaponArray[weapon, 9]);
 	}
 /*
 if (creator.reload && weaponArray[weapon, 11] != clipSize)
@@ -314,4 +315,3 @@ if (creator.switch_weapon)
 				weapon = 0;
 			}
     }
-

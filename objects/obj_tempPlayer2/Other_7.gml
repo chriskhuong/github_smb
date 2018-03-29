@@ -1,6 +1,6 @@
 ///Change back to move state
 
-if (state == (scr_attackState))
+if (state == (scr_attackState2))
     {
         state = scr_moveState2;
         attacked = false;

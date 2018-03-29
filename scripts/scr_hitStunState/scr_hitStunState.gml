@@ -1,19 +1,11 @@
-/// scr_hitStunState()
+/// @description scr_hitStunState()
 
-//ability = STUN;
-//sprite_index = special[character, STUN];
+#region Behavior
+
+myState = "Stun"
 movement = STUN;
 
 len = scr_approach(len, 0, 1);
-
-/*
-if (len == 0)   //locks our dash to 90 degrees IF we're not moving
-    {
-        dir = facing * 90; //get's our current facing direction
-                            //(in Macros Global Game Settings 1, 2, 3, 4) and multiplies it by 90
-                            //to get our (UP, DOWN, LEFT, or RIGHT)
-    }
-*/
 
 //Get the h and v speed
 
@@ -25,34 +17,42 @@ vspd = lengthdir_y(-len, dir);
 x += hspd;
 y += vspd;
 
+#endregion
+
+#region Transition Triggers
+
 //len -= .25;
 hitStun--;
 
 if(hitStun <= 0)
 	{
-		state = scr_moveState2;
+		state = sMove;
+		//state = scr_moveState;
 	}
 
-//var _x = x,
-//	_y = y,
-//	_xx,
-//	_yy;
+#endregion
 
-//if (len == 0)   //locks our dash to 90 degrees IF we're not moving
-//    {
-//        dir = point_direction(_x, _y, _xx, _yy); //get's our current facing direction
-//												//(in Macros Global Game Settings 1, 2, 3, 4) and multiplies it by 90
-//												//to get our (UP, DOWN, LEFT, or RIGHT)
-//    }
+#region Sprite
 
-////Get the h and v speed
+//invert to have you facing the enemy that hit you
 
-//len = trueSpd * 4;
+if (hspd > 0)
+    {
+        facing = LEFT;
+    }
+else if (hspd < 0)
+    {
+        facing = RIGHT;
+	}
+if (vspd > 0)
+    {
+        facing = UP;
+    }
+else if (vspd < 0)
+    {
+        facing = DOWN;
+    }
 
-////this fixes the speed of any angular movement
-//hspd = lengthdir_x(len, dir);
-//vspd = lengthdir_y(len, dir);
+sprite_index = special[character, STUN];
 
-////Move
-//x += hspd;
-//y += vspd;
+#endregion

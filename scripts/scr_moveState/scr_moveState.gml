@@ -1,0 +1,294 @@
+/// @description scr_moveState()
+
+#region Behavior
+
+myState = "Move";
+attacked = false;
+movement = MOVE;
+myGunIndex = 0;
+myGunAlpha = 1;
+
+#region Movement
+//Get direction
+dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
+
+//Get the length
+if (creator.xaxis == 0 && creator.yaxis == 0)   //we're NOT moving
+    {
+        len = 0;
+        movement = IDLE;
+    }
+    
+else    //we're moving
+    {
+        len = trueSpd;
+    }
+
+//Get the h and v speed
+
+//this fixes the speed of any  movement
+hspd = x + lengthdir_x(len, dir);
+vspd = y + lengthdir_y(len, dir);
+collision_zoneX = !place_free(x + hspd, y);
+collision_zoneY = !place_free(x, y + vspd);
+
+//Collision check if free
+if (place_free(hspd, vspd))
+	{
+		//Move
+		x = hspd;
+		y = vspd;
+	}
+else
+	{
+		var sweepInterval = 1;
+		
+		for (var angle = sweepInterval; angle <= 80; angle += sweepInterval)
+			{
+				for (var multiplier = -1; multiplier <= 1; multiplier += 2)
+					{
+						var angleToCheck = dir + angle * multiplier;
+						hspd = x + lengthdir_x(len, angleToCheck);
+						vspd = y + lengthdir_y(len, angleToCheck);
+						if (place_free(hspd, vspd))
+							{
+								x = hspd;
+								y = vspd;
+								exit;
+							}
+					}
+			}
+	}
+
+#endregion
+
+#region Firing
+
+var fireRate = weaponArray[weapon, 3];
+//var clipReload = weaponArray[weapon, 9];
+//var ammoMax = weaponArray[weapon, 10];
+
+//general shooting
+if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 8] > 0)
+    {
+        script_execute(weaponArray[weapon, 4]);
+        myStats.alarm[1] = fireRate;
+        myStats.can_shoot = false;
+		weaponArray[weapon, 8] = scr_approach(weaponArray[weapon, 8], 0, 1);
+    }
+	
+#endregion
+
+#region Grenades
+//NOTE: refer to the //FIRING// section when adding more details such as timing between grenade tosses
+
+if (creator.grenade_key && weaponArray[1, 15] > 0)
+    {
+        image_index = 0;
+        weaponArray[1, 15] -= 1;
+        script_execute(scr_grenade);
+    }
+	
+#endregion
+
+#region Weapon Swap
+
+if (creator.switch_weapon)
+    {
+		if (weapon < weapons)
+			{
+				weapon++;
+			}
+		else
+			{
+				weapon = 0;
+			}
+    }
+#endregion
+
+#endregion
+
+#region Transition Triggers
+
+#region Hit Stun
+
+if(hit)
+	{
+		len = knockback;
+		hit = false;
+		state = sStun;
+	}
+
+#endregion
+
+#region Reloading
+	//Standard reload									//Auto reload when out of ammo								//use fire_press if desired to tap again
+if((creator.reload && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] == 0 && weaponArray[weapon, 10] > 0 && creator.fire_key))
+	{
+		alarm[10] = myGunSpeed;
+		state = sReload;
+	}
+
+#endregion
+
+#region Special Button
+if (creator.dash_key)   //remember to change this to whatever input you put special actions to
+    {
+		
+		#region chat and other events
+		
+		var xdir = lengthdir_x(8, facing*90)
+        var ydir = lengthdir_y(8, facing*90)
+        var speaker = instance_place(x + xdir, y + ydir, obj_speaker);
+		
+        if (speaker != noone)
+            {
+                //talk to it
+                with (speaker)    //everything here is inside of the sign
+                    {
+                        if (!instance_exists(dialog))   //if the dialog variable doesn't hold a dialog object
+                            {
+                                dialog = instance_create_depth(x + xOffset, y + yOffset, depth, obj_dialog); //then we create a dialog object
+                                dialog.text = text; //sets the dialog's text. the speaker is telling the dialog box what to say
+                            }
+                        else    //if it does exist
+                            {
+                                dialog.text_page++; //just go to the next page
+                                dialog.text_count = 0; //resets the dialog index back to zero when we go to the next page of dialog
+                                if (dialog.text_page > array_length_1d(dialog.text) - 1)//makes sure the dialog can't go past our max number of pages
+                                    {
+                                        with(dialog) //if we go past the array length of the dialog, then we need to destroy that particular dialog
+                                            {
+                                                instance_destroy();
+                                            }
+                                    }
+                            }
+                    }
+            }
+            #endregion
+		
+        else if (myStats.stamina >= 5)
+            {
+                //dash
+                myStats.stamina -= 5;
+                state = sAbility;  //sets the state to their ability
+                alarm[0] = timer[character, ability];    //sets how long the scr_dashState is active
+                myStats.alarm[0] = room_speed;
+				
+            }
+}
+
+#endregion
+
+#region Melee
+
+if (creator.attack_key)
+    {
+		//image_index = 0;
+		state = sAttack;
+		
+		//Will probably scrap this VVV
+		
+		#region interaction with dead body
+		
+		var xdir = lengthdir_x(8, facing*90)
+        var ydir = lengthdir_y(8, facing*90)
+        var dead = instance_place(x + xdir, y + ydir, obj_Player);
+		
+        if (dead != noone)
+            {
+                with (dead)
+                    {
+                        if (!alive)
+                            {
+
+										alive = true;
+										silo = true;
+										state = sMove;
+										with (deadBody)
+											{
+												alarm[0] = 60;
+												alarm[1] = 30;
+											}
+                            }
+                    }
+			}
+			#endregion
+		
+    }
+	
+#endregion
+
+#endregion
+
+#region Sprite
+
+#region Facing
+
+//Horizontal sprite control
+
+if (hspd > 0)
+    {
+        if (facing == LEFT)
+            {
+				image_xscale = 1;
+                image_speed = -1;
+            }
+		else
+			{
+				image_xscale = -1;
+				image_speed = 1;
+			}
+    }
+else if (hspd < 0)
+    {
+        if (facing == RIGHT)
+            {
+				image_xscale = -1;
+                image_speed = -1;
+            }
+		else
+			{
+				image_xscale = 1;
+				image_speed = 1;
+			}
+    }
+else
+	{
+		if (facing == RIGHT)
+			{
+				image_xscale = -1;
+			}
+		else if (facing == LEFT)
+			{
+				image_xscale = 1;
+			}
+	}
+if (vspd > 0)
+    {
+        if (facing == UP)
+            {
+                image_speed = -1;
+            }
+		else
+			{
+				image_speed = 1;
+			}
+    }
+else if (vspd < 0)
+    {
+        if (facing == DOWN)
+            {
+                image_speed = -1;
+            }
+		else
+			{
+				image_speed = 1;
+			}
+    }
+	
+#endregion
+
+sprite_index = sprite[facing, movement];
+
+#endregion

@@ -2,7 +2,7 @@
 
 var unchosen = .25;
 var chosen = 1;
-	
+
 facing = DOWN;
 myTargetX = x + 40;
 myTargetY = y

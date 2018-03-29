@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 //v this should be in a controller object
+
 enum states
 	{
 		idle	= 0,

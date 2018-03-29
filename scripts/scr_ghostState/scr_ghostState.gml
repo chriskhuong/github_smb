@@ -1,16 +1,48 @@
 ///scr_ghostState()
-//image_blend = c_gray;
-//image_alpha= .5;
-var rng = 90; //range from player
-var deadDir = point_direction(x,y, myStats.dead.x,myStats.dead.y);
-//myStats.dead.image_index = special[character, DEAD];
-alive = false;
 
-if (point_distance(x,y, myStats.dead.x, myStats.dead.y) > rng)
-    {
-        x = myStats.dead.x - lengthdir_x(rng, deadDir);
-        y = myStats.dead.y - lengthdir_y(rng, deadDir);
-    }
+#region Behavior
+
+myState = "Ghost";
+myGunAlpha = 0;
+
+silo = false;
+
+var rng = 15;	//range from body
+
+#region Ghost limitations
+
+if (alive)
+	{
+		deadBody = instance_create_depth(x, y, depth, obj_deadBody);
+		deadBody.creator = id;
+		deadBody.sprite_index = special[character, DEAD];
+		deadBody.image_xscale = image_xscale;
+		//dead.image_index = 0;
+		deadBody.image_speed = image_speed;
+		deadBody.start_height = start_height;
+		deadBody.start_width = start_width;
+		deadBody.start_yoffset = start_yoffset
+		dx = deadBody.x;
+		dy = deadBody.y;
+		alive = false;
+		
+		if (instance_exists(obj_playerTracker))
+			{
+				obj_playerTracker.alarm[0] = 1;
+			}
+	}
+	
+var deadDir = point_direction(x, y, dx, dy);
+		
+if (point_distance(x,y, dx, dy) > rng)
+	{
+		x = dx - lengthdir_x(rng, deadDir);
+		y = dy - lengthdir_y(rng, deadDir);
+	}
+
+#endregion
+
+#region Movement
 
 //Get direction
 dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
@@ -24,7 +56,6 @@ if (creator.xaxis == 0 && creator.yaxis == 0)   //we're NOT moving
     
 else    //we're moving
     {
-        //scr_getFace(); //took this out because is was overriding the player targeting direction
         len = trueSpd;
     }
 
@@ -39,3 +70,30 @@ collision_zoneY = !place_free(x, y + vspd);
 //Move
 x += hspd;
 y += vspd;
+
+#endregion
+
+#endregion
+
+#region Transition Triggers
+
+//NOTE: The transition here is in the moveState
+
+#endregion
+
+#region Sprite
+
+if (hspd > 0)
+    {
+        facing = RIGHT;
+		image_xscale = -1;
+    }
+else if (hspd < 0)
+    {
+        facing = LEFT;
+		image_xscale = 1;
+	}
+
+sprite_index = special[character, GHOST];
+
+#endregion

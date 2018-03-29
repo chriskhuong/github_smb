@@ -24,12 +24,6 @@ switch(character){
         sprite[UP, IDLE] = spr_britney_idle_up;
         sprite[LEFT, IDLE] = spr_britney_idle_side;
         sprite[DOWN, IDLE] = spr_britney_idle_down;
-        
-		//REALLY STUPID HARDCODE, FIND A FIX
-		sprite[RIGHT, STUN] = spr_britney_hurt;
-		sprite[UP, STUN] = spr_britney_hurt;
-		sprite[LEFT, STUN] = spr_britney_hurt;
-		sprite[DOWN, STUN] = spr_britney_hurt;
 		
 		//combos
 		sCombo[0] = spr_britney_melee_side1;
@@ -84,12 +78,6 @@ switch(character){
         sprite[UP, IDLE] = spr_jo_idle_up;
         sprite[LEFT, IDLE] = spr_jo_idle_side;
         sprite[DOWN, IDLE] = spr_jo_idle_down;
-        
-		//REALLY STUPID HARDCODE, FIND A FIX
-		sprite[RIGHT, STUN] = spr_jo_hurt;
-		sprite[UP, STUN] = spr_jo_hurt;
-		sprite[LEFT, STUN] = spr_jo_hurt;
-		sprite[DOWN, STUN] = spr_jo_hurt;
 		
 		//combos
 		sCombo[0] = spr_jo_melee_side1;
@@ -139,12 +127,6 @@ switch(character){
         sprite[UP, IDLE] = spr_mio_idle_up;
         sprite[LEFT, IDLE] = spr_mio_idle_side;
         sprite[DOWN, IDLE] = spr_mio_idle_down;
-        
-		//REALLY STUPID HARDCODE, FIND A FIX
-		sprite[RIGHT, STUN] = spr_mio_hurt;
-		sprite[UP, STUN] = spr_mio_hurt;
-		sprite[LEFT, STUN] = spr_mio_hurt;
-		sprite[DOWN, STUN] = spr_mio_hurt;
 		
 		//combos
 		sCombo[0] = spr_mio_melee_side1;
@@ -211,11 +193,6 @@ switch(character){
         sprite[LEFT, ATTACK] = sCombo[attackSequence];
         sprite[DOWN, ATTACK] = dCombo[attackSequence];
 		
-		//REALLY STUPID HARDCODE, FIND A FIX
-		sprite[RIGHT, STUN] = spr_anna_hurt;
-		sprite[UP, STUN] = spr_anna_hurt;
-		sprite[LEFT, STUN] = spr_anna_hurt;
-		sprite[DOWN, STUN] = spr_anna_hurt;
         /*
         /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
         //SPECIAL
@@ -273,6 +250,8 @@ special[BRITNEY, ABILITY] = scr_teatimeState;  //change to teatime
 timer[BRITNEY, ABILITY] = 15;
 //special[BRITNEY, ULTIMATE];
 special[BRITNEY, DEAD] = spr_britney_death;
+special[BRITNEY, STUN] = spr_britney_hurt;
+special[BRITNEY, GHOST] = spr_ghost_britney;
 special[BRITNEY, NAME] = "BRITNEY";
 special[BRITNEY, FACE] = 0;
 
@@ -281,6 +260,8 @@ special[JO, ABILITY] = scr_dashState;
 timer[JO, ABILITY] = room_speed/6;
 //special[JO, ULTIMATE]
 special[JO, DEAD] = spr_jo_death;
+special[JO, STUN] = spr_jo_hurt;
+special[JO, GHOST] = spr_jo_hurt;
 special[JO, NAME] = "JO";
 special[JO, FACE] = 1;
 
@@ -289,6 +270,8 @@ special[MIO, ABILITY] = scr_teleportState;
 timer[MIO, ABILITY] = 2;
 //special[MIO, ULTIMATE]
 special[MIO, DEAD] = spr_mio_death;
+special[MIO, STUN] = spr_mio_hurt;
+special[MIO, GHOST] = spr_ghost_mio;
 special[MIO, NAME] = "MIO";
 special[MIO, FACE] = 2;
 
@@ -296,7 +279,9 @@ special[MIO, FACE] = 2;
 special[ANNA, ABILITY] = scr_backhandState;  //change to backhand **TRY FIXING THIS SHIT SO WE DON'T NEED DUPLICATE SCRITPS**
 timer[ANNA, ABILITY] = 2;
 //special[ANNA, ULTIMATE]
-special[ANNA, DEAD] = 0;
+special[ANNA, DEAD] = spr_anna_death;
+special[ANNA, STUN] = spr_anna_hurt;
+special[ANNA, GHOST] = spr_ghost_anna;
 special[ANNA, NAME] = "ANNA";
 special[ANNA, FACE] = 3;
 

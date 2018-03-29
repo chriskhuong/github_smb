@@ -1,2 +1,2 @@
-///Stamina Regen Alarm
+/// @description Stamina Regen Alarm
 
