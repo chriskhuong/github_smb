@@ -4,7 +4,7 @@
 //ability = DEAD;
 var rng = 90; //range from player
 if (alive)
-	{
+	{	
 		deadBody = instance_create_depth(x, y, depth, obj_deadBody);
 		deadBody.creator = id;
 		deadBody.sprite_index = special[character, DEAD];
@@ -18,6 +18,8 @@ if (alive)
 		dy = deadBody.y;
 		alive = false;
 		
+			
+			
 		if (instance_exists(obj_playerTracker))
 			{
 				obj_playerTracker.alarm[0] = 1;

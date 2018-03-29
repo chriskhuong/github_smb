@@ -3,12 +3,12 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "snd_Epic_Battle",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "9d0c2b2e-cad4-4678-bd00-0be5230e2078",
     "bitDepth": 1,
-    "bitRate": 128,
-    "kind": 3,
+    "bitRate": 40,
+    "kind": 0,
     "preload": true,
-    "sampleRate": 44100,
-    "type": 1,
+    "sampleRate": 22050,
+    "type": 0,
     "volume": 1
 }

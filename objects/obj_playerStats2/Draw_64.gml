@@ -10,7 +10,6 @@ var xHalf = 0;
 var yHalf = 0;
 
 
-
 var xSpot = (num * ((view_w/2) / 2.5));
 var ySpot = (view_h - 64);
 var xoff = 16;

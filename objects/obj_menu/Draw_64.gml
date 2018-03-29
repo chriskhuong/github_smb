@@ -1,4 +1,4 @@
-if(!obj_input2.paused) exit;
+if(!InputManager.paused) exit;
 
 var gwidth = global.view_width, gheight = global.view_height;
 

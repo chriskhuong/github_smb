@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "24cdc174-e8ef-444d-8137-82d33d8d123b",
+            "Value": {
+                "id": "08f544a1-4ac8-4323-bd42-181679d40367",
+                "resourcePath": "objects\\obj_tracker\\obj_tracker.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24de7812-7124-4797-bff5-f9cc5710fe15",
             "Value": {
                 "id": "0ce6a260-6187-47b8-bbd7-6e38838ce6a0",

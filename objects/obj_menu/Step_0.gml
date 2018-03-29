@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 
-if(!obj_input2.paused) exit;
+if(!InputManager.paused) exit;
 
 
-input_up_p = keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(obj_input2.dvc,gp_padu) || gamepad_button_check_pressed(0,gp_axislv);
-input_down_p = keyboard_check_pressed(global.key_down) || gamepad_button_check_pressed(obj_input2.dvc,gp_padd) || gamepad_button_check_pressed(0,gp_axislv);
-input_enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(obj_input2.dvc,gp_face1);
-input_revert_p = keyboard_check_pressed(global.key_revert);
+input_up_p = keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(0,gp_padu);
+input_down_p = keyboard_check_pressed(global.key_down) || gamepad_button_check_pressed(0,gp_padd);
+input_enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(0,gp_face1);
+input_revert_p = keyboard_check_pressed(global.key_revert) || gamepad_button_check_pressed(0,gp_face2);
 
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid);
 if(inputting)
@@ -26,12 +26,18 @@ if(inputting)
 		}
 		break;
 		case menu_element_type.slider:
-			var hinput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
+			switch(menu_option[page]){
+			case 0: if(!audio_is_playing(snd_charSelect)){ audio_play_sound(snd_charSelect,1,false); } break;
+			case 1: if(!audio_is_playing(snd_charSelect)){ audio_play_sound(snd_charSelect,1,false);} break;
+			case 2: if(!audio_is_playing(snd_Epic_Battle)){ audio_play_sound(snd_Epic_Battle,1,false);} break;
+			};
+			
+			var hinput = keyboard_check(global.key_right) - keyboard_check(global.key_left) //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
 		if(hinput != 0)
 		{
 			ds_grid[# 3, menu_option[page]] += hinput * 0.01;	
 			ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]],0,1);
-			scr_change_volume(ds_grid[# 3, menu_option[page]], ds_grid[# 0, menu_option[page]]);
+			script_execute(ds_grid[# 2, menu_option[page]],ds_grid[# 3, menu_option[page]]);
 		}
 		break;
 		case menu_element_type.toggle:

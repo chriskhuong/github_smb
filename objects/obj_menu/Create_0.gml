@@ -1,5 +1,5 @@
 /// @Menu set up
-audio_play_sound(snd_Epic_Battle,1,true);
+//audio_play_sound(snd_Epic_Battle,1,true);
 global.pause = true;
 global.view_width = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
