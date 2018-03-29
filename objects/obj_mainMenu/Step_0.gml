@@ -1,21 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(!audio_is_playing(snd_Epic_Battle))
+audio_play_sound(snd_Epic_Battle,1,false);
 
 
 
-
+/*
 input_up_p = keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(0,gp_padu);
 input_down_p = keyboard_check_pressed(global.key_down) || gamepad_button_check_pressed(0,gp_padd);
 input_enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(0,gp_face1);
 input_revert_p = keyboard_check_pressed(global.key_revert) || gamepad_button_check_pressed(0,gp_face2);
-
+*/
 var ds_grid = mainMenu_page[page], ds_height = ds_grid_height(ds_grid);
 if(inputting)
 {
 	switch(ds_grid[# 1, menu_option[page]])
 	{
 		case mainMenu_element_type.shift:
-		var hinput = keyboard_check_pressed(global.key_right) - keyboard_check_pressed(global.key_left);
+		var hinput = InputManager.down_pressed - InputManager.up_pressed; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
 		if(hinput != 0)
 		{
 			// audio for changing input
@@ -25,16 +27,17 @@ if(inputting)
 		}
 		break;
 		case mainMenu_element_type.slider:
-			var hinput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
+				
+			var hinput = InputManager.down_pressed - InputManager.up_pressed;
 		if(hinput != 0)
 		{
 			ds_grid[# 3, menu_option[page]] += hinput * 0.01;	
 			ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]],0,1);
-			scr_change_volume(ds_grid[# 3, menu_option[page]], ds_grid[# 0, menu_option[page]]);
+			script_execute(ds_grid[# 2, menu_option[page]],ds_grid[# 3, menu_option[page]]);
 		}
 		break;
 		case mainMenu_element_type.toggle:
-			var hinput = keyboard_check_pressed(global.key_right) - keyboard_check_pressed(global.key_left);
+			var hinput = InputManager.down_pressed - InputManager.up_pressed; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
 		if(hinput != 0)
 		{
 			ds_grid[# 3, menu_option[page]] += hinput;	
@@ -54,8 +57,8 @@ if(inputting)
 	}
 }
 else
-{
-	var ochange = input_down_p - input_up_p;
+{	// InputManager.down_pressed - InputManager.up_pressed;
+	var ochange = InputManager.down_pressed - InputManager.up_pressed;
 
 if(ochange != 0)
 	{
@@ -69,7 +72,7 @@ if(ochange != 0)
 }
 
 
-if(input_enter_p)
+if(InputManager.attack_key)
 {
 	switch(ds_grid[# 1, menu_option[page]])
 	{
