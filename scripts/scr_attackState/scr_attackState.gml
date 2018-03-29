@@ -1,16 +1,19 @@
-///scr_attackState
+/// @description scr_playerSelectState()
 
-image_speed = 1.5;
+#region Behavior
 
-movement = ATTACK;
+myState = "Attack";
+myGunAlpha = 0;
+image_speed = 1;
+movement = ATTACK
 
 var attack_x = 0;
 var attack_y = 0;
 
-switch (facing)    //change facing to image_index
-    {
-        //Do Something
-        case RIGHT:
+switch(facing)
+	{
+		//WILL CHANGE! REFER TO HITBOX TUTORIAL
+		case RIGHT:
             image_xscale = -1;
             attack_x = x + 32;
             attack_y = y + 16;
@@ -31,26 +34,34 @@ switch (facing)    //change facing to image_index
 			attack_x = x;
             attack_y = y + 40;
             break;
-        
-    }
+	}
 
+#endregion
 
-if (image_index >= 2 && attacked == false)   //used >= rather than == to avoid jumps in decimals
-    {
+#region Transition Triggers
+
+if (attacked == false)
+	{
 		var D = instance_create_depth(attack_x, attack_y, depth, obj_damage);
 		D.creator = id;
-		D.creatorTag = tag;
+		D.tag = tag;
         D.damage = id.dmg;
 		
         attacked = true;
+
 		attackSequence++;
 		alarm[0] = room_speed;
-    }
-
-//attackSequence++;
-//alarm[0] = room_speed;
+	}
 
 if (attackSequence + 1 > maxSequence)
 	{
 		attackSequence = 0;
 	}
+
+#endregion
+
+#region Sprite
+
+sprite_index = sprite[facing, movement];
+
+#endregion

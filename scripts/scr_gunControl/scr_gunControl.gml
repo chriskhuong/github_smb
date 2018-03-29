@@ -19,7 +19,7 @@ if (myGunAngle < 315 && myGunAngle > 225)
 		myGunXScale = 1;
 		myGunYScale = 1;
         gunOver = true;
-        myGunIndex = 0;
+        //myGunIndex = 0;
     }
 else if (myGunAngle < 225 && myGunAngle > 135)
     {
@@ -28,7 +28,7 @@ else if (myGunAngle < 225 && myGunAngle > 135)
 		myGunXScale = 1;
 		myGunYScale = -1;
 		gunOver = true;
-        myGunIndex = 0;
+        //myGunIndex = 0;
     }
 else if (myGunAngle < 135 && myGunAngle > 45)
     {
@@ -37,7 +37,7 @@ else if (myGunAngle < 135 && myGunAngle > 45)
 		myGunXScale = 1;
 		myGunYScale = -1;
         gunOver = false;
-        myGunIndex = 0;
+        //myGunIndex = 0;
     }
 else
     {
@@ -46,7 +46,5 @@ else
 		myGunXScale = 1;
 		myGunYScale = 1;
 		gunOver = true;
-        myGunIndex = 0;
+        //myGunIndex = 0;
     }
-
-

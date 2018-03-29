@@ -10,6 +10,11 @@
 #macro ATTACK 2
 #macro STUN 3
 #macro DEAD 4
+#macro GHOST 5
+#macro ABILITY 6
+#macro ULTIMATE 7
+#macro NAME 8
+#macro FACE 9
 #macro BRITNEY 0
 #macro JO 1
 #macro MIO 2
@@ -20,7 +25,3 @@
 #macro GRENADE 3
 #macro MOUSE 0
 #macro KEY 1
-#macro ABILITY 0
-#macro ULTIMATE 1
-#macro NAME 2
-#macro FACE 3

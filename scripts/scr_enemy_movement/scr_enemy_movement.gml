@@ -1,7 +1,7 @@
 ///scr_enemy_movement()
 if(point_distance(x, y, targetx, targety) > spd)
     {
-        var dir = point_direction(x, y, targetx, targety); //get a direction, then use the direction to move the enemy
+        dir = point_direction(x, y, targetx, targety); //get a direction, then use the direction to move the enemy
         var hspd = lengthdir_x(spd, dir); //x axis movement spd = length, dir is ^this stuff
         var vspd = lengthdir_y(spd, dir); //same as above
         

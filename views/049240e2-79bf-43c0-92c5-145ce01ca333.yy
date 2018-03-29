@@ -5,6 +5,7 @@
     "name": "049240e2-79bf-43c0-92c5-145ce01ca333",
     "children": [
         "ccc06fee-80e6-478a-b655-976410ce4990",
+        "7a00daf8-be51-43e1-8f72-d67f003c3e20",
         "c26ea56a-f9fe-41e0-87ed-f8c61c2c6702",
         "4f4d660b-f8ae-4b01-b62a-670ab24fdf10",
         "b4276e4a-27e5-4b07-b856-d6a6d1c26d69",
@@ -17,7 +18,12 @@
         "3515926d-778d-45ad-97b6-48d7cca11c64",
         "266685ae-ad06-4e23-bd95-5f16feaaff1c",
         "a0c64a06-bf2e-46bc-a3f3-6c8419a1c45e",
-        "6585010a-18b4-474a-a17a-caafa4730b9c"
+        "6585010a-18b4-474a-a17a-caafa4730b9c",
+        "20ef018e-4652-48c0-a7b1-43e3444b8e23",
+        "acdb0faa-d28a-4632-bcea-035bdcde2c5b",
+        "b6af5ac9-ff70-469c-af45-7c770d98265b",
+        "9e0c8e42-f400-41fa-b8af-790892c08d0d",
+        "4b242774-0a9e-4b47-8b78-459c58ed1f19"
     ],
     "filterType": "GMScript",
     "folderName": "scripts",
