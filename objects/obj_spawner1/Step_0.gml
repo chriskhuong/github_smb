@@ -24,12 +24,12 @@ if(instance_number(obj_tempEnemy) < 1)
 			{
 				for (var i = 0; i < enemiesNum; i++)
 					{
-						instance_create_depth(x + lengthdir_x(dist, random_range(0, 360)), y + lengthdir_y(dist, random_range(0, 360)), depth, choose(obj_tempEnemy, obj_tempBetterEnemy));
+						instance_create_depth(x + lengthdir_x(dist, random_range(0, 360)), y + lengthdir_y(dist, random_range(0, 360)), depth, choose(obj_tempEnemy, obj_tempBetterEnemy, obj_tempBetterEnemy));
 						//alarm[0] = spawnRate;
 					}
 			}
 		
 		wave += 1;
-		enemiesNum *= (wave/2);
+		enemiesNum *= (wave/4);
 		floor(enemiesNum);
 	}

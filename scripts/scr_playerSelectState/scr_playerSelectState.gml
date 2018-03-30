@@ -14,9 +14,9 @@ myTargetY = y;
 
 if (confirmed == false)
 	{
-		if (creator.switch_char_up)
+		if (creator.switch_char_up || creator.up_pressed)
 		    {
-		        if (character < 4)
+		        if (character < 3)
 		            {
 		                character++;
 		            }
@@ -25,7 +25,7 @@ if (confirmed == false)
 		                character = 0;
 		            }
 		    }
-		else if (creator.switch_char_down)
+		else if (creator.switch_char_down || creator.down_pressed)
 		    {
 		        if (character > 0)
 		            {
@@ -33,7 +33,7 @@ if (confirmed == false)
 		            }
 		        else
 		            {
-		                character = 4;
+		                character = 3;
 		            }
 		    }
 		scr_characterData(character);
@@ -71,7 +71,7 @@ if (obj_lobby.ready && creator.pause_key)
 	{
 		//******NOTE********
 		//modify with a global or something to determine which game mode we're playing
-		
+		audio_stop_sound(snd_Epic_Battle);
 		room_goto(rm_SurvivalMode);
 	}
 

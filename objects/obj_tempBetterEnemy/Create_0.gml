@@ -4,7 +4,7 @@ event_inherited();  //allows the object to inherit the create event of the paren
 
 start_yoffset = sprite_yoffset + 16;
 
-image_speed = room_speed * 3;
+image_speed = 1;
 
 up = spr_slimeHelmet_run_up;
 side = spr_slimeHelmet_run_left;

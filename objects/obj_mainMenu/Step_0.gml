@@ -28,7 +28,7 @@ if(inputting)
 		break;
 		case mainMenu_element_type.slider:
 				
-			var hinput = InputManager.down_pressed - InputManager.up_pressed;
+			var hinput = InputManager.right_pressed - InputManager.left_pressed;
 		if(hinput != 0)
 		{
 			ds_grid[# 3, menu_option[page]] += hinput * 0.01;	

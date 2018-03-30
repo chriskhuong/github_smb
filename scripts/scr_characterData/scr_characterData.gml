@@ -263,7 +263,7 @@ timer[JO, ABILITY] = room_speed/6;
 special[JO, ABILITY] = spr_jo_death;
 special[JO, DEAD] = spr_jo_death;
 special[JO, STUN] = spr_jo_hurt;
-special[JO, GHOST] = spr_jo_hurt;
+special[JO, GHOST] = spr_ghost_jo;
 special[JO, NAME] = "JO";
 special[JO, FACE] = 1;
 

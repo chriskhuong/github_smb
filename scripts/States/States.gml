@@ -10,11 +10,10 @@
 #macro sStun		6
 #macro sDead		7
 #macro sGhost		8
-#macro sWander		9	//Enemy/NPC Specific
-#macro sAlert		10	//Enemy/NPC Specific
-#macro sReload		11
-#macro sGrenade		12
-#macro sAbility		13
+#macro sChase		9	//Enemy/NPC Specific
+#macro sReload		10
+#macro sGrenade		11
+#macro sAbility		12
 
 //TARGET----------------------------
 #macro sMouse		0
