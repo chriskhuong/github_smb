@@ -5,12 +5,6 @@ audio_play_sound(snd_Epic_Battle,1,false);
 
 
 
-/*
-input_up_p = keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(0,gp_padu);
-input_down_p = keyboard_check_pressed(global.key_down) || gamepad_button_check_pressed(0,gp_padd);
-input_enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(0,gp_face1);
-input_revert_p = keyboard_check_pressed(global.key_revert) || gamepad_button_check_pressed(0,gp_face2);
-*/
 var ds_grid = mainMenu_page[page], ds_height = ds_grid_height(ds_grid);
 if(inputting)
 {

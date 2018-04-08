@@ -13,6 +13,7 @@ if(page != 2)
 draw_sprite(spr_mainMenu,0,start_x/2,start_y/10);
 if(page == 2)
 {
+	//drawing the character selection screen
 	draw_sprite(spr_previewRevival,0,start_x/2,start_y/5);
 	if(menu_option[page] == 0)
 	{

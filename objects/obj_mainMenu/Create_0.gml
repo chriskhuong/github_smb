@@ -5,15 +5,6 @@
 global.view_width = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
 
-// Makes these controls what you are using for the player
-/*
-global.key_revert = vk_backspace;
-global.key_enter = vk_enter;
-global.key_left = vk_left;
-global.key_right = vk_right;
-global.key_up = vk_up;
-global.key_down = vk_down;
-*/
 
 
 //display_set_gui_size(global.view_width, global.view_height);
@@ -23,6 +14,7 @@ enum mainMenu_page {
     main,
 	settings,
 	mode,
+	characterSelect,
 	audio,
 	graphics,
 	controls,
@@ -52,6 +44,11 @@ ds_mode_select = scr_create_menu_page(
 	["CAMPAIN", mainMenu_element_type.script_runner, scr_start_game],
 	["SURVIVAL", mainMenu_element_type.script_runner, scr_start_game],
 	["BATTLE MAIDENS", mainMenu_element_type.script_runner,scr_start_game],
+	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.main]
+);
+
+ds_character_select = scr_create_menu_page(
+	
 	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.main]
 );
 
@@ -88,7 +85,7 @@ ds_menu_controls = scr_create_menu_page(
 );
 
 page = 0;
-mainMenu_page = [ds_menu_main,ds_settings,ds_mode_select,ds_menu_audio,ds_menu_graphics,ds_menu_controls]
+mainMenu_page = [ds_menu_main,ds_settings,ds_mode_select,ds_character_select,ds_menu_audio,ds_menu_graphics,ds_menu_controls]
 var i = 0, array_len = array_length_1d(mainMenu_page);
 repeat(array_len)
 {
