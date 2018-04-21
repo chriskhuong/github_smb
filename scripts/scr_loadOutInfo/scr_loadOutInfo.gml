@@ -35,15 +35,15 @@ if (obj_lobby.ready  && creator.pause_key)
 		state = sMove;
 		room_goto(rm_SurvivalMode);
 	}
-		if (creator.ult_key)
+		else if (creator.ult_key)
 		{
 			state = sCharacterSelect;
 		}
-		if (creator.grenade_key)
+		else if (creator.grenade_key)
 		{
-			state = sAbilityInfo
+			state = sAbilityInfo;
 		}
-		if (creator.cancel)
+		else if (creator.cancel)
 		{
 			state = sSelect;
 		}

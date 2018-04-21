@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+	if(room == New_Testing_Room && state == sLoadOutInfo)
+	{
+		image_alpha = 0;	
+	}
 switch(gunOver){
 	
 	case true:

@@ -13,6 +13,10 @@ else
 	{
 		image_alpha = 1;
 	}
+	if(room == New_Testing_Room && state == sLoadOutInfo)
+	{
+		image_alpha = 0;	
+	}
 	
 if (room == New_Testing_Room)
 	{
@@ -20,7 +24,7 @@ if (room == New_Testing_Room)
 		draw_text(x, y + 30, special[character, NAME]);
 		if (confirmed)
 			{
-				draw_text(x, y + 50, "READY!");
+				draw_sprite(ui_text_ready,0,x - 40, y + 50);
 			}
 	}
 

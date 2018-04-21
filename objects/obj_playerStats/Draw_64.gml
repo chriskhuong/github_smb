@@ -33,6 +33,16 @@ if(creator.state == sCharacterSelect && room == New_Testing_Room)
 	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
 }
 #endregion
+#region abilityInfo
+if(creator.state == sAbilityInfo && room == New_Testing_Room)
+{
+	draw_sprite_ext(ui_window_abilityinfo_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
+	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	draw_sprite(spr_abilities,0,(xSpot + xFull) - 75,ySpot - yFull - 275);
+	draw_sprite(spr_abilities,0,(xSpot + xFull) - 75,ySpot - yFull - 140);
+}
+#endregion
 #region Health
 
 if(creator.state == sCharacterSelect && room == New_Testing_Room)
@@ -191,10 +201,12 @@ if(creator.state == sLoadOutInfo && room == New_Testing_Room)
 	draw_sprite_ext(ui_window_loadout_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
 	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
 	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
-	draw_sprite(ui,0,xSpot- 75,ySpot - 320);
+	draw_sprite(spr_weapons,creator.weaponArray[1, 17],xSpot- 75,ySpot - 270);
+	draw_sprite(spr_weapons,creator.weaponArray[0,17],xSpot- 75,ySpot - 170);
+	
 	//draw_sprite(ui_text_ready,0,xSpot- 75,ySpot - 90);
 }
-else
+else if (room != New_Testing_Room)
 {
 	draw_text(xSpot + 23, ySpot + 28, creator.weaponArray[1, 15]);
 	draw_sprite(spr_guns,creator.weaponArray[creator.weapon, 17],xSpot + 32, ySpot + 20);
