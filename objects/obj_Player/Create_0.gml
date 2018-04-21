@@ -3,14 +3,13 @@
 event_inherited();  //allows the object to inherit the create event of the parent
 //Instance Variables
 //act as public variables
-
 //FOR CHARACTER SELECT ONLY/////
 confirmed = false;
 myCounter = noone;
 once = false;
 alarm[11] = 1;
 ////////////////////////////////
-
+selected = false;
 alive = true;
 playerNum = 0;
 shadow_var = 16;
@@ -45,8 +44,11 @@ scr_weaponArray1(character);
 var_sprite_width = sprite_get_width(character * 2);
 var_sprite_height = sprite_get_height(character * 2);
 
-states_array[sJoin]		= -1;
+states_array[sJoin]		= scr_playerJoinState;
 states_array[sSelect]	= scr_playerSelectState;
+states_array[sCharacterSelect]	= scr_characterInfo;
+states_array[sLoadOutInfo]	= scr_loadOutInfo;
+states_array[sAbilityInfo]	= scr_abilityInfo;
 states_array[sMove]		= scr_moveState;
 states_array[sAttack]	= scr_attackState;
 states_array[sUltimate]	= -1;
@@ -59,7 +61,7 @@ states_array[sAbility]	= scr_abilityState;
 
 //state machine
 target_state = scr_keyTargeting_state2;
-state = sSelect;
+state = sJoin;
 
 #region hit/hurtbox
 /*

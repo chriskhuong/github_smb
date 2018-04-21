@@ -2,6 +2,7 @@
 // You can write your code in this editor
 ///Draw the stats
 #region Variables
+
 //Heart Variables
 var xEmpty = 0;
 var yEmpty = 0;
@@ -9,15 +10,32 @@ var xFull = 0;
 var yFull = 0;
 var xHalf = 0;
 var yHalf = 0;
-
+var xPortrait = 0;
 var xSpot = (num * ((view_w/2) / 2.5));
 var ySpot = (view_h - 64);
 var xoff = 16;
 #endregion
 draw_set_halign(fa_right);
 //NOTE: for enemy duplicate, remove this event;
+#region Join
+if(creator.state == sJoin && room == New_Testing_Room)
+{
+	draw_sprite_ext(ui_window_blankGrey,0,xSpot- 75,ySpot - 290,image_xscale,image_yscale,0,c_white,1);			
+}
+#endregion
+#region characterInfo
+if(creator.state == sCharacterSelect && room == New_Testing_Room)
+{
+	draw_sprite_ext(ui_window_character_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
+	draw_sprite(ui_text_hp,0,(xSpot + xFull) - 65,ySpot - yFull - 260);
+	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
+}
+#endregion
 #region Health
-if(room == New_Testing_Room)
+
+if(creator.state == sCharacterSelect && room == New_Testing_Room)
 {
 	repeat(floor(hp/2))
 	{
@@ -26,11 +44,11 @@ if(room == New_Testing_Room)
 			yFull = xoff;
 			xFull = 0;
 		}	
-		draw_sprite(spr_hearts,0,(xSpot + xFull) - 25,ySpot - yFull - 280);
+		draw_sprite(spr_hearts,0,(xSpot + xFull) - 25,ySpot - yFull - 260);
 		xFull += xoff;
 	}
 }
-else
+else if (room != New_Testing_Room)
 {
 	repeat(maxHp/2)
 	{
@@ -65,7 +83,30 @@ else
 }
 #endregion
 #region Portraits 
+if(creator.state == sSelect && room == New_Testing_Room)
+{
+	if(creator.creator.up_key)
+	{
+		draw_sprite(button_arrow_up_0,0,xSpot - 35,ySpot - 315);
+	}
+	else 
+	{
+		draw_sprite(button_arrow_up_1,0,xSpot - 35,ySpot - 315);	
+	}
+	draw_sprite(ui_window_blank,0,xSpot- 75,ySpot - 290);
+	draw_sprite(ui_character_britney,creator.special[creator.character, FACE],xSpot - 75,ySpot - 290);
+	if(creator.creator.down_key)
+	{
+		draw_sprite(button_arrow_down_0,0,xSpot- 35,ySpot - 50);
+	}
+	else
+	{
+		draw_sprite(button_arrow_down_1,0,xSpot- 35,ySpot - 50);
+	}
+}
+else if (room != New_Testing_Room)
 draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,ySpot - 15);
+
 #endregion
 #region CoolDowns
 // draw the sprite as a grey background
@@ -144,9 +185,21 @@ draw_set_halign(fa_center);
 draw_sprite(spr_count,10,xSpot + 6, ySpot + 28);
 #endregion
 #region Guns
-draw_text(xSpot + 23, ySpot + 28, creator.weaponArray[1, 15]);
-draw_sprite(spr_guns,creator.weaponArray[creator.weapon, 17],xSpot + 32, ySpot + 20);
-draw_set_color(c_white);
-
-draw_set_font(font1);
+#region loadOutInfo
+if(creator.state == sLoadOutInfo && room == New_Testing_Room)
+{
+	draw_sprite_ext(ui_window_loadout_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
+	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	draw_sprite(ui,0,xSpot- 75,ySpot - 320);
+	//draw_sprite(ui_text_ready,0,xSpot- 75,ySpot - 90);
+}
+else
+{
+	draw_text(xSpot + 23, ySpot + 28, creator.weaponArray[1, 15]);
+	draw_sprite(spr_guns,creator.weaponArray[creator.weapon, 17],xSpot + 32, ySpot + 20);
+	draw_set_color(c_white);
+	draw_set_font(font1);	
+}
+#endregion
 #endregion

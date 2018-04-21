@@ -1,4 +1,6 @@
 ///Initialize the player
+//var state = [playerJoinState, playerSelectState,playerInfoState, playerLoadOutInfo, playerAbilityInfo];
+
 
 creator = noone;
 //False Stats

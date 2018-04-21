@@ -1,8 +1,6 @@
 ///Control the stats
 if (hp <= 0)
     {
-		p_lives -= 1;
-        hp = maxHp;
 		creator.state = sGhost;
 		//creator.state = scr_ghostState;
     }

@@ -14,4 +14,6 @@ if (silo == true)
 		
 		gpu_set_alphatestenable(false);
 		gpu_set_blendmode(bm_normal);
+		draw_set_alpha(1);
 	}
+	
