@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-draw_text(x, y + 50, myState);
-draw_text(x, y + 60, string(facing));
-
+	if(room != New_Testing_Room)
+	{
+	draw_text(x, y + 50, myState);
+	draw_text(x, y + 60, string(facing));
+	}
 //event_inherited();
 if (!alive)
 	{
@@ -13,18 +14,21 @@ else
 	{
 		image_alpha = 1;
 	}
-	if(room == New_Testing_Room && state == sLoadOutInfo)
+	if(room == New_Testing_Room && state != sCharacterSelect)
 	{
 		image_alpha = 0;	
 	}
 	
 if (room == New_Testing_Room)
 	{
+		if(room != New_Testing_Room)
+	{
 		draw_set_halign(fa_center);
 		draw_text(x, y + 30, special[character, NAME]);
+	}
 		if (confirmed)
 			{
-				draw_sprite(ui_text_ready,0,x - 40, y + 50);
+				draw_sprite(ui_text_ready,0,x - 65, y + 50);
 			}
 	}
 
@@ -36,7 +40,8 @@ if (room == New_Testing_Room)
 	}
 
 pal_swap_set(my_pal_sprite,current_pal,false);
-
+if(room == New_Testing_Room && state = sCharacterSelect)
+	{
 switch(gunOver){
 	
 	case true:
@@ -52,11 +57,31 @@ switch(gunOver){
 		default:
 		break;
 	}
-
+}else if(room != New_Testing_Room)
+	{
+switch(gunOver){
+	
+	case true:
+		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+		break;
+		
+	case false:
+		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+		break;
+		
+		default:
+		break;
+	}
+}
 pal_swap_reset();
 
-draw_sprite_ext(spr_target, 0, myTargetX, myTargetY, image_xscale, image_yscale, image_angle, image_blend, myTargetAlpha);
-
+	if(room != New_Testing_Room)
+	{
+		draw_sprite_ext(spr_target, 0, myTargetX, myTargetY, image_xscale, image_yscale, image_angle, image_blend, myTargetAlpha);
+	}
+	
 
 ////SILHOUETTES
 if(silo == true)

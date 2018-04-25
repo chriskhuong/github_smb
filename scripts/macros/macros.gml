@@ -15,7 +15,8 @@
 #macro ULTIMATE 7
 #macro NAME 8
 #macro FACE 9
-#macro JOIN 10
+#macro ABILITYWINDOW0 10
+#macro ABILITYWINDOW1 11
 #macro BRITNEY 0
 #macro JO 1
 #macro MIO 2

@@ -39,8 +39,8 @@ if(creator.state == sAbilityInfo && room == New_Testing_Room)
 	draw_sprite_ext(ui_window_abilityinfo_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
 	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
 	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
-	draw_sprite(spr_abilities,0,(xSpot + xFull) - 75,ySpot - yFull - 275);
-	draw_sprite(spr_abilities,0,(xSpot + xFull) - 75,ySpot - yFull - 140);
+	draw_sprite(spr_abilities,creator.special[creator.character, ABILITYWINDOW0],(xSpot + xFull) - 75,ySpot - yFull - 275);
+	draw_sprite(spr_abilities,creator.special[creator.character, ABILITYWINDOW1],(xSpot + xFull) - 75,ySpot - yFull - 170);
 }
 #endregion
 #region Health
@@ -120,6 +120,7 @@ draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,yS
 #endregion
 #region CoolDowns
 // draw the sprite as a grey background
+if (room != New_Testing_Room)
 draw_sprite_ext(spr_cooldowns,0,xSpot - 34, ySpot + 18,image_xscale,image_yscale,image_angle,-1,.3);
 /*var x1 = x - sprite_xoffset;
 var y1 = y - sprite_yoffset;
@@ -156,6 +157,7 @@ if(stamina <= 2 && stamina > 0)
 */
 #endregion
 #region Ammo
+if (room != New_Testing_Room){
 var ammo_current =  string_format(creator.weaponArray[creator.weapon, 11],3, 0)
 //draw_set_alpha(.5);
 var ammo_current = string_replace_all(ammo_current," ", "0");
@@ -187,12 +189,15 @@ else if(spc == "0" && fpc == "0" && tpc != "0")
 			draw_text(xSpot + 64, ySpot + 8, tpc);}
 else if(tpc == "0")
 		{ draw_text_color(xSpot + 64, ySpot + 8, clip_current,c_gray,c_gray,c_gray,c_gray,.7);}
-
+}
 #endregion
 #region Grenade
+else if (room != New_Testing_Room)
+{
 draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);
 draw_set_halign(fa_center);
 draw_sprite(spr_count,10,xSpot + 6, ySpot + 28);
+}
 #endregion
 #region Guns
 #region loadOutInfo

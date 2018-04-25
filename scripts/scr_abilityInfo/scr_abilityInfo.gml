@@ -19,7 +19,6 @@ if (creator.cancel && confirmed)
 								instance_destroy();
 							}
 					}
-		image_speed = unchosen;
 	}
 
 
