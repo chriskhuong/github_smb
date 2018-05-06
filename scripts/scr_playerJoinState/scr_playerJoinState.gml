@@ -5,7 +5,6 @@
 myState = "PlayerJoin";
 joined = false;
 
-
 #endregion
 
 #region Transition Triggers

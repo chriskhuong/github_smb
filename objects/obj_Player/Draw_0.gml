@@ -26,10 +26,7 @@ if (room == New_Testing_Room)
 		draw_set_halign(fa_center);
 		draw_text(x, y + 30, special[character, NAME]);
 	}
-		if (confirmed)
-			{
-				draw_sprite(ui_text_ready,0,x - 65, y + 50);
-			}
+		
 	}
 
 	{

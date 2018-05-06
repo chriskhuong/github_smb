@@ -82,7 +82,7 @@
             "Key": "01c5eead-716c-4b49-8ab2-2b29ccd4519b",
             "Value": {
                 "id": "e8ba8979-46b7-4bde-b2ea-9f57a6b8cd25",
-                "resourcePath": "sprites\\ui_window_blankGrey\\ui_window_blankGrey.yy",
+                "resourcePath": "sprites\\spr_window_join\\spr_window_join.yy",
                 "resourceType": "GMSprite"
             }
         },

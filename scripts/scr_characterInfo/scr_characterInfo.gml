@@ -34,6 +34,7 @@ if (creator.cancel && confirmed)
 #endregion
 
 #region Transition Triggers
+
 if (obj_lobby.ready  && creator.pause_key)
 	{
 		//******NOTE********
@@ -42,12 +43,12 @@ if (obj_lobby.ready  && creator.pause_key)
 		state = sMove;
 		room_goto(rm_SurvivalMode);
 	}
-		if (creator.grenade_key)
+	 else if (creator.grenade_key)
 		{
 			state = sLoadOutInfo;
 		}
 
-		if (creator.cancel)
+		else if (creator.cancel)
 		{
 			state = sSelect;
 		}

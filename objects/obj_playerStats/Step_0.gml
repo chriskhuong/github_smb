@@ -10,8 +10,15 @@ if (stamina < maxStamina && alarm[0] == -1)
     {
         stamina += .1;
     }
-
-
+/*if (obj_lobby.ready  && creator.creator.pause_key)
+	{
+		//******NOTE********
+		//modify with a global or something to determine which game mode we're playing
+		audio_stop_sound(snd_Epic_Battle);
+		obj_Player.state = sMove;
+		room_goto(rm_SurvivalMode);
+	}
+*/
 //show_debug_message(string(xCam) + " " + string(yCam));
 //Zoom View
 var zoom_speed = .1;

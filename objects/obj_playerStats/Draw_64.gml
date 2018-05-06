@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 ///Draw the stats
+
 #region Variables
 
 //Heart Variables
@@ -16,29 +17,63 @@ var ySpot = (view_h - 64);
 var xoff = 16;
 #endregion
 draw_set_halign(fa_right);
+//Draws the 4 blocks the user sees in the survival mode screen.
+if(room == New_Testing_Room)
+draw_sprite(ui_window_blank,0,xSpot- 75,ySpot - 290);
 //NOTE: for enemy duplicate, remove this event;
 #region Join
+//Checks if the players are in the join state and in the testing room we
+// only want to draw these in the join screen.
 if(creator.state == sJoin && room == New_Testing_Room)
 {
-	draw_sprite_ext(ui_window_blankGrey,0,xSpot- 75,ySpot - 290,image_xscale,image_yscale,0,c_white,1);			
+	// Draw the background for the player Join screen
+	if (creator.creator.attack_key)
+	{
+		draw_sprite_ext(button_xbox_a,0,xSpot- 75,ySpot - 290,image_xscale,image_yscale,0,c_white,1);			
+	}
+	draw_sprite_ext(spr_window_join,0,xSpot- 75,ySpot - 290,image_xscale,image_yscale,0,c_white,1);			
 }
 #endregion
 #region characterInfo
+//Checks if the players are in the Character select state and in the testing room we
+// only want to draw these in the character selection screen.
 if(creator.state == sCharacterSelect && room == New_Testing_Room)
 {
+	//Draw the background first, then we draw the HP,then we draw the LB and RB UI at the top of the box,
+	//then we draw the A button last.
 	draw_sprite_ext(ui_window_character_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
 	draw_sprite(ui_text_hp,0,(xSpot + xFull) - 65,ySpot - yFull - 260);
+	if(creator.creator.ult_key)
 	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	else
+	draw_sprite(button_LB_1,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	if(creator.creator.grenade_key)
 	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	else
+	draw_sprite(button_RB_1,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	draw_sprite(ui_text_colorselect,0,xSpot - 67,ySpot - 140);
+	draw_sprite(button_arrow_left_1,0,xSpot - 40,ySpot - 120);
+	draw_sprite(button_arrow_right_1,0,xSpot + 20,ySpot - 120);
 	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
 }
 #endregion
 #region abilityInfo
+//Checks if the players are in the Ability Info state and in the testing room we
+// only want to draw these in the Info selection screen.
 if(creator.state == sAbilityInfo && room == New_Testing_Room)
 {
+	//Draw the background for the Ability windows,then the LB and RB, then we draw
+	//the abilities for each character that is stored in the character data script.
 	draw_sprite_ext(ui_window_abilityinfo_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
+		if(creator.creator.ult_key)
 	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	else
+	draw_sprite(button_LB_1,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	if(creator.creator.grenade_key)
 	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	else
+	draw_sprite(button_RB_1,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
 	draw_sprite(spr_abilities,creator.special[creator.character, ABILITYWINDOW0],(xSpot + xFull) - 75,ySpot - yFull - 275);
 	draw_sprite(spr_abilities,creator.special[creator.character, ABILITYWINDOW1],(xSpot + xFull) - 75,ySpot - yFull - 170);
 }
@@ -158,7 +193,7 @@ if(stamina <= 2 && stamina > 0)
 #endregion
 #region Ammo
 if (room != New_Testing_Room){
-var ammo_current =  string_format(creator.weaponArray[creator.weapon, 11],3, 0)
+var ammo_current =  string_format(creator.weaponArray[creator.weapon, 8],3, 0)
 //draw_set_alpha(.5);
 var ammo_current = string_replace_all(ammo_current," ", "0");
 var fp = string_char_at(ammo_current,1);
@@ -178,7 +213,7 @@ else if(tp == "0")
 		
 draw_text(xSpot + 30, ySpot + 8,"/");
 
-var clip_current =  string_format(creator.weaponArray[creator.weapon, 12],3, 0)
+var clip_current =  string_format(creator.weaponArray[creator.weapon, 10],3, 0)
 var clip_current = string_replace_all(clip_current," ", "0");
 var fpc = string_char_at(clip_current,1), spc = string_char_at(clip_current,2),tpc = string_char_at(clip_current,3);
 if(fpc == "0" && spc != "0")
@@ -204,11 +239,17 @@ draw_sprite(spr_count,10,xSpot + 6, ySpot + 28);
 if(creator.state == sLoadOutInfo && room == New_Testing_Room)
 {
 	draw_sprite_ext(ui_window_loadout_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
+	if(creator.creator.ult_key)
 	draw_sprite(button_LB_0,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	else
+	draw_sprite(button_LB_1,0,(xSpot + xFull) - 78,ySpot - yFull - 315);
+	if(creator.creator.grenade_key)
 	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	else
+	draw_sprite(button_RB_1,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
+	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
 	draw_sprite(spr_weapons,creator.weaponArray[1, 17],xSpot- 75,ySpot - 270);
 	draw_sprite(spr_weapons,creator.weaponArray[0,17],xSpot- 75,ySpot - 170);
-	
 	//draw_sprite(ui_text_ready,0,xSpot- 75,ySpot - 90);
 }
 else if (room != New_Testing_Room)

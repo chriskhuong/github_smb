@@ -269,7 +269,7 @@ special[JO, GHOST] = spr_ghost_jo;
 special[JO, NAME] = "JO";
 special[JO, FACE] = 1;
 special[JO, ABILITYWINDOW0] = 2;
-special[JO, ABILITYWINDOW1] = 7;
+special[JO, ABILITYWINDOW1] = 3;
 //MIO
 skill[MIO, ABILITY] = scr_teleportState;
 timer[MIO, ABILITY] = 2;
@@ -294,7 +294,7 @@ special[ANNA, GHOST] = spr_ghost_anna;
 special[ANNA, NAME] = "ANNA";
 special[ANNA, FACE] = 3;
 special[ANNA, ABILITYWINDOW0] = 6;
-special[ANNA, ABILITYWINDOW1] = 3;
+special[ANNA, ABILITYWINDOW1] = 7;
 
 //SEBASTIAN
 skill[SEBASTIAN, ABILITY] = scr_shieldState;  //change to shield thing

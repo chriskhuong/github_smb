@@ -35,7 +35,7 @@ if (obj_lobby.ready  && creator.pause_key)
 		state = sMove;
 		room_goto(rm_SurvivalMode);
 	}
-		else if (creator.ult_key)
+	 else if (creator.ult_key)
 		{
 			state = sCharacterSelect;
 		}
