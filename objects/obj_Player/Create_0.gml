@@ -1,20 +1,18 @@
 ///void Awake
 
 event_inherited();  //allows the object to inherit the create event of the parent
-//Instance Variables
-//act as public variables
+
 //FOR CHARACTER SELECT ONLY/////
 confirmed = false;
 myCounter = noone;
 once = false;
 alarm[11] = 1;
-////////////////////////////////
 selected = false;
-alive = true;
 playerNum = 0;
-shadow_var = 16;
 creator = noone;
+
 tag = "player";
+alive = true;
 spd = 150;
 tarSpd = 2;
 hspd = 0;
@@ -28,19 +26,19 @@ movement = MOVE;
 attacked = false;   //melee_attacked = false;
 attackSequence = 0;
 character = 0;
-weapon = 0;
+weapon = 1;
 weapons = 1;
 image_speed = .25;
 ability = ABILITY;
 ultimate = noone;	//...yet
 spd_buff = spd+1;
 currency = 0;
-silo = true;
 reloading = false;
+
 
 //get character's information
 scr_characterData(character);
-scr_weaponArray1(character);
+scr_weaponArray(character);
 var_sprite_width = sprite_get_width(character * 2);
 var_sprite_height = sprite_get_height(character * 2);
 
@@ -60,8 +58,16 @@ states_array[sReload]	= scr_reloadState;
 states_array[sAbility]	= scr_abilityState;
 
 //state machine
-target_state = scr_keyTargeting_state2;
+target_state = scr_keyTargetingState;
 state = sJoin;
+
+#region silhouette and shadow
+
+silo = true;
+shadow_var = 16;	//character "width"
+start_yoffset = sprite_yoffset - 8;
+
+#endregion
 
 #region hit/hurtbox
 /*

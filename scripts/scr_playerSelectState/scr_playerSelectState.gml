@@ -32,7 +32,7 @@ if (confirmed == false)
 		            }
 		    }
 		scr_characterData(character);
-		scr_weaponArray1(character);
+		scr_weaponArray(character);
 		myStats.maxHp = hp;
 		myStats.hp = myStats.maxHp;
 	}

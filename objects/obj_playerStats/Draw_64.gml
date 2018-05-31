@@ -12,19 +12,19 @@ var yFull = 0;
 var xHalf = 0;
 var yHalf = 0;
 var xPortrait = 0;
-var xSpot = (num * ((view_w/2) / 2.5));
-var ySpot = (view_h - 64);
+var xSpot = (num * ((global.view_w/2) / 2.5));
+var ySpot = (global.view_h - 64);
 var xoff = 16;
 #endregion
 draw_set_halign(fa_right);
 //Draws the 4 blocks the user sees in the survival mode screen.
-if(room == New_Testing_Room)
+if(room == rm_characterSelect)
 draw_sprite(ui_window_blank,0,xSpot- 75,ySpot - 290);
 //NOTE: for enemy duplicate, remove this event;
 #region Join
 //Checks if the players are in the join state and in the testing room we
 // only want to draw these in the join screen.
-if(creator.state == sJoin && room == New_Testing_Room)
+if(creator.state == sJoin && room == rm_characterSelect)
 {
 	// Draw the background for the player Join screen
 	if (creator.creator.attack_key)
@@ -37,7 +37,7 @@ if(creator.state == sJoin && room == New_Testing_Room)
 #region characterInfo
 //Checks if the players are in the Character select state and in the testing room we
 // only want to draw these in the character selection screen.
-if(creator.state == sCharacterSelect && room == New_Testing_Room)
+if(creator.state == sCharacterSelect && room == rm_characterSelect)
 {
 	//Draw the background first, then we draw the HP,then we draw the LB and RB UI at the top of the box,
 	//then we draw the A button last.
@@ -60,7 +60,7 @@ if(creator.state == sCharacterSelect && room == New_Testing_Room)
 #region abilityInfo
 //Checks if the players are in the Ability Info state and in the testing room we
 // only want to draw these in the Info selection screen.
-if(creator.state == sAbilityInfo && room == New_Testing_Room)
+if(creator.state == sAbilityInfo && room == rm_characterSelect)
 {
 	//Draw the background for the Ability windows,then the LB and RB, then we draw
 	//the abilities for each character that is stored in the character data script.
@@ -80,7 +80,7 @@ if(creator.state == sAbilityInfo && room == New_Testing_Room)
 #endregion
 #region Health
 
-if(creator.state == sCharacterSelect && room == New_Testing_Room)
+if(creator.state == sCharacterSelect && room == rm_characterSelect)
 {
 	repeat(floor(hp/2))
 	{
@@ -93,7 +93,7 @@ if(creator.state == sCharacterSelect && room == New_Testing_Room)
 		xFull += xoff;
 	}
 }
-else if (room != New_Testing_Room)
+else if (room != rm_characterSelect)
 {
 	repeat(maxHp/2)
 	{
@@ -128,7 +128,7 @@ else if (room != New_Testing_Room)
 }
 #endregion
 #region Portraits 
-if(creator.state == sSelect && room == New_Testing_Room)
+if(creator.state == sSelect && room == rm_characterSelect)
 {
 	if(creator.creator.up_key)
 	{
@@ -149,13 +149,13 @@ if(creator.state == sSelect && room == New_Testing_Room)
 		draw_sprite(button_arrow_down_1,0,xSpot- 35,ySpot - 50);
 	}
 }
-else if (room != New_Testing_Room)
+else if (room != rm_characterSelect)
 draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,ySpot - 15);
 
 #endregion
 #region CoolDowns
 // draw the sprite as a grey background
-if (room != New_Testing_Room)
+if (room != rm_characterSelect)
 draw_sprite_ext(spr_cooldowns,0,xSpot - 34, ySpot + 18,image_xscale,image_yscale,image_angle,-1,.3);
 /*var x1 = x - sprite_xoffset;
 var y1 = y - sprite_yoffset;
@@ -192,7 +192,7 @@ if(stamina <= 2 && stamina > 0)
 */
 #endregion
 #region Ammo
-if (room != New_Testing_Room){
+if (room != rm_characterSelect){
 var ammo_current =  string_format(creator.weaponArray[creator.weapon, 8],3, 0)
 //draw_set_alpha(.5);
 var ammo_current = string_replace_all(ammo_current," ", "0");
@@ -227,7 +227,7 @@ else if(tpc == "0")
 }
 #endregion
 #region Grenade
-else if (room != New_Testing_Room)
+else if (room != rm_characterSelect)
 {
 draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);
 draw_set_halign(fa_center);
@@ -236,7 +236,7 @@ draw_sprite(spr_count,10,xSpot + 6, ySpot + 28);
 #endregion
 #region Guns
 #region loadOutInfo
-if(creator.state == sLoadOutInfo && room == New_Testing_Room)
+if(creator.state == sLoadOutInfo && room == rm_characterSelect)
 {
 	draw_sprite_ext(ui_window_loadout_1,0,xSpot- 75,ySpot - 320,image_xscale,image_yscale,0,c_white,1);
 	if(creator.creator.ult_key)
@@ -252,7 +252,7 @@ if(creator.state == sLoadOutInfo && room == New_Testing_Room)
 	draw_sprite(spr_weapons,creator.weaponArray[0,17],xSpot- 75,ySpot - 170);
 	//draw_sprite(ui_text_ready,0,xSpot- 75,ySpot - 90);
 }
-else if (room != New_Testing_Room)
+else if (room != rm_characterSelect)
 {
 	draw_text(xSpot + 23, ySpot + 28, creator.weaponArray[1, 15]);
 	draw_sprite(spr_guns,creator.weaponArray[creator.weapon, 17],xSpot + 32, ySpot + 20);

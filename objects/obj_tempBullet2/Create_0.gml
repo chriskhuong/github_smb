@@ -20,14 +20,14 @@ enum fire
 		levitating
 	}
 
-if instance_exists(obj_tempPlayer2)
+if instance_exists(obj_Player)
 	{
 		ran_num = 95;
 		ran = random_range(-ran_num, ran_num);
-		xAdd = obj_tempPlayer2.hspd * 70;
-		yAdd = obj_tempPlayer2.vspd * 70;
+		xAdd = obj_Player.hspd * 70;
+		yAdd = obj_Player.vspd * 70;
 		
-		direction_to_player = point_direction(x, y, obj_tempPlayer2.x + ran + xAdd, obj_tempPlayer2.y + ran + yAdd);
+		direction_to_player = point_direction(x, y, obj_Player.x + ran + xAdd, obj_Player.y + ran + yAdd);
 	}
 
 pointPlayer = false;
@@ -35,7 +35,7 @@ pointPlayer = false;
 if (pointPlayer)
 	{
 		pointA = noone;
-		var dir = point_direction(pointA.x, pointA.y, obj_tempPlayer2.x, obj_tempPlayer2.y);
+		var dir = point_direction(pointA.x, pointA.y, obj_Player.x, obj_Player.y);
 	}
 
 //phy_bullet = true;

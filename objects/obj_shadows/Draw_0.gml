@@ -8,12 +8,9 @@ if (!surface_exists(shadowSurface))
 		shadowSurface = surface_create(room_width, room_height)
 	
 	}
-/*
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-*/
-var sx = 15;//(room_width/2) - mouse_x;
-var sy = 10;//(room_height/2) - mouse_y;
+
+var sx = 15;
+var sy = 10;
 
 if(keyboard_check_pressed(ord("L")))
 	{
@@ -34,16 +31,16 @@ with(obj_lifeFormParent)
 		var sprite = shadow_var * image_xscale;
 		
 		draw_sprite_pos(sprite_index, image_index,
-		x - (sprite) - view_x - sx,
-		y - view_y - sy,
-		x + (sprite) - view_x- sx,
-		y - view_y - sy,
-		x + (sprite) - view_x,
+		x - (sprite) - global.view_x - sx,
+		y - global.view_y - sy,
+		x + (sprite) - global.view_x- sx,
+		y - global.view_y - sy,
+		x + (sprite) - global.view_x,
 		//y - viewY,
-		(y +(start_height - (start_yoffset)))-view_y,
-		x - (sprite) - view_x,
+		(y +(start_height - (start_yoffset)))- global.view_y,
+		x - (sprite) - global.view_x,
 		//y - viewY,
-		(y +(start_height - (start_yoffset)))-view_y,
+		(y +(start_height - (start_yoffset)))- global.view_y,
 		1);
 	}
 gpu_set_fog(false, c_white, 0, 1);
@@ -51,5 +48,5 @@ gpu_set_fog(false, c_white, 0, 1);
 surface_reset_target();
 
 draw_set_alpha(0.5);
-draw_surface(shadowSurface, view_x, view_y);
+draw_surface(shadowSurface, global.view_x, global.view_y);
 draw_set_alpha(1);

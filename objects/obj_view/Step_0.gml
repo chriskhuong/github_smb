@@ -17,13 +17,6 @@ else
 x += (xTo - x)/25;
 y += (yTo - y)/25;
 
-/*
-//camera boundary locking
-__view_set( e__VW.XView, 0, -(__view_get( e__VW.WView, 0 )/2) + x );
-__view_set( e__VW.YView, 0, -(__view_get( e__VW.HView, 0 )/2) + y );
-__view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ), 0, room_width - __view_get( e__VW.WView, 0 ) ));
-__view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ), 0, room_height - __view_get( e__VW.HView, 0 ) ));
-*/
 
 if (shake != 0)
 {
@@ -37,10 +30,9 @@ if (shake < 0)
         shake = 0;
     }
 
-///////////////
-/*
-var i;
-for (i = 0; i < instance_number(obj_tempPlayer1); i++)
-	{
-		players[i] = instance_find(obj_tempPlayer1, i);
-	}
+
+global.view_x = obj_view.x - global.view_w/2;
+global.view_y = obj_view.y - global.view_h/2;
+
+global.view_x = clamp(global.view_x, 0, room_width - global.view_w);
+global.view_y = clamp(global.view_y, 0, room_height - global.view_h);

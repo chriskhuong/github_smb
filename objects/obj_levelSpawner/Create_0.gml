@@ -9,7 +9,7 @@ levelColor[l] = c_blue;		//the color of the level
 levelNeeds[l, 0] = -1;		//what the level needs to be available, -1 means always available
 levelX[l] = 64;
 levelY[l] = 160;
-levelRoom[l] = New_Testing_Room;
+levelRoom[l] = rm_characterSelect;
 l++;
 
 levelName[l] = "b";

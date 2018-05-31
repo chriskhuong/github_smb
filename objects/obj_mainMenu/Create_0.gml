@@ -68,10 +68,7 @@ ds_menu_audio = scr_create_menu_page(
 
 
 ds_menu_graphics = scr_create_menu_page(
-	["RESOLUTION", mainMenu_element_type.shift, scr_change_resolution, 0, [string(obj_resolutionManager.ideal_width*obj_resolutionManager.zoom) + " x " + string(obj_resolutionManager.ideal_height*obj_resolutionManager.zoom),
-																	   string(obj_resolutionManager.ideal_width*(obj_resolutionManager.zoom-1)) + " x " + string(obj_resolutionManager.ideal_height*(obj_resolutionManager.zoom-1)),
-																	   string(obj_resolutionManager.ideal_width*(obj_resolutionManager.zoom-2)) + " x " + string(obj_resolutionManager.ideal_height*(obj_resolutionManager.zoom-2))]],
-	/*["RESOLUTION", menu_element_type.shift, scr_change_resolution, 0, ["384 x 216","768 x 432", "1152 x 648", "1536 x 874", "1920 x 1080"]],*/
+	["RESOLUTION", menu_element_type.shift, scr_change_resolution, 0, ["384 x 216","768 x 432", "1152 x 648", "1536 x 874", "1920 x 1080"]],
 	["WINDOW MODE", mainMenu_element_type.toggle, scr_change_window_mode, 1, ["FULLSCREEN", "WINDOWED"]],
 	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.settings]
 );

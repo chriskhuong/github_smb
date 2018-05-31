@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-	if(room != New_Testing_Room)
+	if(room != rm_characterSelect)
 	{
 	draw_text(x, y + 50, myState);
 	draw_text(x, y + 60, string(facing));
@@ -14,14 +14,14 @@ else
 	{
 		image_alpha = 1;
 	}
-	if(room == New_Testing_Room && state != sCharacterSelect)
+	if(room == rm_characterSelect && state != sCharacterSelect)
 	{
 		image_alpha = 0;	
 	}
 	
-if (room == New_Testing_Room)
+if (room == rm_characterSelect)
 	{
-		if(room != New_Testing_Room)
+		if(room != rm_characterSelect)
 	{
 		draw_set_halign(fa_center);
 		draw_text(x, y + 30, special[character, NAME]);
@@ -37,7 +37,7 @@ if (room == New_Testing_Room)
 	}
 
 pal_swap_set(my_pal_sprite,current_pal,false);
-if(room == New_Testing_Room && state = sCharacterSelect)
+if(room == rm_characterSelect && state = sCharacterSelect)
 	{
 switch(gunOver){
 	
@@ -54,7 +54,7 @@ switch(gunOver){
 		default:
 		break;
 	}
-}else if(room != New_Testing_Room)
+}else if(room != rm_characterSelect)
 	{
 switch(gunOver){
 	
@@ -74,7 +74,7 @@ switch(gunOver){
 }
 pal_swap_reset();
 
-	if(room != New_Testing_Room)
+	if(room != rm_characterSelect)
 	{
 		draw_sprite_ext(spr_target, 0, myTargetX, myTargetY, image_xscale, image_yscale, image_angle, image_blend, myTargetAlpha);
 	}

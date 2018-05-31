@@ -1,28 +1,9 @@
 ///scr_teleportState()
-/*
-movement = MOVE;
 
-if (len == 0)   //locks our teleport to 90 degrees IF we're not moving
-    {
-        dir = facing * 90; //gets our facing MACRO (1, 2, 3, 4) and multiplies it by 90 to get our direction
-    }
-    
-//get the h and v speed
-
-len = spd * 4
-
-//this fixes the speed of any angular movement
-hspd = lengthdir_x(len, dir);
-vspd = lengthdir_y(len, dir);
-
-//move
-phy_position_x += hspd;
-phy_position_y += vspd;
-*/
-//create the effect
 //TO DO
+//create the effect
 //POOF particles
-//damage anything that the player moves through
+//damage anything that the player moves through for special
 
 movement = MOVE;
 

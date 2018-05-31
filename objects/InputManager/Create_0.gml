@@ -43,15 +43,6 @@ event_perform(ev_alarm,0); // find gamepads
 if(object_index == InputManager)
     show_error("InputManager is a parent object that should not be instantiated. Try making InputForPlayer1 instead!",true);
 
-//var xSpot = ((playerSlot) * ((view_w/2) / 2.5));
-//var ySpot = (view_h/2);
-//var pO = instance_create_depth(xSpot, ySpot, depth, obj_tempPlayer2);
-//pO.state = scr_moveState2;
-//pO.creator = id;
-//pO.playerNum = playerSlot;
-//pO.char = playerSlot;
-//pO.keyboard = false;
-
 
 /*
 ///replays

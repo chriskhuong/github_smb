@@ -134,40 +134,7 @@ if((creator.reload && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] ==
 #region Special Button
 if (creator.dash_key)   //remember to change this to whatever input you put special actions to
     {
-		
-		#region chat and other events
-		
-		var xdir = lengthdir_x(8, facing*90)
-        var ydir = lengthdir_y(8, facing*90)
-        var speaker = instance_place(x + xdir, y + ydir, obj_speaker);
-		
-        if (speaker != noone)
-            {
-                //talk to it
-                with (speaker)    //everything here is inside of the sign
-                    {
-                        if (!instance_exists(dialog))   //if the dialog variable doesn't hold a dialog object
-                            {
-                                dialog = instance_create_depth(x + xOffset, y + yOffset, depth, obj_dialog); //then we create a dialog object
-                                dialog.text = text; //sets the dialog's text. the speaker is telling the dialog box what to say
-                            }
-                        else    //if it does exist
-                            {
-                                dialog.text_page++; //just go to the next page
-                                dialog.text_count = 0; //resets the dialog index back to zero when we go to the next page of dialog
-                                if (dialog.text_page > array_length_1d(dialog.text) - 1)//makes sure the dialog can't go past our max number of pages
-                                    {
-                                        with(dialog) //if we go past the array length of the dialog, then we need to destroy that particular dialog
-                                            {
-                                                instance_destroy();
-                                            }
-                                    }
-                            }
-                    }
-            }
-            #endregion
-		
-        else if (myStats.stamina >= 5)
+        if (myStats.stamina >= 5)
             {
                 //dash
                 myStats.stamina -= 5;

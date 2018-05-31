@@ -39,34 +39,3 @@ yaim = (down_aim - up_aim);
 
 
 return playerSlot;
-//Variable for multiplayer joypad input
-
-//dvc = argument0; //dvc is the device (the controller)
-
-//Check for gamepad input
-//ALL INPUT IS TBD AFTER TESTING
-/*
-if (gamepad_is_connected(dvc))
-    {
-        gamepad_set_axis_deadzone(dvc, .35);
-        xaxis = gamepad_axis_value(dvc, gp_axislh); //the '.5' is the dead zone of the axis
-        yaxis = gamepad_axis_value(dvc, gp_axislv);
-        xaim = gamepad_axis_value(dvc, gp_axisrh); //the '.5' is the dead zone of the axis
-        yaim = gamepad_axis_value(dvc, gp_axisrv);
-        dash_key = gamepad_button_check_pressed(dvc, gp_shoulderlb);	//gp_face1)); //this is the bottom button ('A' on xbox);
-        attack_key = gamepad_button_check_pressed(dvc, gp_face1);	//gp_face3)); //this is the left button ('X' on xbox);
-        pause_key = gamepad_button_check_pressed(dvc, gp_start); //this is the start button
-        fire_key = gamepad_button_check(dvc, gp_shoulderrb);	//gp_face2)); //this is the right button ('B' on xbox);
-        grenade_key = gamepad_button_check_pressed(dvc, gp_shoulderr);   //TEMPORARY
-        grenade_release = gamepad_button_check_released(dvc, gp_shoulderr);   //TEMPORARY
-		SOMETHING = gamepad_button_check_pressed(dvc, gp_shoulderl);
-        //swap_key = (gamepad_button_check_pressed(dvc, gp_face4)); //this is the top button ('Y' on xbox);
-        reload = gamepad_button_check_pressed(dvc, gp_face3); //gp_select)); //TEMPORARY
-        switch_weapon = gamepad_button_check_pressed(dvc, gp_padl) || gamepad_button_check_pressed(dvc, gp_padr);	//gp_shoulderlb));
-        switch_char_up = gamepad_button_check_pressed(dvc, gp_padu); //TEMPORARY CHARACTER SWAP
-        switch_char_down = gamepad_button_check_pressed(dvc, gp_padd); //TEMPORARY CHARACTER SWAP
-		temp_back = gamepad_button_check_pressed(dvc, gp_face2);
-    }
-
-return dvc;
-*/

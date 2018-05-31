@@ -8,13 +8,13 @@ image_speed = 1;
 
 up = spr_slimeHelmet_run_up;
 side = spr_slimeHelmet_run_left;
-
+/*
 while(place_meeting(x, y, obj_lifeFormParent))
 	{
 		x = random(room_width);
 		y = random(room_height);
 	}
-
+*/
 shadow_var = 16;
 hp = 9;
 spd = 4;

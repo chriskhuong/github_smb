@@ -12,7 +12,7 @@ var yHalf = 0;
 
 
 var xSpot = (num * ((view_w/2) / 2.5));
-var ySpot = (view_h - 64);
+var ySpot = (  - 64);
 var xoff = 16;
 draw_set_halign(fa_right);
 //draw_set_color(merge_color(c_black, creator.myColor, .5))

@@ -21,7 +21,7 @@ if (counter >= room_speed * 3)
 			}
 	}
 	
-if(collision_circle(x, y, 64, obj_tempPlayer2, false, false))
+if(collision_circle(x, y, 64, obj_Player, false, false))
 	{
 		state = states.alert;
 	}

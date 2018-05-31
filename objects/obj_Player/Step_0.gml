@@ -9,7 +9,7 @@ trueSpd = spd * secondsPassed;
 
 #region Pallet swap control /*NOTE - MODIFY THIS SO EACH IDIVIDUAL PLAYER CAN CONTROL THIS*/
 /*
-if (room == New_Testing_Room)
+if (room == rm_characterSelect)
 	{
 		if(creator.grenade_key)
 		    {
