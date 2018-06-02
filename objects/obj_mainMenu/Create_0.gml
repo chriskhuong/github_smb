@@ -48,7 +48,6 @@ ds_mode_select = scr_create_menu_page(
 );
 
 ds_character_select = scr_create_menu_page(
-	
 	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.main]
 );
 
@@ -94,3 +93,4 @@ inputting = false;
 
 	audio_group_load(audiogroup_music);
 	audio_group_load(audiogroup_soundEffects);
+

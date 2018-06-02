@@ -1,5 +1,6 @@
 if(!InputManager.paused) exit;
 
+
 var gwidth = global.view_width, gheight = global.view_height;
 
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid);
@@ -8,8 +9,9 @@ var start_y = (gheight/3) - ((((ds_height-1)/2) * y_buffer)), start_x = gwidth/2
 
 // Draw pause menu "backgound"
 var c = c_black;
+draw_set_alpha(.5);
 draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
-
+draw_set_alpha(1);
 
 // Draw the elements on the left side
 draw_set_valign(fa_middle);
@@ -106,4 +108,5 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
+
 

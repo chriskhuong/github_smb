@@ -87,4 +87,16 @@ if(InputManager.attack_key)
 }
 
 
-
+// This is temporay...till I find a better solution to manage backing in the menu, but it works.
+// to follow this logic, you would need to look at the array of page positions.
+	if(InputManager.cancel)
+	{
+		switch(page)
+	{
+		case 4: page = 1; break;
+		case 5:	page = 1; break;
+		case 6: page = 1; break;
+		default: page = 0;	 
+	}
+		show_debug_message("Back");
+	}

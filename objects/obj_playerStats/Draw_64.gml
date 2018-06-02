@@ -12,8 +12,8 @@ var yFull = 0;
 var xHalf = 0;
 var yHalf = 0;
 var xPortrait = 0;
-var xSpot = (num * ((global.view_w/2) / 2.5));
-var ySpot = (global.view_h - 64);
+var xSpot = (num * ((view_w/2) / 2.5));
+var ySpot = (view_h - 64);
 var xoff = 16;
 #endregion
 draw_set_halign(fa_right);
@@ -27,11 +27,16 @@ draw_sprite(ui_window_blank,0,xSpot- 75,ySpot - 290);
 if(creator.state == sJoin && room == rm_characterSelect)
 {
 	// Draw the background for the player Join screen
-	if (creator.creator.attack_key)
+	draw_sprite_ext(spr_window_join,0,xSpot- 75,ySpot - 290,image_xscale,image_yscale,0,c_white,1);	
+	if (creator.creator.attack_key_analog)
 	{
-		draw_sprite_ext(button_xbox_a,0,xSpot- 75,ySpot - 290,image_xscale,image_yscale,0,c_white,1);			
+		var color = merge_color(c_white,c_black,1);
+		draw_sprite_ext(button_xbox_a,0,xSpot- 23,ySpot - 225,image_xscale,image_yscale,0,color,.7);
+	} 
+	else
+	{
+		draw_sprite_ext(button_xbox_a,0,xSpot- 23,ySpot - 225,image_xscale,image_yscale,0,c_white,1);
 	}
-	draw_sprite_ext(spr_window_join,0,xSpot- 75,ySpot - 290,image_xscale,image_yscale,0,c_white,1);			
 }
 #endregion
 #region characterInfo
@@ -52,8 +57,23 @@ if(creator.state == sCharacterSelect && room == rm_characterSelect)
 	else
 	draw_sprite(button_RB_1,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
 	draw_sprite(ui_text_colorselect,0,xSpot - 67,ySpot - 140);
-	draw_sprite(button_arrow_left_1,0,xSpot - 40,ySpot - 120);
-	draw_sprite(button_arrow_right_1,0,xSpot + 20,ySpot - 120);
+	if(creator.creator.switch_weapon_analog || creator.creator.left_key)
+	{
+		draw_sprite(button_arrow_left_0,0,xSpot - 40,ySpot - 120);
+	}
+	else
+	{
+		draw_sprite(button_arrow_left_1,0,xSpot - 40,ySpot - 120);
+	}
+		if(creator.creator.active_items_analog || creator.creator.right_key)
+	{
+			draw_sprite(button_arrow_right_0,0,xSpot + 20,ySpot - 120);
+	}
+	else
+	{
+		draw_sprite(button_arrow_right_1,0,xSpot + 20,ySpot - 120);
+	}
+	
 	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
 }
 #endregion
@@ -73,7 +93,7 @@ if(creator.state == sAbilityInfo && room == rm_characterSelect)
 	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
 	else
 	draw_sprite(button_RB_1,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
-	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
+	//draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
 	draw_sprite(spr_abilities,creator.special[creator.character, ABILITYWINDOW0],(xSpot + xFull) - 75,ySpot - yFull - 275);
 	draw_sprite(spr_abilities,creator.special[creator.character, ABILITYWINDOW1],(xSpot + xFull) - 75,ySpot - yFull - 170);
 }
@@ -247,7 +267,7 @@ if(creator.state == sLoadOutInfo && room == rm_characterSelect)
 	draw_sprite(button_RB_0,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
 	else
 	draw_sprite(button_RB_1,0,(xSpot + xFull) + 40,ySpot - yFull - 315);
-	draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
+	//draw_sprite(press_a_when_ready,0,xSpot- 75,ySpot - 90);
 	draw_sprite(spr_weapons,creator.weaponArray[1, 17],xSpot- 75,ySpot - 270);
 	draw_sprite(spr_weapons,creator.weaponArray[0,17],xSpot- 75,ySpot - 170);
 	//draw_sprite(ui_text_ready,0,xSpot- 75,ySpot - 90);
@@ -261,3 +281,4 @@ else if (room != rm_characterSelect)
 }
 #endregion
 #endregion
+

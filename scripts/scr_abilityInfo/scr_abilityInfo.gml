@@ -19,6 +19,7 @@ if (creator.cancel && confirmed)
 								instance_destroy();
 							}
 					}
+		confirmed = false;
 	}
 
 
