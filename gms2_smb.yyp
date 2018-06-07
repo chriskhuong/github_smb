@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "06ab8b15-79e0-465d-a3d3-d7c987f01d31",
+            "Value": {
+                "id": "68e8b082-2f60-4ef7-969a-35f13efc6b72",
+                "resourcePath": "views\\06ab8b15-79e0-465d-a3d3-d7c987f01d31.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "06b6a659-b0fa-400b-a138-1fb63c1af7dc",
             "Value": {
                 "id": "0ab87066-c77a-4b17-b78b-ebced97c066e",
@@ -2639,6 +2647,14 @@
             }
         },
         {
+            "Key": "78cad1cc-4f59-4c4a-98cf-59aa562df56e",
+            "Value": {
+                "id": "237e4089-c88e-4054-9be8-833cf2759db7",
+                "resourcePath": "views\\78cad1cc-4f59-4c4a-98cf-59aa562df56e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "78f57dd6-a1f1-49af-bce7-8a1d80e377fd",
             "Value": {
                 "id": "8a6079b0-06e7-442d-a6d9-edcd5f8c6d0d",
@@ -3775,6 +3791,14 @@
             }
         },
         {
+            "Key": "ad6dfb5b-3ca5-4928-83e8-29a46e34d676",
+            "Value": {
+                "id": "6080b3c7-e81e-4128-8bd1-9fd77def5779",
+                "resourcePath": "rooms\\_init_game_tommy\\_init_game_tommy.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "aebb5a2b-9561-47c7-816f-165cedfe0049",
             "Value": {
                 "id": "385d4b73-60cd-4e7c-a806-1c34222efd61",
@@ -4412,6 +4436,14 @@
                 "id": "81646ad3-d007-47a2-be4e-af907eb109f5",
                 "resourcePath": "scripts\\macros\\macros.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ccef0326-5be0-49b3-966a-ee1876fc97cb",
+            "Value": {
+                "id": "77a7adbf-1a3f-484e-b24a-9aacdc609b30",
+                "resourcePath": "rooms\\rm_SurvivalMode1\\rm_SurvivalMode1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

@@ -120,3 +120,23 @@ my_pal_sprite = spr_CLUT;
 pal_swap_index_palette(my_pal_sprite);
 
 #endregion
+
+#region //determine if we are in single player debug mode and establish state accordingly
+
+if(not is_undefined(global.debugPCMap[? "PCstate"]))
+{
+	state = global.debugPCMap[? "PCstate"];
+}
+if(not is_undefined(global.debugPCMap[? "PCcharacter"]))
+{
+	character = global.debugPCMap[? "PCcharacter"];
+}
+if(not is_undefined(global.debugPCMap[? "PCcreator"]))
+{
+	creator = global.debugPCMap[? "PCcreator"];
+}
+if(not is_undefined(global.debugPCMap[? "PCplayerNum"]))
+{
+	playerNum = global.debugPCMap[? "PCplayerNum"];
+}
+#endregion
