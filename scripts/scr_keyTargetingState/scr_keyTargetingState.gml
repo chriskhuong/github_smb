@@ -33,25 +33,7 @@ vspd = lengthdir_y(len, tarDir);
 myTargetX += hspd;
 myTargetY += vspd;
 
-/* //probably doubled up the speed when moving
-// temporary aiming controls
-if (creator.xaxis != 0) //horizontal
-    {
-        myTarget.x += hspd;
-    }
 
-if (creator.yaxis != 0) //vertical
-    {
-        myTarget.y += vspd
-    }
-*/
-    
-/*
-//fuck these controls
-//move the target with the player
-playHspd = lengthdir_x(len, playDir);
-playVspd = lengthdir_y(len, playDir);
-*/
 //Move the cursor back towards the player
 if (creator.xaim == 0 && creator.yaim == 0 && creator.xaxis == 0 && creator.yaxis == 0)
     {

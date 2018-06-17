@@ -12,7 +12,10 @@
         "06f717ca-cae0-40c5-9d4c-e97178b5ca2c",
         "d372c2fa-dc6f-46e7-9406-49f45462c8e9",
         "8d376848-ef11-49b1-b493-7f5743442b87",
-        "10b84ded-c49e-41c2-8453-fb58177dd381"
+        "10b84ded-c49e-41c2-8453-fb58177dd381",
+        "0552cb5c-6a90-4d82-8338-e874e1f27526",
+        "99f60225-f0ab-4a9c-889f-34f7a462397f",
+        "5f454b10-8c45-4764-a99e-6ba0f7b87984"
     ],
     "filterType": "GMSprite",
     "folderName": "britney",

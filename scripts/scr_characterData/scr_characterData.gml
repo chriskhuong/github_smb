@@ -247,9 +247,8 @@ switch(character){
 //Character Special Array
 //BRITNEY
 skill[BRITNEY, ABILITY] = scr_teatimeState;  //change to teatime
-timer[BRITNEY, ABILITY] = 15;
+timer[BRITNEY, ABILITY] = room_speed/3;
 //special[BRITNEY, ULTIMATE];
-special[BRITNEY, ABILITY] = spr_britney_death;
 special[BRITNEY, DEAD] = spr_britney_death;
 special[BRITNEY, STUN] = spr_britney_hurt;
 special[BRITNEY, GHOST] = spr_ghost_britney;
@@ -260,8 +259,8 @@ special[BRITNEY, ABILITYWINDOW1] = 1;
 
 //JO
 skill[JO, ABILITY] = scr_dashState;
-timer[JO, ABILITY] = room_speed/6;
-//special[JO, ULTIMATE]
+timer[JO, ABILITY] = room_speed/3;
+//special[JO, ULTIMATE];
 special[JO, ABILITY] = spr_jo_death;
 special[JO, DEAD] = spr_jo_death;
 special[JO, STUN] = spr_jo_hurt;
@@ -274,7 +273,6 @@ special[JO, ABILITYWINDOW1] = 3;
 skill[MIO, ABILITY] = scr_teleportState;
 timer[MIO, ABILITY] = 2;
 //special[MIO, ULTIMATE]
-special[MIO, ABILITY] = spr_mio_death;
 special[MIO, DEAD] = spr_mio_death;
 special[MIO, STUN] = spr_mio_hurt;
 special[MIO, GHOST] = spr_ghost_mio;
@@ -287,7 +285,6 @@ special[MIO, ABILITYWINDOW1] = 5;
 skill[ANNA, ABILITY] = scr_backhandState;  //change to backhand **TRY FIXING THIS SHIT SO WE DON'T NEED DUPLICATE SCRITPS**
 timer[ANNA, ABILITY] = 2;
 //special[ANNA, ULTIMATE]
-special[ANNA, ABILITY] = spr_anna_death;
 special[ANNA, DEAD] = spr_anna_death;
 special[ANNA, STUN] = spr_anna_hurt;
 special[ANNA, GHOST] = spr_ghost_anna;

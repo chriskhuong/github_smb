@@ -139,7 +139,6 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
                 //dash
                 myStats.stamina -= 5;
                 state = sAbility;  //sets the state to their ability
-                alarm[0] = timer[character, ability];    //sets how long the scr_dashState is active
                 myStats.alarm[0] = room_speed;
 				
             }

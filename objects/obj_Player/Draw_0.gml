@@ -4,6 +4,7 @@
 	{
 	draw_text(x, y + 50, myState);
 	draw_text(x, y + 60, string(facing));
+	draw_text(x, y + 70, floor(image_index));
 	}
 //event_inherited();
 if (!alive)

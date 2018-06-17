@@ -38,7 +38,7 @@ else if (vspd < 0)
 
 #endregion
 
-sprite_index = special[character, ABILITY];//will use thi
+//sprite_index = special[character, ABILITY];//will use thi
 //sprite_index = sprite[facing, movement];	//temp
 
 #endregion
