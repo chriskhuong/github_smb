@@ -270,7 +270,7 @@ special[JO, FACE] = 1;
 special[JO, ABILITYWINDOW0] = 2;
 special[JO, ABILITYWINDOW1] = 3;
 //MIO
-skill[MIO, ABILITY] = scr_teleportState;
+skill[MIO, ABILITY] = scr_ninjaState;
 timer[MIO, ABILITY] = 2;
 //special[MIO, ULTIMATE]
 special[MIO, DEAD] = spr_mio_death;

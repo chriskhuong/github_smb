@@ -986,7 +986,7 @@
             "Key": "2cf7969e-1b42-4cb3-994d-8e9742235e98",
             "Value": {
                 "id": "cb307033-eb25-4197-8df6-7cd84c1c0215",
-                "resourcePath": "sprites\\mio_teleport_left\\mio_teleport_left.yy",
+                "resourcePath": "sprites\\spr_mio_teleport_left\\spr_mio_teleport_left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1916,6 +1916,14 @@
                 "id": "72bf7e3b-d3bc-4737-868c-6737daf58885",
                 "resourcePath": "views\\561e6bb3-3cc3-4cff-ba99-f0097824db31.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "56ad85ac-4cac-4b67-b272-92069495436f",
+            "Value": {
+                "id": "2679cca0-fb15-4c68-89cf-34929304a3b4",
+                "resourcePath": "scripts\\scr_ninjaState\\scr_ninjaState.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5736,6 +5744,7 @@
         "db9caf3c-a7d1-4036-97ba-ed1b2984222b",
         "2fbd6c07-7505-4649-ab2f-7e836d9bb4b9",
         "fb6da30d-95b0-4ba3-81c7-80432a02e7bb",
+        "56ad85ac-4cac-4b67-b272-92069495436f",
         "2c9fdeb3-189f-46b4-a083-4ba7f79d7a8b",
         "93e01bdf-c0cf-4b07-9b63-96cfe66c47e0",
         "b2e99350-44fc-44c5-90ab-9756a354c340",
