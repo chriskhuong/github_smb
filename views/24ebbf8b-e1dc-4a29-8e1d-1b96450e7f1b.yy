@@ -38,7 +38,7 @@
         "125605ff-7bcc-4154-8933-a36509633376"
     ],
     "filterType": "GMSprite",
-    "folderName": "Props_Sakura",
+    "folderName": "Props_Forest",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

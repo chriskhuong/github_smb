@@ -239,3 +239,47 @@ for(TilesPlaced2 = 0; TilesPlaced2 < TilesToPlace2; TilesPlaced2++)
 			}
 	}
 */
+
+
+
+/*
+var lay_id = layer_get_id("bg_Snowfloor"); //assigns to Room Editor Layers
+Layer = layer_tilemap_get_id(lay_id8);
+TilemapWidth = tilemap_get_width(Layer);
+TilemapHeight = tilemap_get_height(Layer);
+
+var lay_id2 = layer_get_id("bg_Cliff");
+Layer2 = layer_tilemap_get_id(lay_id2);
+TilemapWidth2 = tilemap_get_width(Layer2);
+TilemapHeight2 = tilemap_get_height(Layer2);
+
+var lay_id3 = layer_get_id("bg_Dirt"); 
+Layer3 = layer_tilemap_get_id(lay_id3); 
+
+var lay_id4 = layer_get_id("bg_Hillside"); 
+Layer4 = layer_tilemap_get_id(lay_id4); 
+
+var lay_id5 = layer_get_id("bg_Cliff"); 
+Layer5 = layer_tilemap_get_id(lay_id5); 
+
+var lay_id6 = layer_get_id("bg_River"); //replaces animated water with other animated water... fucking amazing
+Layer6 = layer_tilemap_get_id(lay_id6); 
+
+var lay_id7 = layer_get_id("bg_Hill"); 
+Layer7 = layer_tilemap_get_id(lay_id7); 
+
+
+
+
+
+
+
+
+
+
+
+var lay_id8 = layer_get_id("bg_Shallow"); 
+Layer8 = layer_tilemap_get_id(lay_id8);
+
+
+*/

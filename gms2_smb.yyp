@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "048014cc-e406-4439-9ef1-b4c8c610e8b0",
+            "Value": {
+                "id": "95c8c1e7-1adc-4f63-9054-2f6a4a45dad1",
+                "resourcePath": "tilesets\\tileset_Arctic_Terrain\\tileset_Arctic_Terrain.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "049240e2-79bf-43c0-92c5-145ce01ca333",
             "Value": {
                 "id": "65173cb8-be1e-4f85-91a7-491aa9094f64",
@@ -267,6 +275,14 @@
             "Value": {
                 "id": "59ca7b4c-a5e3-4a22-8ad4-982606a74951",
                 "resourcePath": "sprites\\ui_text_colorselect\\ui_text_colorselect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0ac0ae4a-db7a-442f-a66e-5247e58521e3",
+            "Value": {
+                "id": "39d2dc4e-6cfd-4d08-a148-3309ef2cfd9c",
+                "resourcePath": "sprites\\spr_tileset_Arctic_Terrain\\spr_tileset_Arctic_Terrain.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2503,6 +2519,14 @@
             }
         },
         {
+            "Key": "71df1af8-630b-4496-8fda-c79f1bdd653a",
+            "Value": {
+                "id": "98796a47-1b54-4eb7-9be8-dab3f5567e7b",
+                "resourcePath": "views\\71df1af8-630b-4496-8fda-c79f1bdd653a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "724fd667-df49-42e1-9de4-bf9438b3d199",
             "Value": {
                 "id": "f6791a04-6a7e-4489-a39d-ea130c6dece3",
@@ -2892,6 +2916,14 @@
                 "id": "a4bd040a-22cb-4d73-9110-22907e531de9",
                 "resourcePath": "scripts\\inputdog_load_default_gamepad_mapping\\inputdog_load_default_gamepad_mapping.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "80b37a88-7526-43b8-bc14-08bb0869bfc2",
+            "Value": {
+                "id": "49375300-c187-4ad5-be4b-9ee262bc701b",
+                "resourcePath": "views\\80b37a88-7526-43b8-bc14-08bb0869bfc2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5020,6 +5052,14 @@
                 "id": "96d71d9b-67a8-4dd2-8a92-071d88d1353a",
                 "resourcePath": "scripts\\pal_swap_set_tiles\\pal_swap_set_tiles.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e6a61cd6-c9cd-4f5d-a527-6077cfc19eb4",
+            "Value": {
+                "id": "a2617970-9937-4d2b-9908-47865b5011c9",
+                "resourcePath": "rooms\\rm_Arctic_Test\\rm_Arctic_Test.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
