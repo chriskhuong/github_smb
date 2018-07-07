@@ -12,8 +12,8 @@ var yFull = 0;
 var xHalf = 0;
 var yHalf = 0;
 var xPortrait = 0;
-var xSpot = (num * ((view_w/2) / 2.5));
-var ySpot = (view_h - 64);
+var xSpot = (num * ((global.view_w/2) / 2.5));
+var ySpot = (global.view_h - 64);
 var xoff = 16;
 #endregion
 draw_set_halign(fa_right);
@@ -281,4 +281,5 @@ else if (room != rm_characterSelect)
 }
 #endregion
 #endregion
+
 

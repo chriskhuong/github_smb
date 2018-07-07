@@ -1,12 +1,11 @@
 /// @Menu set up
 
-
 //global.pause = false;
-global.view_width = camera_get_view_width(view_camera[0]);
-global.view_height = camera_get_view_height(view_camera[0]);
+//global.view_width = camera_get_view_width(view_camera[0]);
+//global.view_height = camera_get_view_height(view_camera[0]);
 
 
-
+//window_set_size(global.view_width,global.view_height)
 //display_set_gui_size(global.view_width, global.view_height);
 	
 
@@ -67,7 +66,7 @@ ds_menu_audio = scr_create_menu_page(
 
 
 ds_menu_graphics = scr_create_menu_page(
-	["RESOLUTION", menu_element_type.shift, scr_change_resolution, 0, ["384 x 216","768 x 432", "1152 x 648", "1536 x 874", "1920 x 1080"]],
+	["RESOLUTION", menu_element_type.shift, scr_change_resolution, 0, ["1024 x 576","1280 x 720", "1920 x 1080", "2560 x 2560", "3840 x 2160"]],
 	["WINDOW MODE", mainMenu_element_type.toggle, scr_change_window_mode, 1, ["FULLSCREEN", "WINDOWED"]],
 	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.settings]
 );
@@ -93,4 +92,5 @@ inputting = false;
 
 	audio_group_load(audiogroup_music);
 	audio_group_load(audiogroup_soundEffects);
+
 

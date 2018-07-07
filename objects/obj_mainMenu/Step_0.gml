@@ -8,6 +8,7 @@ audio_play_sound(snd_Epic_Battle,1,false);
 var ds_grid = mainMenu_page[page], ds_height = ds_grid_height(ds_grid);
 if(inputting)
 {
+
 	switch(ds_grid[# 1, menu_option[page]])
 	{
 		case mainMenu_element_type.shift:
@@ -57,7 +58,7 @@ else
 if(ochange != 0)
 	{
 		menu_option[page] += ochange;
-	
+		
 		if(menu_option[page] > ds_height-1) { menu_option[page] = 0; }
 		if(menu_option[page] < 0) { menu_option[page] = ds_height - 1; }
 		audio_play_sound(snd_charSelect,1,false);
@@ -68,6 +69,7 @@ if(ochange != 0)
 
 if(InputManager.attack_key)
 {
+	
 	switch(ds_grid[# 1, menu_option[page]])
 	{
 		case mainMenu_element_type.script_runner: script_execute(ds_grid[# 2, menu_option[page]],ds_grid[# 0, menu_option[page]]);
@@ -89,14 +91,16 @@ if(InputManager.attack_key)
 
 // This is temporay...till I find a better solution to manage backing in the menu, but it works.
 // to follow this logic, you would need to look at the array of page positions.
-	if(InputManager.cancel)
+if(InputManager.cancel)
 	{
 		switch(page)
 	{
-		case 4: page = 1; break;
-		case 5:	page = 1; break;
-		case 6: page = 1; break;
-		default: page = 0;	 
+		case 4: page = 1 inputting = false; break;
+		case 5:	page = 1 inputting = false; break;
+		case 6: page = 1 inputting = false; break;
+		default: page = 0 inputting = false;	 
 	}
 		show_debug_message("Back");
 	}
+
+

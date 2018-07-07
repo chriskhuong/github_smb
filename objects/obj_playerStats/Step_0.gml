@@ -19,3 +19,8 @@ if(room != rm_characterSelect)
 		view_zoom = .75;
 	}
 	
+if(InputManager.cancel)
+{
+	instance_deactivate_all(false);
+	room_goto(0);
+}

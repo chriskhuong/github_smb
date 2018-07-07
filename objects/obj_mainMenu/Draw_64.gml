@@ -4,7 +4,7 @@ var gwidth = global.view_w, gheight = global.view_h;
 
 var ds_grid = mainMenu_page[page], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
-var start_y = (gheight/3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x = gwidth/2.1;
+var start_y = (gheight/2.3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x = gwidth/1.8;
 
 // Draw pause menu "backgound"
 var c = make_color_rgb(29,33,13);
@@ -126,3 +126,4 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
+

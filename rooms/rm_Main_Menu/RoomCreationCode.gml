@@ -8,7 +8,7 @@ instance_create(0,0,InputForPlayer2);
 instance_create(0,0,InputForPlayer3);
 instance_create(0,0,InputForPlayer4)
 
-
+/*
 ///Display Properties
 ideal_width = 1024;
 ideal_height = 768; //256;	//135 //might change this later
@@ -29,7 +29,9 @@ view_camera[0] = camera;
 view_enabled = true;
 view_visible[0] = true;
 
-global.view_x = 0;
-global.view_y = 0;
-global.view_w = ideal_width;
-global.view_h = ideal_height;
+
+
+*/
+
+
+//room_goto(room_next(room))
