@@ -5039,6 +5039,14 @@
             }
         },
         {
+            "Key": "e5fdf3e9-004e-439e-847d-db7bff1fa0f7",
+            "Value": {
+                "id": "9e956354-3c53-4ca8-9b8d-dadaa679e476",
+                "resourcePath": "objects\\obj_levelchange\\obj_levelchange.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e61de38e-e6aa-4972-9b24-33d3bc659dc4",
             "Value": {
                 "id": "ece87ac7-36c5-4e14-aa87-6e38f5b25e44",
