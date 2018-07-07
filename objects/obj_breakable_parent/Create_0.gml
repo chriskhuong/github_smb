@@ -5,3 +5,4 @@
 event_inherited();
 tag = "breakable";
 image_speed = 0;
+hh = sprite_get_bbox_bottom(sprite_index) - sprite_get_bbox_top(sprite_index);

@@ -16,8 +16,11 @@ if(z < 1)
                 zspeed = 0;
             }
     }
-
-
-
+/*
+if (!place_free(x + xForce, y + yForce))
+	{
+		spd *= -1;
+	}
+*/
 scr_get_depth();
 
