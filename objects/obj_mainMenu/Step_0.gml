@@ -12,13 +12,13 @@ if(inputting)
 	switch(ds_grid[# 1, menu_option[page]])
 	{
 		case mainMenu_element_type.shift:
-		var hinput = InputManager.down_pressed - InputManager.up_pressed; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
+		var hinput = InputManager.right_pressed - InputManager.left_pressed; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
 		if(hinput != 0)
 		{
 			// audio for changing input
 			audio_play_sound(snd_charSelect,1,false);
 			ds_grid[# 3, menu_option[page]] += hinput;	
-			ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]],0,array_length_1d(ds_grid[# 4, menu_option[page]]));
+			ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]],0,array_length_1d(ds_grid[# 4, menu_option[page]])-1);
 		}
 		break;
 		case mainMenu_element_type.slider:
@@ -98,7 +98,7 @@ if(InputManager.cancel)
 		case 4: page = 1 inputting = false; break;
 		case 5:	page = 1 inputting = false; break;
 		case 6: page = 1 inputting = false; break;
-		default: page = 0 inputting = false;	 
+		default: page = 0 inputting = false; break;	 
 	}
 		show_debug_message("Back");
 	}

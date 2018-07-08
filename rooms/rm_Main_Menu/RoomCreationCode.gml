@@ -8,6 +8,11 @@ instance_create(0,0,InputForPlayer2);
 instance_create(0,0,InputForPlayer3);
 instance_create(0,0,InputForPlayer4)
 
+if (instance_number(obj_resolution) < 1)
+	{
+		instance_create(0, 0, obj_resolution);
+	}
+
 /*
 ///Display Properties
 ideal_width = 1024;

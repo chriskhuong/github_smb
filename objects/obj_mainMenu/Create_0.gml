@@ -66,7 +66,7 @@ ds_menu_audio = scr_create_menu_page(
 
 
 ds_menu_graphics = scr_create_menu_page(
-	["RESOLUTION", menu_element_type.shift, scr_change_resolution, 0, ["1024 x 576","1280 x 720", "1920 x 1080", "2560 x 2560", "3840 x 2160"]],
+	["RESOLUTION", mainMenu_element_type.shift, scr_change_resolution, 0, ["1024 x 576","1280 x 720", "1920 x 1080", "2560 x 1440", "3840 x 2160"]],
 	["WINDOW MODE", mainMenu_element_type.toggle, scr_change_window_mode, 1, ["FULLSCREEN", "WINDOWED"]],
 	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.settings]
 );

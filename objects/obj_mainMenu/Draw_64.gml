@@ -69,7 +69,7 @@ yy= 0; repeat(ds_height)
 		var current_array = ds_grid[# 4,yy];
 		var left_shift = "<< ";
 		var right_shift = " >>";
-		
+	
 		if(current_val == 0) left_shift = "";
 		if(current_val == array_length_1d(ds_grid[# 4, yy])-1) right_shift = "";
 		c = c_white;
@@ -77,8 +77,8 @@ yy= 0; repeat(ds_height)
 		if(inputting and yy == menu_option[page]) c = c_yellow;
 		
 		draw_text_color(rightTextXPosition,rightTextYPosition,left_shift + current_array[current_val] + right_shift, c,c,c,c,1);
-		break;
 		
+		break;
 		case mainMenu_element_type.slider:
 		var len = 64;
 		var current_val = ds_grid[# 3, yy];
