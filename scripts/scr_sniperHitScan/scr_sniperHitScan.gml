@@ -7,16 +7,16 @@ var start_x = temp_x;
 var start_y = temp_y;
 var collision = noone; 
 
-if (instance_exists(obj_tempWall))
+if (instance_exists(obj_solidParent))
 	{
-		collision = (position_meeting(temp_x, temp_y, obj_tempWall));
+		collision = (position_meeting(temp_x, temp_y, obj_solidParent));
 	}
 
-while (!collision && distance_to_point(temp_x, temp_y) < room_width)
+while (!collision && distance_to_point(temp_x, temp_y) < global.view_width)//room_width
     {
         temp_x += lengthdir_x(4, temp_dir);
         temp_y += lengthdir_y(4, temp_dir);
-        collision = (position_meeting(temp_x, temp_y, obj_tempWall));
+        collision = (position_meeting(temp_x, temp_y, obj_solidParent));
     }
 
 var shot = instance_create_depth(temp_x, temp_y, depth, obj_shot);

@@ -31,6 +31,14 @@ depth = -y - 26;
 scr_characterData(character);
 scr_gunControl();
 //script_execute(state);
+#region sebastian arms
+if(character == SEBASTIAN)
+	{
+		//scr_IK(-1, 13, 10, (myGunX - weaponArray[weapon, 19]) + lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle), (myGunY - weaponArray[weapon, 20]) + lengthdir_y(myGunLenX, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle));
+		scr_IK(-1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)));
+		scr_IK(1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)));
+	}
+#endregion
 script_execute(states_array[state])
 script_execute(target_state);
 

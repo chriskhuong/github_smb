@@ -11,7 +11,7 @@ if (confirmed == false)
 	
 		if (creator.switch_char_up || creator.up_pressed)
 		    {
-		        if (character < 3)
+		        if (character < 4)
 		            {
 		                character++;
 		            }
@@ -28,7 +28,7 @@ if (confirmed == false)
 		            }
 		        else
 		            {
-		                character = 3;
+		                character = 4;
 		            }
 		    }
 		scr_characterData(character);

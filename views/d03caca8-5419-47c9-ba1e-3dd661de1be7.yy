@@ -33,7 +33,8 @@
         "023359d4-ddc9-4bf2-9e13-a70860acecb7",
         "50e56cd0-2061-4ddd-a63b-12db95b37133",
         "deab9069-da4b-4a36-856e-b3fab455518e",
-        "73edf9b8-17fa-4749-8003-ab503f59c5c0"
+        "73edf9b8-17fa-4749-8003-ab503f59c5c0",
+        "2faf6690-13c1-4e54-8ec1-a58ef12ee771"
     ],
     "filterType": "GMSprite",
     "folderName": "GunStuff",

@@ -52,12 +52,7 @@ switch(character){
         sprite[UP, ATTACK] = uCombo[attackSequence];
         sprite[LEFT, ATTACK] = sCombo[attackSequence];
         sprite[DOWN, ATTACK] = dCombo[attackSequence];
-        
-        /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
-        //SPECIAL
-        sprite[]
-        script[BRITNEY, SPECIAL]
-        */
+
          break;
          
     case JO:
@@ -100,13 +95,7 @@ switch(character){
         sprite[UP, ATTACK] = uCombo[attackSequence];
         sprite[LEFT, ATTACK] = sCombo[attackSequence];
         sprite[DOWN, ATTACK] = dCombo[attackSequence];
-        
-        /*
-        /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
-        //SPECIAL
-        sprite[]
-        script[BRITNEY, SPECIAL]
-        */
+
         break;
         
     case MIO:
@@ -146,13 +135,7 @@ switch(character){
         sprite[UP, ATTACK] = uCombo[attackSequence];
         sprite[LEFT, ATTACK] = sCombo[attackSequence];
         sprite[DOWN, ATTACK] = dCombo[attackSequence];
-        
-        /*
-        /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
-        //SPECIAL
-        sprite[]
-        script[BRITNEY, SPECIAL]
-        */
+
         break;
         
     case ANNA:
@@ -192,13 +175,7 @@ switch(character){
         sprite[UP, ATTACK] = uCombo[attackSequence];
         sprite[LEFT, ATTACK] = sCombo[attackSequence];
         sprite[DOWN, ATTACK] = dCombo[attackSequence];
-		
-        /*
-        /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
-        //SPECIAL
-        sprite[]
-        script[BRITNEY, SPECIAL]
-        */
+
         break;
     
     case SEBASTIAN:
@@ -208,35 +185,23 @@ switch(character){
 		hp = 8;
         
         //moving
-        sprite[RIGHT, MOVE] = spr_sebastian_temp;
-        sprite[UP, MOVE] = spr_sebastian_temp;
-        sprite[LEFT, MOVE] = spr_sebastian_temp;
-        sprite[DOWN, MOVE] = spr_sebastian_temp;
+        sprite[RIGHT, MOVE] = spr_sebastian_run_side;
+        sprite[UP, MOVE] = spr_sebastian_run_up;
+        sprite[LEFT, MOVE] = spr_sebastian_run_side;
+        sprite[DOWN, MOVE] = spr_sebastian_run_down;
         
         //idle
-        sprite[RIGHT, IDLE] = spr_sebastian_temp;
-        sprite[UP, IDLE] = spr_sebastian_temp;
-        sprite[LEFT, IDLE] = spr_sebastian_temp;
-        sprite[DOWN, IDLE] = spr_sebastian_temp;
-        
-        //attacking
-        sprite[RIGHT, ATTACK] = spr_melee_shovel;
-        sprite[UP, ATTACK] = spr_melee_shovel2;
-        sprite[LEFT, ATTACK] = spr_melee_shovel;
-        sprite[DOWN, ATTACK] = spr_melee_shovel2;
-        
-		//REALLY STUPID HARDCODE, FIND A FIX
-		sprite[RIGHT, STUN] = spr_sebastian_temp;
-		sprite[UP, STUN] = spr_sebastian_temp;
-		sprite[LEFT, STUN] = spr_sebastian_temp;
-		sprite[DOWN, STUN] = spr_sebastian_temp;
-		
+        sprite[RIGHT, IDLE] = spr_sebastian_idle_side;
+        sprite[UP, IDLE] = spr_sebastian_idle_up;
+        sprite[LEFT, IDLE] = spr_sebastian_idle_side;
+        sprite[DOWN, IDLE] = spr_sebastian_idle_down;
         /*
-        /*****ON HOLD UNTIL I CAN FIGURE THIS SHIT OUT********* /
-        //SPECIAL
-        sprite[]
-        script[BRITNEY, SPECIAL]
-        */
+        //attacking
+        sprite[RIGHT, ATTACK] = spr_sebastian_idle_down;
+        sprite[UP, ATTACK] = spr_sebastian_idle_down;
+        sprite[LEFT, ATTACK] = spr_sebastian_idle_down;
+        sprite[DOWN, ATTACK] = spr_sebastian_idle_down;
+		*/
         break;
         
     default:
@@ -297,6 +262,8 @@ special[ANNA, ABILITYWINDOW1] = 7;
 skill[SEBASTIAN, ABILITY] = scr_shieldState;  //change to shield thing
 timer[SEBASTIAN, ABILITY] = room_speed/6;
 //special[SEBASTIAN, ULTIMATE]
-special[SEBASTIAN, DEAD] = 0;
+special[SEBASTIAN, DEAD] = spr_sebastian_temp_death;
+special[ANNA, STUN] = spr_anna_hurt;
+special[ANNA, GHOST] = spr_ghost_sebastian;
 special[SEBASTIAN, NAME] = "SEBASTIAN";
 special[SEBASTIAN, FACE] = 4;

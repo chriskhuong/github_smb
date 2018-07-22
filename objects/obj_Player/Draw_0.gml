@@ -40,38 +40,47 @@ if (room == rm_characterSelect)
 pal_swap_set(my_pal_sprite,current_pal,false);
 if(room == rm_characterSelect && state = sCharacterSelect)
 	{
-switch(gunOver){
-	
-	case true:
-		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
-		break;
-		
-	case false:
-		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
-		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-		break;
-		
-		default:
-		break;
+		switch(gunOver){
+			
+			case true:
+				draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+				draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+				break;
+				
+			case false:
+				draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+				draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+				break;
+				
+				default:
+				break;
+			}
 	}
-}else if(room != rm_characterSelect)
+else if(room != rm_characterSelect)
 	{
-switch(gunOver){
-	
-	case true:
-		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
-		break;
-		
-	case false:
-		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
-		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-		break;
-		
-		default:
-		break;
+		switch(gunOver){
+			
+			case true:
+				draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+				draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+				break;
+				
+			case false:
+				draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+				draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+				break;
+				
+				default:
+				break;
 	}
+	if (character == SEBASTIAN)
+		{
+			draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, image_alpha);
+			draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, image_alpha);
+			draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, image_alpha);
+			draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, image_alpha);
+
+		}
 }
 pal_swap_reset();
 

@@ -166,13 +166,13 @@ switch(character){
         
         //Shotgun
         weaponArray[1, 0] = "Shotgun"; //Name
-        weaponArray[1, 1] = spr_side_shoot_shotgun; //Sprite Index
-        weaponArray[1, 2] = spr_down_shoot_shotgun; //Sprite Index
+        weaponArray[1, 1] = spr_side_shoot_shotgun_new; //Sprite Index
+        weaponArray[1, 2] = spr_down_shoot_shotgun_new; //Sprite Index
         weaponArray[1, 3] = 20; //Rate of Fire
         weaponArray[1, 4] = scr_shotgun; //Ammo Index
         weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
         weaponArray[1, 6] = 0; //x Offset //(for gun placement)
-        weaponArray[1, 7] = 12; //y Offset //(for gun placement)
+        weaponArray[1, 7] = 10; //y Offset //(for gun placement)
         weaponArray[1, 8] = 12;  //ClipAmmo
         weaponArray[1, 9] = 1;  //Reload
         weaponArray[1, 10] = 24;  //MaxAmmo
@@ -184,6 +184,10 @@ switch(character){
 		weaponArray[1, 14] = 0;	//LenY
 		weaponArray[1, 17] = 2;
 		weaponArray[1, 18] = spr_reload_shotgun1;
+		weaponArray[1, 19] = 2; //left Arm xTargets
+		weaponArray[1, 20] = -5; //left Arm yTargets
+		weaponArray[1, 21] = 50; //rightArm xTargets
+		weaponArray[1, 22] = 50; //rightArm yTargets
         //obj_tempPlayer1.weaponArray[0, 8] = 3; //Damage output
         break;
         
