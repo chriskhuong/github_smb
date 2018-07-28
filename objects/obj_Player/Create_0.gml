@@ -24,6 +24,7 @@ dir = 0;
 facing = DOWN; //Remove this once we incorporate actual character sprites
 movement = MOVE;
 attacked = false;   //melee_attacked = false;
+shot = false;
 attackSequence = 0;
 character = 0;
 weapon = 1;
@@ -34,7 +35,8 @@ ultimate = noone;	//...yet
 spd_buff = spd+1;
 currency = 0;
 reloading = false;
-
+armL = -1;
+armR = 1;
 
 //get character's information
 scr_characterData(character);

@@ -5,8 +5,9 @@ var xOff = argument1 * arm;
 var yOff = argument2;
 var xTarg = x + argument3;
 var yTarg = y + argument4;
+var armDir = argument5;
 
-var b = 16, f = b; //b = the length of the arm bones.
+var b = 17, f = b; //b = the length of the arm bones.
 
 //The anchored position, eg shoulder, hip
 shoulder_x = x + xOff;
@@ -31,7 +32,7 @@ forearm_x = shoulder_x+lengthdir_x(b, bicep_angle);
 forearm_y = shoulder_y+lengthdir_y(b, bicep_angle);
 forearm_angle = bicep_angle - radtodeg(theta * sign(arm)); 
 
-switch (arm)
+switch (armDir)
 	{
 		case 1:
 			shoulder_xr = shoulder_x;
