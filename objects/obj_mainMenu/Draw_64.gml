@@ -69,15 +69,17 @@ yy= 0; repeat(ds_height)
 		var current_array = ds_grid[# 4,yy];
 		var left_shift = "<< ";
 		var right_shift = " >>";
-	
 		if(current_val == 0) left_shift = "";
 		if(current_val == array_length_1d(ds_grid[# 4, yy])-1) right_shift = "";
 		c = c_white;
 		
 		if(inputting and yy == menu_option[page]) c = c_yellow;
 		
+		var testing = scr_split_function(current_array[current_val]," ")
+		if(real(testing[0]) <= obj_resolution.max_resolution)
 		draw_text_color(rightTextXPosition,rightTextYPosition,left_shift + current_array[current_val] + right_shift, c,c,c,c,1);
-		
+		else
+		draw_text_color(rightTextXPosition,rightTextYPosition,left_shift + current_array[current_val] + right_shift, c_dkgray,c_dkgray,c_dkgray,c_dkgray,1);
 		break;
 		case mainMenu_element_type.slider:
 		var len = 64;
@@ -126,4 +128,5 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
+
 
