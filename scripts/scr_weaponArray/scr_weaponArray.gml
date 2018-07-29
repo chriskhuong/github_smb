@@ -27,10 +27,20 @@ for (i = 0; i < weapons; i++)
             }
     }
 
+
 //Pistol
 weaponArray[0, 0] = "Pistol"; //Name
-weaponArray[0, 1] = spr_side_shoot_pistol; //Sprite Index
-weaponArray[0, 2] = spr_down_shoot_pistol; //Sprite Index
+
+if (character != SEBASTIAN)
+	{
+		weaponArray[0, 1] = spr_side_shoot_pistol; //Sprite Index
+		weaponArray[0, 2] = spr_down_shoot_pistol; //Sprite Index
+	}
+else
+	{
+		weaponArray[0, 1] = spr_left_shoot_pistol_new; //Sprite Index
+		weaponArray[0, 2] = spr_down_shoot_pistol_new; //Sprite Index
+	}
 weaponArray[0, 3] = 10; //Rate of Fire
 weaponArray[0, 4] = scr_pistol;
 weaponArray[0, 5] = 6; //Muzzle Offset //(for bullet creation)

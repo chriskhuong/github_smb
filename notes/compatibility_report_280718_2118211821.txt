@@ -1,0 +1,1379 @@
+Converting GML script: ${project_dir}\scripts\tmc_vect_scaler\tmc_vect_scaler.gml
+Converted description /// @description tmc_vect_scaler(vect,real)/// @param vect
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_add\tmc_vect_add.gml
+Converted description /// @description tmc_vect_add(vect1, vect2)/// @param vect1
+/// @param  vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_scalar\tmc_vect_scalar.gml
+Converted description /// @description tmc_vect_scalar(vect1, vect2)/// @param vect1
+/// @param  vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_sub\tmc_vect_sub.gml
+Converted description /// @description tmc_vect_sub(vect1, vect2)/// @param vect1
+/// @param  vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_comp\tmc_vect_comp.gml
+Converted description /// @description tmc_vect_comp(vect1, vect2)/// @param vect1
+/// @param  vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_cross\tmc_vect_cross.gml
+Converted description /// @description tmc_vect_cross(vect1,vect2)/// @param vect1
+/// @param vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_dist\tmc_vect_dist.gml
+Converted description /// @description tmc_vect_dist(vect1,vect2)/// @param vect1
+/// @param vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_div\tmc_vect_div.gml
+Converted description /// @description tmc_vect_div(vect1, vect2)/// @param vect1
+/// @param  vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_divr\tmc_vect_divr.gml
+Converted description /// @description tmc_vect_divr(vect, real)/// @param vect
+/// @param  real
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_dot\tmc_vect_dot.gml
+Converted description /// @description tmc_vect_dot(vect1,vect2)/// @param vect1
+/// @param vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_len\tmc_vect_len.gml
+Converted description /// @description tmc_vect_len(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_mult\tmc_vect_mult.gml
+Converted description /// @description tmc_vect_mult(vect1, vect2)/// @param vect1
+/// @param  vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_multr\tmc_vect_multr.gml
+Converted description /// @description tmc_vect_multr(vect, real)/// @param vect
+/// @param  real
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_subr\tmc_vect_subr.gml
+Converted description /// @description tmc_vect_subr(vect, real)/// @param vect
+/// @param  real
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_addr\tmc_vect_addr.gml
+Converted description /// @description tmc_vect_addr(vect, real)/// @param vect
+/// @param  real
+
+Converting GML script: ${project_dir}\scripts\tmc_vect2\tmc_vect2.gml
+Converted description /// @description  tmc_vect2(x,y)/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vect3\tmc_vect3.gml
+Converted description /// @description  tmc_vect3(x,y,z)/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vect4\tmc_vect4.gml
+Converted description /// @description  tmc_vect4(x,y,z,a)/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_free\tmc_vect_free.gml
+Converted description /// @description tmc_vect_free(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_to_vect4\tmc_vect_to_vect4.gml
+Converted description /// @description tmc_vect_to_vect4(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_to_vect2\tmc_vect_to_vect2.gml
+Converted description /// @description tmc_vect_to_vect2(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_to_vect3\tmc_vect_to_vect3.gml
+Converted description /// @description tmc_vect_to_vect3(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_rev\tmc_vect_rev.gml
+Converted description /// @description tmc_vect_rev(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_lerp\tmc_vect_lerp.gml
+Converted description /// @description tmc_vect_lerp(vect1,vect2,lerp)/// @param vect1
+/// @param vect2
+/// @param lerp
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_norm\tmc_vect_norm.gml
+Converted description /// @description tmc_vect_norm(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_clamp\tmc_vect_clamp.gml
+Converted description /// @description tmc_vect_clamp(vect,vectLower,vectUpper)/// @param vect
+/// @param vectLower
+/// @param vectUpper
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_powr\tmc_vect_powr.gml
+Converted description /// @description tmc_vect_powr(vect1, real)/// @param vect1
+/// @param  real
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_pow\tmc_vect_pow.gml
+Converted description /// @description tmc_vect_pow(vect1, vect2)/// @param vect1
+/// @param  vect2
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_set_extra_data\tmc_vect_set_extra_data.gml
+Converted description /// @description tmc_vect_set_extra_data(tmc_vect,data)/// @param tmc_vect
+/// @param data
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_get_extra_data\tmc_vect_get_extra_data.gml
+Converted description /// @description tmc_vect_get_extra_data(tmc_vect)/// @param tmc_vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_perp\tmc_vect_perp.gml
+Converted description /// @description tmc_vect_perp(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_triangle_normal\tmc_vect_triangle_normal.gml
+Converted description /// @description tmc_vect_triangle_normal(vect p1,vect p2, vect p3)/// @param vect p1
+/// @param vect p2
+/// @param  vect p3
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_rot2d\tmc_vect_rot2d.gml
+Converted description /// @description tmc_vect_rot2d(vect,angle)/// @param vect
+/// @param angle
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_dir2d\tmc_vect_dir2d.gml
+Converted description /// @description tmc_vect_dir2d(tmc_vect)/// @param tmc_vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_reflect\tmc_vect_reflect.gml
+Converted description /// @description tmc_vect_reflect(incident, reflect)/// @param incident
+/// @param  reflect
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_bounce\tmc_vect_bounce.gml
+Converted description /// @description tmc_vect_bounce(incident, reflect, restitution)/// @param incident
+/// @param  reflect
+/// @param  restitution
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_is_clockwise\tmc_vect_is_clockwise.gml
+Converted description /// @description tmc_vect_is_clockwise(pA,pB,pC)/// @param pA
+/// @param pB
+/// @param pC
+
+Converting GML script: ${project_dir}\scripts\tmc_vect3_from_angles\tmc_vect3_from_angles.gml
+Converted description /// @description tmc_vect3_from_angles(angle, zangle)/// @param angle
+/// @param  zangle
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_point_inside_triangle\tmc_vect_point_inside_triangle.gml
+Converted description /// @description tmc_vect_point_inside_triangle(Point, TriPT1, TriPT2, TriPT3)/// @param Point
+/// @param  TriPT1
+/// @param  TriPT2
+/// @param  TriPT3
+
+Converting GML script: ${project_dir}\scripts\tmc_vect_plane_normal_from_tri\tmc_vect_plane_normal_from_tri.gml
+Converted description /// @description tmc_vect_plane_normal_from_tri(vect p1,vect p2, vect p3)/// @param vect p1
+/// @param vect p2
+/// @param  vect p3
+
+Converting GML script: ${project_dir}\scripts\tmc_vect\tmc_vect.gml
+Converted description /// @description  tmc_vect(x optional, y optional, z optional, a optional)/// @param x optional
+/// @param  y optional
+/// @param  z optional
+/// @param  a optional
+
+Converting GML script: ${project_dir}\scripts\tmc_segment\tmc_segment.gml
+Converted description /// @description tmc_segment(point1,point2)/// @param point1
+/// @param point2
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_set_extra_data\tmc_segment_set_extra_data.gml
+Converted description /// @description tmc_segment_set_extra_data(tmc_segment,data)/// @param tmc_segment
+/// @param data
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_get_extra_data\tmc_segment_get_extra_data.gml
+Converted description /// @description tmc_segment_get_extra_data(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_free\tmc_segment_free.gml
+Converted description /// @description tmc_segment_free(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_p1\tmc_segment_p1.gml
+Converted description /// @description tmc_segment_p1(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_p2\tmc_segment_p2.gml
+Converted description /// @description tmc_segment_p2(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_len\tmc_segment_len.gml
+Converted description /// @description tmc_segment_len(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_scalar\tmc_segment_scalar.gml
+Converted description /// @description tmc_segment_scalar(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_dir2d\tmc_segment_dir2d.gml
+Converted description /// @description tmc_segment_dir2d(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_line_to_segment\tmc_segment_line_to_segment.gml
+Converted description /// @description tmc_segment_line_to_segment(tmc_segment1,tmc_segment2)/// @param tmc_segment1
+/// @param tmc_segment2
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_aabb\tmc_segment_aabb.gml
+Converted description /// @description tmc_segment_aabb(tmc_segment1,tmc_segment2)/// @param tmc_segment1
+/// @param tmc_segment2
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_get_extent\tmc_segment_get_extent.gml
+Converted description /// @description tmc_segment_get_extent(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_aabb_fast\tmc_segment_aabb_fast.gml
+Converted description /// @description tmc_segment_aabb_fast(tmc_segment1,tmc_segment2)/// @param tmc_segment1
+/// @param tmc_segment2
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_scalar_to_segment\tmc_segment_scalar_to_segment.gml
+Converted description /// @description tmc_segment_scalar_to_segment(tmc_segment1,tmc_segment2)/// @param tmc_segment1
+/// @param tmc_segment2
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_distance_to_segment\tmc_segment_distance_to_segment.gml
+Converted description /// @description tmc_segment_distance_to_segment(tmc_segment1,tmc_segment2)/// @param tmc_segment1
+/// @param tmc_segment2
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_intersects_segment\tmc_segment_intersects_segment.gml
+Converted description /// @description tmc_segment_intersects_segment(tmc_segment1,tmc_segment1)/// @param tmc_segment1
+/// @param tmc_segment1
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_distance_to_point\tmc_segment_distance_to_point.gml
+Converted description /// @description tmc_segment_distance_to_point(tmc_segment1,tmc_vect)/// @param tmc_segment1
+/// @param tmc_vect
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_scalar_to_point\tmc_segment_scalar_to_point.gml
+Converted description /// @description tmc_segment_scalar_to_point(tmc_segment1,tmc_vect)/// @param tmc_segment1
+/// @param tmc_vect
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_line_to_point\tmc_segment_line_to_point.gml
+Converted description /// @description tmc_segment_line_to_point(tmc_segment1,tmc_vect)/// @param tmc_segment1
+/// @param tmc_vect
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_debug_draw_line\tmc_segment_debug_draw_line.gml
+Converted description /// @description tmc_segment_debug_draw_line(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_debug_draw_box\tmc_segment_debug_draw_box.gml
+Converted description /// @description tmc_segment_debug_draw_box(tmc_segment)/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_intersect_plane\tmc_segment_intersect_plane.gml
+Converted description /// @description tmc_segment_intersect_plane(segment Segment, vect3 PlanePoint, vect3 PlaneNormal, vec3 out_IntersectPoint)/// @param segment Segment
+/// @param  vect3 PlanePoint
+/// @param  vect3 PlaneNormal
+/// @param  vec3 out_IntersectPoint
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_intersect_triangle\tmc_segment_intersect_triangle.gml
+Converted description /// @description tmc_segment_intersect_triangle(segment Segment, vect3 TriP1, vect3 TriP2, vec3 TriP3,vec3 out_IntersectPoint)/// @param segment Segment
+/// @param  vect3 TriP1
+/// @param  vect3 TriP2
+/// @param  vec3 TriP3
+/// @param vec3 out_IntersectPoint
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_create\tmc_pill_create.gml
+Converted description /// @description tmc_pill_create(x1,y1,x2,y2,collision_radius,sensor_radius)/// @param x1
+/// @param y1
+/// @param x2
+/// @param y2
+/// @param collision_radius
+/// @param sensor_radius
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_change\tmc_pill_change.gml
+Converted description /// @description tmc_pill_change(tmc_pill,x1,y1,x2,y2,collision_radius,detection_radius)/// @param tmc_pill
+/// @param x1
+/// @param y1
+/// @param x2
+/// @param y2
+/// @param collision_radius
+/// @param detection_radius
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_get_extent_sensor\tmc_pill_get_extent_sensor.gml
+Converted description /// @description tmc_pill_get_extent_sensor(tmc_pill,x,y)/// @param tmc_pill
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_get_world_segment\tmc_pill_get_world_segment.gml
+Converted description /// @description tmc_pill_get_world_segment(tmc_pill,x,y)/// @param tmc_pill
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_get_extent_collision\tmc_pill_get_extent_collision.gml
+Converted description /// @description tmc_pill_get_extent_collision(tmc_pill,x,y)/// @param tmc_pill
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_debug_draw\tmc_pill_debug_draw.gml
+Converted description /// @description tmc_pill_debug_draw(tmc_pill,y,x)/// @param tmc_pill
+/// @param y
+/// @param x
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_debug_draw_bbox\tmc_pill_debug_draw_bbox.gml
+Converted description /// @description tmc_pill_debug_draw_bbox(tmc_pill,y,x)/// @param tmc_pill
+/// @param y
+/// @param x
+
+Converting GML script: ${project_dir}\scripts\tmc_pill_character_collision\tmc_pill_character_collision.gml
+Converted description /// @description tmc_pill_character_collision(tmc_pill, tmc_shape_list)/// @param tmc_pill
+/// @param  tmc_shape_list
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_list_create\tmc_shape_list_create.gml
+Converted description /// @description tmc_shape_list_create()
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_list_add\tmc_shape_list_add.gml
+Converted description /// @description tmc_shape_list_add(tmc_shape_list,tmc_shape)/// @param tmc_shape_list
+/// @param tmc_shape
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_list_free\tmc_shape_list_free.gml
+Converted description /// @description tmc_shape_list_free(tmc_shape_list)/// @param tmc_shape_list
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_list_size\tmc_shape_list_size.gml
+Converted description /// @description tmc_shape_list_size(tmc_shaepe_list)/// @param tmc_shaepe_list
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_list_debug_draw\tmc_shape_list_debug_draw.gml
+Converted description /// @description tmc_shape_list_debug_draw(tmc_shape_list, draw_extent)/// @param tmc_shape_list
+/// @param  draw_extent
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_list_create\tmc_segment_list_create.gml
+Converted description /// @description tmc_segment_list_create()
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_list_size\tmc_segment_list_size.gml
+Converted description /// @description tmc_segment_list_size(tmc_segment_list)/// @param tmc_segment_list
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_list_add\tmc_segment_list_add.gml
+Converted description /// @description tmc_segment_list_add(tmc_segment_list,tmc_segment)/// @param tmc_segment_list
+/// @param tmc_segment
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_list_get_extent\tmc_segment_list_get_extent.gml
+Converted description /// @description tmc_segment_list_get_extent(tmc_segemnt_list)/// @param tmc_segemnt_list
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_list_free\tmc_segment_list_free.gml
+Converted description /// @description tmc_segment_list_free(tmc_segment_list)/// @param tmc_segment_list
+
+Converting GML script: ${project_dir}\scripts\tmc_segment_list_debug_draw\tmc_segment_list_debug_draw.gml
+Converted description /// @description tmc_segment_list_debug_draw(tmc_segment_list,view_extent)/// @param tmc_segment_list
+/// @param view_extent
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_create\tmc_shape_create.gml
+Converted description /// @description tmc_shape_create(tmc_segment_list)/// @param tmc_segment_list
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_set_extra_data\tmc_shape_set_extra_data.gml
+Converted description /// @description tmc_shape_set_extra_data(tmc_shape,data)/// @param tmc_shape
+/// @param data
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_get_extra_data\tmc_shape_get_extra_data.gml
+Converted description /// @description tmc_shape_get_extra_data(tmc_shape)/// @param tmc_shape
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_get_extent\tmc_shape_get_extent.gml
+Converted description /// @description tmc_shape_get_extent(tmc_shape)/// @param tmc_shape
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_get_segments\tmc_shape_get_segments.gml
+Converted description /// @description tmc_shape_get_segments(tmc_shape)/// @param tmc_shape
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_free\tmc_shape_free.gml
+Converted description /// @description tmc_shape_free(tmc_shape)/// @param tmc_shape
+
+Converting GML script: ${project_dir}\scripts\tmc_shape_debug_draw\tmc_shape_debug_draw.gml
+Converted description /// @description tmc_shape_debug_draw(shape,view_extent)/// @param shape
+/// @param view_extent
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2\tmc_vec2.gml
+Converted description /// @description tmc_vec2(x,y)/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_clone\tmc_vec2_clone.gml
+Converted description /// @description tmc_vec2_clone(tmc_vec2)/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_r\tmc_vec2_r.gml
+Converted description /// @description tmc_vec2_r(real)/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_e\tmc_vec2_e.gml
+Converted description /// @description tmc_vec2_e()
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_set_io\tmc_vec2_set_io.gml
+Converted description /// @description tmc_vec2_set_io(io_tmc_vec2,tmc_vec2)/// @param io_tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_set_r_io\tmc_vec2_set_r_io.gml
+Converted description /// @description tmc_vec2_set_r_io(io_tmc_vec2,real)/// @param io_tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_set_vals_io\tmc_vec2_set_vals_io.gml
+Converted description /// @description tmc_vec2_set_vals_io(io_tmc_vec2,x,y)/// @param io_tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_add\tmc_vec2_add.gml
+Converted description /// @description tmc_vec2_add(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_add_io\tmc_vec2_add_io.gml
+Converted description /// @description tmc_vec2_add_io(io_tmc_vec2,tmc_vec2)/// @param io_tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_add_r\tmc_vec2_add_r.gml
+Converted description /// @description tmc_vec2_add_r(tmc_vec2,real)/// @param tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_add_r_io\tmc_vec2_add_r_io.gml
+Converted description /// @description tmc_vec2_add_r_io(io_tmc_vec2,real)/// @param io_tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_add_vals\tmc_vec2_add_vals.gml
+Converted description /// @description tmc_vec2_add_vals(tmc_vec2,x,y)/// @param tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_add_vals_io\tmc_vec2_add_vals_io.gml
+Converted description /// @description tmc_vec2_add_vals_io(io_tmc_vec2,x,y)/// @param io_tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_sub\tmc_vec2_sub.gml
+Converted description /// @description tmc_vec2_sub(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_sub_io\tmc_vec2_sub_io.gml
+Converted description /// @description tmc_vec2_sub_io(io_tmc_vec2,tmc_vec2)/// @param io_tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_sub_r\tmc_vec2_sub_r.gml
+Converted description /// @description tmc_vec2_sub_r(tmc_vec2,real)/// @param tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_sub_r_io\tmc_vec2_sub_r_io.gml
+Converted description /// @description tmc_vec2_sub_r_io(io_tmc_vec2,real)/// @param io_tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_sub_vals\tmc_vec2_sub_vals.gml
+Converted description /// @description tmc_vec2_sub_vals(tmc_vec2,x,y)/// @param tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_sub_vals_io\tmc_vec2_sub_vals_io.gml
+Converted description /// @description tmc_vec2_sub_vals_io(io_tmc_vec2,x,y)/// @param io_tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_mult\tmc_vec2_mult.gml
+Converted description /// @description tmc_vec2_mult(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_mult_io\tmc_vec2_mult_io.gml
+Converted description /// @description tmc_vec2_mult_io(io_tmc_vec2,tmc_vec2)/// @param io_tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_mult_r\tmc_vec2_mult_r.gml
+Converted description /// @description tmc_vec2_mult_r(tmc_vec2,real)/// @param tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_mult_r_io\tmc_vec2_mult_r_io.gml
+Converted description /// @description tmc_vec2_mult_r_io(io_tmc_vec2,real)/// @param io_tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_mult_vals\tmc_vec2_mult_vals.gml
+Converted description /// @description tmc_vec2_mult_vals(tmc_vec2,x,y)/// @param tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_mult_vals_io\tmc_vec2_mult_vals_io.gml
+Converted description /// @description tmc_vec2_mult_vals_io(io_tmc_vec2,x,y)/// @param io_tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_div\tmc_vec2_div.gml
+Converted description /// @description tmc_vec2_div(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_div_io\tmc_vec2_div_io.gml
+Converted description /// @description tmc_vec2_div_io(io_tmc_vec2,tmc_vec2)/// @param io_tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_div_r\tmc_vec2_div_r.gml
+Converted description /// @description tmc_vec2_div_r(tmc_vec2,real)/// @param tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_div_r_io\tmc_vec2_div_r_io.gml
+Converted description /// @description tmc_vec2_div_r_io(io_tmc_vec2,real)/// @param io_tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_div_vals\tmc_vec2_div_vals.gml
+Converted description /// @description tmc_vec2_div_vals(tmc_vec2,x,y)/// @param tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_div_vals_io\tmc_vec2_div_vals_io.gml
+Converted description /// @description tmc_vec2_div_vals_io(io_tmc_vec2,x,y)/// @param io_tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_scalar\tmc_vec2_scalar.gml
+Converted description /// @description tmc_vec2_scalar(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_scalar_vals\tmc_vec2_scalar_vals.gml
+Converted description /// @description tmc_vec2_scalar_vals(tmc_vec2,x,y)/// @param tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_scalar_io\tmc_vec2_scalar_io.gml
+Converted description /// @description tmc_vec2_scalar_io(io_tmc_vec2,tmc_vec2)/// @param io_tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_scalar_vals_io\tmc_vec2_scalar_vals_io.gml
+Converted description /// @description tmc_vec2_scalar_vals_io(io_tmc_vec2,x,y)/// @param io_tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_len\tmc_vec2_len.gml
+Converted description /// @description tmc_vec2_len(tmc_vec2)/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_dist\tmc_vec2_dist.gml
+Converted description /// @description tmc_vec2_dist(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_dist_vals\tmc_vec2_dist_vals.gml
+Converted description /// @description tmc_vec2_dist_vals(tmc_vec2,x,y)/// @param tmc_vec2
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_norm\tmc_vec2_norm.gml
+Converted description /// @description tmc_vec2_norm(tmc_vec2)/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_norm_io\tmc_vec2_norm_io.gml
+Converted description /// @description tmc_vec2_norm_io(io_tmc_vec2)/// @param io_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_norm_o\tmc_vec2_norm_o.gml
+Converted description /// @description tmc_vec2_norm_o(tmc_vec2,o_tmc_vec2)/// @param tmc_vec2
+/// @param o_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_scale_r\tmc_vec2_scale_r.gml
+Converted description /// @description tmc_vec2_scale_r(tmc_vec2,real)/// @param tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_scale_r_o\tmc_vec2_scale_r_o.gml
+Converted description /// @description tmc_vec2_scale_r_o(tmc_vec2,real,o_tmc_vec2)/// @param tmc_vec2
+/// @param real
+/// @param o_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_scale_r_io\tmc_vec2_scale_r_io.gml
+Converted description /// @description tmc_vec2_scale_r_io(io_tmc_vec2,real)/// @param io_tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_dot\tmc_vec2_dot.gml
+Converted description /// @description tmc_vec2_dot(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_dot_norm\tmc_vec2_dot_norm.gml
+Converted description /// @description tmc_vec2_dot_norm(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_dot_vals\tmc_vec2_dot_vals.gml
+Converted description /// @description tmc_vec2_dot_vals(tmc_vec4,x,y,z)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_dot_vals_norm\tmc_vec2_dot_vals_norm.gml
+Converted description /// @description tmc_vec2_dot_vals_norm(tmc_vec2,x,y,z,a)/// @param tmc_vec2
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_perp\tmc_vec2_perp.gml
+Converted description /// @description tmc_vec2_perp(vect)/// @param vect
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_perp2\tmc_vec2_perp2.gml
+Converted description /// @description tmc_vec2_perp2(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_comp\tmc_vec2_comp.gml
+Converted description /// @description tmc_vec2_comp(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_to_vec4\tmc_vec2_to_vec4.gml
+Converted description /// @description tmc_vec2_to_vec4(tmc_vec2)/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_to_vec3\tmc_vec2_to_vec3.gml
+Converted description /// @description tmc_vec2_to_vec3(tmc_vec)/// @param tmc_vec
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_to_vec3_io\tmc_vec2_to_vec3_io.gml
+Converted description /// @description tmc_vec2_to_vec3_io(io_tmc_vec2)/// @param io_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_to_vec4_io\tmc_vec2_to_vec4_io.gml
+Converted description /// @description tmc_vec2_to_vec4_io(io_tmc_vec2)/// @param io_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_rev\tmc_vec2_rev.gml
+Converted description /// @description tmc_vec2_rev(tmc_vec2)/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_rev_io\tmc_vec2_rev_io.gml
+Converted description /// @description tmc_vec2_rev_io(io_tmc_vec2)/// @param io_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_lerp\tmc_vec2_lerp.gml
+Converted description /// @description tmc_vec2_lerp(tmc_vec2,tmc_vec2,lerp)/// @param tmc_vec2
+/// @param tmc_vec2
+/// @param lerp
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_lerp_o\tmc_vec2_lerp_o.gml
+Converted description /// @description tmc_vec2_lerp_o(tmc_vec2,tmc_vec2,lerp,o_tmc_vect4)/// @param tmc_vec2
+/// @param tmc_vec2
+/// @param lerp
+/// @param o_tmc_vect4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_set_extra_data\tmc_vec2_set_extra_data.gml
+Converted description /// @description tmc_vec2_set_extra_data(tmc_vec2,data,offset)/// @param tmc_vec2
+/// @param data
+/// @param offset
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_get_extra_data\tmc_vec2_get_extra_data.gml
+Converted description /// @description tmc_vec2_get_extra_data(tmc_vec2,offset)/// @param tmc_vec2
+/// @param offset
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_clamp\tmc_vec2_clamp.gml
+Converted description /// @description tmc_vec2_clamp(tmc_vec2,tmc_vec2_min,tmc_vec2_max)/// @param tmc_vec2
+/// @param tmc_vec2_min
+/// @param tmc_vec2_max
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_clamp_io\tmc_vec2_clamp_io.gml
+Converted description /// @description tmc_vec2_clamp_io(io_tmc_vec2,tmc_vec2_min,tmc_vec2_max)/// @param io_tmc_vec2
+/// @param tmc_vec2_min
+/// @param tmc_vec2_max
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_pow\tmc_vec2_pow.gml
+Converted description /// @description tmc_vec2_pow(tmc_vec2,tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_pow_o\tmc_vec2_pow_o.gml
+Converted description /// @description tmc_vec2_pow_o(tmc_vec2,tmc_vec2,o_tmc_vec2)/// @param tmc_vec2
+/// @param tmc_vec2
+/// @param o_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_pow_r\tmc_vec2_pow_r.gml
+Converted description /// @description tmc_vec2_pow_r(tmc_vec2,real)/// @param tmc_vec2
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec2_pow_r_o\tmc_vec2_pow_r_o.gml
+Converted description /// @description tmc_vec2_pow_r_o(tmc_vec2,real,o_tmc_vec2)/// @param tmc_vec2
+/// @param real
+/// @param o_tmc_vec2
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3\tmc_vec3.gml
+Converted description /// @description tmc_vec3(x,y,z)/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_clone\tmc_vec3_clone.gml
+Converted description /// @description tmc_vec3_clone(tmc_vec3)/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_e\tmc_vec3_e.gml
+Converted description /// @description tmc_vec3_e()
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_r\tmc_vec3_r.gml
+Converted description /// @description tmc_vec3_r(real)/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_set_io\tmc_vec3_set_io.gml
+Converted description /// @description tmc_vec3_set_io(io_tmc_vec3,tmc_vec3)/// @param io_tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_set_r_io\tmc_vec3_set_r_io.gml
+Converted description /// @description tmc_vec3_set_r_io(io_tmc_vec3,real)/// @param io_tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_set_vals_io\tmc_vec3_set_vals_io.gml
+Converted description /// @description tmc_vec3_set_vals_io(io_tmc_vec3,x,y,z)/// @param io_tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_add\tmc_vec3_add.gml
+Converted description /// @description tmc_vec3_add(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_add_io\tmc_vec3_add_io.gml
+Converted description /// @description tmc_vec3_add_io(io_tmc_vec3,tmc_vec3)/// @param io_tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_add_r\tmc_vec3_add_r.gml
+Converted description /// @description tmc_vec3_add_r(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_add_r_io\tmc_vec3_add_r_io.gml
+Converted description /// @description tmc_vec3_add_r_io(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_add_vals\tmc_vec3_add_vals.gml
+Converted description /// @description tmc_vec3_add_vals(tmc_vec3,x,y,z)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_add_vals_io\tmc_vec3_add_vals_io.gml
+Converted description /// @description tmc_vec3_add_vals_io(io_tmc_vec3,x,y,z)/// @param io_tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_sub\tmc_vec3_sub.gml
+Converted description /// @description tmc_vec3_sub(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_sub_io\tmc_vec3_sub_io.gml
+Converted description /// @description tmc_vec3_sub_io(io_tmc_vec3,tmc_vec3)/// @param io_tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_sub_o\tmc_vec3_sub_o.gml
+Converted description /// @description tmc_vec3_sub_o(tmc_vec3,tmc_vec3,o_tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+/// @param o_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_sub_r\tmc_vec3_sub_r.gml
+Converted description /// @description tmc_vec3_sub_r(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_sub_r_io\tmc_vec3_sub_r_io.gml
+Converted description /// @description tmc_vec3_sub_r_io(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_sub_vals\tmc_vec3_sub_vals.gml
+Converted description /// @description tmc_vec3_sub_vals(tmc_vec3,x,y,z)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_sub_vals_io\tmc_vec3_sub_vals_io.gml
+Converted description /// @description tmc_vec3_sub_vals_io(io_tmc_vec3,x,y,z)/// @param io_tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_mult\tmc_vec3_mult.gml
+Converted description /// @description tmc_vec3_mult(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_mult_io\tmc_vec3_mult_io.gml
+Converted description /// @description tmc_vec3_mult_io(io_tmc_vec3,tmc_vec3)/// @param io_tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_mult_r\tmc_vec3_mult_r.gml
+Converted description /// @description tmc_vec3_mult_r(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_mult_r_io\tmc_vec3_mult_r_io.gml
+Converted description /// @description tmc_vec3_mult_r_io(io_tmc_vec3,real)/// @param io_tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_mult_vals\tmc_vec3_mult_vals.gml
+Converted description /// @description tmc_vec3_mult_vals(tmc_vec3,x,y,z)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_mult_vals_io\tmc_vec3_mult_vals_io.gml
+Converted description /// @description tmc_vec3_mult_vals_io(io_tmc_vec4,x,y,z)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_div\tmc_vec3_div.gml
+Converted description /// @description tmc_vec3_div(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_div_io\tmc_vec3_div_io.gml
+Converted description /// @description tmc_vec3_div_io(io_tmc_vec3,tmc_vec3)/// @param io_tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_div_r\tmc_vec3_div_r.gml
+Converted description /// @description tmc_vec3_div_r(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_div_r_io\tmc_vec3_div_r_io.gml
+Converted description /// @description tmc_vec3_div_r_io(io_tmc_vec3,real)/// @param io_tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_div_vals\tmc_vec3_div_vals.gml
+Converted description /// @description tmc_vec3_div_vals(tmc_vec3,x,y,z)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_div_vals_io\tmc_vec3_div_vals_io.gml
+Converted description /// @description tmc_vec3_div_vals_io(io_tmc_vec3,x,y,z)/// @param io_tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_scalar\tmc_vec3_scalar.gml
+Converted description /// @description tmc_vec3_scalar(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_scalar_io\tmc_vec3_scalar_io.gml
+Converted description /// @description tmc_vec3_scalar_io(io_tmc_vec3,tmc_vec3)/// @param io_tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_scalar_vals\tmc_vec3_scalar_vals.gml
+Converted description /// @description tmc_vec3_scalar_vals(tmc_vec3,x,y,z)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_scalar_vals_io\tmc_vec3_scalar_vals_io.gml
+Converted description /// @description tmc_vec3_scalar_vals_io(io_tmc_vec3,x,y,z)/// @param io_tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_len\tmc_vec3_len.gml
+Converted description /// @description tmc_vec3_len(tmc_vec3)/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_dist\tmc_vec3_dist.gml
+Converted description /// @description tmc_vec3_dist(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_dist_vals\tmc_vec3_dist_vals.gml
+Converted description /// @description tmc_vec3_dist_vals(tmc_vec3,x,y,z)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_norm\tmc_vec3_norm.gml
+Converted description /// @description tmc_vec3_norm(tmc_vec3)/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_norm_io\tmc_vec3_norm_io.gml
+Converted description /// @description tmc_vec3_norm_io(io_tmc_vec3)/// @param io_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_norm_o\tmc_vec3_norm_o.gml
+Converted description /// @description tmc_vec3_norm_o(tmc_vec3,o_tmc_vec3)/// @param tmc_vec3
+/// @param o_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_scale_r\tmc_vec3_scale_r.gml
+Converted description /// @description tmc_vec3_scale_r(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_scale_r_io\tmc_vec3_scale_r_io.gml
+Converted description /// @description tmc_vec3_scale_r_io(io_tmc_vec3,real)/// @param io_tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_scale_r_o\tmc_vec3_scale_r_o.gml
+Converted description /// @description tmc_vec3_scale_r_o(tmc_vec3,real,o_tmc_vec3)/// @param tmc_vec3
+/// @param real
+/// @param o_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_dot\tmc_vec3_dot.gml
+Converted description /// @description tmc_vec3_dot(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_dot_norm\tmc_vec3_dot_norm.gml
+Converted description /// @description tmc_vec3_dot_norm(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_dot_vals\tmc_vec3_dot_vals.gml
+Converted description /// @description tmc_vec3_dot_vals(tmc_vec4,x,y,z)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_dot_vals_norm\tmc_vec3_dot_vals_norm.gml
+Converted description /// @description tmc_vec3_dot_vals_norm(tmc_vec3,x,y,z,a)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_cross\tmc_vec3_cross.gml
+Converted description /// @description tmc_vec3_cross(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_cross_vals\tmc_vec3_cross_vals.gml
+Converted description /// @description tmc_vec3_cross_vals(tmc_vec3,x,y,z,a)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_cross_io\tmc_vec3_cross_io.gml
+Converted description /// @description tmc_vec3_cross_io(io_tmc_vec3,tmc_vec3)/// @param io_tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_cross_vals_io\tmc_vec3_cross_vals_io.gml
+Converted description /// @description tmc_vec3_cross_vals_io(io_tmc_vec3,x,y,z,a)/// @param io_tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_comp\tmc_vec3_comp.gml
+Converted description /// @description tmc_vec3_comp(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_to_vec4\tmc_vec3_to_vec4.gml
+Converted description /// @description tmc_vec3_to_vec4(tmc_vec3)/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_to_vec4_io\tmc_vec3_to_vec4_io.gml
+Converted description /// @description tmc_vec3_to_vec4_io(io_tmc_vec3)/// @param io_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_to_vec2\tmc_vec3_to_vec2.gml
+Converted description /// @description tmc_vec3_to_vec2(tmc_vec3)/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_to_vec2_io\tmc_vec3_to_vec2_io.gml
+Converted description /// @description tmc_vec3_to_vec2_io(io_tmc_vec3)/// @param io_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_rev\tmc_vec3_rev.gml
+Converted description /// @description tmc_vec3_rev(tmc_vec3)/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_rev_io\tmc_vec3_rev_io.gml
+Converted description /// @description tmc_vec3_rev_io(io_tmc_vec3)/// @param io_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_lerp\tmc_vec3_lerp.gml
+Converted description /// @description tmc_vec3_lerp(tmc_vec3,tmc_vec3,lerp)/// @param tmc_vec3
+/// @param tmc_vec3
+/// @param lerp
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_lerp_o\tmc_vec3_lerp_o.gml
+Converted description /// @description tmc_vec3_lerp_o(tmc_vec3,tmc_vec3,lerp,o_tmc_vect4)/// @param tmc_vec3
+/// @param tmc_vec3
+/// @param lerp
+/// @param o_tmc_vect4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_set_extra_data\tmc_vec3_set_extra_data.gml
+Converted description /// @description tmc_vec3_set_extra_data(tmc_vec3,data,offset)/// @param tmc_vec3
+/// @param data
+/// @param offset
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_get_extra_data\tmc_vec3_get_extra_data.gml
+Converted description /// @description tmc_vec3_get_extra_data(tmc_vec3,offset)/// @param tmc_vec3
+/// @param offset
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_clamp\tmc_vec3_clamp.gml
+Converted description /// @description tmc_vec3_clamp(tmc_vec3,tmc_vec3_min,tmc_vec3_max)/// @param tmc_vec3
+/// @param tmc_vec3_min
+/// @param tmc_vec3_max
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_clamp_io\tmc_vec3_clamp_io.gml
+Converted description /// @description tmc_vec3_clamp_io(io_tmc_vec3,tmc_vec3_min,tmc_vec3_max)/// @param io_tmc_vec3
+/// @param tmc_vec3_min
+/// @param tmc_vec3_max
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_pow\tmc_vec3_pow.gml
+Converted description /// @description tmc_vec3_pow(tmc_vec3,tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_pow_o\tmc_vec3_pow_o.gml
+Converted description /// @description tmc_vec3_pow_o(tmc_vec3,tmc_vec3,o_tmc_vec3)/// @param tmc_vec3
+/// @param tmc_vec3
+/// @param o_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_pow_r\tmc_vec3_pow_r.gml
+Converted description /// @description tmc_vec3_pow_r(tmc_vec3,real)/// @param tmc_vec3
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_pow_r_o\tmc_vec3_pow_r_o.gml
+Converted description /// @description tmc_vec3_pow_r_o(tmc_vec3,real,o_tmc_vec3)/// @param tmc_vec3
+/// @param real
+/// @param o_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4\tmc_vec4.gml
+Converted description /// @description tmc_vec4(x,y,z,a)/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_clone\tmc_vec4_clone.gml
+Converted description /// @description tmc_vec4_clone(tmc_vec4)/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_r\tmc_vec4_r.gml
+Converted description /// @description tmc_vec4_r(real)/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_e\tmc_vec4_e.gml
+Converted description /// @description tmc_vec4_e()
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_set_io\tmc_vec4_set_io.gml
+Converted description /// @description tmc_vec4_set_io(o_tmc_vec4,tmc_vec4)/// @param o_tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_set_r_io\tmc_vec4_set_r_io.gml
+Converted description /// @description tmc_vec4_set_r_io(io_tmc_vec4,real)/// @param io_tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_set_vals_io\tmc_vec4_set_vals_io.gml
+Converted description /// @description tmc_vec4_set_vals_io(io_tmc_vec4,x,y,z,a)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_add\tmc_vec4_add.gml
+Converted description /// @description tmc_vec4_add(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_add_io\tmc_vec4_add_io.gml
+Converted description /// @description tmc_vec4_add_io(io_tmc_vec4,tmc_vec4)/// @param io_tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_add_o\tmc_vec4_add_o.gml
+Converted description /// @description tmc_vec4_add_o(tmc_vec4,tmc_vec4,o_tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_add_r\tmc_vec4_add_r.gml
+Converted description /// @description tmc_vec4_add_r(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_add_r_io\tmc_vec4_add_r_io.gml
+Converted description /// @description tmc_vec4_add_r_io(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_add_vals\tmc_vec4_add_vals.gml
+Converted description /// @description tmc_vec4_add_vals(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_add_vals_io\tmc_vec4_add_vals_io.gml
+Converted description /// @description tmc_vec4_add_vals_io(io_tmc_vec4,x,y,z,a)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_sub\tmc_vec4_sub.gml
+Converted description /// @description tmc_vec4_sub(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_sub_io\tmc_vec4_sub_io.gml
+Converted description /// @description tmc_vec4_sub_io(io_tmc_vec4,tmc_vec4)/// @param io_tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_sub_o\tmc_vec4_sub_o.gml
+Converted description /// @description tmc_vec4_sub_o(tmc_vec4,tmc_vec4,o_tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_sub_r\tmc_vec4_sub_r.gml
+Converted description /// @description tmc_vec4_sub_r(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_sub_r_io\tmc_vec4_sub_r_io.gml
+Converted description /// @description tmc_vec4_sub_r_io(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_sub_vals\tmc_vec4_sub_vals.gml
+Converted description /// @description tmc_vec4_sub_vals(tmc_vec3,x,y,z,a)/// @param tmc_vec3
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_sub_vals_io\tmc_vec4_sub_vals_io.gml
+Converted description /// @description tmc_vec4_sub_vals_io(io_tmc_vec4,x,y,z,a)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_mult\tmc_vec4_mult.gml
+Converted description /// @description tmc_vec4_mult(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_mult_io\tmc_vec4_mult_io.gml
+Converted description /// @description tmc_vec4_mult_io(io_tmc_vec4,tmc_vec4)/// @param io_tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_mult_o\tmc_vec4_mult_o.gml
+Converted description /// @description tmc_vec4_mult_o(tmc_vec4,tmc_vec4,o_tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_mult_r\tmc_vec4_mult_r.gml
+Converted description /// @description tmc_vec4_mult_r(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_mult_r_io\tmc_vec4_mult_r_io.gml
+Converted description /// @description tmc_vec4_mult_r_io(io_tmc_vec4,real)/// @param io_tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_mult_vals\tmc_vec4_mult_vals.gml
+Converted description /// @description tmc_vec4_mult_vals(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_mult_vals_io\tmc_vec4_mult_vals_io.gml
+Converted description /// @description tmc_vec4_mult_vals_io(io_tmc_vec4,x,y,z,a)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_div\tmc_vec4_div.gml
+Converted description /// @description tmc_vec4_div(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_div_io\tmc_vec4_div_io.gml
+Converted description /// @description tmc_vec4_div_io(io_tmc_vec4,tmc_vec4)/// @param io_tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_div_o\tmc_vec4_div_o.gml
+Converted description /// @description tmc_vec4_div_o(tmc_vec4,tmc_vec4,o_tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_div_r\tmc_vec4_div_r.gml
+Converted description /// @description tmc_vec4_div_r(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_div_r_io\tmc_vec4_div_r_io.gml
+Converted description /// @description tmc_vec4_div_r_io(io_tmc_vec4,real)/// @param io_tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_div_vals\tmc_vec4_div_vals.gml
+Converted description /// @description tmc_vec4_div_vals(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_div_vals_io\tmc_vec4_div_vals_io.gml
+Converted description /// @description tmc_vec4_div_vals_io(io_tmc_vec4,x,y,z,a)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_scalar\tmc_vec4_scalar.gml
+Converted description /// @description tmc_vec4_scalar(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_scalar_io\tmc_vec4_scalar_io.gml
+Converted description /// @description tmc_vec4_scalar_io(io_tmc_vec4,tmc_vec4)/// @param io_tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_scalar_vals\tmc_vec4_scalar_vals.gml
+Converted description /// @description tmc_vec4_scalar_vals(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_scalar_vals_io\tmc_vec4_scalar_vals_io.gml
+Converted description /// @description tmc_vec4_scalar_vals_io(io_tmc_vec4,x,y,z,a)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_len\tmc_vec4_len.gml
+Converted description /// @description tmc_vec4_len(tmc_vec4)/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_dist\tmc_vec4_dist.gml
+Converted description /// @description tmc_vec4_dist(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_dist_vals\tmc_vec4_dist_vals.gml
+Converted description /// @description tmc_vec4_dist_vals(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_norm\tmc_vec4_norm.gml
+Converted description /// @description tmc_vec4_norm(tmc_vec4)/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_norm_io\tmc_vec4_norm_io.gml
+Converted description /// @description tmc_vec4_norm_io(io_tmc_vec4)/// @param io_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_norm_o\tmc_vec4_norm_o.gml
+Converted description /// @description tmc_vec4_norm_o(tmc_vec4,o_tmc_vec4)/// @param tmc_vec4
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_scale_r\tmc_vec4_scale_r.gml
+Converted description /// @description tmc_vec4_scale_r(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_scale_r_io\tmc_vec4_scale_r_io.gml
+Converted description /// @description tmc_vec4_scale_r_io(io_tmc_vec4,real)/// @param io_tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_scale_r_o\tmc_vec4_scale_r_o.gml
+Converted description /// @description tmc_vec4_scale_r_o(tmc_vec4,real,o_tmc_vec4)/// @param tmc_vec4
+/// @param real
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_dot\tmc_vec4_dot.gml
+Converted description /// @description tmc_vec4_dot(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_dot_norm\tmc_vec4_dot_norm.gml
+Converted description /// @description tmc_vec4_dot_norm(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_dot_vals\tmc_vec4_dot_vals.gml
+Converted description /// @description tmc_vec4_dot_vals(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_dot_vals_norm\tmc_vec4_dot_vals_norm.gml
+Converted description /// @description tmc_vec4_dot_vals_norm(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_cross\tmc_vec4_cross.gml
+Converted description /// @description tmc_vec4_cross(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_cross_vals\tmc_vec4_cross_vals.gml
+Converted description /// @description tmc_vec4_cross_vals(tmc_vec4,x,y,z,a)/// @param tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_cross_io\tmc_vec4_cross_io.gml
+Converted description /// @description tmc_vec4_cross_io(io_tmc_vec4,tmc_vec4)/// @param io_tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_cross_vals_io\tmc_vec4_cross_vals_io.gml
+Converted description /// @description tmc_vec4_cross_vals_io(io_tmc_vec4,x,y,z,a)/// @param io_tmc_vec4
+/// @param x
+/// @param y
+/// @param z
+/// @param a
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_comp\tmc_vec4_comp.gml
+Converted description /// @description tmc_vec4_comp(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_to_vec3\tmc_vec4_to_vec3.gml
+Converted description /// @description tmc_vec4_to_vec3(io_tmc_vec4)/// @param io_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_to_vec3_io\tmc_vec4_to_vec3_io.gml
+Converted description /// @description tmc_vec4_to_vec3_io(io_tmc_vec4)/// @param io_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_to_vec2\tmc_vec4_to_vec2.gml
+Converted description /// @description tmc_vec4_to_vec2(io_tmc_vec4)/// @param io_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_to_vec2_io\tmc_vec4_to_vec2_io.gml
+Converted description /// @description tmc_vec4_to_vec2_io(io_tmc_vec4)/// @param io_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_rev\tmc_vec4_rev.gml
+Converted description /// @description tmc_vec4_rev(tmc_vec4)/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_rev_io\tmc_vec4_rev_io.gml
+Converted description /// @description tmc_vec4_rev_io(io_tmc_vec4)/// @param io_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_lerp\tmc_vec4_lerp.gml
+Converted description /// @description tmc_vec4_lerp(tmc_vec4,tmc_vec4,lerp)/// @param tmc_vec4
+/// @param tmc_vec4
+/// @param lerp
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_lerp_o\tmc_vec4_lerp_o.gml
+Converted description /// @description tmc_vec4_lerp_o(tmc_vec4,tmc_vec4,lerp,o_tmc_vect4)/// @param tmc_vec4
+/// @param tmc_vec4
+/// @param lerp
+/// @param o_tmc_vect4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_set_extra_data\tmc_vec4_set_extra_data.gml
+Converted description /// @description tmc_vec4_set_extra_data(tmc_vec3,data,offset)/// @param tmc_vec3
+/// @param data
+/// @param offset
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_get_extra_data\tmc_vec4_get_extra_data.gml
+Converted description /// @description tmc_vec4_get_extra_data(tmc_vect4,offset)/// @param tmc_vect4
+/// @param offset
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_clamp\tmc_vec4_clamp.gml
+Converted description /// @description tmc_vec4_clamp(tmc_vec4,tmc_vec4_min,tmc_vec4_max)/// @param tmc_vec4
+/// @param tmc_vec4_min
+/// @param tmc_vec4_max
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_clamp_io\tmc_vec4_clamp_io.gml
+Converted description /// @description tmc_vec4_clamp_io(io_tmc_vec4,tmc_vec4_min,tmc_vec4_max)/// @param io_tmc_vec4
+/// @param tmc_vec4_min
+/// @param tmc_vec4_max
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_pow\tmc_vec4_pow.gml
+Converted description /// @description tmc_vec4_pow(tmc_vec4,tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_pow_o\tmc_vec4_pow_o.gml
+Converted description /// @description tmc_vec4_pow_o(tmc_vec4,tmc_vec4,o_tmc_vec4)/// @param tmc_vec4
+/// @param tmc_vec4
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_pow_r\tmc_vec4_pow_r.gml
+Converted description /// @description tmc_vec4_pow_r(tmc_vec4,real)/// @param tmc_vec4
+/// @param real
+
+Converting GML script: ${project_dir}\scripts\tmc_vec4_pow_r_o\tmc_vec4_pow_r_o.gml
+Converted description /// @description tmc_vec4_pow_r_o(tmc_vec4,real,o_tmc_vec4)/// @param tmc_vec4
+/// @param real
+/// @param o_tmc_vec4
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_facet_normal\tmc_vec_facet_normal.gml
+Converted description /// @description tmc_vec_facet_normal(tmc_vec3 p1, tmc_vec3 p2, tmc_vec3 p3)/// @param tmc_vec3 p1
+/// @param  tmc_vec3 p2
+/// @param  tmc_vec3 p3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_plane_normal\tmc_vec_plane_normal.gml
+Converted description /// @description tmc_vec_plane_normal(tmc_vec3 p1, tmc_vec3 p2, tmc_vec3 p3)/// @param tmc_vec3 p1
+/// @param  tmc_vec3 p2
+/// @param  tmc_vec3 p3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_facet_normal_o\tmc_vec_facet_normal_o.gml
+Converted description /// @description tmc_vec_facet_normal_o(tmc_vec3 p1, tmc_vec3 p2, tmc_vec3 p3, o_tmc_vec3 outNormal)/// @param tmc_vec3 p1
+/// @param  tmc_vec3 p2
+/// @param  tmc_vec3 p3
+/// @param  o_tmc_vec3 outNormal
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_plane_normal_o\tmc_vec_plane_normal_o.gml
+Converted description /// @description tmc_vec_plane_normal_o(tmc_vec3 p1, tmc_vec3 p2, tmc_vec3 p3, o_tmc_vec3 outNormal)/// @param tmc_vec3 p1
+/// @param  tmc_vec3 p2
+/// @param  tmc_vec3 p3
+/// @param  o_tmc_vec3 outNormal
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_is_clockwise_2d\tmc_vec_is_clockwise_2d.gml
+Converted description /// @description tmc_vec_is_clockwise_2d(pA,pB,pC)/// @param pA
+/// @param pB
+/// @param pC
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_line_intersect_plane\tmc_vec_line_intersect_plane.gml
+Converted description /// @description tmc_vec_line_intersect_plane(vec3 P1, vec3 p2, vec3 PlanePoint, vec3 PlaneNormal, vec3 out_IntersectPoint)/// @param vec3 P1
+/// @param  vec3 p2
+/// @param  vec3 PlanePoint
+/// @param  vec3 PlaneNormal
+/// @param  vec3 out_IntersectPoint
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_point_inside_triangle_3d\tmc_vec_point_inside_triangle_3d.gml
+Converted description /// @description tmc_vec_point_inside_triangle_3d(Point, TriPT1, TriPT2, TriPT3)/// @param Point
+/// @param  TriPT1
+/// @param  TriPT2
+/// @param  TriPT3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_line_intersect_triangle_3d\tmc_vec_line_intersect_triangle_3d.gml
+Converted description /// @description tmc_vec_line_intersect_triangle_3d(vec3 p1, vec3 p2, vect3 TriP1, vect3 TriP2, vec3 TriP3,vec3 out_IntersectPoint)/// @param vec3 p1
+/// @param  vec3 p2
+/// @param  vect3 TriP1
+/// @param  vect3 TriP2
+/// @param  vec3 TriP3
+/// @param vec3 out_IntersectPoint
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_rot2d_io\tmc_vec_rot2d_io.gml
+Converted description /// @description tmc_vec_rot2d_io(io_tmc_vec,angle)/// @param io_tmc_vec
+/// @param angle
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_dir2d\tmc_vec_dir2d.gml
+Converted description /// @description tmc_vec_dir2d(tmc_vec)/// @param tmc_vec
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_from_angles\tmc_vec3_from_angles.gml
+Converted description /// @description tmc_vec3_from_angles(angle, zangle)/// @param angle
+/// @param  zangle
+
+Converting GML script: ${project_dir}\scripts\tmc_vec3_from_angles_o\tmc_vec3_from_angles_o.gml
+Converted description /// @description tmc_vec3_from_angles_o(angle, zangle, o_tmc_vec3)/// @param angle
+/// @param  zangle
+/// @param  o_tmc_vec3
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_reflect_3d\tmc_vec_reflect_3d.gml
+Converted description /// @description tmc_vec_reflect_3d(tmc_vec3 incident, tmc_vec3 reflect)/// @param tmc_vec3 incident
+/// @param  tmc_vec3 reflect
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_reflect_2d\tmc_vec_reflect_2d.gml
+Converted description /// @description tmc_vec_reflect_2d(tmc_vec2 incident, tmc_vec2 reflect)/// @param tmc_vec2 incident
+/// @param  tmc_vec2 reflect
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_bounce_3d\tmc_vec_bounce_3d.gml
+Converted description /// @description tmc_vec_bounce_3d(tmc_vec3 incident, tmc_vec3 reflect, real restitution)/// @param tmc_vec3 incident
+/// @param  tmc_vec3 reflect
+/// @param  real restitution
+
+Converting GML script: ${project_dir}\scripts\tmc_vec_bounce_2d\tmc_vec_bounce_2d.gml
+Converted description /// @description tmc_vec_bounce_2d(tmc_vec2 incident, tmc_vec2 reflect, real restitution)/// @param tmc_vec2 incident
+/// @param  tmc_vec2 reflect
+/// @param  real restitution

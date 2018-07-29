@@ -6,7 +6,8 @@
     "children": [
         "15630706-5a8a-4b5c-92b6-9e51c563b3d3",
         "f9b7a1bb-2621-4b73-85cc-e802ce4a76f1",
-        "c339d213-c99f-4af8-b881-54ef4345c448"
+        "c339d213-c99f-4af8-b881-54ef4345c448",
+        "dfc38c61-0477-4de9-b764-2aa5dffb3a47"
     ],
     "filterType": "GMObject",
     "folderName": "Enemy_Characters",

@@ -13,17 +13,17 @@ if(instance_number(obj_tempEnemy) < 1)
 			{
 				for (var i = 0; i < enemiesNum; i++)
 					{
-						instance_create_depth(x + (dist*cos(random(pi*2))), y + (dist*sin(random(pi*2))), depth, obj_tempEnemy);
+						instance_create_depth(x + (dist*cos(random(pi*2))), y + (dist*sin(random(pi*2))), depth, obj_slime);
 					}
 			}
-		else
+		/*else
 			{
 				for (var i = 0; i < enemiesNum; i++)
 					{
-						instance_create_depth(x + lengthdir_x(dist, random_range(0, 360)), y + lengthdir_y(dist, random_range(0, 360)), depth, choose(obj_tempEnemy, obj_tempBetterEnemy, obj_tempBetterEnemy));
+						instance_create_depth(x + lengthdir_x(dist, random_range(0, 360)), y + lengthdir_y(dist, random_range(0, 360)), depth, choose(obj_slime, obj_tempBetterEnemy, obj_tempBetterEnemy));
 					}
 			}
-		
+		*/
 		wave += 1;
 		enemiesNum *= (wave/4);
 		floor(enemiesNum);

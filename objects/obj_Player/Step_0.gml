@@ -29,19 +29,8 @@ if (room == rm_characterSelect)
 
 depth = -y - 26;
 scr_characterData(character);
-scr_gunControl();
+//scr_gunControl();
 //script_execute(state);
-/*
-#region sebastian arms
-if(character == SEBASTIAN)
-	{
-		scr_IK(-1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 12, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 12, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)));
-		scr_IK(1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 18, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 18, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)));
-	}
-#endregion
-*/
+
 script_execute(states_array[state])
 script_execute(target_state);
-
-/*
-sprite_index = sprite[facing, movement];
