@@ -1,12 +1,4 @@
 ///Player Controls
-var p;
-p = 100
-if (x < view_xview + p) view_xview = x - p
-if (x > view_xview + view_wview - p) view_xview = x - view_wview + p
-if (y < view_yview + p) view_yview = y - p
-if (y > view_yview + view_hview - p) view_yview = y - view_hview + p
-view_xview = max(0, min(room_width - global.view_w, global.view_x))
-view_yview = max(0, min(room_height - global.view_h, global.view_y))
 
 #region timeadjustment for movement
 

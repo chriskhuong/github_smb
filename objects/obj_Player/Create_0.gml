@@ -1,7 +1,7 @@
 ///void Awake
 
 event_inherited();  //allows the object to inherit the create event of the parent
-playerNumber = 0;
+
 //FOR CHARACTER SELECT ONLY/////
 confirmed = false;
 myCounter = noone;

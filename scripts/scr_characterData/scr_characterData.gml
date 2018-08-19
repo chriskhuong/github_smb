@@ -234,7 +234,6 @@ special[JO, NAME] = "JO";
 special[JO, FACE] = 1;
 special[JO, ABILITYWINDOW0] = 2;
 special[JO, ABILITYWINDOW1] = 3;
-
 //MIO
 skill[MIO, ABILITY] = scr_ninjaState;
 timer[MIO, ABILITY] = 2;

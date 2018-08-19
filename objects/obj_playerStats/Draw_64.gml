@@ -216,7 +216,6 @@ if(stamina <= 2 && stamina > 0)
 #endregion
 #region Ammo
 if (room != rm_characterSelect){
-draw_set_font(global.fontAmmo);
 var ammo_current =  string_format(creator.weaponArray[creator.weapon, 8],3, 0)
 //draw_set_alpha(.5);
 var ammo_current = string_replace_all(ammo_current," ", "0");
@@ -253,10 +252,9 @@ else if(tpc == "0")
 #region Grenade
 else if (room != rm_characterSelect)
 {
-	draw_set_font(global.fontGrenade);
-	draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);
-	draw_set_halign(fa_center);
-	draw_sprite(spr_count,10,xSpot + 6, ySpot + 28);
+draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);
+draw_set_halign(fa_center);
+draw_sprite(spr_count,10,xSpot + 6, ySpot + 28);
 }
 #endregion
 #region Guns
