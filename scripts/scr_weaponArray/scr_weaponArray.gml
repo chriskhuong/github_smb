@@ -35,13 +35,11 @@ if (character != SEBASTIAN)
 	{
 		weaponArray[0, 1] = spr_side_shoot_pistol; //Sprite Index
 		weaponArray[0, 2] = spr_down_shoot_pistol; //Sprite Index
-		weaponArray[0, 18] = spr_reload_pistol;
 	}
 else
 	{
 		weaponArray[0, 1] = spr_left_shoot_pistol_new; //Sprite Index
 		weaponArray[0, 2] = spr_down_shoot_pistol_new; //Sprite Index
-		weaponArray[0, 18] = spr_sebastian_reload_pistol;
 	}
 weaponArray[0, 3] = 10; //Rate of Fire
 weaponArray[0, 4] = scr_pistol;
@@ -195,7 +193,7 @@ switch(character){
 		weaponArray[1, 13] = -34;	//LenX
 		weaponArray[1, 14] = 0;	//LenY
 		weaponArray[1, 17] = 2;
-		weaponArray[1, 18] = spr_sebastian_reload_shotgun;
+		weaponArray[1, 18] = spr_reload_shotgun1;
 		weaponArray[1, 19] = 2; //left Arm xTargets
 		weaponArray[1, 20] = -5; //left Arm yTargets
 		weaponArray[1, 21] = 50; //rightArm xTargets

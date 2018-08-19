@@ -263,8 +263,8 @@ special[ANNA, ABILITYWINDOW1] = 7;
 skill[SEBASTIAN, ABILITY] = scr_shieldState;  //change to shield thing
 timer[SEBASTIAN, ABILITY] = room_speed/6;
 //special[SEBASTIAN, ULTIMATE]
-special[SEBASTIAN, DEAD] = spr_sebastian_death;
-special[SEBASTIAN, STUN] = spr_sebastian_hurt;
-special[SEBASTIAN, GHOST] = spr_ghost_sebastian;
+special[SEBASTIAN, DEAD] = spr_sebastian_temp_death;
+special[ANNA, STUN] = spr_anna_hurt;
+special[ANNA, GHOST] = spr_ghost_sebastian;
 special[SEBASTIAN, NAME] = "SEBASTIAN";
 special[SEBASTIAN, FACE] = 4;
