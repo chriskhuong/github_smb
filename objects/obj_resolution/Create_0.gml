@@ -36,3 +36,9 @@ global.view_x = 0;
 global.view_y = 0;
 global.view_w = ideal_width;
 global.view_h = ideal_height;
+if(max_resolution > 1080)
+{
+		obj_resolution.res_width = 1920;
+		window_set_size(1920,1080);
+		obj_mainMenu.alarm[0] = 1;
+}

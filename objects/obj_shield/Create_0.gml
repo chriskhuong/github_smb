@@ -1,6 +1,6 @@
 ///Initialize the shield object
 
-image_alpha = .25;
+image_alpha = 1;
 
 creator = noone;
 

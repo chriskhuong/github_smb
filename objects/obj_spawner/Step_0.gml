@@ -7,13 +7,13 @@
 
 dist = 400;
 
-if(instance_number(obj_tempEnemy) < 1)
+if(instance_number(obj_enemyParent) < 1)
 	{
 		if (wave <= 3)
 			{
 				for (var i = 0; i < enemiesNum; i++)
 					{
-						instance_create_depth(x + (dist*cos(random(pi*2))), y + (dist*sin(random(pi*2))), depth, obj_slime);
+						instance_create_depth(x + (dist*cos(random(pi*2))), y + (dist*sin(random(pi*2))), depth, obj_slimeSteer);
 					}
 			}
 		/*else
