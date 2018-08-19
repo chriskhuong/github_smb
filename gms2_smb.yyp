@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "01ae5e19-fc0d-4cb4-b002-3626d1cd1b83",
-            "Value": {
-                "id": "8f7a3d48-7013-4141-bef1-89da6ce78fba",
-                "resourcePath": "rooms\\rm_sakura_H2_001\\rm_sakura_H2_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "01bef766-5234-4307-9a0c-b8a41554438f",
             "Value": {
                 "id": "a8e618cd-70c4-44ee-b194-1f5bce5fe7a6",
@@ -663,14 +655,6 @@
             }
         },
         {
-            "Key": "0dd9e092-db8d-4801-b88d-ec057aac7d18",
-            "Value": {
-                "id": "632e8200-b0a5-4837-9669-0446e080bcfa",
-                "resourcePath": "rooms\\rm_sakura_V1_001\\rm_sakura_V1_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "0e440b88-1f56-4be9-a126-61109d36b769",
             "Value": {
                 "id": "8d88ac88-8e35-437d-abc3-6cd3983ac23b",
@@ -871,14 +855,6 @@
             }
         },
         {
-            "Key": "142564ca-76bd-43e9-9968-f000bc43374c",
-            "Value": {
-                "id": "fb412aea-4b0a-49ec-9eb2-8766bbfb67f3",
-                "resourcePath": "rooms\\rm_Sakura_9x9_preview\\rm_Sakura_9x9_preview.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "144b4cff-2a9d-4865-afc1-eb3d44f640e7",
             "Value": {
                 "id": "35ec2018-a966-4e51-9872-04507f337fe8",
@@ -956,14 +932,6 @@
                 "id": "1cccfb30-cad7-4e94-9f82-90053c1f11bb",
                 "resourcePath": "sprites\\spr_britney_run_side\\spr_britney_run_side.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "15c6cda8-037c-4b15-88a6-194491dd871f",
-            "Value": {
-                "id": "486915eb-3d46-44f4-979e-971fbd4eb5ee",
-                "resourcePath": "rooms\\rm_sakura_0_001\\rm_sakura_0_001.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -2247,14 +2215,6 @@
             }
         },
         {
-            "Key": "3592c84f-ce3b-4ad8-90a0-f5042f08906a",
-            "Value": {
-                "id": "80432125-5f0d-4e2a-aafe-d41f1c7070a6",
-                "resourcePath": "rooms\\rm_sakura_8_001\\rm_sakura_8_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "35c9c776-eaaf-4183-82c6-69feee7b5ac2",
             "Value": {
                 "id": "1968ab9b-a843-48d0-9a90-72ba9921b880",
@@ -2991,14 +2951,6 @@
             }
         },
         {
-            "Key": "49a55d9b-8e12-48fd-9971-f14bec912edf",
-            "Value": {
-                "id": "c87f5805-53bb-4e6f-9078-55ad4ec7b8d6",
-                "resourcePath": "rooms\\rm_sakura_V0_001\\rm_sakura_V0_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "49f851e4-b1b7-4f07-b3c9-c190abd49768",
             "Value": {
                 "id": "edc837fa-c2a1-42d7-933b-df2940120271",
@@ -3036,14 +2988,6 @@
                 "id": "4b5a6280-79bf-4010-85e2-159656a2f5a5",
                 "resourcePath": "scripts\\tmc_vec3_pow_o\\tmc_vec3_pow_o.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4a587b04-9a0b-455d-ab0c-1ebd825d8a7b",
-            "Value": {
-                "id": "98e266c2-1373-415c-bf1f-f7bbf6ccf726",
-                "resourcePath": "rooms\\rm_sakura_9x9_base\\rm_sakura_9x9_base.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -3132,14 +3076,6 @@
                 "id": "43da9371-41ca-4221-a3b2-de01c5090b0c",
                 "resourcePath": "scripts\\tmc_vec2_sub_io\\tmc_vec2_sub_io.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4ccbbaf7-46cd-4587-a3da-0158f48d829d",
-            "Value": {
-                "id": "7f6c3ee1-ab31-434e-8228-7abd770ab197",
-                "resourcePath": "rooms\\rm_sakura_6_001\\rm_sakura_6_001.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -4703,14 +4639,6 @@
             }
         },
         {
-            "Key": "7818e527-5538-418e-a074-6c20c31dac3c",
-            "Value": {
-                "id": "da10df55-0467-44f8-8229-cd983403fcb0",
-                "resourcePath": "rooms\\rm_sakura_1_001\\rm_sakura_1_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "782bb0d5-36c9-4b50-a6ac-444961ec74d4",
             "Value": {
                 "id": "56129e66-4db9-4922-be06-d4081a1bdd7c",
@@ -5276,14 +5204,6 @@
                 "id": "5e064348-54ca-487c-9519-2326b9d7c178",
                 "resourcePath": "scripts\\tmc_vec2_sub\\tmc_vec2_sub.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "86306db1-7258-4e82-bd42-60d5b0ed2eac",
-            "Value": {
-                "id": "029a46cc-b714-4aa1-b05c-dd33a1b9b0c3",
-                "resourcePath": "rooms\\rm_sakura_5_001\\rm_sakura_5_001.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -7111,14 +7031,6 @@
             }
         },
         {
-            "Key": "bc9959b8-f09c-4ad1-aa98-fb559f3bb2bd",
-            "Value": {
-                "id": "b695fdf0-7e55-4d09-bc95-24c9933df87a",
-                "resourcePath": "rooms\\rm_sakura_V2_001\\rm_sakura_V2_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "bc9f5e30-a522-47e8-9ede-3cf807b2e5a2",
             "Value": {
                 "id": "30eae9bc-215b-4226-94e3-198ff6b995ac",
@@ -7583,14 +7495,6 @@
             }
         },
         {
-            "Key": "c8376652-f313-4a0a-9763-d31da1197c9d",
-            "Value": {
-                "id": "b6e25737-43c4-442b-a873-03a1455cbf48",
-                "resourcePath": "rooms\\rm_sakura_4_001\\rm_sakura_4_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "c85714a8-4666-4aec-87cb-a3074aefa352",
             "Value": {
                 "id": "6944dc39-f1a7-4d98-bd05-896a5774a7aa",
@@ -7692,14 +7596,6 @@
                 "id": "2b7c0756-421b-49a9-bad4-e437e5bb28ef",
                 "resourcePath": "sprites\\spr_jo_run_side\\spr_jo_run_side.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "cb6cceea-7406-4f66-8c39-029be089e5b8",
-            "Value": {
-                "id": "5bbd7ade-4d50-4ecf-b67c-0ecb9b976b0a",
-                "resourcePath": "rooms\\rm_sakura_7_001\\rm_sakura_7_001.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -7908,14 +7804,6 @@
                 "id": "a82f9140-e239-4284-ba88-9446fc0ec3f3",
                 "resourcePath": "scripts\\tmc_vec3_scalar_vals\\tmc_vec3_scalar_vals.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d2905a83-4c2f-4398-848e-832fbf08bada",
-            "Value": {
-                "id": "63dc4d20-77e7-45b6-83e8-31f2c86321ef",
-                "resourcePath": "rooms\\rm_sakura_3_001\\rm_sakura_3_001.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -8396,14 +8284,6 @@
                 "id": "98b15a61-f0c3-4e85-9284-63b0114d36be",
                 "resourcePath": "scripts\\tmc_vec3_add_r_io\\tmc_vec3_add_r_io.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e1e4d131-7d6e-4239-988d-daace53811b7",
-            "Value": {
-                "id": "b48d0b9f-e991-4bb8-aaa4-da1843352827",
-                "resourcePath": "rooms\\rm_sakura_H1_001\\rm_sakura_H1_001.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -9239,14 +9119,6 @@
             }
         },
         {
-            "Key": "f44c81a9-d4d6-40c0-a907-556402f230ac",
-            "Value": {
-                "id": "cbb5fc9e-a72d-476e-9e09-2d09b9ebe3d0",
-                "resourcePath": "rooms\\rm_sakura_H0_001\\rm_sakura_H0_001.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "f4866f6e-ceb4-464b-9dfd-29ce6b1c0968",
             "Value": {
                 "id": "8d66dea1-99bb-41af-a31a-70ac9cd4754e",
@@ -9580,14 +9452,6 @@
                 "id": "dcd1a3ea-b48e-498b-83a8-cb2729ccedd2",
                 "resourcePath": "scripts\\tmc_vec4_to_vec2_io\\tmc_vec4_to_vec2_io.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "fdba5cc8-6267-48fe-816e-cb8a9913fa46",
-            "Value": {
-                "id": "375df8ef-8558-4fe6-a838-91fc282d8479",
-                "resourcePath": "rooms\\rm_sakura_2_001\\rm_sakura_2_001.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
