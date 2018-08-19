@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "07053267-be8c-4148-ab15-c056c28ba90d",
+            "Value": {
+                "id": "72173830-e562-4b02-94be-8ce11c0511b5",
+                "resourcePath": "sprites\\spr_cooldownGrey\\spr_cooldownGrey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "071c3022-1787-4e31-868b-760bc1c99e94",
             "Value": {
                 "id": "16000395-362f-439c-9eb7-15c93c1e8853",
@@ -2460,6 +2468,14 @@
                 "id": "86c61f3c-b5a8-436c-9478-3031328662e9",
                 "resourcePath": "scripts\\tmc_vec4_pow_o\\tmc_vec4_pow_o.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3b9cdeee-a335-4d59-bba8-90397113fd76",
+            "Value": {
+                "id": "34c015ef-c27b-445c-bc81-192cd3a4846e",
+                "resourcePath": "sprites\\spr_indicator_arrow\\spr_indicator_arrow.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5903,6 +5919,14 @@
             }
         },
         {
+            "Key": "9af92458-7787-483c-89e1-e05d7f5c36d3",
+            "Value": {
+                "id": "0ab5c9c4-69d3-469d-b542-2ca3f525414e",
+                "resourcePath": "scripts\\scr_return_menu\\scr_return_menu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9b04c6be-7f14-42ba-87b1-971d155d1199",
             "Value": {
                 "id": "dc03c933-c6bb-45a3-aa86-fd5152593716",
@@ -6772,6 +6796,14 @@
                 "id": "661a39a1-ddf3-4c87-82b3-656dd490df85",
                 "resourcePath": "sprites\\spr_Mushroom_0\\spr_Mushroom_0.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b1df7291-625e-4e4a-a438-cf6bfef7217a",
+            "Value": {
+                "id": "ad8020c6-0957-450a-a755-3a22eb5ecc17",
+                "resourcePath": "objects\\obj_holdPages\\obj_holdPages.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -9848,6 +9880,7 @@
         "c05a676b-3832-4a7c-b843-fd6496f1e274",
         "ac47a415-79b6-4d85-b810-c56a81697548",
         "7f4ca990-379f-46e5-bc84-e87660135984",
+        "9af92458-7787-483c-89e1-e05d7f5c36d3",
         "cd5c2ca1-7666-4cc4-8284-98b8f534a5f0",
         "e8108274-1a29-4958-80a4-bd1f72cd2c81",
         "52222a6a-2040-4883-b51c-64a375265349",

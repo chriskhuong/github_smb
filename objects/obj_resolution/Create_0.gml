@@ -2,9 +2,7 @@
 // You can write your code in this editor
 ideal_width = 0; // we do not touch this since we caculate this in the code
 ideal_height = 576; // we want this for the standard 16:9 resolutions.
-
 res_width = 0;
-
 // grabs the aspect ratio which is 1.7... and that is a 16:9 ratio
 aspect_ratio = display_get_width() / display_get_height();
 //this is our ideal width we are shooting for with our aspect ratio.

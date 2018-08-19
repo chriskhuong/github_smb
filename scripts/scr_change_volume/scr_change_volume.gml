@@ -1,12 +1,12 @@
 show_debug_message("Change volume to: "+ string(argument0));
 
 
-	switch(menu_option[page]){
+	switch(menu_option[global.page]){
 			case 0: if(!audio_is_playing(snd_charSelect)) audio_play_sound(snd_charSelect,1,false); break;
 			case 1: if(!audio_is_playing(snd_charSelect)) audio_play_sound(snd_charSelect,1,false); break;
 			case 2: if(!audio_is_playing(snd_Epic_Battle)) audio_play_sound(snd_Epic_Battle,1,false); break;
 			};
-var type = menu_option[page];
+var type = menu_option[global.page];
 
 switch(type)
 {

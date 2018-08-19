@@ -2,30 +2,30 @@
 
 var gwidth = global.view_w, gheight = global.view_h;
 
-var ds_grid = mainMenu_page[page], ds_height = ds_grid_height(ds_grid);
+var ds_grid = mainMenu_page[global.page], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
 var start_y = (gheight/2.3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x = gwidth/1.8;
 
 // Draw pause menu "backgound"
 var c = make_color_rgb(29,33,13);
 draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
-if(page != 2)
+if(global.page != 2)
 draw_sprite(spr_mainMenu,0,start_x/2,start_y/10);
-if(page == 2)
+if(global.page == 2)
 {
 	//drawing the character selection screen
 	draw_sprite(spr_previewRevival,0,start_x/2,start_y/5);
-	if(menu_option[page] == 0)
+	if(menu_option[global.page] == 0)
 	{
 		draw_text(start_x,start_y, "Objective: Maid Brigade's military operations.");
 		draw_text(start_x,start_y + 20, "Destroy all enemies.");
 	}
-	if(menu_option[page] == 1)
+	if(menu_option[global.page] == 1)
 	{
 		draw_text(start_x,start_y, "Objective: Survive as long as you can in our");
 		draw_text(start_x,start_y + 20, "swarm of slimes.");	
 	}
-		if(menu_option[page] == 2)
+		if(menu_option[global.page] == 2)
 	{
 		draw_text(start_x,start_y, "Objective: Battle against other players in our");
 		draw_text(start_x,start_y + 20, "PVP game.");	
@@ -42,7 +42,7 @@ var yy = 0; repeat(ds_height)
 	leftTextYPos = start_y + (yy*y_buffer);
 	c = c_white;
 	xOff = 0;
-	if(yy == menu_option[page])
+	if(yy == menu_option[global.page])
 	{
 		c = c_red;
 		xOff = -(x_buffer/2);
@@ -73,7 +73,7 @@ yy= 0; repeat(ds_height)
 		if(current_val == array_length_1d(ds_grid[# 4, yy])-1) right_shift = "";
 		c = c_white;
 		
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.page]) c = c_yellow;
 		
 		var testing = scr_split_function(current_array[current_val]," ")
 		if(real(testing[0]) <= obj_resolution.max_resolution)
@@ -89,7 +89,7 @@ yy= 0; repeat(ds_height)
 		c = c_white;
 		
 		draw_line_width(rightTextXPosition,rightTextYPosition,rightTextXPosition + len, rightTextYPosition,2);
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.page]) c = c_yellow;
 		draw_circle_color(rightTextXPosition + (circle_pos*len),rightTextYPosition,4,c,c,false);
 		draw_text_color(rightTextXPosition + (len * 1.2), rightTextYPosition, string(floor(circle_pos*100))+"%",c,c,c,c,1);
 		break;
@@ -98,7 +98,7 @@ yy= 0; repeat(ds_height)
 		var current_val = ds_grid[# 3, yy];
 		var c1, c2;
 		c = c_white;
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.page]) c = c_yellow;
 		
 		if(current_val == 0)  {c1 = c; c2 = c_dkgray;}
 		else {c1 = c_dkgray; c2 = c;}
@@ -119,7 +119,7 @@ yy= 0; repeat(ds_height)
 			default:		string_val = chr(current_val); break;
 		}
 		c = c_white;
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.page]) c = c_yellow;
 		draw_text_color(rightTextXPosition,rightTextYPosition,string_val,c,c,c,c,1)
 		break;
 	}
@@ -128,5 +128,6 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
+
 
 

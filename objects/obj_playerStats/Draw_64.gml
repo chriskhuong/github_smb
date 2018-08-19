@@ -174,6 +174,23 @@ draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,yS
 
 #endregion
 #region CoolDowns
+draw_sprite_ext(spr_cooldowns,0,xSpot - 34, ySpot + 18,image_xscale,image_yscale,0,-1,1);
+if(mouse_check_button(mb_left) && room != rm_characterSelect)
+{
+	cooltime = endTime;
+	coolDown = true;
+}
+if(coolDown == true)
+{
+	cooltime = cooltime - 1;
+	depth = -5000
+	draw_sprite_part_ext(spr_cooldownGrey,0,4,0,24,((sprite_get_height(spr_cooldownGrey) / endTime) * cooltime),xSpot - 30, ySpot + 18,image_xscale,image_yscale,-1,.6);	
+	if(cooltime >= endTime)
+	{
+		cooltime -= 1;
+		coolDown = false;
+	}
+}
 /*
 // draw the sprite as a grey background
 if (room != rm_characterSelect)
@@ -215,7 +232,8 @@ if(stamina <= 2 && stamina > 0)
 */
 #endregion
 #region Ammo
-if (room != rm_characterSelect){
+if (room != rm_characterSelect)
+{
 draw_set_font(global.fontAmmo);
 var ammo_current =  string_format(creator.weaponArray[creator.weapon, 8],3, 0)
 //draw_set_alpha(.5);
@@ -251,10 +269,10 @@ else if(tpc == "0")
 }
 #endregion
 #region Grenade
-else if (room != rm_characterSelect)
+if (room != rm_characterSelect)
 {
-	draw_set_font(global.fontGrenade);
 	draw_sprite(spr_grenade,0,xSpot - 6, ySpot + 28);
+	draw_set_font(global.fontGrenade);
 	draw_set_halign(fa_center);
 	draw_sprite(spr_count,10,xSpot + 6, ySpot + 28);
 }
@@ -286,5 +304,6 @@ else if (room != rm_characterSelect)
 }
 #endregion
 #endregion
+
 
 

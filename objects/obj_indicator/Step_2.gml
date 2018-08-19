@@ -32,14 +32,14 @@ if (vl != 0) {
 }
 if ((creator.x < xMin || creator.x > xMax) || (creator.y < yMin || creator.y > yMax)) {
     image_alpha = 1;
-	show_debug_message("I'M OUT");
+    on = true;
 } else {
 	/*
     image_alpha = max(0, (vl - inner) / inner)
     vl /= 2
 	*/
+	on = false;
 	image_alpha = 0
-	show_debug_message("I'M ON")
 }
 pointDir = point_direction(sx, sy, tx, ty)
 if (vy < 0) {

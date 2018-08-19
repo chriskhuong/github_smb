@@ -78,7 +78,7 @@ if(ochange != 0)
 }
 
 
-if(InputManager.attack_key)
+if(InputManager.attack_key_analog)
 {
 	switch(ds_grid[# 1, menu_option[page]])
 	{
@@ -97,6 +97,7 @@ if(InputManager.attack_key)
 	// audio
 	
 }
+
 
 
 

@@ -79,7 +79,7 @@ ds_menu_controls = scr_create_menu_page(
 	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.settings],
 );
 
-page = 0;
+//global.page = 0;
 mainMenu_page = [ds_menu_main,ds_settings,ds_mode_select,ds_character_select,ds_menu_audio,ds_menu_graphics,ds_menu_controls]
 var i = 0, array_len = array_length_1d(mainMenu_page);
 repeat(array_len)
@@ -92,5 +92,3 @@ inputting = false;
 
 	audio_group_load(audiogroup_music);
 	audio_group_load(audiogroup_soundEffects);
-
-
