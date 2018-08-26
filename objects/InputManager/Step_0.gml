@@ -2,7 +2,7 @@
 // You can write your code in this editor
 //scr_getInput(playerSlot);
 
-if(pause_key){
+if(pause_key && room != rm_characterSelect && room != rm_Main_Menu){
     paused = !paused;
     if(!sprite_exists(screenShot)){
         screenShot = sprite_create_from_surface(application_surface,0,0,view_wport,view_hport,0,0,0,0);    

@@ -7,7 +7,7 @@
 
 //window_set_size(global.view_width,global.view_height)
 //display_set_gui_size(global.view_width, global.view_height);
-	
+	global.joined = 0;
 
 enum mainMenu_page {
     main,

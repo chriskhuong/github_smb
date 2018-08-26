@@ -55,7 +55,7 @@ enum menu_element_type
 ds_menu_main = scr_create_menu_page(
 	["RESUME", menu_element_type.script_runner, scr_resume_game],
 	["SETTINGS", menu_element_type.page_transfer, menu_page.settings],
-	["EXIT", menu_element_type.script_runner, scr_return_menu]
+	["RETRUN TO MAIN MENU", menu_element_type.script_runner, scr_return_menu]
 );
 
 ds_settings = scr_create_menu_page(

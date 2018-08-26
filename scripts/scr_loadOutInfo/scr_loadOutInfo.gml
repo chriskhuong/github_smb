@@ -25,9 +25,8 @@ if (creator.cancel && confirmed)
 
 
 #endregion
-
 #region Transition Triggers
-if (obj_lobby.ready  && creator.pause_key)
+if (obj_lobby.ready && creator.pause_key)
 	{
 		//******NOTE********
 		//modify with a global or something to determine which game mode we're playing

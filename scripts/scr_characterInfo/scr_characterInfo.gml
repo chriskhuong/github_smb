@@ -1,7 +1,5 @@
 /// @description scr_playerSelectState()
-
 #region Behavior
-
 myState = "CharacterInfo";
 var unchosen = .25;
 var chosen = 1;
@@ -10,7 +8,7 @@ facing = DOWN;
 myTargetX = x + 40;
 myTargetY = y;
 
-if (creator.attack_key && obj_lobby.can_do && !confirmed)
+if (obj_lobby.can_do && creator.attack_key && !confirmed)
 	{
 		myCounter = instance_create_depth(x, y, depth, obj_counter);
 		confirmed = true;
@@ -35,7 +33,7 @@ if (creator.cancel && confirmed)
 
 #region Transition Triggers
 
-if (obj_lobby.ready  && creator.pause_key)
+if (obj_lobby.ready && confirmed && creator.pause_key)
 	{
 		//******NOTE********
 		//modify with a global or something to determine which game mode we're playing
