@@ -31,10 +31,14 @@ position = vect2(x, y);
 velocity = vect2(0, 0);
 steering = vect2(0, 0);
 
-maxSpeed = spd;
+max_speed = spd;
 max_force = 1;
 
 //path finding stuff
 path = path_add();
 my_path_point = 0; //irandom(path_get_number(my_path) - 1)
 my_path_dir = 1;
+
+
+timer = room_speed / 5;	//pathfinding update
+maxTimer = timer;

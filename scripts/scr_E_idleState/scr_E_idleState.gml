@@ -1,14 +1,14 @@
 ///@description idle_behavior()
 
 //Behavior
-myState = "Idle;"
+myState = "Idle";
 counter += 1;
 
 target = instance_nearest(x, y, obj_Player);
 new_target = noone;
 
 //Transition Triggers
-if (counter >= room_speed * 3)
+if (counter >= room_speed * 1)
 	{
 		var change = choose(0, 1);
 		switch(change)
@@ -18,7 +18,7 @@ if (counter >= room_speed * 3)
 				break;
 			}
 	}
-
+/*
 if (instance_exists(target) && target.alive == true)
     {
         var dis = point_distance(x, y, target.x, target.y)
@@ -29,6 +29,6 @@ if (instance_exists(target) && target.alive == true)
                 targety = target.y;
             }		
 	}
-	
+*/	
 //Sprite
 //sprite_index = spr_enemy_idle;

@@ -9,8 +9,8 @@ if (!surface_exists(shadowSurface))
 	
 	}
 
-var sx = 15;
-var sy = 10;
+var sx = 30; //15;
+var sy = 15;
 
 if(keyboard_check_pressed(ord("L")))
 	{
