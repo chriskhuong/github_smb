@@ -21,6 +21,7 @@ steering = vect2(0, 0);
 //steering = vect_add(steering, sb_wander(128,128,180,0.5));
 steering=vect_add(steering,sb_separation(obj_enemyParent,32,2));
 steering=vect_add(steering,sb_avoid(obj_breakable_parent,64,64,5));
+steering=vect_add(steering,sb_avoid(obj_invisibleBoundary,64,64,5));
 steering=vect_add(steering,sb_avoid(obj_solidParent,64,64,5));
 //steering = vect_add(steering, sb_flee(mouse_x,mouse_y,1));
 //steering = vect_add(steering, sb_pursuit(obj_master_drone,1));
@@ -45,7 +46,7 @@ if (timer <= 0)
 steering = vect_truncate(steering, max_force);
 
 //Limit velocity to max_speed
-velocity = vect_truncate(vect_add(velocity, steering), max_speed);
+velocity = vect_truncate(vect_add(velocity, steering), spd);
 
 //Add velocity to position
 position = vect_add(position, velocity);

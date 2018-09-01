@@ -1,11 +1,11 @@
-/// @description sb_avoid(object, distance _ahead, width, weight)
+/// @description sb_avoid(object, distance_ahead, width, weight)
 /// @param object
-/// @param  distance _ahead
+/// @param  distance_ahead
 /// @param  width
 /// @param  weight
 
 var _obj    = argument[0];
-var _dist   = argument[1]*(vect_len(velocity)/max_speed)
+var _dist   = argument[1]*(vect_len(velocity)/spd)
 var _width  = argument[2]*.5;
 var _weight = argument[3];
 

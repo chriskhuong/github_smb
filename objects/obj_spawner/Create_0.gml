@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // how many will spawn, this is used in the alarm event
-enemiesNum = 7;
+enemiesNum = 100;
 wave = 1;
 dist = 1184;
 // how often they will spawn

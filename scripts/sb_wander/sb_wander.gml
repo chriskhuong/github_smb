@@ -27,7 +27,7 @@ var _target_position = vect_add(position,vect_add(_circle_center, _displacement)
 
 
 // Set velocity
-var _desired_velocity = vect_scaler(vect_subtract(_target_position,position),max_speed);
+var _desired_velocity = vect_scaler(vect_subtract(_target_position,position), spd);
 
 return (vect_multr(vect_subtract(_desired_velocity,velocity),_weight));
 

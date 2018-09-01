@@ -10,6 +10,8 @@ image_speed = 1;
 
 hp = 3;
 
+draw = false;
+
 states_array[sIdle]		= scr_E_idleState;
 states_array[sMove]		= scr_E_wanderState;
 states_array[sChase]	= scr_E_pathSteerChaseState;
@@ -40,5 +42,5 @@ my_path_point = 0; //irandom(path_get_number(my_path) - 1)
 my_path_dir = 1;
 
 
-timer = room_speed / 5;	//pathfinding update
+timer = room_speed / 3;	//pathfinding update
 maxTimer = timer;

@@ -23,7 +23,7 @@ if(_distance_to_point < _max_distance) { //point reached
 } 
 
 // subtract current position from target position and constrain to max_speed
-var _desired_velocity = vect_scaler(vect_subtract(_target,position),max_speed);
+var _desired_velocity = vect_scaler(vect_subtract(_target,position), spd);
 
 return (vect_multr(vect_subtract(_desired_velocity,velocity),_weight));
 

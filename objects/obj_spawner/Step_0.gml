@@ -13,7 +13,14 @@ if(instance_number(obj_enemyParent) < 1)
 			{
 				for (var i = 0; i < enemiesNum; i++)
 					{
-						instance_create_depth(x + (dist*cos(random(pi*2))), y + (dist*sin(random(pi*2))), depth, obj_slimeSteer);
+						with (instance_create_depth(x + (dist*cos(random(pi*2))), y + (dist*sin(random(pi*2))), depth, obj_slimeSteer))
+							{
+								while (!place_free(x, y))
+									{
+										x = x + (cos(random(pi*2)));
+										y = y + (sin(random(pi*2)));
+									}
+							}
 					}
 			}
 		/*else
