@@ -3,6 +3,7 @@ inputs = ds_list_create();
 defaultKeys = ds_map_create();
 defaultGamepadInputs = ds_map_create();
 playerSlot = instance_number(InputManager);
+pO = noone;
 paused = false;
 screenShot = -1;
 global.editPlayerSlot = playerSlot; //for the remapping room

@@ -2,7 +2,7 @@ global.fontAmmo = font_add_sprite_ext(spr_ammoCount, " 0123456789/", false, -5);
 global.fontGrenade = font_add_sprite_ext(spr_count, "0123456789x", false, 0);
 global.debugPCMap = ds_map_create();	
 //Loop through all the objects that need to be created and check if they exist. If they dont make it.
-var arrayOfPresistantObjs = [obj_mainMenu,obj_resolution,obj_holdPages,InputForPlayer1,InputForPlayer2,InputForPlayer3,InputForPlayer4,obj_palette_manager]
+var arrayOfPresistantObjs = [obj_mainMenu,obj_resolution,obj_holdPages,InputForPlayer4,InputForPlayer3,InputForPlayer2,InputForPlayer1,obj_palette_manager]
 for (var i = array_length_1d(arrayOfPresistantObjs) - 1; i > -1; i--;)
    {
 	if (instance_number(arrayOfPresistantObjs[i]) < 1)
@@ -10,6 +10,7 @@ for (var i = array_length_1d(arrayOfPresistantObjs) - 1; i > -1; i--;)
 		instance_create(0, 0, arrayOfPresistantObjs[i]);
 	}	
 }
+
 
 
 

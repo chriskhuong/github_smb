@@ -3,7 +3,12 @@
 if(!audio_is_playing(snd_Epic_Battle))
 audio_play_sound(snd_Epic_Battle,1,false);
 
-
+inputUp = InputForPlayer1.up_pressed || InputForPlayer2.up_pressed || InputForPlayer3.up_pressed || InputForPlayer4.up_pressed;
+inputDown = InputForPlayer1.down_pressed || InputForPlayer2.down_pressed || InputForPlayer3.down_pressed || InputForPlayer4.down_pressed;
+inputRight = InputForPlayer1.right_pressed || InputForPlayer2.right_pressed || InputForPlayer3.right_pressed || InputForPlayer4.right_pressed;
+inputLeft = InputForPlayer1.left_pressed || InputForPlayer2.left_pressed || InputForPlayer3.left_pressed || InputForPlayer4.left_pressed;
+inputCancel = InputForPlayer1.cancel || InputForPlayer2.cancel || InputForPlayer3.cancel || InputForPlayer4.cancel;
+inputConfirm = InputForPlayer1.attack_key || InputForPlayer2.attack_key || InputForPlayer3.attack_key || InputForPlayer4.attack_key;
 
 var ds_grid = mainMenu_page[global.page], ds_height = ds_grid_height(ds_grid);
 if(inputting)
@@ -12,7 +17,7 @@ if(inputting)
 	switch(ds_grid[# 1, menu_option[global.page]])
 	{
 		case mainMenu_element_type.shift:
-		var hinput = InputManager.right_pressed - InputManager.left_pressed; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
+		var hinput = inputRight - inputLeft; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
 		if(hinput != 0)
 		{
 			// audio for changing input
@@ -23,7 +28,7 @@ if(inputting)
 		break;
 		case mainMenu_element_type.slider:
 				
-			var hinput = InputManager.right_pressed - InputManager.left_pressed;
+			var hinput = inputRight - inputLeft;
 		if(hinput != 0)
 		{
 			ds_grid[# 3, menu_option[global.page]] += hinput * 0.01;	
@@ -32,7 +37,7 @@ if(inputting)
 		}
 		break;
 		case mainMenu_element_type.toggle:
-			var hinput = InputManager.down_pressed - InputManager.up_pressed; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
+			var hinput = inputRight - inputLeft; //|| gamepad_button_check_pressed(0,gp_padr) - gamepad_button_check_pressed(0,gp_padl);
 		if(hinput != 0)
 		{
 			ds_grid[# 3, menu_option[global.page]] += hinput;	
@@ -53,7 +58,7 @@ if(inputting)
 }
 else
 {	// InputManager.down_pressed - InputManager.up_pressed;
-	var ochange = InputManager.down_pressed - InputManager.up_pressed;
+	var ochange = inputDown - inputUp;
 
 if(ochange != 0)
 	{
@@ -67,7 +72,7 @@ if(ochange != 0)
 }
 
 
-if(InputManager.attack_key)
+if(inputConfirm)
 {
 	
 	switch(ds_grid[# 1, menu_option[global.page]])
@@ -91,7 +96,7 @@ if(InputManager.attack_key)
 
 // This is temporay...till I find a better solution to manage backing in the menu, but it works.
 // to follow this logic, you would need to look at the array of page positions.
-if(InputManager.cancel)
+if(inputCancel)
 	{
 		switch(global.page)
 	{
@@ -102,6 +107,7 @@ if(InputManager.cancel)
 	}
 		show_debug_message("Back");
 	}
+
 
 
 

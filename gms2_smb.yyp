@@ -2399,6 +2399,14 @@
             }
         },
         {
+            "Key": "3834e040-5c8b-4a17-8091-6159d284223e",
+            "Value": {
+                "id": "30a5accb-1c89-466f-840a-357388345657",
+                "resourcePath": "sprites\\spr_reloadCoolDown\\spr_reloadCoolDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38629a04-8444-4fea-9ed0-7b4a7f672cbb",
             "Value": {
                 "id": "6dfb3b51-9f8b-46f9-aed9-799c59a91761",
@@ -2540,6 +2548,14 @@
                 "id": "089824d0-8af9-43cc-a675-0980aa0ca312",
                 "resourcePath": "scripts\\@joystick_xpos\\joystick_xpos.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3bc8702f-1fde-4c90-812d-30b161c71e94",
+            "Value": {
+                "id": "9ad5d832-14d3-4b8c-9bb1-30e6067e9b03",
+                "resourcePath": "sprites\\spr_reloadCoolDownGrey\\spr_reloadCoolDownGrey.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
