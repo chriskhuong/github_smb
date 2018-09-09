@@ -134,12 +134,12 @@ if((creator.reload && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] ==
 #region Special Button
 if (creator.dash_key)   //remember to change this to whatever input you put special actions to
     {
-        if (myStats.stamina >= 5)
+        if (myStats.stamina >= 10)
             {
                 //dash
-                myStats.stamina -= 5;
+                myStats.stamina = 0;
                 state = sAbility;  //sets the state to their ability
-                myStats.alarm[0] = room_speed;
+                myStats.alarm[0] = InputManager.pO.timer[InputManager.pO.character, ABILITY];
 				
             }
 }

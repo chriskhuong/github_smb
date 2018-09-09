@@ -1,12 +1,9 @@
 ///Initialize the player
 //var state = [playerJoinState, playerSelectState,playerInfoState, playerLoadOutInfo, playerAbilityInfo];
-		 
 coolDown = false;
-endTime = 200;
 cooltime = 0;
 creator = noone;
 rCoolDown = false;
-rEndTime = 100;
 rCooltime = 0;
 //False Stats
 maxHp = obj_Player.hp;

@@ -176,6 +176,7 @@ draw_sprite(spr_portraits,creator.special[creator.character, FACE],xSpot - 70,yS
 #region CoolDowns
 if (room != rm_characterSelect)
 {
+	endTime = creator.timer[creator.character, ABILITY];
 draw_sprite_ext(spr_cooldowns,0,xSpot - 34, ySpot + 18,image_xscale,image_yscale,0,-1,1);
 if(creator.creator.dash_key && room != rm_characterSelect)
 {
@@ -184,13 +185,16 @@ if(creator.creator.dash_key && room != rm_characterSelect)
 }
 if(coolDown == true)
 {
-	cooltime = cooltime - 1;
+	//cooltime = cooltime - 1;
 	depth = -5000
 	draw_sprite_part_ext(spr_cooldownGrey,0,4,0,24,((sprite_get_height(spr_cooldownGrey) / endTime) * cooltime),xSpot - 30, ySpot + 18,image_xscale,image_yscale,-1,.6);	
-	if(cooltime >= endTime)
+	if(cooltime >= 0)
 		{
 			cooltime -= 1;
-			coolDown = false;
+		}
+		else
+		{
+			coolDown = false;	
 		}
 	}
 }
