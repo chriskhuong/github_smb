@@ -6983,6 +6983,14 @@
             }
         },
         {
+            "Key": "b1e28428-2719-4d25-99f2-921840b4fc1a",
+            "Value": {
+                "id": "46eb91f4-3250-4d9b-bc76-63a179146ed2",
+                "resourcePath": "sprites\\spr_cloud_effect\\spr_cloud_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b23b5a7b-ecee-4614-96c0-84c43f8c3409",
             "Value": {
                 "id": "0cd61d4d-e975-487d-b111-6799810c11a4",
@@ -9724,14 +9732,6 @@
                 "id": "dca6393d-ba32-4898-833a-58831979816b",
                 "resourcePath": "objects\\obj_shield\\obj_shield.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "fa40a5a5-7dd5-4c31-9fd0-7654193eb080",
-            "Value": {
-                "id": "031dded7-5d2e-4546-8fd8-ab332ed517ad",
-                "resourcePath": "sprites\\spr_melee_dust_bunnies\\spr_melee_dust_bunnies.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
