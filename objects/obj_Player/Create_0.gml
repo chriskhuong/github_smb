@@ -101,7 +101,6 @@ myGunY = y + weaponArray[weapon, 7];
 
 myGunXScale = 1;
 myGunYScale = 1;
-
 myGunSprite = weaponArray[weapon, 2];
 myGunDir = point_direction(myGunX, myGunY, myTargetX, myTargetY);
 myGunAngle = myGunDir;

@@ -1,6 +1,6 @@
 ///Initialize the player
 //var state = [playerJoinState, playerSelectState,playerInfoState, playerLoadOutInfo, playerAbilityInfo];
-
+		 
 coolDown = false;
 endTime = 200;
 cooltime = 0;
