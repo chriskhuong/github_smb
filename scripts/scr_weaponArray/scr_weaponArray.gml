@@ -200,6 +200,7 @@ switch(character){
 		weaponArray[1, 20] = -5; //left Arm yTargets
 		weaponArray[1, 21] = 50; //rightArm xTargets
 		weaponArray[1, 22] = 50; //rightArm yTargets
+		weaponArray[0, 13] = -38;
         //obj_tempPlayer1.weaponArray[0, 8] = 3; //Damage output
         break;
         
