@@ -6,11 +6,11 @@ if (hp <= 0)
     }
   
 //stamina regen
-if (stamina < maxStamina && alarm[0] == -1)
+/*if (stamina < maxStamina && cooltime < 1)
     {
         stamina += .1;
     }
-
+*/
 var zoom_speed = .1;
 
 

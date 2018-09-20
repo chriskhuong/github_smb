@@ -3,7 +3,7 @@
 if(InputManager.cancel && room != rm_Main_Menu && room != rm_SurvivalMode)
 {
 	show_debug_message("This is the current state:"+ string(InputManager.pO.state));
-	if(InputManager.cancel && InputManager.pO.state == sJoin)
+	if(InputManager.cancel && backout && InputManager.pO.state == sJoin)
 	{
 		global.page = 2;
 		instance_deactivate_object(obj_Player);

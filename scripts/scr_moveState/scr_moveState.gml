@@ -123,7 +123,8 @@ if(hit)
 
 #region Reloading
 	//Standard reload									//Auto reload when out of ammo								//use fire_press if desired to tap again
-if((creator.reload && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] == 0 && weaponArray[weapon, 10] > 0 && creator.fire_key))
+var hello = weaponArray[weapon, 10];
+if((creator.reload && weaponArray[weapon, 10] < hello  && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] == 0 && weaponArray[weapon, 10] > 0 && creator.fire_key))
 	{
 		alarm[10] = myGunSpeed;
 		state = sReload;
@@ -134,12 +135,11 @@ if((creator.reload && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] ==
 #region Special Button
 if (creator.dash_key)   //remember to change this to whatever input you put special actions to
     {
-        if (myStats.stamina >= 10)
+        if (myStats.coolDown == false)
             {
                 //dash
-                myStats.stamina = 0;
                 state = sAbility;  //sets the state to their ability
-                myStats.alarm[0] = InputManager.pO.timer[InputManager.pO.character, ABILITY];
+                //myStats.alarm[0] = room_speed;
 				
             }
 }

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor	
-
+if(creator.state == sReload)
+{
 if(InputManager.reload && rCoolDown == false)
 	{
 		image = sprite_get_number(creator.weaponArray[creator.weapon, 18]) - 1;
@@ -26,3 +27,4 @@ if(rCoolDown == true)
 			}
 	}
 
+}

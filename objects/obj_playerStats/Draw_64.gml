@@ -178,7 +178,7 @@ if (room != rm_characterSelect)
 {
 	endTime = creator.timer[creator.character, ABILITY];
 draw_sprite_ext(spr_cooldowns,0,xSpot - 34, ySpot + 18,image_xscale,image_yscale,0,-1,1);
-if(creator.creator.dash_key && room != rm_characterSelect)
+if(creator.creator.dash_key && coolDown == false && room != rm_characterSelect)
 {
 	cooltime = endTime;
 	coolDown = true;
@@ -198,45 +198,6 @@ if(coolDown == true)
 		}
 	}
 }
-/*
-// draw the sprite as a grey background
-if (room != rm_characterSelect)
-draw_sprite_ext(spr_cooldowns,0,xSpot - 34, ySpot + 18,image_xscale,image_yscale,image_angle,-1,.3);
-
-max
-*/
-/*var x1 = x - sprite_xoffset;
-var y1 = y - sprite_yoffset;
-var x2 = x + sprite_width;
-var y2 = y + sprite_height;
-draw_sprite_part(spr_cooldowns,0,x1,y1,x2,y2,xSpot - 34, ySpot + 18);
-*/
-/*
-if(stamina == maxStamina)
-{
-	draw_sprite(spr_cooldowns,0,xSpot - 34, ySpot + 18);	
-}
-if(stamina <= 8 && stamina > 6)
-{
-	draw_sprite_part(spr_cooldowns,0,4,sprite_get_height(spr_cooldowns)/1.2,sprite_get_width(spr_cooldowns),sprite_get_height(spr_cooldowns),xSpot - 30, ySpot + 30);
-}
-if(stamina <= 6 && stamina > 5)
-{
-	draw_sprite_part(spr_cooldowns,0,4,10,24,25,xSpot - 30, ySpot + 30);
-}
-if(stamina <= 5 && stamina > 4)
-{
-	draw_sprite_part(spr_cooldowns,0,4,14,24,25,xSpot - 30, ySpot + 30);
-}
-if(stamina <= 4 && stamina > 2)
-{
-	draw_sprite_part(spr_cooldowns,0,4,18,24,25,xSpot - 30, ySpot + 30);
-}
-if(stamina <= 2 && stamina > 0)
-{
-	draw_sprite_part(spr_cooldowns,0,4,22,24,25,xSpot - 30, ySpot + 30);
-}
-*/
 #endregion
 #region Ammo
 if (room != rm_characterSelect)
