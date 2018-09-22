@@ -13,13 +13,13 @@ hp = 3;
 draw = false;
 
 states_array[sIdle]		= scr_E_idleState;
-states_array[sMove]		= scr_E_wanderState;
+states_array[sMove]		= scr_E_wanderSteerState;
 states_array[sChase]	= scr_E_pathSteerChaseState;
 //states_array[sChase]	= scr_E_pathChaseState;
 //states_array[sChase]	= scr_E_chaseState;
-states_array[sStun]		= scr_E_stunState;
+states_array[sStun]		= scr_E_stunSteerState;
 
-state = sChase	;//scr_enemy_idleState;
+state = sIdle;//scr_enemy_idleState;
 
 counter = 0;
 spd = 1.25;

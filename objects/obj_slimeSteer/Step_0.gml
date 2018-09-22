@@ -3,5 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-
 script_execute(states_array[state]);

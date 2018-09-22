@@ -2,8 +2,7 @@
 
 #region Behavior
 myState = "ChaseSteer";
-counter += 1;
-
+max_speed = spd;
 target = instance_nearest(x, y, obj_playerParent);
 
 var mx = target.x;

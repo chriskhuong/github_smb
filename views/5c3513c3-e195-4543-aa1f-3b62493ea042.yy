@@ -9,7 +9,8 @@
         "6e71ad07-9114-44cc-b35b-97e1ddb1cd56",
         "0b13c109-217d-4326-aa8b-d30b69f37405",
         "1b1aae1c-22e1-46d5-ac04-3112cdd819af",
-        "e36518f9-67ee-495f-82b6-2d9763a0a184"
+        "e36518f9-67ee-495f-82b6-2d9763a0a184",
+        "32ba933b-2c91-4d7d-a314-6628633ff166"
     ],
     "filterType": "GMScript",
     "folderName": "SteeringBehaviors",
