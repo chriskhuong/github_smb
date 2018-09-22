@@ -8,7 +8,7 @@ paused = false;
 screenShot = -1;
 global.editPlayerSlot = playerSlot; //for the remapping room
 show_debug_message("created InputManager for Player "+string(playerSlot));
-
+retry = false;
 event_user(0); //add inputs
 
 customKeys = ds_map_create();
