@@ -1,8 +1,7 @@
 /// @description  Step Behaviour Usage
 
 #region Behavior
-myState = "WanderSteer";
-counter += 1;
+myState = "StunSteer";
 max_speed = spd;
 
 // reset steering
@@ -14,8 +13,8 @@ steering = vect2(0,0);
 					//steering = vect_add(steering, sb_#behaviour#(argument,stuff,blah));
 					
 					//steering = vect_add(steering, sb_seek(mouse_x, mouse_y, 1));
-					//steering = vect_add(steering, sb_seek_arrive(mouse_x,mouse_y,256,1));
-					steering = vect_add(steering, sb_wander(256,128,180,0.5));
+					steering = vect_add(steering, sb_seek_arrive(mouse_x,mouse_y,256,1));
+					//steering = vect_add(steering, sb_wander(256,128,180,0.5));
 					//steering = vect_add(steering, sb_flee(mouse_x,mouse_y,1));
 					//steering = vect_add(steering, sb_pursuit(obj_master_drone,1));
 					//steering = vect_add(steering, sb_evade(obj_master_drone,1));
@@ -47,7 +46,7 @@ steering = vect2(0,0);
 #endregion
 
 #region Transition Trigger
-
+/*
 if (counter >= room_speed * 3)
 	{
 		var change = choose(0, 1);
@@ -62,7 +61,7 @@ if (counter >= room_speed * 3)
 				break;
 			}
 	}
-
+*/
 #endregion
 
 #region Sprite

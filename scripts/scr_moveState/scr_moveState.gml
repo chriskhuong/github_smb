@@ -123,8 +123,7 @@ if(hit)
 
 #region Reloading
 	//Standard reload									//Auto reload when out of ammo								//use fire_press if desired to tap again
-var hello = weaponArray[weapon, 10];
-if((creator.reload && weaponArray[weapon, 10] < hello  && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] == 0 && weaponArray[weapon, 10] > 0 && creator.fire_key))
+if((creator.reload && weaponArray[weapon, 10] && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] == 0 && weaponArray[weapon, 10] > 0 && creator.fire_key))
 	{
 		alarm[10] = myGunSpeed;
 		state = sReload;

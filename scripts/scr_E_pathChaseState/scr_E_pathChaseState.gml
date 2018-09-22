@@ -2,7 +2,6 @@
 
 //Behavior
 myState = "Chase";
-counter += 1;
 
 target = instance_nearest(x, y, obj_Player);
 

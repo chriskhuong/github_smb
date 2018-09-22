@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "060dcf1d-a7be-4df0-a691-508ed91a771b",
+            "Value": {
+                "id": "ae463cad-990f-4b26-b681-fe3052ddfb8f",
+                "resourcePath": "scripts\\scr_E_wanderSteerState\\scr_E_wanderSteerState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0612625e-a255-402e-893f-2553577946aa",
             "Value": {
                 "id": "5aad08e0-275b-4c1a-9087-6e8066023f77",
@@ -2183,6 +2191,14 @@
             }
         },
         {
+            "Key": "32ba933b-2c91-4d7d-a314-6628633ff166",
+            "Value": {
+                "id": "f73a0a4a-be5a-4e2b-9084-824bdde2a988",
+                "resourcePath": "scripts\\sb_seek_arrive\\sb_seek_arrive.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "32bff715-9ccc-48bb-81a2-6799003669c8",
             "Value": {
                 "id": "c8e39235-0d84-4f87-8039-9177e4910e9e",
@@ -2836,6 +2852,14 @@
                 "id": "fff2b2fd-e718-4ebb-a37f-90228abaf23f",
                 "resourcePath": "sprites\\spr_slimeHelmet_run_left\\spr_slimeHelmet_run_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "40f9a0cc-8309-4e0d-a1f9-907cfb60d58f",
+            "Value": {
+                "id": "b26008a9-006d-40a6-a3e4-1bae83b7c8c9",
+                "resourcePath": "scripts\\scr_E_stunSteerState\\scr_E_stunSteerState.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -10375,6 +10399,8 @@
         "77b9acc2-3412-42ea-93f0-236cb62ada2f",
         "3a118e91-ad14-4cbc-a713-8c8fc94f7412",
         "ee7db634-313f-4429-90a3-3db8e7a9d46a",
+        "060dcf1d-a7be-4df0-a691-508ed91a771b",
+        "40f9a0cc-8309-4e0d-a1f9-907cfb60d58f",
         "bc0257cd-6f06-4eea-8977-0a534b5f3fc5",
         "1c3e3d4a-4bc0-4a73-9662-c4fb5ff43684",
         "b23e4d62-d608-4440-83e5-ffae7dd7dfed",
@@ -10820,7 +10846,8 @@
         "6e71ad07-9114-44cc-b35b-97e1ddb1cd56",
         "0b13c109-217d-4326-aa8b-d30b69f37405",
         "1b1aae1c-22e1-46d5-ac04-3112cdd819af",
-        "e36518f9-67ee-495f-82b6-2d9763a0a184"
+        "e36518f9-67ee-495f-82b6-2d9763a0a184",
+        "32ba933b-2c91-4d7d-a314-6628633ff166"
     ],
     "tutorial": ""
 }

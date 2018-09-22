@@ -6,10 +6,10 @@
 ///Return vector2 for steering towards random point
 
 
-var _circle_distance = argument[0];
-var _circle_radius = argument[1];
-var _wander_angle = argument[2]/2;
-var _weight = argument[3];
+var _circle_distance = argument[0];	//128
+var _circle_radius = argument[1];	//128
+var _wander_angle = argument[2]/2;	//180
+var _weight = argument[3];			//0.5
 
 // Use velocity vector to place circle
 var _circle_center = vect_multr(vect_norm(velocity), _circle_distance);
@@ -27,7 +27,7 @@ var _target_position = vect_add(position,vect_add(_circle_center, _displacement)
 
 
 // Set velocity
-var _desired_velocity = vect_scaler(vect_subtract(_target_position,position), spd);
+var _desired_velocity = vect_scaler(vect_subtract(_target_position,position), max_speed);
 
 return (vect_multr(vect_subtract(_desired_velocity,velocity),_weight));
 
