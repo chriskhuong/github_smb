@@ -2743,6 +2743,14 @@
             }
         },
         {
+            "Key": "3e84479c-0f8c-423e-9aca-10fa724741b7",
+            "Value": {
+                "id": "b85acfdc-bca3-4684-bd7f-236dc6153b13",
+                "resourcePath": "sprites\\spr_xbox_buttons\\spr_xbox_buttons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e92beb8-d683-4c83-a2cb-864387baea15",
             "Value": {
                 "id": "c4099361-682b-437f-b97b-c327c280674b",
@@ -3996,6 +4004,14 @@
                 "id": "aa1f3fe1-b6c3-4118-a0c5-f1c869a544f1",
                 "resourcePath": "scripts\\tmc_vec4_norm_io\\tmc_vec4_norm_io.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5ec93639-5408-4daf-93ce-d0f91918b0df",
+            "Value": {
+                "id": "0431262d-b0f8-4cd7-b1c4-cc5a35afe4c2",
+                "resourcePath": "sprites\\spr_survival_popup\\spr_survival_popup.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5487,6 +5503,14 @@
             }
         },
         {
+            "Key": "84993aa2-6b24-4142-83c1-29175869b761",
+            "Value": {
+                "id": "b71ba4cc-6716-452d-a316-40f1be1fde0a",
+                "resourcePath": "sprites\\spr_goblin_death1\\spr_goblin_death1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "84c75022-c46c-4cbc-a939-6e8604d1a35c",
             "Value": {
                 "id": "417a766b-aab4-46e4-9764-d3e808636426",
@@ -5815,6 +5839,14 @@
             }
         },
         {
+            "Key": "8e6eff66-bc8c-4eb3-94c7-4c485e628a9a",
+            "Value": {
+                "id": "eee63341-a1a3-4e34-93de-ee8cac38066e",
+                "resourcePath": "sprites\\spr_goblin2_run\\spr_goblin2_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8eb47724-dfa8-49a5-8c44-4834e8b55239",
             "Value": {
                 "id": "6e679d91-ab29-4b10-9e76-2b94e17b5b5b",
@@ -5995,6 +6027,14 @@
             "Value": {
                 "id": "8f09446e-df72-41e1-9cbd-446ec7cdd755",
                 "resourcePath": "sprites\\spr_side_shoot_assault\\spr_side_shoot_assault.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "94090591-8a20-4e66-aab5-6ab9d9f54175",
+            "Value": {
+                "id": "eca3bdc1-57a3-4010-a5ac-d23fbd5c95fe",
+                "resourcePath": "sprites\\spr_goblin1_idle\\spr_goblin1_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6239,6 +6279,14 @@
             }
         },
         {
+            "Key": "9bb18696-f8fb-452a-9b62-591d92e69296",
+            "Value": {
+                "id": "d2f9f6ac-f160-4bb0-a013-5baa32359cfd",
+                "resourcePath": "sprites\\spr_goblin2_idle\\spr_goblin2_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9bf9466d-4195-417a-9972-d4143f48ee06",
             "Value": {
                 "id": "95e808f6-49d9-47d8-9e7d-67c383a07f1b",
@@ -6284,6 +6332,14 @@
                 "id": "136ccf26-0f31-4a42-a426-b89be28c3bf6",
                 "resourcePath": "views\\9caba8cc-a34f-45d6-ba77-ba11a1c68d1f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9cf18510-d245-48c2-9271-6f1ca0317502",
+            "Value": {
+                "id": "df647659-fcbd-41b2-9cd8-cb7280f107b9",
+                "resourcePath": "sprites\\spr_survival_popup_bg\\spr_survival_popup_bg.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -6491,6 +6547,14 @@
             "Value": {
                 "id": "b4198ffc-bfe3-47b3-ab8b-4c2602b17eb4",
                 "resourcePath": "sprites\\ui_select_teapot\\ui_select_teapot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a1dd10e4-6ef9-42dd-9eee-325cd7fa88bf",
+            "Value": {
+                "id": "9509e3a7-1ac0-49a9-9993-2f0a1ae48709",
+                "resourcePath": "sprites\\spr_goblin1_shoot\\spr_goblin1_shoot.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7375,6 +7439,14 @@
             }
         },
         {
+            "Key": "b8e1cfbc-3dad-4a82-9379-707ae8ded383",
+            "Value": {
+                "id": "358364ad-3b8f-4005-bbac-4d8ca6573383",
+                "resourcePath": "sprites\\spr_goblin2_melee\\spr_goblin2_melee.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b93335b7-43cd-48b8-8a40-dbcdb0357ac4",
             "Value": {
                 "id": "8933aa0c-e64d-4345-979d-38f172d3c75c",
@@ -7823,6 +7895,14 @@
             }
         },
         {
+            "Key": "c4fcd4d4-7183-41fe-bd03-4ce4edac0238",
+            "Value": {
+                "id": "e5d68b0e-6815-48d4-b007-a03c4dfa3788",
+                "resourcePath": "sprites\\spr_goblin2_shoot\\spr_goblin2_shoot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c503c6e8-36b0-4fa4-ad17-b6ed67c87d36",
             "Value": {
                 "id": "77bd74c2-c427-42e6-9003-7b5224d13161",
@@ -8011,6 +8091,14 @@
             "Value": {
                 "id": "56bd4a1d-53ef-449a-9cfa-afda146df272",
                 "resourcePath": "sprites\\spr_billy_spawn\\spr_billy_spawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c8a93203-f8c9-4d09-b600-ba070d7f779c",
+            "Value": {
+                "id": "fb5e5546-f1af-421c-93fc-c33619bfaaba",
+                "resourcePath": "sprites\\spr_goblin1_melee\\spr_goblin1_melee.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8623,6 +8711,14 @@
             }
         },
         {
+            "Key": "db556a85-d9df-4b54-b889-62df74932703",
+            "Value": {
+                "id": "ec51b7c0-073c-4337-b390-4a6fc4b8b0f9",
+                "resourcePath": "sprites\\spr_goblin_death2\\spr_goblin_death2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "db994fdd-a3b7-41f4-bba9-fba59cb3b3d0",
             "Value": {
                 "id": "e02a90cf-a213-41a3-9076-054fb42a6a8b",
@@ -9028,6 +9124,14 @@
                 "id": "bb2cea2c-ebaa-4b78-b2a3-85900ac5220d",
                 "resourcePath": "scripts\\scr_loadOutInfo\\scr_loadOutInfo.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e592ecc1-245f-4656-96a1-cd02dad19338",
+            "Value": {
+                "id": "3d431d98-8c80-4acc-aaf9-96012c1ca0c8",
+                "resourcePath": "sprites\\spr_goblin1_run\\spr_goblin1_run.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -9807,6 +9911,14 @@
             }
         },
         {
+            "Key": "f668e946-f028-454c-8b4e-7d91956ee64d",
+            "Value": {
+                "id": "ec772d8b-c701-40e2-8ab4-a73ce88e039a",
+                "resourcePath": "notes\\note3.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "f679183c-b29f-4d5a-a40b-c1426f56c8dc",
             "Value": {
                 "id": "bfedd0ea-edfd-479f-9fbb-9509fb41f8a2",
@@ -10076,6 +10188,14 @@
                 "id": "dcac2cf4-088d-40a6-a874-c9afe6e4a06a",
                 "resourcePath": "sprites\\spr_Bush_8\\spr_Bush_8.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd88c0c6-e568-48e1-8b97-7b16a88c1c53",
+            "Value": {
+                "id": "3ada55e6-ed41-463a-b278-b7b70c4bd3dc",
+                "resourcePath": "views\\fd88c0c6-e568-48e1-8b97-7b16a88c1c53.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
