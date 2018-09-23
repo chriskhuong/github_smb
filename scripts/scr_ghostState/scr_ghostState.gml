@@ -4,7 +4,7 @@
 
 myState = "Ghost";
 myGunAlpha = 0;
-
+myArmAlpha = myGunAlpha;
 silo = false;
 
 var rng = 15;	//range from body

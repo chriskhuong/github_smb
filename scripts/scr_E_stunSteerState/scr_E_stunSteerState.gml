@@ -2,7 +2,7 @@
 
 #region Behavior
 myState = "StunSteer";
-max_speed = spd;
+max_speed = spd*2;
 
 // reset steering
 steering = vect2(0,0);
@@ -13,7 +13,7 @@ steering = vect2(0,0);
 					//steering = vect_add(steering, sb_#behaviour#(argument,stuff,blah));
 					
 					//steering = vect_add(steering, sb_seek(mouse_x, mouse_y, 1));
-					steering = vect_add(steering, sb_seek_arrive(mouse_x,mouse_y,256,1));
+					steering = vect_add(steering, sb_seek_arrive(stunX,stunY,16,1));
 					//steering = vect_add(steering, sb_wander(256,128,180,0.5));
 					//steering = vect_add(steering, sb_flee(mouse_x,mouse_y,1));
 					//steering = vect_add(steering, sb_pursuit(obj_master_drone,1));
@@ -43,30 +43,24 @@ steering = vect2(0,0);
 
 //image_angle = vect_direction(velocity);
 
+hitStun--;
+
 #endregion
 
 #region Transition Trigger
-/*
-if (counter >= room_speed * 3)
+
+if (hitStun <= 0)
 	{
-		var change = choose(0, 1);
-		switch(change)
-			{
-				case 0:
-					state = sIdle;
-				
-				case 1:
-					counter = 0;
-					
-				break;
-			}
+		state = sMove;
+		hitStun = 0;
 	}
-*/
+
 #endregion
 
 #region Sprite
 
-dir = point_direction(x, y, xprevious, yprevious);
+//dir = point_direction(x, y, xprevious, yprevious);
+sprite_index = spr_slime_hurt_side;
 
 if (dir < 225 && dir > 135)
 	{	//facing left

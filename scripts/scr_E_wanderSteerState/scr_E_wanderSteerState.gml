@@ -66,7 +66,7 @@ if (counter >= room_speed * 3)
 #endregion
 
 #region Sprite
-
+sprite_index = spr_slime_run_side;
 dir = point_direction(x, y, xprevious, yprevious);
 
 if (dir < 225 && dir > 135)

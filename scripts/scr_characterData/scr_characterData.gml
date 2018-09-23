@@ -183,7 +183,8 @@ switch(character){
         
         dmg = 3;
 		hp = 8;
-        
+        maxSequence = 2;
+		
         //moving
         sprite[RIGHT, MOVE] = spr_sebastian_run_side;
         sprite[UP, MOVE] = spr_sebastian_run_up;
@@ -195,13 +196,22 @@ switch(character){
         sprite[UP, IDLE] = spr_sebastian_idle_up;
         sprite[LEFT, IDLE] = spr_sebastian_idle_side;
         sprite[DOWN, IDLE] = spr_sebastian_idle_down;
-        /*
-        //attacking
-        sprite[RIGHT, ATTACK] = spr_sebastian_idle_down;
-        sprite[UP, ATTACK] = spr_sebastian_idle_down;
-        sprite[LEFT, ATTACK] = spr_sebastian_idle_down;
-        sprite[DOWN, ATTACK] = spr_sebastian_idle_down;
-		*/
+        
+		//combos
+		sCombo[0] = spr_sebastian_melee_side1;
+		sCombo[1] = spr_sebastian_melee_side2;
+		
+		uCombo[0] = spr_sebastian_melee_up1;
+		uCombo[1] = spr_sebastian_melee_up2;
+		
+		dCombo[0] = spr_sebastian_melee_down1;
+		dCombo[1] = spr_sebastian_melee_down2;
+        
+		//attacking
+        sprite[RIGHT, ATTACK] = sCombo[attackSequence];
+        sprite[UP, ATTACK] = uCombo[attackSequence];
+        sprite[LEFT, ATTACK] = sCombo[attackSequence];
+        sprite[DOWN, ATTACK] = dCombo[attackSequence];
         break;
         
     default:

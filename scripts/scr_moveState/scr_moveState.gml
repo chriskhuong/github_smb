@@ -7,7 +7,7 @@ attacked = false;
 movement = MOVE;
 myGunIndex = 0;
 myGunAlpha = 1;
-
+myArmAlpha = myGunAlpha;
 #region Movement
 //Get direction
 dir = point_direction(0, 0, creator.xaxis, creator.yaxis);

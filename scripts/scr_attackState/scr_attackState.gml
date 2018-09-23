@@ -4,6 +4,7 @@
 
 myState = "Attack";
 myGunAlpha = 0;
+myArmAlpha = myGunAlpha;
 image_speed = 2;
 movement = ATTACK
 

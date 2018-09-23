@@ -84,7 +84,7 @@ if(collision_circle(x, y, 32, obj_Player, false, false))
 #endregion
 
 #region Sprite
-
+sprite_index = spr_slime_run_side;
 dir = point_direction(target.x, target.y, x, y);
 
 if (dir < 270 && dir > 90)

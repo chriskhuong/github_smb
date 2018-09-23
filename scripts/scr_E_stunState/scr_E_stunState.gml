@@ -52,6 +52,7 @@ hitStun--;
 if(hitStun <= 0)
 	{
 		state = sMove;
+		hitStun = 0;
 		//state = scr_moveState;
 	}
 

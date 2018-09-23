@@ -32,3 +32,4 @@ if (instance_exists(target) && target.alive == true)
 */	
 //Sprite
 //sprite_index = spr_enemy_idle;
+sprite_index = spr_slime_run_side;

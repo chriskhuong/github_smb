@@ -63,37 +63,37 @@ else if(room != rm_characterSelect)
 				switch(facing)
 					{	
 						case RIGHT:
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myGunAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myArmAlpha);
 							draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 							draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myGunAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myArmAlpha);
 							break;
 						
 						case DOWN:
 							draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myGunAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myArmAlpha);
 							draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
 							break;
 							
 						case LEFT:
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myGunAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myArmAlpha);
 							draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 							draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myGunAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myArmAlpha);
 							break;
 							
 						case UP:
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myGunAlpha);
-							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myGunAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xl, forearm_yl, 1, -1, forearm_anglel, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xl, shoulder_yl, 1, -1, bicep_anglel, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_forearm, 0, forearm_xr, forearm_yr, 1, 1, forearm_angler, image_blend, myArmAlpha);
+							draw_sprite_ext(spr_sebastian_bicep, 0, shoulder_xr, shoulder_yr, 1, 1, bicep_angler, image_blend, myArmAlpha);
 							draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
 							draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 							break;
