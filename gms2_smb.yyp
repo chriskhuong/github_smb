@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "06aca9e3-ef0b-4fa8-a3a7-09e00ef66e17",
+            "Value": {
+                "id": "6f04bb62-7913-47b3-aa71-fd3a05bcc372",
+                "resourcePath": "sprites\\spr_sebastian_reload_pistol_side\\spr_sebastian_reload_pistol_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06af54ab-8746-49b8-b5bd-b46052ebe101",
             "Value": {
                 "id": "b0d9c0f5-7618-4905-ae2c-935e533c9a46",
@@ -6295,6 +6303,14 @@
             }
         },
         {
+            "Key": "99e1338b-4d92-41f8-8dd0-d7b945d395d9",
+            "Value": {
+                "id": "9731d561-056c-457e-82eb-9c0a6d819359",
+                "resourcePath": "sprites\\spr_gameover_buttons\\spr_gameover_buttons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "99f60225-f0ab-4a9c-889f-34f7a462397f",
             "Value": {
                 "id": "2d0d1555-27eb-447b-8d45-232f5bb7fe8b",
@@ -7556,6 +7572,14 @@
                 "id": "f590c5e4-819e-4c7b-b9f4-9b075ca710a3",
                 "resourcePath": "scripts\\tmc_pill_debug_draw\\tmc_pill_debug_draw.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b9e5f475-a6f9-44dc-9004-60df3245dddb",
+            "Value": {
+                "id": "7475634d-34c6-4a56-8e9d-1794f28acd0a",
+                "resourcePath": "sprites\\spr_missionfailed\\spr_missionfailed.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -9820,6 +9844,14 @@
                 "id": "1b0e0e44-a75b-4f66-b0c9-bb91d3962030",
                 "resourcePath": "views\\f190d356-fd36-4ca0-b3bb-455836362c46.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f1a250a2-2899-451c-82e4-a52c378cf81a",
+            "Value": {
+                "id": "37a4bcb1-bd02-478b-bf70-4fd775300f27",
+                "resourcePath": "sprites\\spr_sebastian_reload_shotgun_side\\spr_sebastian_reload_shotgun_side.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
