@@ -8,7 +8,8 @@
         "b535f6a4-10ba-45b1-b0f5-4e5d27838d07",
         "fe95c2c2-bafb-4607-99d2-ba6843ae2de5",
         "f6b5787f-b13f-41ae-985a-ad2fe12d2b9d",
-        "8d618b9c-537e-467e-a010-913006c28ef1"
+        "8d618b9c-537e-467e-a010-913006c28ef1",
+        "2697baed-7c61-455f-9a1a-7927598d9dc6"
     ],
     "filterType": "GMObject",
     "folderName": "Object Parents",

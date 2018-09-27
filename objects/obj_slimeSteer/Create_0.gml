@@ -4,6 +4,11 @@
 // Inherit the parent event
 event_inherited();
 
+character = SLIME;
+movement = IDLE;
+
+scr_enemyData(character);
+
 shadow_var = 16;
 start_yoffset = sprite_yoffset + 16;
 image_speed = 1;

@@ -1650,7 +1650,7 @@
             "Key": "2697baed-7c61-455f-9a1a-7927598d9dc6",
             "Value": {
                 "id": "b8bbfd3a-4df2-43f8-b39e-0b321f9d59c9",
-                "resourcePath": "objects\\obj_breakable_parent\\obj_breakable_parent.yy",
+                "resourcePath": "objects\\obj_breakableParent\\obj_breakableParent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -7759,6 +7759,14 @@
             }
         },
         {
+            "Key": "beda05ef-c923-4928-b8e0-87546916d76e",
+            "Value": {
+                "id": "6916c87c-9ec2-4886-8083-991766077c1b",
+                "resourcePath": "scripts\\scr_enemyData\\scr_enemyData.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bf2deb27-1c37-4d4c-9c75-e507384201dd",
             "Value": {
                 "id": "ee7b0435-130a-4027-8a57-a9b36ac06be4",
@@ -10018,7 +10026,7 @@
             "Key": "f62bb7c1-be57-4c2a-a670-4018445e57dd",
             "Value": {
                 "id": "d39c600d-fa59-4212-8e8c-5164d549acc3",
-                "resourcePath": "sprites\\spr_beholder_left\\spr_beholder_left.yy",
+                "resourcePath": "sprites\\spr_beholder_side\\spr_beholder_side.yy",
                 "resourceType": "GMSprite"
             }
         },

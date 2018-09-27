@@ -18,13 +18,24 @@
 #macro ABILITYWINDOW0 10
 #macro ABILITYWINDOW1 11
 #macro CHARATERLOCATOR 12
-#macro BRITNEY 0
-#macro JO 1
-#macro MIO 2
-#macro ANNA 3
-#macro SEBASTIAN 4
 #macro GUNONE 0
 #macro GUNTWO 1
 #macro GRENADE 3
 #macro MOUSE 0
 #macro KEY 1
+
+
+//characters
+#macro BRITNEY 0
+#macro JO 1
+#macro MIO 2
+#macro ANNA 3
+#macro SEBASTIAN 4
+
+
+//enemies
+#macro SLIME 5
+#macro SLIMEHELM 6
+#macro BEHOLDER 7
+#macro ORC 8
+#macro GOBLIN 9

@@ -2,8 +2,8 @@
 
 #region Behavior
 myState = "StunSteer";
+movement = STUN;
 max_speed = spd*2;
-
 // reset steering
 steering = vect2(0,0);
 
@@ -22,7 +22,7 @@ steering = vect2(0,0);
 					//steering = vect_add(steering, sb_alignment(obj_enemyParent,128,1));
 					steering = vect_add(steering, sb_separation(obj_enemyParent,64,3));
 					//steering = vect_add(steering, sb_cohesion(obj_enemyParent,184,2));
-					steering=vect_add(steering,sb_avoid(obj_breakable_parent,64,64,5));
+					steering=vect_add(steering,sb_avoid(obj_breakableParent,64,64,5));
 					steering=vect_add(steering,sb_avoid(obj_invisibleBoundary,64,64,5));
 					steering=vect_add(steering,sb_avoid(obj_solidParent,64,64,5));
 					
@@ -41,6 +41,14 @@ steering = vect2(0,0);
 					x = position[1];
 					y = position[2];
 
+stunFlick--;
+
+if (stunFlick <= 0)
+	{
+		stunFlash = !stunFlash
+		stunFlick = maxStunFlick;
+	}
+
 //image_angle = vect_direction(velocity);
 
 hitStun--;
@@ -52,6 +60,7 @@ hitStun--;
 if (hitStun <= 0)
 	{
 		state = sMove;
+		stunFlash = false;
 		hitStun = 0;
 	}
 
@@ -60,7 +69,7 @@ if (hitStun <= 0)
 #region Sprite
 
 //dir = point_direction(x, y, xprevious, yprevious);
-sprite_index = spr_slime_hurt_side;
+sprite_index = sprite[character, movement];
 
 if (dir < 225 && dir > 135)
 	{	//facing left

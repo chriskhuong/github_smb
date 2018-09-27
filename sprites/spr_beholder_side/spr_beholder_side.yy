@@ -2,7 +2,7 @@
     "id": "f62bb7c1-be57-4c2a-a670-4018445e57dd",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_beholder_left",
+    "name": "spr_beholder_side",
     "For3D": false,
     "HTile": false,
     "VTile": false,

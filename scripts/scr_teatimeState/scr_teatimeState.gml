@@ -10,15 +10,19 @@ image_speed = 1;
 if (attacked == false)
 	{
 		image_index = 0;
+		var teatime = instance_create_depth(x, y, depth + 200, obj_teatime);
+		teatime.creator = id;
 		attacked = true;
 	}
 
+/*
 if (instance_number(obj_teatime) < 1)
     {
         var teatime = instance_create_depth(x, y, depth + 200, obj_teatime);
         teatime.creator = id;
         
     }
+*/
 
 #endregion
 

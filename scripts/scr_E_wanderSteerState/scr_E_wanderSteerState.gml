@@ -2,6 +2,7 @@
 
 #region Behavior
 myState = "WanderSteer";
+movement = MOVE;
 counter += 1;
 max_speed = spd;
 
@@ -23,7 +24,7 @@ steering = vect2(0,0);
 					//steering = vect_add(steering, sb_alignment(obj_enemyParent,128,1));
 					steering = vect_add(steering, sb_separation(obj_enemyParent,64,3));
 					//steering = vect_add(steering, sb_cohesion(obj_enemyParent,184,2));
-					steering=vect_add(steering,sb_avoid(obj_breakable_parent,64,64,5));
+					steering=vect_add(steering,sb_avoid(obj_breakableParent,64,64,5));
 					steering=vect_add(steering,sb_avoid(obj_invisibleBoundary,64,64,5));
 					steering=vect_add(steering,sb_avoid(obj_solidParent,64,64,5));
 					
@@ -66,7 +67,7 @@ if (counter >= room_speed * 3)
 #endregion
 
 #region Sprite
-sprite_index = spr_slime_run_side;
+sprite_index = sprite[character, movement];
 dir = point_direction(x, y, xprevious, yprevious);
 
 if (dir < 225 && dir > 135)
