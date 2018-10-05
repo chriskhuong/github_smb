@@ -967,6 +967,14 @@
             }
         },
         {
+            "Key": "1483735f-a689-4847-9320-c6e27690820e",
+            "Value": {
+                "id": "f93e20ba-2f74-4387-9cc9-671ed2469796",
+                "resourcePath": "sprites\\spr_hud_pistol_reload\\spr_hud_pistol_reload.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "149afd22-d5a2-4885-bffe-e3ca75adc5e8",
             "Value": {
                 "id": "efecbe81-7cf1-4b1f-9291-8d0aa43b4d2f",
@@ -1612,6 +1620,14 @@
                 "id": "898a276d-3566-48a7-afab-a3b10da21e89",
                 "resourcePath": "views\\2522b979-fb74-4765-8c5f-c1dc44f3330a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "25476257-9ca0-497c-88e1-f960467fbb0f",
+            "Value": {
+                "id": "dc9fed88-b40a-4fd2-a558-4933eda01f4d",
+                "resourcePath": "sprites\\spr_gunshots3\\spr_gunshots3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3991,6 +4007,14 @@
             }
         },
         {
+            "Key": "5bfdb3e6-eb70-46a0-97df-420ce663b364",
+            "Value": {
+                "id": "661dfc3c-e9eb-43f2-b65f-ef2d278ac4f2",
+                "resourcePath": "sprites\\spr_gunshots2\\spr_gunshots2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5c1555f8-05cc-44f9-9326-fd8ec1f53261",
             "Value": {
                 "id": "01b782d6-f86c-4be0-97dc-d5041de6d3b3",
@@ -5823,6 +5847,14 @@
             }
         },
         {
+            "Key": "8b0f03cd-1ab2-4e52-a01a-ac76c6316547",
+            "Value": {
+                "id": "0fb51b82-717b-4f51-acde-0111dcf5bb9f",
+                "resourcePath": "sprites\\spr_hud_assault_reload\\spr_hud_assault_reload.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b30534a-89d5-4e0d-8c44-b6015ceb74ec",
             "Value": {
                 "id": "80e6274e-ec0e-4f15-9e12-1a4811598d1f",
@@ -5963,6 +5995,14 @@
             "Value": {
                 "id": "cfb3cc3f-3f70-4314-8a8b-e2604ee3e168",
                 "resourcePath": "sprites\\sDogBark\\sDogBark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8fe8c6b9-ccfd-41c1-8a96-988ce67d58ab",
+            "Value": {
+                "id": "56b14f9f-aa86-4123-afbd-2a3b8ded22ba",
+                "resourcePath": "sprites\\spr_hud_pistol2_reload\\spr_hud_pistol2_reload.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6767,6 +6807,14 @@
             }
         },
         {
+            "Key": "a4794f07-c8d0-4f12-821b-63185c931657",
+            "Value": {
+                "id": "06d38200-4c70-4313-89c0-7a103a42d6c8",
+                "resourcePath": "sprites\\spr_gunshots1\\spr_gunshots1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4a46bd9-776f-47a0-8960-d4018affb9ec",
             "Value": {
                 "id": "7d532ed7-eb4c-45a6-99fc-2bf50efbb29c",
@@ -7420,6 +7468,14 @@
                 "id": "eb12660e-b57e-4d54-9d8c-914233f0090c",
                 "resourcePath": "views\\b4276e4a-27e5-4b07-b856-d6a6d1c26d69.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b46f413e-a9b2-4c40-af4d-23d70924a5a7",
+            "Value": {
+                "id": "c3ec5efa-856b-479e-b276-10228df0e187",
+                "resourcePath": "sprites\\spr_hud_smg_reload\\spr_hud_smg_reload.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8647,6 +8703,14 @@
             }
         },
         {
+            "Key": "d5f502d7-db6b-478a-9ff3-80e678f32240",
+            "Value": {
+                "id": "5716375e-fb4a-463c-8e64-1719662854a7",
+                "resourcePath": "sprites\\spr_hud_sniper_reload\\spr_hud_sniper_reload.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d6035b7e-1a18-4b97-bc75-37915779322d",
             "Value": {
                 "id": "552dd5e2-3f6b-49be-b2c2-c823d78fa226",
@@ -9383,6 +9447,14 @@
             }
         },
         {
+            "Key": "e86689c4-3cdf-452b-ab4c-daf28a972b7d",
+            "Value": {
+                "id": "77fe3ecc-2947-4a0c-a280-6907d87e457f",
+                "resourcePath": "sprites\\spr_muzzleflare\\spr_muzzleflare.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e8b42894-4945-4bd9-962d-0fe24075889d",
             "Value": {
                 "id": "dc49d56f-63c8-4859-bbee-bd2ba22278f6",
@@ -9959,6 +10031,14 @@
             }
         },
         {
+            "Key": "f4576455-2fbe-494e-bd7c-a4e2199f079e",
+            "Value": {
+                "id": "2b3b7aea-9edc-4d36-9963-6efff330b8a8",
+                "resourcePath": "sprites\\spr_hud_shotgun_reload\\spr_hud_shotgun_reload.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f4866f6e-ceb4-464b-9dfd-29ce6b1c0968",
             "Value": {
                 "id": "8d66dea1-99bb-41af-a31a-70ac9cd4754e",
@@ -10244,6 +10324,14 @@
                 "id": "42fccea9-0d7e-4d09-b0a6-d3915b360116",
                 "resourcePath": "scripts\\tmc_pill_get_extent_sensor\\tmc_pill_get_extent_sensor.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fc094b7b-bfec-43a3-8d69-afe5a8c04f9f",
+            "Value": {
+                "id": "f4b321fc-2c9c-43ae-9548-d16be7a1e81f",
+                "resourcePath": "sprites\\spr_gunshots4\\spr_gunshots4.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -10943,7 +11031,8 @@
         "0b13c109-217d-4326-aa8b-d30b69f37405",
         "1b1aae1c-22e1-46d5-ac04-3112cdd819af",
         "e36518f9-67ee-495f-82b6-2d9763a0a184",
-        "32ba933b-2c91-4d7d-a314-6628633ff166"
+        "32ba933b-2c91-4d7d-a314-6628633ff166",
+        "beda05ef-c923-4928-b8e0-87546916d76e"
     ],
     "tutorial": ""
 }

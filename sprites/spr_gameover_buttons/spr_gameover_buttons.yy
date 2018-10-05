@@ -5,7 +5,7 @@
     "name": "spr_gameover_buttons",
     "For3D": false,
     "HTile": false,
-    "VTile": false,
+    "VTile": true,
     "bbox_bottom": 23,
     "bbox_left": 19,
     "bbox_right": 236,
