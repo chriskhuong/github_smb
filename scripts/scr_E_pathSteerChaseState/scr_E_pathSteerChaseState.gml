@@ -2,8 +2,8 @@
 
 #region Behavior
 myState = "ChaseSteer";
-counter += 1;
-
+movement = MOVE;
+max_speed = spd;
 target = instance_nearest(x, y, obj_playerParent);
 
 var mx = target.x;
@@ -20,7 +20,7 @@ steering = vect2(0, 0);
 //steering = vect_add(steering, sb_seek_arrive(mouse_x,mouse_y,256,1));
 //steering = vect_add(steering, sb_wander(128,128,180,0.5));
 steering=vect_add(steering,sb_separation(obj_enemyParent,32,2));
-steering=vect_add(steering,sb_avoid(obj_breakable_parent,64,64,5));
+steering=vect_add(steering,sb_avoid(obj_breakableParent,64,64,5));
 steering=vect_add(steering,sb_avoid(obj_invisibleBoundary,64,64,5));
 steering=vect_add(steering,sb_avoid(obj_solidParent,64,64,5));
 //steering = vect_add(steering, sb_flee(mouse_x,mouse_y,1));
@@ -85,7 +85,7 @@ if(collision_circle(x, y, 32, obj_Player, false, false))
 #endregion
 
 #region Sprite
-
+sprite_index = sprite[character, movement];
 dir = point_direction(target.x, target.y, x, y);
 
 if (dir < 270 && dir > 90)

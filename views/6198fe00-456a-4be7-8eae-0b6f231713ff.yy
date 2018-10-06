@@ -50,7 +50,12 @@
         "0609de40-aaa2-40d5-ac3d-e4c3cf82f439",
         "a2cd9c4a-c58a-4722-8010-6cd4ea56cf38",
         "3834e040-5c8b-4a17-8091-6159d284223e",
-        "3bc8702f-1fde-4c90-812d-30b161c71e94"
+        "3bc8702f-1fde-4c90-812d-30b161c71e94",
+        "3e84479c-0f8c-423e-9aca-10fa724741b7",
+        "5ec93639-5408-4daf-93ce-d0f91918b0df",
+        "9cf18510-d245-48c2-9271-6f1ca0317502",
+        "99e1338b-4d92-41f8-8dd0-d7b945d395d9",
+        "b9e5f475-a6f9-44dc-9004-60df3245dddb"
     ],
     "filterType": "GMSprite",
     "folderName": "UI",

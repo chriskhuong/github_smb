@@ -5,3 +5,5 @@ if (draw)
 	{
 		draw_path(path, x, y, false);
 	}
+	
+//draw_line_width(x, y, xprevious, yprevious, 30); direction checking

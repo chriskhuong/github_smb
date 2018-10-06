@@ -201,6 +201,9 @@ switch(character){
 		weaponArray[1, 21] = 50; //rightArm xTargets
 		weaponArray[1, 22] = 50; //rightArm yTargets
 		weaponArray[0, 13] = -38;
+		weaponArray[0, 1] = spr_left_shoot_pistol_new; //Sprite Index
+		weaponArray[0, 2] = spr_down_shoot_pistol_new; //Sprite Index
+		weaponArray[0, 18] = spr_sebastian_reload_pistol;
         //obj_tempPlayer1.weaponArray[0, 8] = 3; //Damage output
         break;
         

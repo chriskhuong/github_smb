@@ -7,6 +7,8 @@ attacked = false;
 movement = MOVE;
 myGunIndex = 0;
 myGunAlpha = 1;
+myArmAlpha = myGunAlpha;
+recoil = max(0, recoil - 1);	//returns the larger number into recoil
 
 #region Movement
 //Get direction
@@ -71,6 +73,7 @@ var fireRate = weaponArray[weapon, 3];
 //general shooting
 if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 8] > 0)
     {
+		recoil = 4;
         script_execute(weaponArray[weapon, 4]);
         myStats.alarm[1] = fireRate;
         myStats.can_shoot = false;
@@ -123,8 +126,7 @@ if(hit)
 
 #region Reloading
 	//Standard reload									//Auto reload when out of ammo								//use fire_press if desired to tap again
-var hello = weaponArray[weapon, 10];
-if((creator.reload && weaponArray[weapon, 10] < hello  && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] == 0 && weaponArray[weapon, 10] > 0 && creator.fire_key))
+if((creator.reload && weaponArray[weapon, 10] && weaponArray[weapon, 10] > 0) || (weaponArray[weapon, 8] == 0 && weaponArray[weapon, 10] > 0 && creator.fire_key))
 	{
 		alarm[10] = myGunSpeed;
 		state = sReload;

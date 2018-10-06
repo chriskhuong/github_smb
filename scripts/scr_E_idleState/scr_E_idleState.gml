@@ -2,6 +2,7 @@
 
 //Behavior
 myState = "Idle";
+movement = IDLE;
 counter += 1;
 
 target = instance_nearest(x, y, obj_Player);
@@ -32,3 +33,4 @@ if (instance_exists(target) && target.alive == true)
 */	
 //Sprite
 //sprite_index = spr_enemy_idle;
+sprite_index = sprite[character, movement];

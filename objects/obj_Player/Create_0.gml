@@ -111,6 +111,9 @@ myGunIndex = 0;
 myGunFinal = sprite_get_number(weaponArray[weapon, 18]);
 myGunSpeed = room_speed/10;
 myGunAlpha = 1;
+myArmAlpha = 1;
+
+recoil = 0;
 
 #endregion
 

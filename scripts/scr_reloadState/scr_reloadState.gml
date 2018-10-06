@@ -11,7 +11,7 @@ reloading = true;
 myGunSprite = weaponArray[weapon, 18];
 myGunFinal = sprite_get_number(weaponArray[weapon, 18]);
 myGunAlpha = 1;
-
+myArmAlpha = 0;
 if (facing == RIGHT || facing == DOWN)
 	{
 		myGunAngle = 0;

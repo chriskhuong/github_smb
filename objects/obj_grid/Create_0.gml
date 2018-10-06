@@ -11,5 +11,5 @@ draw = false;
 grid = mp_grid_create(0, 0, hCells, vCells, cellWidth, cellHeight);
 
 //Add collision objects to avoid
-mp_grid_add_instances(grid, obj_breakable_parent, false);
+mp_grid_add_instances(grid, obj_breakableParent, false);
 mp_grid_add_instances(grid, obj_solidParent, false);
