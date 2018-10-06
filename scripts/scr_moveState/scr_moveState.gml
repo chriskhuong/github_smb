@@ -8,6 +8,8 @@ movement = MOVE;
 myGunIndex = 0;
 myGunAlpha = 1;
 myArmAlpha = myGunAlpha;
+recoil = max(0, recoil - 1);	//returns the larger number into recoil
+
 #region Movement
 //Get direction
 dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
@@ -71,6 +73,7 @@ var fireRate = weaponArray[weapon, 3];
 //general shooting
 if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 8] > 0)
     {
+		recoil = 4;
         script_execute(weaponArray[weapon, 4]);
         myStats.alarm[1] = fireRate;
         myStats.can_shoot = false;

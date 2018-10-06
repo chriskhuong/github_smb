@@ -113,6 +113,8 @@ myGunSpeed = room_speed/10;
 myGunAlpha = 1;
 myArmAlpha = 1;
 
+recoil = 0;
+
 #endregion
 
 #region palette stuff

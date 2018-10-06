@@ -1,8 +1,8 @@
 ///@description scr_gunControl()
 //sets all the gun data from what was previously stored in the end step of the gun object
 
-myGunX = x + weaponArray[weapon, 6];
-myGunY = y + weaponArray[weapon, 7];
+myGunX = x + weaponArray[weapon, 6] - lengthdir_x(recoil, myGunAngle);
+myGunY = y + weaponArray[weapon, 7] - lengthdir_y(recoil, myGunAngle);
 
 myGunLenX = -weaponArray[weapon, 13];
 myGunLenY = -weaponArray[weapon, 14];
