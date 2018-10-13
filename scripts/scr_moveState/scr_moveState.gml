@@ -74,6 +74,9 @@ var fireRate = weaponArray[weapon, 3];
 if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 8] > 0)
     {
 		recoil = 4;
+		audio_emitter_pitch(myGunAudio, random_range(.9, 1));
+		audio_emitter_gain(myGunAudio, random_range(.75, 1.25));
+		audio_play_sound_on(myGunAudio, snd_gun, false, 1);
         script_execute(weaponArray[weapon, 4]);
         myStats.alarm[1] = fireRate;
         myStats.can_shoot = false;
