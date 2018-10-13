@@ -113,8 +113,8 @@ myGunSpeed = room_speed/10;
 myGunAlpha = 1;
 myArmAlpha = 1;
 
+myGunAudio = audio_emitter_create();
 recoil = 0;
-
 #endregion
 
 #region palette stuff

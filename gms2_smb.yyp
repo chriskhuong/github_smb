@@ -10247,6 +10247,14 @@
             }
         },
         {
+            "Key": "f7c3a285-eb3b-4411-9bf9-d1817920ba51",
+            "Value": {
+                "id": "8ac2ce67-6153-4590-ab71-ed34f34daf71",
+                "resourcePath": "sounds\\snd_gun\\snd_gun.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f81ace6f-fa9d-4ce2-b0c6-7c767ee1ed88",
             "Value": {
                 "id": "5784d04d-e0f8-481b-b84c-a6512d0d902e",
