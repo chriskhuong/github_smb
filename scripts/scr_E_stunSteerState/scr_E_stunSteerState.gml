@@ -41,17 +41,18 @@ steering = vect2(0,0);
 					x = position[1];
 					y = position[2];
 
-stunFlick--;
+if (stunFlick > 0)
+	{
+		stunFlick--;
+	}
 
-if (stunFlick <= 0)
+else
 	{
 		stunFlash = !stunFlash
 		stunFlick = maxStunFlick;
 	}
 
 //image_angle = vect_direction(velocity);
-
-hitStun--;
 
 #endregion
 
@@ -62,6 +63,10 @@ if (hitStun <= 0)
 		state = sMove;
 		stunFlash = false;
 		hitStun = 0;
+	}
+else
+	{
+		hitStun--;
 	}
 
 #endregion

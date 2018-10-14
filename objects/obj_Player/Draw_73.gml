@@ -9,7 +9,7 @@ if (silo == true)
 		gpu_set_fog(true, myColor, 0, 0);
 		draw_self();
 		draw_set_alpha(.75);
-		draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+		//draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
 		gpu_set_fog(false, c_white, 0, 0);
 		
 		gpu_set_alphatestenable(false);

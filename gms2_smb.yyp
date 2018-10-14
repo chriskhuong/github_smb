@@ -3311,6 +3311,14 @@
             }
         },
         {
+            "Key": "4ab56975-655e-446a-912c-b7bcae357b52",
+            "Value": {
+                "id": "7838f417-6f2d-4200-8d42-5ac49f42622d",
+                "resourcePath": "objects\\Obj_muzzleFlare\\Obj_muzzleFlare.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ad2852d-9abb-40bf-9fb6-99328ffaa1c6",
             "Value": {
                 "id": "4792cf11-b7ce-45fd-adb8-5dd4c1b6f275",

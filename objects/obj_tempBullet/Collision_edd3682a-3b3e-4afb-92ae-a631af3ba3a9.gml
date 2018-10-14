@@ -15,4 +15,3 @@ if (other.tag != creator)
 		audio_play_sound(snd_shot, 3, false);
 		instance_destroy();
     }
-
