@@ -30,7 +30,29 @@ if (alive)
 			{
 				obj_playerTracker.alarm[0] = 1;
 			}
+	var dead = 0;		
+	for(var hello = 0; hello < instance_number(obj_Player); hello++)
+		{
+			var playerCount = instance_number(obj_Player);
+		   players[hello] = instance_find(obj_Player,hello);
+				   if(players[hello].state == sGhost)
+				   {
+					   dead += 1; 
+				   }
+					if(dead == playerCount)
+					{	
+						show_debug_message(string(dead));
+						global.allDead = true;
+						obj_playerStats.alarm[5] = room_speed * 3;
+					}
+					else
+					{
+						global.allDead = false;	
+					}
+				show_debug_message(string(dead));
+		}
 	}
+
 	
 var deadDir = point_direction(x, y, dx, dy);
 		
