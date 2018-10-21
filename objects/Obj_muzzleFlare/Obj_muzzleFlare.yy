@@ -2,18 +2,8 @@
     "id": "4ab56975-655e-446a-912c-b7bcae357b52",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Obj_muzzleFlare",
+    "name": "obj_muzzleFlare",
     "eventList": [
-        {
-            "id": "c1604352-d8fb-4fbd-91da-f55b9245807d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "4ab56975-655e-446a-912c-b7bcae357b52"
-        },
         {
             "id": "da701261-5b5c-4056-937d-fd0f58385522",
             "modelName": "GMEvent",

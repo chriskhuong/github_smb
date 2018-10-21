@@ -77,9 +77,7 @@ if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 8] > 0)
 		audio_emitter_pitch(myGunAudio, random_range(.9, 1));
 		audio_emitter_gain(myGunAudio, random_range(.75, 1.25));
 		audio_play_sound_on(myGunAudio, snd_gun, false, 1);
-		p = instance_create_depth(random_range(myGunX - 3, myGunX + 3) + lengthdir_x(myGunLenX + 15, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle), random_range(myGunY - 3, myGunY + 3) + lengthdir_y(myGunLenX + 15, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle), depth-500, Obj_muzzleFlare);
-		p.image_xscale = random_range(.5, .75);
-		p.image_yscale = (random_range(.5, .75) * choose(-1, 1));
+		p = instance_create_depth(myGunX + lengthdir_x(myGunLenX + 15, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle), myGunY + lengthdir_y(myGunLenX + 15, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle), depth-500, obj_muzzleFlare);
 		p.image_angle = myGunAngle;
 		p.creator = id;
         script_execute(weaponArray[weapon, 4]);

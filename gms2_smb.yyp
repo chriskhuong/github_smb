@@ -3330,7 +3330,7 @@
             "Key": "4ab56975-655e-446a-912c-b7bcae357b52",
             "Value": {
                 "id": "7838f417-6f2d-4200-8d42-5ac49f42622d",
-                "resourcePath": "objects\\Obj_muzzleFlare\\Obj_muzzleFlare.yy",
+                "resourcePath": "objects\\obj_muzzleFlare\\obj_muzzleFlare.yy",
                 "resourceType": "GMObject"
             }
         },
