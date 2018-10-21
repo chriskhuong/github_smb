@@ -1567,6 +1567,14 @@
             }
         },
         {
+            "Key": "239bd739-1214-42ad-9f08-e0d61b14569c",
+            "Value": {
+                "id": "7a6c051a-ee81-44d5-8028-913313127202",
+                "resourcePath": "sprites\\spr_slime_dead_side3\\spr_slime_dead_side3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23eb8fbd-8bc4-476e-b1fb-8b286a44e93e",
             "Value": {
                 "id": "d4cfa91c-919a-45ee-8d01-2528b3fa6fc9",
@@ -2380,6 +2388,14 @@
                 "id": "ebe5dc0f-e2bc-4398-8da8-3f60745b13ae",
                 "resourcePath": "scripts\\tmc_vec2_r\\tmc_vec2_r.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "34dd08d9-61ae-4bf0-8d13-a76f0479ab66",
+            "Value": {
+                "id": "d9a5ec51-3ad3-40d0-bcb9-68f6e033dbc6",
+                "resourcePath": "sprites\\spr_slime_dead_side2\\spr_slime_dead_side2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
