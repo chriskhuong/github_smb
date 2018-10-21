@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+ini_open("savedata.ini");
 ideal_width = 0; // we do not touch this since we caculate this in the code
-ideal_height = 576; // we want this for the standard 16:9 resolutions.
-res_width = 0;
+ideal_height = 576 // we want this for the standard 16:9 resolutions.
+res_width = ini_read_real("Variables","resWidth",0);
+res_height = ini_read_real("Variables","resHieght",576);
+ini_close();
 creator = noone;
 backout = false;
 // grabs the aspect ratio which is 1.7... and that is a 16:9 ratio
@@ -36,9 +39,14 @@ global.view_x = 0;
 global.view_y = 0;
 global.view_w = ideal_width;
 global.view_h = ideal_height;
+if(res_width > 0)
+{
+		window_set_size(res_width,res_height);
+		obj_mainMenu.alarm[0] = 1;
+}
 if(max_resolution > 1080)
 {
-		obj_resolution.res_width = 1920;
-		window_set_size(1920,1080);
-		obj_mainMenu.alarm[0] = 1;
+		//obj_resolution.res_width = 1920;
+		//window_set_size(res_width,res_height);
+		//obj_mainMenu.alarm[0] = 1;
 }

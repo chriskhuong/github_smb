@@ -53,9 +53,9 @@ enum menu_element_type
 //	to your script from the step event.																		//
 */
 ds_menu_main = scr_create_menu_page(
-	["RESUME", menu_element_type.script_runner, scr_resume_game],
-	["SETTINGS", menu_element_type.page_transfer, menu_page.settings],
-	["RETRUN TO MAIN MENU", menu_element_type.script_runner, scr_return_menu]
+	["Resume",menu_element_type.script_runner, scr_resume_game],
+	["Settings", menu_element_type.page_transfer, menu_page.settings],
+	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]
 );
 
 ds_settings = scr_create_menu_page(

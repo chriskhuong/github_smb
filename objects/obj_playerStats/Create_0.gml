@@ -17,6 +17,7 @@ attack = 1; /**/
 level = 1;
 can_shoot = true;
 num = 0;
+alive = true;
 //depth = -500000;
 alarm[11] = 1;
 
