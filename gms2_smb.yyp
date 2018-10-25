@@ -5607,6 +5607,14 @@
             }
         },
         {
+            "Key": "82426e6a-f796-4a4d-ac30-dead9c762c1b",
+            "Value": {
+                "id": "ecacfbb9-46a3-4a48-8746-1ce4b0f58671",
+                "resourcePath": "sprites\\spr_pausescreen_buttons\\spr_pausescreen_buttons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "824ff064-df5d-4cbc-bb45-2136c9b488c4",
             "Value": {
                 "id": "be9333bf-248d-489d-a47e-101787dfd385",
@@ -6988,6 +6996,14 @@
                 "id": "16a97048-5a43-4e6a-9cd3-deccc4e136fe",
                 "resourcePath": "scripts\\tmc_vec3_cross_io\\tmc_vec3_cross_io.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a6dc8dba-15ff-48a3-93fa-fff41cfcfcb0",
+            "Value": {
+                "id": "845e1492-236d-47bd-90e4-0c241ce4d897",
+                "resourcePath": "sprites\\spr_titlescreen_buttons\\spr_titlescreen_buttons.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8559,6 +8575,14 @@
             }
         },
         {
+            "Key": "ce5fade5-f39f-4fd3-be8e-927a4321e9a9",
+            "Value": {
+                "id": "c80079be-2cd5-42eb-bf62-a80070780b26",
+                "resourcePath": "sprites\\spr_titlescreen_background\\spr_titlescreen_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cf4652f9-8537-45db-b841-cfd947b71d76",
             "Value": {
                 "id": "99bb9f54-988a-4257-9bec-4e83b771616e",
@@ -9164,6 +9188,14 @@
                 "id": "796607c9-6446-42a8-962e-2808c239c974",
                 "resourcePath": "scripts\\tmc_vec2_add\\tmc_vec2_add.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e020aa4b-2d58-4375-a9cb-27367bc7f569",
+            "Value": {
+                "id": "f490161a-abe2-4b4c-808f-e2410dde4a18",
+                "resourcePath": "sprites\\spr_pausescreen_header\\spr_pausescreen_header.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
