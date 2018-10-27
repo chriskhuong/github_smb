@@ -112,12 +112,3 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
-
-if (global.allDead)
-    {
-	draw_sprite(spr_missionfailed,0,xSpot + 64,ySpot/4);	
-	obj_menu.menu_pages[0] = scr_create_menu_page(
-	[spr_gameover_buttons, menu_element_type.script_runner,scr_resume_game,2],
-	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]
-);
-	}

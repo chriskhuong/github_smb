@@ -1,6 +1,6 @@
 with(obj_Player)
 	{
-		if(confirmed)
+			if(confirmed)
 				{
 					state = sMove;
 					if(instance_exists(obj_spawnZone))

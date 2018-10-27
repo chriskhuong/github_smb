@@ -25,7 +25,7 @@ if (alive)
 		dx = deadBody.x;
 		dy = deadBody.y;
 		alive = false;
-		
+		show_debug_message("SGhost");		
 		if (instance_exists(obj_playerTracker))
 			{
 				obj_playerTracker.alarm[0] = 1;

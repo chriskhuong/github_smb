@@ -93,7 +93,6 @@ if(inputConfirm)
 	
 }
 
-
 // This is temporay...till I find a better solution to manage backing in the menu, but it works.
 // to follow this logic, you would need to look at the array of page positions.
 if(inputCancel)
