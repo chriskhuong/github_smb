@@ -38,7 +38,7 @@
         "f5824b33-ba76-46a9-a622-93020d7c3572"
     ],
     "filterType": "GMObject",
-    "folderName": "group_obj_Sakura_Props",
+    "folderName": "Sakura_Props",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

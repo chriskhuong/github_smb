@@ -2,7 +2,7 @@
 {
     "name": "rm_SurvivalMode2",
     "id": "e51d7fd5-af4a-452b-a8f6-5d7bd0ed9fc8",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

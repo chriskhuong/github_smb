@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "1a61b444-6900-493c-ae7a-53ea750165e3",
+            "Value": {
+                "id": "1e85a4b7-6f4f-42eb-ac59-455e247cd849",
+                "resourcePath": "objects\\obj_icecap_11\\obj_icecap_11.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1ad0e055-2518-4d3b-944a-0443565a1d19",
             "Value": {
                 "id": "5f6e375b-4fdc-40e6-8870-9f0dcd97ed1e",
@@ -1723,6 +1731,14 @@
             "Value": {
                 "id": "e806e188-f68e-4e04-8b57-6a90bb5de7c9",
                 "resourcePath": "objects\\obj_Mushroom_0\\obj_Mushroom_0.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "27258ce3-c53b-40ab-9ba4-fa8b67dbc571",
+            "Value": {
+                "id": "1af20372-0f08-435c-9a2a-85a75fa3817d",
+                "resourcePath": "objects\\obj_icecap_13\\obj_icecap_13.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2551,6 +2567,14 @@
             }
         },
         {
+            "Key": "384e38d7-2680-409a-955f-00668247616e",
+            "Value": {
+                "id": "2ab57d72-7f89-4993-b2d5-79285afc8034",
+                "resourcePath": "objects\\obj_icecap_12\\obj_icecap_12.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "38629a04-8444-4fea-9ed0-7b4a7f672cbb",
             "Value": {
                 "id": "6dfb3b51-9f8b-46f9-aed9-799c59a91761",
@@ -2775,6 +2799,14 @@
             }
         },
         {
+            "Key": "3d6629dd-1df3-4c82-a39d-736e4c796c3f",
+            "Value": {
+                "id": "da894e16-4c71-47f2-a2fc-ae6578d4f9d9",
+                "resourcePath": "objects\\obj_iceberg_02\\obj_iceberg_02.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3d83c9ad-e1a1-4671-8ae3-67eefb3c9913",
             "Value": {
                 "id": "62107055-a892-4698-b908-dda6217049f6",
@@ -2956,6 +2988,14 @@
                 "id": "3967e5bc-2d82-4755-8548-0b6ebdebadbc",
                 "resourcePath": "views\\41462962-736b-43e1-bb0b-25ddb67fba77.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "41e51d66-adfd-4bf7-ad55-00f2e09b7f26",
+            "Value": {
+                "id": "cdaa67f2-18a6-4d22-ae0e-66a7d351b845",
+                "resourcePath": "tilesets\\tileset_Arctic_Decal\\tileset_Arctic_Decal.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -3860,6 +3900,14 @@
                 "id": "72bf7e3b-d3bc-4737-868c-6737daf58885",
                 "resourcePath": "views\\561e6bb3-3cc3-4cff-ba99-f0097824db31.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5638004f-e4eb-47f6-afed-ecbcc8636ea3",
+            "Value": {
+                "id": "446c5e9c-fbc2-4ab8-b11c-f7f7230099c4",
+                "resourcePath": "objects\\obj_icecap_01\\obj_icecap_01.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5623,6 +5671,14 @@
             }
         },
         {
+            "Key": "81308510-2035-4094-bfab-fc8795a2e242",
+            "Value": {
+                "id": "81fd9188-8025-4f99-86b9-66a2226c3032",
+                "resourcePath": "objects\\obj_icecap_08\\obj_icecap_08.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "81431bd3-01ed-48cf-8ba6-5003265bb281",
             "Value": {
                 "id": "11d5a478-7aba-454c-be21-087a052b23ee",
@@ -5839,6 +5895,14 @@
             }
         },
         {
+            "Key": "86f4d7ac-7095-4bc3-92d3-ef294df84f1f",
+            "Value": {
+                "id": "586bcf53-cc76-4987-ba55-63e1be43038b",
+                "resourcePath": "objects\\obj_icecap_14\\obj_icecap_14.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "872fea9a-3e40-4161-818a-c4d4d6c99e84",
             "Value": {
                 "id": "c7c749f2-189b-45d3-9bae-2f13720d3630",
@@ -5900,6 +5964,14 @@
                 "id": "8adffef7-e9b1-4e77-ad71-6b93accd2e26",
                 "resourcePath": "sprites\\spr_mio_idle_down\\spr_mio_idle_down.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "883905b3-1341-4375-9d33-c6f451b92ced",
+            "Value": {
+                "id": "d3380b90-2f37-4cf6-9d28-f53e13bb609a",
+                "resourcePath": "objects\\obj_icecap_10\\obj_icecap_10.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -6055,6 +6127,14 @@
             }
         },
         {
+            "Key": "8d6d8072-5b5c-4c99-9eba-f117271af375",
+            "Value": {
+                "id": "d8913e4b-490c-4c62-b7c8-7c28c0e1d342",
+                "resourcePath": "objects\\obj_icecap_07\\obj_icecap_07.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8e0b42bc-7f50-40d8-b9fb-d5673e351e2a",
             "Value": {
                 "id": "ea83295c-084c-496a-9224-ec1c8cfbfcfa",
@@ -6140,6 +6220,14 @@
                 "id": "cfb3cc3f-3f70-4314-8a8b-e2604ee3e168",
                 "resourcePath": "sprites\\sDogBark\\sDogBark.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8fdc43d9-96f3-436c-bd09-d8562c603ea7",
+            "Value": {
+                "id": "1632332a-6adf-410e-aac1-dfebdc43199f",
+                "resourcePath": "views\\8fdc43d9-96f3-436c-bd09-d8562c603ea7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -6524,6 +6612,14 @@
                 "id": "2d0d1555-27eb-447b-8d45-232f5bb7fe8b",
                 "resourcePath": "sprites\\britney_tea2\\britney_tea2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9a89447e-987e-45af-9776-ebe26959bf46",
+            "Value": {
+                "id": "54dd376a-7a37-4f00-abd6-d9f35c3b068c",
+                "resourcePath": "objects\\obj_icecap_09\\obj_icecap_09.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7543,6 +7639,14 @@
             }
         },
         {
+            "Key": "b1eba52e-59e0-4cd6-abfe-43dae30cbe64",
+            "Value": {
+                "id": "c6c6f090-9cdf-44cb-91b4-4018163885df",
+                "resourcePath": "objects\\obj_icecap_02\\obj_icecap_02.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b23b5a7b-ecee-4614-96c0-84c43f8c3409",
             "Value": {
                 "id": "0cd61d4d-e975-487d-b111-6799810c11a4",
@@ -7860,6 +7964,14 @@
                 "id": "d01de5e2-3596-4b1d-9ccd-5b572e2a59ba",
                 "resourcePath": "scripts\\tmc_vec4_lerp\\tmc_vec4_lerp.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "baee02cd-4f25-4780-bbe4-e54aee11dbdb",
+            "Value": {
+                "id": "55a56f47-5417-4ab9-90e4-80f724775151",
+                "resourcePath": "objects\\obj_icecap_03\\obj_icecap_03.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -8260,6 +8372,14 @@
                 "id": "1d349d95-e67e-4ae1-99ee-81bbc1966dd2",
                 "resourcePath": "views\\c4c1912f-1195-499e-967d-5b9cc879d351.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c4ec133e-c52e-47be-97e6-b47650e47f55",
+            "Value": {
+                "id": "1e3ab111-14d8-410e-a4b8-fa177e14e656",
+                "resourcePath": "objects\\obj_icecap_04\\obj_icecap_04.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -8908,6 +9028,14 @@
                 "id": "1b51d90e-136a-4373-a170-7e56d601ed82",
                 "resourcePath": "views\\d4b93a6b-a367-454f-827d-508fac13bade.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d4ccbb51-309b-42ab-be30-5f4a9c60c829",
+            "Value": {
+                "id": "d5ea9aa4-bfbf-466a-96cd-d3714a810cdd",
+                "resourcePath": "objects\\obj_iceberg_01\\obj_iceberg_01.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -9863,6 +9991,14 @@
             }
         },
         {
+            "Key": "ebdb3300-41e4-488e-a241-6432d33315b8",
+            "Value": {
+                "id": "2c8f0dcf-4fa1-49ea-a138-570621aff7f0",
+                "resourcePath": "objects\\obj_icecap_15\\obj_icecap_15.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ebead27e-4c70-4eec-932f-866097b92c62",
             "Value": {
                 "id": "a3df44ea-3a7b-4f2f-8057-958324bd20f6",
@@ -10295,6 +10431,14 @@
             }
         },
         {
+            "Key": "f44f7575-6cf6-43a6-a022-76ebdd32fa92",
+            "Value": {
+                "id": "e0135ee2-3d00-4ee0-ac3c-ba353de75daa",
+                "resourcePath": "objects\\obj_icecap_06\\obj_icecap_06.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f4576455-2fbe-494e-bd7c-a4e2199f079e",
             "Value": {
                 "id": "2b3b7aea-9edc-4d36-9963-6efff330b8a8",
@@ -10724,6 +10868,14 @@
                 "id": "ba31bcd0-51c6-4643-9968-db3650fce3dc",
                 "resourcePath": "scripts\\tmc_vec3_scale_r_o\\tmc_vec3_scale_r_o.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fde75c1c-f285-4583-b931-c42c503a84ad",
+            "Value": {
+                "id": "d73a5aa8-a7b6-4950-8673-d0adacaeebfd",
+                "resourcePath": "objects\\obj_icecap_05\\obj_icecap_05.yy",
+                "resourceType": "GMObject"
             }
         },
         {
