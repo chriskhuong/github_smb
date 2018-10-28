@@ -177,7 +177,7 @@ if (creator.attack_key)
 
 										alive = true;
 										silo = true;
-										hp = maxHp;
+										myStats.hp = myStats.maxHp;
 										state = sMove;
 										with (deadBody)
 											{
