@@ -2,7 +2,8 @@
 // You can write your code in this editor
 if (room = 
 	rm_SurvivalMode ||
-	rm_SurvivalMode2
+	rm_SurvivalMode2 ||
+	rm_Arctic_Test 
 	)
 	{
 		room_type = 0;

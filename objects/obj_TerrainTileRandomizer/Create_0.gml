@@ -264,7 +264,7 @@ if (room_type == 1)
 	TilemapWidth9 = tilemap_get_width(Layer9);
 	TilemapHeight9 = tilemap_get_height(Layer9);
 
-	var lay_id_Snowfloor = layer_get_id("bg_Snow_Floor");
+	var lay_id_Snowfloor = layer_get_id("bg_Snow_Floor"); //arctic base lol
 	Layer10 = layer_tilemap_get_id(lay_id_Snowfloor);
 	TilemapWidth10 = tilemap_get_width(Layer10);
 	TilemapHeight10 = tilemap_get_height(Layer10);
@@ -303,9 +303,9 @@ if (room_type == 1)
 				{
 					//Arctic Ocean
 					Tilemap9 = tilemap_get(Layer9, i, j);
-					coin = choose(0, 1, 2, 3);
 					if (Tilemap9 == 60)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 							{
 								TileToPlace9 = tile_set_index(Tilemap9, choose(random_range(61, 64), random_range(72, 76), random_range(84, 88), random_range(96, 100)));
@@ -315,9 +315,9 @@ if (room_type == 1)
 				
 					//Snowfloor Base
 					Tilemap10 = tilemap_get(Layer10, i, j);
-					coin = choose(0, 1, 2); 
 					if (Tilemap10 == 14)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 							{
 								TileToPlace10 = tile_set_index(Tilemap10, choose(random_range(14, 17), random_range(26, 29), random_range(38, 41)));
@@ -327,6 +327,7 @@ if (room_type == 1)
 					//Snowfloor Top
 					if (Tilemap10 == 2)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 							{
 								TileToPlace10 = tile_set_index(Tilemap10, choose(random_range(2, 5)));
@@ -336,6 +337,7 @@ if (room_type == 1)
 					//Snowfloor Bottom
 					if (Tilemap10 == 50)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 							{
 								TileToPlace10 = tile_set_index(Tilemap10, choose(random_range(50, 53)));
@@ -345,6 +347,7 @@ if (room_type == 1)
 					//Snowfloor Rightside
 					if (Tilemap10 == 18)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 							{
 								TileToPlace10 = tile_set_index(Tilemap10, choose(18, 30, 42));
@@ -354,6 +357,7 @@ if (room_type == 1)
 					//Snowfloor Leftside
 					if (Tilemap10 == 13)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 							{
 								TileToPlace10 = tile_set_index(Tilemap10, choose(13, 25, 37));
@@ -362,9 +366,9 @@ if (room_type == 1)
 					}
 					//Arctic River
 					Tilemap11 = tilemap_get(Layer11, i, j);
-					coin = choose(0, 1, 2); 
 					if (Tilemap11 == 169)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace11 = tile_set_index(Tilemap11, choose(random_range(169, 172), random_range(181, 184), random_range(193, 196)));
@@ -374,6 +378,7 @@ if (room_type == 1)
 					//top arctic river
 					if (Tilemap11 == 157)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace11 = tile_set_index(Tilemap11, choose(random_range(157, 160)));
@@ -383,6 +388,7 @@ if (room_type == 1)
 					//bottom arctic river
 					if (Tilemap11 == 205)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace11 = tile_set_index(Tilemap11, choose(random_range(205, 208)));
@@ -392,6 +398,7 @@ if (room_type == 1)
 					//left arctic river
 					if (Tilemap11 == 168)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace11 = tile_set_index(Tilemap11, choose(168, 180, 192));
@@ -401,6 +408,7 @@ if (room_type == 1)
 					//right arctic river
 					if (Tilemap11 == 173)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace11 = tile_set_index(Tilemap11, choose(173, 185, 197));
@@ -409,9 +417,10 @@ if (room_type == 1)
 					}
 					//frozen water
 					Tilemap12 = tilemap_get(Layer12, i, j);
-					coin = choose(0, 1, 2); 
+					coin = 1; //choose(0, 1);
 					if (Tilemap12 == 121)
 					{
+						coin = choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace12 = tile_set_index(Tilemap12, choose(random_range(121, 123), random_range(133,135)));
@@ -421,6 +430,7 @@ if (room_type == 1)
 					//frozen water top
 					if (Tilemap12 == 109)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace12 = tile_set_index(Tilemap12, choose(random_range(109,111)));
@@ -430,6 +440,7 @@ if (room_type == 1)
 					//frozen water bottom
 					if (Tilemap12 == 145)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace12 = tile_set_index(Tilemap12, choose(random_range(145,147)));
@@ -439,6 +450,7 @@ if (room_type == 1)
 					//frozen water right
 					if (Tilemap12 == 124)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace12 = tile_set_index(Tilemap12, choose(124, 136));
@@ -448,6 +460,7 @@ if (room_type == 1)
 					//frozen water left
 					if (Tilemap12 == 120)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace12 = tile_set_index(Tilemap12, choose(120, 132));
@@ -455,10 +468,10 @@ if (room_type == 1)
 						}
 					}
 					Tilemap13 = tilemap_get(Layer13, i, j);
-					coin = choose(0, 1, 2); 
 					//arctic hillside base
 					if (Tilemap13 == 104)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace13 = tile_set_index(Tilemap13, choose(random_range(104, 106)));
@@ -468,6 +481,7 @@ if (room_type == 1)
 					//arctic hillside top
 					if (Tilemap13 == 92)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace13 = tile_set_index(Tilemap13, choose(random_range(92, 94)));
@@ -477,6 +491,7 @@ if (room_type == 1)
 					//arctic hillside bottom
 					if (Tilemap13 == 116)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace13 = tile_set_index(Tilemap13, choose(random_range(116, 118)));
@@ -484,10 +499,10 @@ if (room_type == 1)
 						}
 					}
 					Tilemap14 = tilemap_get(Layer14, i, j);
-					coin = choose(0, 1, 2); 
 					//arctic hill
 					if (Tilemap14 == 56)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace14 = tile_set_index(Tilemap14, choose(random_range(56, 58), random_range(68,70)));
@@ -497,6 +512,7 @@ if (room_type == 1)
 					//arctic hill top
 					if (Tilemap14 == 44)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace14 = tile_set_index(Tilemap14, choose(random_range(44, 46)));
@@ -506,6 +522,7 @@ if (room_type == 1)
 					//arctic hill bottom
 					if (Tilemap14 == 80)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace14 = tile_set_index(Tilemap14, choose(random_range(80, 82)));
@@ -515,6 +532,7 @@ if (room_type == 1)
 					//arctic hill left
 					if (Tilemap14 == 55)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace14 = tile_set_index(Tilemap14, choose(55, 67));
@@ -524,6 +542,7 @@ if (room_type == 1)
 					//arctic hill right
 					if (Tilemap14 == 59)
 					{
+						coin = 1; //choose(0, 1);
 						if (coin == 1)
 						{
 							TileToPlace14 = tile_set_index(Tilemap14, choose(59, 71));
