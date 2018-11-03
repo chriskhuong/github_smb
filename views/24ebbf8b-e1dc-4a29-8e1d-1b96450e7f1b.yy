@@ -35,7 +35,9 @@
         "6fb7ee2c-8dc1-4cbc-b655-dbcc992d501c",
         "777910ed-b392-47ae-8d10-abe47c8a78f8",
         "0fcb2cbb-b880-4352-b892-b7325b15a7c4",
-        "125605ff-7bcc-4154-8933-a36509633376"
+        "125605ff-7bcc-4154-8933-a36509633376",
+        "04c2f5b4-0feb-4991-923d-73da6cf501db",
+        "83fd7f57-7e97-4ae0-bd7a-b8422496e2e5"
     ],
     "filterType": "GMSprite",
     "folderName": "Props_Forest",

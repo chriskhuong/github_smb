@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "04c2f5b4-0feb-4991-923d-73da6cf501db",
+            "Value": {
+                "id": "ce7b937f-4629-4d67-a7e4-38bb23e6ed90",
+                "resourcePath": "sprites\\spr_Bush_DestructibleTest\\spr_Bush_DestructibleTest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04faba01-1788-4358-b902-9edc5b1d53c1",
             "Value": {
                 "id": "aa093899-ecbd-4358-a994-01f4c1760c9a",
@@ -932,6 +940,14 @@
                 "id": "418333e6-557b-44c8-a7bf-6530eeb45999",
                 "resourcePath": "views\\131ac087-fdcc-4c2a-9641-88d6126d68d4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "13680347-8b1c-4271-938b-fce8faa74a04",
+            "Value": {
+                "id": "4f829c33-c904-4537-9e5f-35c9ed6b8cbf",
+                "resourcePath": "objects\\obj_Bush_Trunk_0\\obj_Bush_Trunk_0.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5775,6 +5791,14 @@
             }
         },
         {
+            "Key": "83fd7f57-7e97-4ae0-bd7a-b8422496e2e5",
+            "Value": {
+                "id": "13c77c8a-8ed3-49ac-9418-3d98c09f7627",
+                "resourcePath": "sprites\\spr_Bush_Trunk_0\\spr_Bush_Trunk_0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "84993aa2-6b24-4142-83c1-29175869b761",
             "Value": {
                 "id": "b71ba4cc-6716-452d-a316-40f1be1fde0a",
@@ -9340,6 +9364,14 @@
                 "id": "4cf53b50-381d-432d-9dec-06c657fb11bc",
                 "resourcePath": "sprites\\spr_walk_hat_left\\spr_walk_hat_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dcb722fc-416a-46c3-ab18-52126cf080a8",
+            "Value": {
+                "id": "38866106-f52f-4925-9b06-82032d1db1f4",
+                "resourcePath": "objects\\obj_Bush_Destructible_0\\obj_Bush_Destructible_0.yy",
+                "resourceType": "GMObject"
             }
         },
         {
