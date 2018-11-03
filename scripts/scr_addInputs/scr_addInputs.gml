@@ -13,7 +13,7 @@ inputdog_add_input("attack_key_analog",			ord("V")||mb_right,	gp_face1);
 inputdog_add_input("cancel",					vk_escape,			gp_face2);
 inputdog_add_input("reload",					ord("R"),			gp_face3);
 inputdog_add_input("action",					vk_enter,			gp_face4);
-inputdog_add_input("pause_key",					vk_escape,			gp_start);
+inputdog_add_input("pause_key",					ord("P"),			gp_start);
 inputdog_add_input("fire_key",					vk_space||mb_left,	gp_shoulderrb);
 inputdog_add_input("grenade_key",				ord("G"),			gp_shoulderr);
 inputdog_add_input("ultimate",					ord("E"),			gp_shoulderl); 

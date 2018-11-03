@@ -2,10 +2,8 @@
 // You can write your code in this editor
 var cellSize = 16;
 
-var hCells = room_width div cellSize;
-var vCells = room_height div cellSize;
-
-draw = false;
+var hCells = (room_width div cellSize)+1;
+var vCells = (room_height div cellSize)+1;
 
 grid = mp_grid_create(0, 0, hCells, vCells, cellSize, cellSize);
 
