@@ -13,7 +13,9 @@
         "01bef766-5234-4307-9a0c-b8a41554438f",
         "78f57dd6-a1f1-49af-bce7-8a1d80e377fd",
         "2a5fa1bc-38fa-43e4-b3ca-db4284123fea",
-        "ab740781-5d57-445e-bd4f-9eccb0523ac6"
+        "ab740781-5d57-445e-bd4f-9eccb0523ac6",
+        "dcb722fc-416a-46c3-ab18-52126cf080a8",
+        "13680347-8b1c-4271-938b-fce8faa74a04"
     ],
     "filterType": "GMObject",
     "folderName": "General_Props",
