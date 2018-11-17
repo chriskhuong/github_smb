@@ -2,19 +2,38 @@ var xSpot = (0 * ((global.view_w/2) / 2.5));
 var ySpot = (global.view_h - 64);
 if(!InputManager.paused) exit;
 
-
 var gwidth = global.view_width, gheight = global.view_height;
 
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
-var start_y = (gheight/3) - ((((ds_height-1)/2) * y_buffer)), start_x = gwidth/2.1;
+var start_y = (gheight/1.8) - ((((ds_height-1)/2) * y_buffer)), start_x = gwidth/2.4;
 
 // Draw pause menu "backgound"
-var c = c_black;
-draw_set_alpha(.5);
+var c = c_gray;
+draw_set_alpha(1);
 draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
 draw_set_alpha(1);
+if(InputManager.paused && !global.allDead)
+{
+	draw_sprite(spr_pausescreen_header,0,xSpot + 400,ySpot/8);	
+}
 
+if (global.allDead)
+    {
+	draw_sprite(spr_missionfailed,0,xSpot + 400,ySpot/8);	
+	obj_menu.menu_pages[0] = scr_create_menu_page(
+	[spr_gameover_buttons, menu_element_type.script_runner,scr_resume_game,2],
+	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]
+);
+	}
+if(instance_exists(obj_menu) && !global.allDead)
+{
+	obj_menu.menu_pages[0] = scr_create_menu_page(
+	[spr_pausescreen_buttons,menu_element_type.script_runner, scr_resume_game,0],
+	[spr_pausescreen_buttons, menu_element_type.page_transfer, menu_page.settings,2],
+	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]
+);
+}
 // Draw the elements on the left side
 draw_set_valign(fa_middle);
 draw_set_halign(fa_right);
@@ -38,7 +57,7 @@ var yy = 0; repeat(ds_height)
 }
 // Draw the dividing Line
 
-draw_line(start_x,start_y,start_x,leftTextYPos);
+//draw_line(start_x,start_y,start_x,leftTextYPos);
 
 // Draw Elements on the Right side
 draw_set_halign(fa_left);

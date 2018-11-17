@@ -22,5 +22,5 @@ if(global.allDead)
 			hp = maxHp;
 			alive = true;
 		}
-
+	global.allDead = false;
 }

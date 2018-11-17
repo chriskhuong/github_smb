@@ -8,9 +8,9 @@ var start_y = (gheight/2.3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x =
 
 // Draw pause menu "backgound"
 var c = make_color_rgb(29,33,13);
-draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
+//draw_sprite(spr_titlescreen_background,0,0,0);
 if(global.page != 2)
-draw_sprite(spr_mainMenu,0,start_x/2,start_y/10);
+draw_sprite(spr_mainMenu,0,start_x/2.7,start_y/20);
 if(global.page == 2)
 {
 	//drawing the character selection screen
