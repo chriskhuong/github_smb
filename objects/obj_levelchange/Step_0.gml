@@ -15,7 +15,7 @@ if keyboard_check_pressed(vk_numpad3)
 //because chris's surface pro3 doesn't have numkeypad... :| 
 
 	
-if keyboard_check_pressed(vk_f9) && !(room = rm_Arctic_Test)
+if keyboard_check_pressed(vk_f9) && !(room = rm_Armory)
 {
 	room_goto_next(); 
 }
