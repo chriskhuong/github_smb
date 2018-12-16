@@ -4207,6 +4207,14 @@
             }
         },
         {
+            "Key": "5e3b1793-5a61-4d74-95fd-6909295c6b17",
+            "Value": {
+                "id": "e5454014-d6d1-407b-a339-03222654dc60",
+                "resourcePath": "fonts\\font2\\font2.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "5e73b162-e77b-4257-9115-eac225363662",
             "Value": {
                 "id": "aa1f3fe1-b6c3-4118-a0c5-f1c869a544f1",
@@ -4891,6 +4899,14 @@
             "Value": {
                 "id": "9332ccdc-e6d9-442a-a762-2c961a0ead67",
                 "resourcePath": "sprites\\spr_mio_melee_side3\\spr_mio_melee_side3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6efc842c-8971-4f4f-a9a1-b50edbfce539",
+            "Value": {
+                "id": "146e8040-990f-4fbb-b71d-43d56edc4f40",
+                "resourcePath": "sprites\\spr_text2\\spr_text2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9851,6 +9867,14 @@
             "Value": {
                 "id": "a19a22dc-4766-4861-a0c8-7d87f6490bbb",
                 "resourcePath": "sprites\\spr_ghost_jo\\spr_ghost_jo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e62c40af-d298-4a7e-983d-093a491d84a8",
+            "Value": {
+                "id": "c0fa2714-23a4-44da-a1bf-f7dc4146a575",
+                "resourcePath": "sprites\\spr_text\\spr_text.yy",
                 "resourceType": "GMSprite"
             }
         },

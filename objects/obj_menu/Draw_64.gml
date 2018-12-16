@@ -1,4 +1,4 @@
-var xSpot = (0 * ((global.view_w/2) / 2.5));
+var xSpot = (1 * ((global.view_w/2) / 2.5));
 var ySpot = (global.view_h - 64);
 if(!InputManager.paused) exit;
 
@@ -15,12 +15,14 @@ draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
 draw_set_alpha(1);
 if(InputManager.paused && !global.allDead)
 {
-	draw_sprite(spr_pausescreen_header,0,xSpot + 400,ySpot/8);	
+	xSpot = global.view_w/2;
+	draw_sprite(spr_pausescreen_header,0,xSpot,ySpot/4);	
 }
 
 if (global.allDead)
     {
-	draw_sprite(spr_missionfailed,0,xSpot + 400,ySpot/8);	
+		xSpot = global.view_w/2;
+	draw_sprite(spr_missionfailed,0,xSpot,ySpot/3);	
 	obj_menu.menu_pages[0] = scr_create_menu_page(
 	[spr_gameover_buttons, menu_element_type.script_runner,scr_resume_game,2],
 	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]

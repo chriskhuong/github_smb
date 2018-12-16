@@ -1,4 +1,36 @@
 ///Player Controls
+if(room == rm_SurvivalMode)
+{
+	curX++;
+	curX++;
+	curX++;	
+	//curX++;	
+}
+xpos++;
+if (curX >= maxX)
+{
+curX = global.view_w + 64;
+move = true;
+}
+if (move && curY < maxY)
+{
+	curY++;
+	size += .037;
+	if(size2 <= 1)
+	size2 += .042;
+}
+if (curY3 < 16 && room == rm_SurvivalMode)
+{
+	curY3++;
+}
+if (curY4 < 48 && room == rm_SurvivalMode)
+{
+	curY4++;
+}
+if (move && curY2 > maxY2)
+{
+	curY2--;
+}
 var p;
 p = 100
 if (x < view_xview + p) view_xview = x - p
