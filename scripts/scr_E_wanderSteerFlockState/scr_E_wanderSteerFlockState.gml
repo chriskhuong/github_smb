@@ -78,6 +78,15 @@ if (dir > 315 && dir <= 360 || dir >= 0 && dir < 45)
 	{	//facing right
 		image_xscale = 1;
 	}
+if (image_xscale > 0)
+	{	//facing right
+		myTargetX = x - 64;
+	}
+else
+	{
+		myTargetX = x + 64;
+	}
+myTargetY = y;
 
 //faciing up and down
 #endregion

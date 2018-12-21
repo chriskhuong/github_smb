@@ -34,3 +34,12 @@ if (instance_exists(target) && target.alive == true)
 //Sprite
 //sprite_index = spr_enemy_idle;
 sprite_index = sprite[character, movement];
+if (image_xscale > 0)
+	{	//facing right
+		myTargetX = x - 64;
+	}
+else
+	{
+		myTargetX = x + 64;
+	}
+myTargetY = y;

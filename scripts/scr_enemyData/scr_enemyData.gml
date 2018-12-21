@@ -72,6 +72,16 @@ switch(character)
 			//sprite[LEFT, ATTACK]	= sCombo[attackSequence];
 			//sprite[DOWN, ATTACK]	= dCombo[attackSequence];
 			
+			switch (head)
+			{
+				case 1:
+					headArray[1, MOVE] = spr_orc1_head_run;
+					headArray[1, IDLE] = spr_orc1_head_idle;
+					headArray[1, STUN] = spr_orc1_head_idle;
+				break;
+			}
+		break;
+			
 			break;
 			
 		case GOBLIN:

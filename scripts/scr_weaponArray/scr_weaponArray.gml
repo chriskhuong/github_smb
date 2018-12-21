@@ -206,6 +206,20 @@ switch(character){
 		weaponArray[0, 18] = spr_sebastian_reload_pistol;
         //obj_tempPlayer1.weaponArray[0, 8] = 3; //Damage output
         break;
+		
+	case ORC:
+		//Generic Gun
+		weaponArray[1, 0] = "Gun"; //Name
+		weaponArray[1, 1] = spr_orc_shootside; //Sprite Index
+		weaponArray[1, 2] = spr_orc_shootdown; //Sprite Index
+		weaponArray[1, 3] = 10; //Rate of Fire
+		weaponArray[1, 4] = scr_pistol;
+		weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
+		weaponArray[1, 6] = 0; //x Offset //(for gun placement)
+		weaponArray[1, 7] = 0; //y Offset //(for gun placement)
+		weaponArray[1, 13] = -15;	//LenX
+		weaponArray[1, 14] = 0;	//LenY
+		break;
         
     default:
     break;

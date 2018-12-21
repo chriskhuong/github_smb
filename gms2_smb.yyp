@@ -3959,6 +3959,14 @@
             }
         },
         {
+            "Key": "56f686f5-0b52-412e-b651-9117ab6ff454",
+            "Value": {
+                "id": "981a198c-0798-4884-8f7b-883ef2f99846",
+                "resourcePath": "objects\\obj_orcSteerFlock\\obj_orcSteerFlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "570630aa-dabf-4b8d-8ad3-2c11175d4491",
             "Value": {
                 "id": "bb9f7a86-106e-443b-9947-21d04298c412",
@@ -5940,6 +5948,14 @@
                 "id": "586bcf53-cc76-4987-ba55-63e1be43038b",
                 "resourcePath": "objects\\obj_icecap_14\\obj_icecap_14.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "87051c0a-b47b-4127-ae73-5798c3878df0",
+            "Value": {
+                "id": "be374fe1-2d60-4e5d-8dd1-1a61e918749b",
+                "resourcePath": "scripts\\scr_E_pathSteerPositioningState\\scr_E_pathSteerPositioningState.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -11159,6 +11175,7 @@
         "77b9acc2-3412-42ea-93f0-236cb62ada2f",
         "3a118e91-ad14-4cbc-a713-8c8fc94f7412",
         "ee7db634-313f-4429-90a3-3db8e7a9d46a",
+        "87051c0a-b47b-4127-ae73-5798c3878df0",
         "060dcf1d-a7be-4df0-a691-508ed91a771b",
         "a5925986-32eb-4246-b661-a6e8854c6648",
         "40f9a0cc-8309-4e0d-a1f9-907cfb60d58f",

@@ -7,8 +7,8 @@
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 81,
-    "bbox_left": 20,
-    "bbox_right": 76,
+    "bbox_left": 51,
+    "bbox_right": 107,
     "bbox_top": 61,
     "bboxmode": 0,
     "colkind": 1,
@@ -87,6 +87,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 128,
-    "xorig": 70,
+    "xorig": 56,
     "yorig": 65
 }
