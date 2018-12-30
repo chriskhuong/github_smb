@@ -4,8 +4,22 @@
 // Inherit the parent event
 event_inherited();
 
-draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
-draw_sprite_ext(headArray[head, movement], image_index, x, y, myHeadXScale, myHeadYScale, myGunAngle, image_blend, image_alpha);
+switch(gunOver)
+	{
+			
+			case true:
+				draw_sprite_ext(headArray[head, movement], image_index, x, y, myHeadXScale, myHeadYScale, myHeadAngle, image_blend, image_alpha);
+				draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+				break;
+				
+			case false:
+				draw_sprite_ext(myGunSprite, myGunIndex, myGunX, myGunY, myGunXScale, myGunYScale, myGunAngle, image_blend, myGunAlpha);
+				draw_sprite_ext(headArray[head, movement], image_index, x, y, myHeadXScale, myHeadYScale, myHeadAngle, image_blend, image_alpha);
+				break;
+				
+				default:
+				break;
+	}
 
 if (stunFlash)
 	{

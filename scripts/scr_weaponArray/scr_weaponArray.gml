@@ -53,7 +53,6 @@ weaponArray[0, 9] = 12;  //Reload
 weaponArray[0, 10] = 24  //MaxAmmo
 weaponArray[0, 11] = 12; //ClipAmmo MAX
 weaponArray[0, 12] = 24  //MaxAmmo MAX
-//obj_tempPlayer1.weaponArray[0, 13] = scr_grenade();
 weaponArray[0, 13] = -15;	//LenX
 weaponArray[0, 14] = 0;	//LenY
 weaponArray[0, 15] = noone; // the item
@@ -165,10 +164,10 @@ switch(character){
         weaponArray[1, 10] = 16;  //MaxAmmo
         weaponArray[1, 11] = 4;  //ClipAmmo TAKE
         weaponArray[1, 12] = 16;  //MaxAmmo TAKE
-        weaponArray[1, 15] = 0;  //Grenade Ammo
-        weaponArray[1, 16] = 0;  //Grenade Max    
 		weaponArray[1, 13] = -20;	//LenX
         weaponArray[1, 14] = 0;	//LenY//obj_tempPlayer1.weaponArray[0, 8] = 5; //Damage output
+        weaponArray[1, 15] = 0;  //Grenade Ammo
+        weaponArray[1, 16] = 0;  //Grenade Max    
 		weaponArray[1, 17] = 5;
 		weaponArray[1, 18] = spr_reload_sniper;
         break;

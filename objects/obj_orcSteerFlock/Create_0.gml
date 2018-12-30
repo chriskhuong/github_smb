@@ -6,7 +6,7 @@ event_inherited();
 
 character = ORC;
 movement = IDLE;
-head = 1;
+head = choose(1, 2, 3, 4);
 weapons = 1;
 weapon = 1;
 recoil = 0;
@@ -52,7 +52,7 @@ myGunY = y + weaponArray[weapon, 7];
 
 myGunXScale = 1;
 myGunYScale = 1;
-myGunSprite = weaponArray[1, 2];
+myGunSprite = weaponArray[1, 1];
 myTargetX = position[1];
 myTargetY = position[2];
 myGunDir = point_direction(myGunX, myGunY, myTargetX, myTargetY);
@@ -63,7 +63,12 @@ myGunIndex = 0;
 myGunSpeed = room_speed/10;
 myGunAlpha = 1;
 myArmAlpha = 1;
+gunOver = true;
 #endregion
+
+myHeadXScale = image_xscale;
+myHeadYScale = image_yscale;
+myHeadAngle = myGunAngle;
 
 //path finding stuff
 path = path_add();

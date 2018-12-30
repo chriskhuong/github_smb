@@ -79,6 +79,24 @@ switch(character)
 					headArray[1, IDLE] = spr_orc1_head_idle;
 					headArray[1, STUN] = spr_orc1_head_idle;
 				break;
+				
+				case 2:
+					headArray[2, MOVE] = spr_orc2_head_run;
+					headArray[2, IDLE] = spr_orc2_head_idle;
+					headArray[2, STUN] = spr_orc2_head_idle;
+				break;
+				
+				case 3:
+					headArray[3, MOVE] = spr_orc3_head_run;
+					headArray[3, IDLE] = spr_orc3_head_idle;
+					headArray[3, STUN] = spr_orc3_head_idle;
+				break;
+				
+				case 4:
+					headArray[4, MOVE] = spr_orc4_head_run;
+					headArray[4, IDLE] = spr_orc4_head_idle;
+					headArray[4, STUN] = spr_orc4_head_idle;
+				break;
 			}
 		break;
 			

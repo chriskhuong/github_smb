@@ -24,5 +24,26 @@ with(grid_controller) {
     sb_grid_center_y[#_grid_x,_grid_y] += other.position[2];    
 }
 
+myHeadYScale = -sign(image_xscale);
+myGunYScale = myHeadYScale;
 
-
+if (myGunAngle >= 135 && myGunAngle <= 225 || myGunAngle >= 0 && myGunAngle <= 45 || myGunAngle >= 315 && myGunAngle <= 360)
+	{
+		myHeadAngle = myGunAngle;
+	}
+if (myGunAngle >= 45 && myGunAngle <= 90)
+	{
+		myHeadAngle = 45;
+	}
+else if (myGunAngle >= 90 && myGunAngle <= 135)
+	{
+		myHeadAngle = 135;
+	}
+else if (myGunAngle >= 225 && myGunAngle <= 270)
+	{
+		myHeadAngle = 225;
+	}
+else if (myGunAngle >= 270 && myGunAngle <= 315)
+	{
+		myHeadAngle = 315;
+	}
