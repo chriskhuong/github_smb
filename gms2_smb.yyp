@@ -1455,6 +1455,14 @@
             }
         },
         {
+            "Key": "203f071b-d434-48a2-8959-3af21266bb64",
+            "Value": {
+                "id": "206071cf-b42e-4fe8-9d93-38330c7d5950",
+                "resourcePath": "objects\\obj_supplyCrate\\obj_supplyCrate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "204f0406-d173-4c84-b40d-9cc876d10e97",
             "Value": {
                 "id": "abca7aeb-3827-4c3d-ab62-f53b0c44f10a",
@@ -10411,6 +10419,14 @@
             "Value": {
                 "id": "a8dced9d-f1a5-48c1-b639-ee1b7be7c5f1",
                 "resourcePath": "sprites\\spr_bulletdrop_pistol\\spr_bulletdrop_pistol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f06e2c0e-2cff-4826-9bcd-c2de5ae66ec9",
+            "Value": {
+                "id": "d161e1b3-0e26-42c0-ab66-5a06c61ddfa7",
+                "resourcePath": "sprites\\spr_armoryCost\\spr_armoryCost.yy",
                 "resourceType": "GMSprite"
             }
         },
