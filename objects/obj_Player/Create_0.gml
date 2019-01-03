@@ -1,6 +1,10 @@
 ///void Awake
 curX = 0;
+next = false;
+finished = false;
+stop = false;
 size = 0;
+edge = false;
 size2= 0;
 wave = 1;
 curY = global.view_h/2;

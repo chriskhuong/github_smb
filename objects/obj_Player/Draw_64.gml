@@ -27,17 +27,20 @@ var xpos = 0
 var screenW = global.view_w;
 var sprNumber = (screenW div 64) + 1;// 64 is the width of the spr_survival_popup_bg
 //draw_sprite_ext(spr_survival_popup_bg,1,-screenW * 2, ySpot,2,2,0,c_black,1);
-for(var i = 0; i < sprNumber; i++)
-	{	
-		draw_set_font(global.fontAmmo);
-		draw_sprite_ext(spr_survival_popup_bg,1,(-screenW-64) + curX + (i* 64), curY2,1,2,0,c_white,1);
-		draw_sprite_ext(spr_survival_popup_bg,1,(-screenW-64) + curX + (i* 64), curY,1,2,0,c_white,1);
-		draw_sprite_ext(spr_survival_popup_bg,0,xSpot,ySpot,50,size,0,c_white,.2);
-		draw_sprite_ext(spr_survival_popup,0,global.view_w/2,ySpot,1,size2,0,c_white,1);
-		draw_sprite(spr_survival_popup,1,global.view_w/2,curY4);
-		draw_text(global.view_w/2 + 45,curY4, string(wave));
-		draw_sprite(spr_survival_popup,2,global.view_w/2,curY3);
-	}
+if(!finished)
+	{
+		for(var i = 0; i < sprNumber; i++)
+			{	
+				draw_set_font(global.fontAmmo);
+				draw_sprite_ext(spr_survival_popup_bg,1,(-screenW-64) + curX + (i* 64), curY2,1,2,0,c_white,1);
+				draw_sprite_ext(spr_survival_popup_bg,1,(-screenW-64) + curX + (i* 64), curY,1,2,0,c_white,1);
+				draw_sprite_ext(spr_survival_popup_bg,0,xSpot,ySpot,50,size,0,c_white,.2);
+				draw_sprite_ext(spr_survival_popup,0,global.view_w/2,ySpot,1,size2,0,c_white,1);
+				draw_sprite(spr_survival_popup,1,global.view_w/2,curY4);
+				draw_text(global.view_w/2 + 45,curY4, string(wave));
+				draw_sprite(spr_survival_popup,2,global.view_w/2,curY3);
+			}
+	}	
 }
 draw_set_font(-1)
 

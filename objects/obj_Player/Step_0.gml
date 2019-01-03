@@ -1,35 +1,78 @@
 ///Player Controls
 if(room == rm_SurvivalMode)
 {
-	curX++;
-	curX++;
-	curX++;	
-	//curX++;	
+	if(!edge || next)
+	curX += 14;
+	else
+	curX += 6;
 }
 xpos++;
-if (curX >= maxX)
+if (!next && curX >= maxX)
 {
+edge = true;	
 curX = global.view_w + 64;
 move = true;
 }
-if (move && curY < maxY)
+if (!stop && move && curY < maxY)
 {
 	curY++;
 	size += .037;
 	if(size2 <= 1)
 	size2 += .042;
 }
-if (curY3 < 16 && room == rm_SurvivalMode)
+if (!stop && curY3 < 16 && room == rm_SurvivalMode)
 {
 	curY3++;
 }
-if (curY4 < 48 && room == rm_SurvivalMode)
+if (!stop && curY4 < 48 && room == rm_SurvivalMode)
 {
 	curY4++;
 }
-if (move && curY2 > maxY2)
+if(!stop && curY4 >= 48 && room == rm_SurvivalMode)
+{
+	stop = true;
+}
+if (!stop && move && curY2 > maxY2)
 {
 	curY2--;
+}
+if(stop)
+{
+	if(move && curY >= global.view_h/2)
+	curY--;
+	if(move && curY <= global.view_h/2)
+	curY = global.view_h/2;
+	if (move && curY2 <= global.view_h/2)
+	curY2++;
+	if(move && curY2 >= global.view_h/2)
+	curY2 = global.view_h/2;
+	if(size >= 0)
+	size -= .037;
+	if(size <= 0)
+	{
+		size = 0;	
+		next = true;
+	}
+	if(size2 >= 0)
+	size2 -= .042;
+	if(size2 <= 0)
+	size2 = 0;
+	
+	if(next)
+	{
+		if (curY >= -128 && curY4 < 16)
+			{
+				curY3--;
+			}
+		if (curY4 >= -128)
+			{
+				curY4--;
+			}
+			if(curY3 == -128)
+			{
+				finshed = true;
+			}
+	}
 }
 var p;
 p = 100
