@@ -80,6 +80,23 @@ if(creator.fire_key && myStats.can_shoot == true && weaponArray[weapon, 8] > 0)
 		p = instance_create_depth(myGunX + lengthdir_x(myGunLenX + 15, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle), myGunY + lengthdir_y(myGunLenX + 15, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle), depth-500, obj_muzzleFlare);
 		p.image_angle = myGunAngle;
 		p.creator = id;
+		if (weaponArray[weapon, 4] == scr_shotgun)
+			{
+				p.image_index = 0;
+			}
+		else if (weaponArray[weapon, 4] == scr_sniper)
+			{
+				p.image_index = 2;
+			}
+		else if (weaponArray[weapon, 4] == scr_assault)
+			{
+				p.image_index = 3;
+			}
+		else
+			{
+				p.image_index = 1;
+			}
+
         script_execute(weaponArray[weapon, 4]);
         myStats.alarm[1] = fireRate;
         myStats.can_shoot = false;
