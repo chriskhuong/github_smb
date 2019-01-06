@@ -21,3 +21,8 @@ else
 	{
 		hitStun--;
 	}
+
+if (hp <= 0)
+    {
+        instance_destroy();
+    }

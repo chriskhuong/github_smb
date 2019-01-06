@@ -2,10 +2,13 @@ if (other.tag != creator)
     {
 		bulletdmg = 1;
         other.hp -= bulletdmg;
-        
+		if (other.hp <= 0)
+			{
+				creatorid.ultCharge += 1;
+			}
         //Apply the knockback
         
-        var dir = point_direction(0, 0, x, y); //gets the direction if the creator doesn't exist, just calculates from the object's current position
+        var dir = point_direction(x, y, other.x, other.y); //gets the direction if the creator doesn't exist, just calculates from the object's current position
         var xforce = lengthdir_x(knockback, dir);
         var yforce = lengthdir_y(knockback, dir);
         /*with (other)

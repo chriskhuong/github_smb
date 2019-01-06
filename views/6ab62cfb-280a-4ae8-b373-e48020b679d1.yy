@@ -6,10 +6,11 @@
     "children": [
         "15630706-5a8a-4b5c-92b6-9e51c563b3d3",
         "f9b7a1bb-2621-4b73-85cc-e802ce4a76f1",
-        "c339d213-c99f-4af8-b881-54ef4345c448",
         "dfc38c61-0477-4de9-b764-2aa5dffb3a47",
         "b1f6a128-475a-4b83-be99-044fa5f37cd1",
-        "56f686f5-0b52-412e-b651-9117ab6ff454"
+        "f0c0e852-1cc9-43ed-90f5-de08ae299cac",
+        "56f686f5-0b52-412e-b651-9117ab6ff454",
+        "a25c3874-fcde-40b2-b58b-25c6f0797b73"
     ],
     "filterType": "GMObject",
     "folderName": "Enemy_Characters",

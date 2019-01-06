@@ -33,7 +33,6 @@ if (timer <= 0)
 				steering = vect_add(steering, sb_path_loop(path,30,my_path_dir,1));
 			}
 		timer = maxTimer;
-		show_debug_message(timer);
 	}
 //steering = vect_add(steering, sb_alignment(par_drone,128,1));
 //steering = vect_add(steering, sb_separation(par_drone,64,3));

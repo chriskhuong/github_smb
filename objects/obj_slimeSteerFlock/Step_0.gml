@@ -23,5 +23,3 @@ with(grid_controller) {
     sb_grid_center_x[#_grid_x,_grid_y] += other.position[1];
     sb_grid_center_y[#_grid_x,_grid_y] += other.position[2];    
 }
-
-

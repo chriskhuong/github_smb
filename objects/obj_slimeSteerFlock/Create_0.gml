@@ -23,6 +23,7 @@ states_array[sChase]	= scr_E_pathSteerChaseState;
 //states_array[sChase]	= scr_E_pathChaseState;
 //states_array[sChase]	= scr_E_chaseState;
 states_array[sStun]		= scr_E_stunSteerState;
+states_array[sDead]		= scr_E_deadState;
 
 state = sIdle;//scr_enemy_idleState;
 
@@ -52,3 +53,5 @@ cellSize = grid_controller.cellSize;
 
 timer = room_speed / 3;	//pathfinding update
 maxTimer = timer;
+
+once = false;

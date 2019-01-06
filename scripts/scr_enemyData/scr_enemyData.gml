@@ -12,12 +12,14 @@ switch(character)
 			//hurt
 			sprite[character, STUN] = spr_slime_hurt_side;
 			
+			//death
+			sprite[character, DEAD] = spr_slime_dead_side;
 			//attacking
 			//sprite[RIGHT, ATTACK]	= sCombo[attackSequence];
 			//sprite[UP, ATTACK]		= uCombo[attackSequence];
 			//sprite[LEFT, ATTACK]	= sCombo[attackSequence];
 			//sprite[DOWN, ATTACK]	= dCombo[attackSequence];
-			
+			//spd
 			break;
 			
 		case SLIMEHELM:
@@ -30,12 +32,14 @@ switch(character)
 			//hurt
 			sprite[character, STUN] = spr_slimeHelmet_hurt_side;
 			
+			//death
+			sprite[character, DEAD] = spr_slime_dead_side;
 			//attacking
 			//sprite[RIGHT, ATTACK]	= sCombo[attackSequence];
 			//sprite[UP, ATTACK]		= uCombo[attackSequence];
 			//sprite[LEFT, ATTACK]	= sCombo[attackSequence];
 			//sprite[DOWN, ATTACK]	= dCombo[attackSequence];
-			
+			//spd
 			break;
 			
 		case BEHOLDER:
@@ -48,12 +52,14 @@ switch(character)
 			//hurt
 			sprite[character, STUN] = spr_beholder_side;
 			
+			//death
+			//sprite[character, DEAD] = spr_beholder_dead_side;
 			//attacking
 			//sprite[RIGHT, ATTACK]	= sCombo[attackSequence];
 			//sprite[UP, ATTACK]		= uCombo[attackSequence];
 			//sprite[LEFT, ATTACK]	= sCombo[attackSequence];
 			//sprite[DOWN, ATTACK]	= dCombo[attackSequence];
-			
+			//spd
 			break;
 			
 		case ORC:
@@ -71,31 +77,36 @@ switch(character)
 			//sprite[UP, ATTACK]		= uCombo[attackSequence];
 			//sprite[LEFT, ATTACK]	= sCombo[attackSequence];
 			//sprite[DOWN, ATTACK]	= dCombo[attackSequence];
-			
+			//spd
 			switch (head)
 			{
 				case 1:
 					headArray[1, MOVE] = spr_orc1_head_run;
 					headArray[1, IDLE] = spr_orc1_head_idle;
 					headArray[1, STUN] = spr_orc1_head_idle;
+					//dead
+					sprite[character, DEAD] = choose(spr_orc1_death1, spr_orc1_death2);
 				break;
 				
 				case 2:
 					headArray[2, MOVE] = spr_orc2_head_run;
 					headArray[2, IDLE] = spr_orc2_head_idle;
 					headArray[2, STUN] = spr_orc2_head_idle;
+					sprite[character, DEAD] = choose(spr_orc2_death1, spr_orc2_death2);
 				break;
 				
 				case 3:
 					headArray[3, MOVE] = spr_orc3_head_run;
 					headArray[3, IDLE] = spr_orc3_head_idle;
 					headArray[3, STUN] = spr_orc3_head_idle;
+					sprite[character, DEAD] = choose(spr_orc3_death1, spr_orc3_death2);
 				break;
 				
 				case 4:
 					headArray[4, MOVE] = spr_orc4_head_run;
 					headArray[4, IDLE] = spr_orc4_head_idle;
 					headArray[4, STUN] = spr_orc4_head_idle;
+					sprite[character, DEAD] = choose(spr_orc4_death1, spr_orc4_death2);
 				break;
 			}
 		break;
@@ -117,6 +128,6 @@ switch(character)
 			//sprite[UP, ATTACK]		= uCombo[attackSequence];
 			//sprite[LEFT, ATTACK]	= sCombo[attackSequence];
 			//sprite[DOWN, ATTACK]	= dCombo[attackSequence];
-			
+			//spd
 			break;
 	}

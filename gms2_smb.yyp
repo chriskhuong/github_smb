@@ -3095,6 +3095,14 @@
             }
         },
         {
+            "Key": "430315a2-27a6-4fe7-9a4a-4b9ebc832a2c",
+            "Value": {
+                "id": "8ee94adc-02dc-4765-9d2f-216fed546d0c",
+                "resourcePath": "sprites\\spr_behilder_dead_side\\spr_behilder_dead_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "437a9bef-90ae-4feb-ba6a-1cd93508e317",
             "Value": {
                 "id": "415abe23-7d3a-4913-a759-6985c92dc318",
@@ -3268,6 +3276,14 @@
                 "id": "ddc56a38-d340-4d73-ae0d-ce685dcd07eb",
                 "resourcePath": "scripts\\tmc_vec2_clone\\tmc_vec2_clone.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "481d8137-3e66-41f3-aa44-0c47df90b8cd",
+            "Value": {
+                "id": "9d2955c4-8f0b-4ca2-bbd6-7d64a65dd1dd",
+                "resourcePath": "objects\\obj_orc\\obj_orc.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4780,6 +4796,14 @@
                 "id": "d002f564-cab6-4106-9790-5c1b19517aea",
                 "resourcePath": "rooms\\rInitInputManager\\rInitInputManager.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "6b8c4bfc-a081-4ac5-a840-b4b5d1c0bae5",
+            "Value": {
+                "id": "a46e4f08-23b7-49f2-a0ef-1a53474152fc",
+                "resourcePath": "objects\\obj_goblin\\obj_goblin.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7055,11 +7079,27 @@
             }
         },
         {
+            "Key": "a1e87235-3017-4d26-b692-5da1923f2331",
+            "Value": {
+                "id": "55c65cf1-ee43-4384-8b86-92055d7b6f09",
+                "resourcePath": "sprites\\spr_beholder_hurt_side\\spr_beholder_hurt_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a211d433-e769-467c-90a2-0ed9f1cacc17",
             "Value": {
                 "id": "75644391-13d7-4ced-8b71-49ae6d0ca7d7",
                 "resourcePath": "sprites\\spr_billy_walk_faceless\\spr_billy_walk_faceless.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a25c3874-fcde-40b2-b58b-25c6f0797b73",
+            "Value": {
+                "id": "16b7bd44-8973-4cce-9a34-a98d27b79a8c",
+                "resourcePath": "views\\a25c3874-fcde-40b2-b58b-25c6f0797b73.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -9143,6 +9183,14 @@
             }
         },
         {
+            "Key": "d40b0e48-5948-4f49-a228-d3aeb36ec82a",
+            "Value": {
+                "id": "cb12d535-37bf-48ab-93e2-cd1ba4f02dee",
+                "resourcePath": "scripts\\scr_E_deadState\\scr_E_deadState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d43d45e9-e856-40f4-a285-d596ac7a6258",
             "Value": {
                 "id": "518febeb-8317-4cf0-bf64-ee03036aa365",
@@ -10439,6 +10487,14 @@
             }
         },
         {
+            "Key": "f0c0e852-1cc9-43ed-90f5-de08ae299cac",
+            "Value": {
+                "id": "f27c5b78-25a3-4ba9-841f-80a968b6db9f",
+                "resourcePath": "objects\\obj_goblinSteerFlock\\obj_goblinSteerFlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f0da5fc7-fe9a-487e-b687-d2b4ddbce61a",
             "Value": {
                 "id": "f0da2347-c505-45e8-bbfe-09d35fce591f",
@@ -11197,6 +11253,7 @@
         "93e01bdf-c0cf-4b07-9b63-96cfe66c47e0",
         "b2e99350-44fc-44c5-90ab-9756a354c340",
         "77b9acc2-3412-42ea-93f0-236cb62ada2f",
+        "d40b0e48-5948-4f49-a228-d3aeb36ec82a",
         "3a118e91-ad14-4cbc-a713-8c8fc94f7412",
         "ee7db634-313f-4429-90a3-3db8e7a9d46a",
         "87051c0a-b47b-4127-ae73-5798c3878df0",

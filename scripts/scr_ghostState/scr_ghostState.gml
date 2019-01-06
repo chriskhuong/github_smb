@@ -24,8 +24,7 @@ if (alive)
 		deadBody.start_yoffset = start_yoffset
 		dx = deadBody.x;
 		dy = deadBody.y;
-		alive = false;
-		show_debug_message("SGhost");		
+		alive = false;		
 		if (instance_exists(obj_playerTracker))
 			{
 				obj_playerTracker.alarm[0] = 1;
@@ -41,7 +40,6 @@ if (alive)
 				   }
 					if(dead == playerCount)
 					{	
-						show_debug_message(string(dead));
 						global.allDead = true;
 						obj_playerStats.alarm[5] = room_speed * 3;
 					}
@@ -49,7 +47,6 @@ if (alive)
 					{
 						global.allDead = false;	
 					}
-				show_debug_message(string(dead));
 		}
 	}
 

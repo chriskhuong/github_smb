@@ -4,8 +4,11 @@
 // Inherit the parent event
 event_inherited();
 
-dir = point_direction(other.x, other.y, x, y);
-stunX = x + lengthdir_x(16, dir);
-stunY = y + lengthdir_y(16, dir);
-state = sStun;
-hitStun = 15;
+if (state != sDead)
+{
+	dir = point_direction(other.x, other.y, x, y);
+	stunX = x + lengthdir_x(16, dir);
+	stunY = y + lengthdir_y(16, dir);
+	state = sStun;
+	hitStun = 15;
+}

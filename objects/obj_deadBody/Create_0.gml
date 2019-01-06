@@ -1,5 +1,4 @@
 ///Initialize the Dash Effect
-show_debug_message("I AM BORN!!!!!!!!!")
 event_inherited();
 creator = noone;
 //image_speed = 0;

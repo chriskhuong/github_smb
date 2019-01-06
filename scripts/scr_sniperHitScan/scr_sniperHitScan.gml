@@ -30,7 +30,8 @@ if(collision_line(start_x, start_y, temp_x, temp_y, obj_enemyParent, false, true
         show_debug_message(string(hitpoint[0]) + " " + string(hitpoint[1]));
         
         var hit = instance_create_depth(hitpoint[0], hitpoint[1], depth, obj_damage);
-        hit.creator = id;
+		hit.creator = tag;
+        hit.creatorid = id;
         hit.damage = damage;
         /*
         damage = 50;

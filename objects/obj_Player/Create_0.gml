@@ -54,6 +54,7 @@ currency = 0;
 reloading = false;
 armL = -1;
 armR = 1;
+ultCharge = 0;
 
 //get character's information
 scr_characterData(character);
