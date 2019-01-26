@@ -1,22 +1,22 @@
 ///void Awake
-curX = 0;
-next = false;
-finished = false;
-stop = false;
-size = 0;
-edge = false;
-size2= 0;
-wave = 1;
-curY = global.view_h/2;
-curY4 = -128;
-curY3 = -128;
-curY2 = global.view_h/2;
-maxY2 = curY2 - 50;
-maxY = curY + 50;
-maxX = global.view_w + 80;
-move = false;
-makeSprite = true;
-xpos = 0;
+//curX = 0;
+//next = false;
+//finished = false;
+//stop = false;
+//size = 0;
+//edge = false;
+//size2= 0;
+//wave = 1;
+//curY = global.view_h/2;
+//curY4 = -128;
+//curY3 = -128;
+//curY2 = global.view_h/2;
+//maxY2 = curY2 - 50;
+//maxY = curY + 50;
+//maxX = global.view_w + 80;
+//move = false;
+//makeSprite = true;
+//xpos = 0;
 event_inherited();  //allows the object to inherit the create event of the parent
 playerNumber = 0;
 //FOR CHARACTER SELECT ONLY/////

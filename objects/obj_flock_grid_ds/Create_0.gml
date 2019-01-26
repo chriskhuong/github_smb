@@ -22,3 +22,6 @@ ds_grid_clear(sb_grid_ids, 0);
 //Add collision objects to avoid
 //mp_grid_add_instances(grid, obj_breakableParent, false);
 //mp_grid_add_instances(grid, obj_solidParent, false);
+
+refresh = room_speed*2;
+maxRefresh = refresh;

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 draw_set_colour(c_white);
 draw_set_alpha(0.1);
 
@@ -21,5 +21,4 @@ for(i=0; i < hCells; i++) {
 }
 
 draw_set_alpha(1); //reset since it was causing strangeness
-
-
+*/
