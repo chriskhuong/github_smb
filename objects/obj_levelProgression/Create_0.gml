@@ -88,14 +88,14 @@ levelYPos = [];
 space = false;
 for(i = 0; i < clusterCount; i++)
 {
-	clusterXPos[i] = (i * 150) + 100;
-	levelYPos[i] = 230;
+	clusterXPos[i] = ((i-1) * (global.view_w/4)) + (global.view_w/4);
+	levelYPos[i] = global.view_h/2;
 	levelImage[i] = i;
 	for(f = 0; f < levelCount; f++)
 	{
 		levelName[f] = "Level " + string(f);
 		levelNeeds[f] = f;
-		levelXPos[f] = (f * 25) + clusterXPos[i];
+		levelXPos[f] = (f * 50) + clusterXPos[i];
 		var newLevel = instance_create_depth(levelXPos[f],levelYPos[i],100,obj_levels);
 		newLevel.myIndex = levelImage[i];
 		newLevel.levelName = levelName[f];
