@@ -30,6 +30,7 @@ stripeStartX = 0 - ((stripeNum + 1)*stripeWidth);
 stripeCurrentX = 0;
 stripe1YPos = stripe1Y;
 stripe2YPos = stripe1Y;
+stripeAlpha = 1;
 
 destX -= ((stripeNum - 1)*stripeWidth);
 

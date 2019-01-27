@@ -43,7 +43,6 @@ if (time < duration && warningPhase == 2)
 if (time < duration && warningPhase == 3)
 	{
 		warningTextAlpha = 0;
-		//image_xscale = scr_ease_out(time, startWidth, destW - startWidth, duration);
 		image_yscale = scr_ease_out(time, destH, startHeight - destH, duration);
 		stripe1Y = scr_ease_out(time, (destY - 100), startY - (destY - 100), duration);
 		stripe2Y = scr_ease_out(time, (destY + 100), startY - (destY + 100), duration);
@@ -54,7 +53,6 @@ if (time < duration && warningPhase == 3)
 if (time < duration && warningPhase == 4)
 	{
 		stripeX = stripeCurrentX;
-		//image_xscale = scr_ease_out(time, startWidth, destW - startWidth, duration);
 		stripeX = scr_ease_out(time, stripeCurrentX, destEnd + stripeCurrentX, duration);
 		time++;
 	}
@@ -94,38 +92,12 @@ if (runningStripes)
 				stripeX = 0;
 			}
 	}
-/*
-else
-	{
-		var tempStart = stripeStartX;
-		stripeStartX = destX;
-		destX = tempStart;
-		time = 0;
-	}
-*/
-/*phase 2
-stripeX++;
 
-if (stripeX > stripeWidth)
+if (image_yscale <= .1)
 	{
-		stripeX = 0;
-	}
-image_alpha = 1;
-*/
-/*
-//segment for height
-if (time < duration)
-	{
-		x = startX;
-		y = startY;
-		image_xscale = scr_ease_out(time, startWidth, destW - startWidth, duration);
-		time++;
+		image_alpha = 0;
 	}
 else
 	{
-		var tempStart = startWidth;
-		startWidth = destW;
-		destW = tempStart;
-		time = 0;
+		image_alpha = 1;
 	}
-*/
