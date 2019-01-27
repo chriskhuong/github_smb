@@ -6599,6 +6599,14 @@
             }
         },
         {
+            "Key": "95ed256b-c2f9-4597-bb5e-62e54d9ce409",
+            "Value": {
+                "id": "c9e46648-09a2-4479-9707-9bc75f88cdaa",
+                "resourcePath": "sprites\\spr_warning_text\\spr_warning_text.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "95f9a2c5-9b8e-440b-82f7-65e08ced9d8a",
             "Value": {
                 "id": "3cdf8928-0ca0-48c0-a502-85dafa98ecd3",

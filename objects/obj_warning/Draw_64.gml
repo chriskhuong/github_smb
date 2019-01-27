@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//draw_self();
+draw_self();
 //draw
+draw_sprite_ext(spr_warning_text, warningText, x, y, 2, 2, image_angle, image_blend, warningTextAlpha);
+
 for(i = 0; i < stripeNum + 2; i++)
 	{
 		draw_sprite_ext(spr_survival_popup_bg, 1, stripeX + ((i-1) * stripeWidth), stripe1Y, 1, 2, image_angle, image_blend, image_alpha);
