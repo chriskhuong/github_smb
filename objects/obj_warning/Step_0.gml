@@ -30,6 +30,12 @@ if (time < duration && warningPhase == 2)
 			{
 				warningText += .2;
 			}
+		if (warningText >= frameEnd-1)
+			{
+				warningTime++;
+				warning1X = scr_ease_in(warningTime, warning1XPos, (destW - warning1XPos) * 4, duration/2);
+				warning2X = scr_ease_in(warningTime, warning1XPos, (destW + warning1XPos) * 4, duration/2);
+			}
 		time++;
 	}
 

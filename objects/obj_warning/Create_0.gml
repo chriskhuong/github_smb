@@ -19,9 +19,8 @@ warningTextAlpha = 0;
 warningPhase = 0;
 phaseCounter = room_speed/4;
 maxPhaseCount = phaseCounter;
-//stripes
 
-//create
+//stripes
 stripeWidth = sprite_get_width(spr_survival_popup_bg);
 stripeNum = floor(obj_resolution.ideal_width/stripeWidth);
 stripeX = 0;
@@ -35,15 +34,19 @@ stripe2YPos = stripe1Y;
 destX -= ((stripeNum - 1)*stripeWidth);
 
 runningStripes = false;
+
 image_xscale = destW;
 image_yscale = startHeight;
 x = startX;
 y = startY;
-/*
-//step
-curX++;
 
-if (curX >= maxX)
-{
-curX = 0;
-}*/
+
+//text
+warning1X = startX;
+warning2X = startX;
+warning1XPos = warning1X;
+warning2XPos = warning2X;
+warningTime = 0;
+warningY = startY;
+warningW = sprite_get_width(spr_warning_text);
+warningH = sprite_get_height(spr_warning_text);

@@ -3,7 +3,9 @@
 
 draw_self();
 //draw
-draw_sprite_ext(spr_warning_text, warningText, x, y, 2, 2, image_angle, image_blend, warningTextAlpha);
+//draw_sprite_ext(spr_warning_text, warningText, x, y, 2, 2, image_angle, image_blend, warningTextAlpha);
+draw_sprite_part_ext(spr_warning_text, warningText, 0, 0, warningW, warningH/2, warning1X-warningW, warningY-warningH, 2, 2, image_blend, warningTextAlpha);
+draw_sprite_part_ext(spr_warning_text, warningText, 0, 0+warningH/2, warningW, warningH, warning2X-warningW, warningY, 2, 2, image_blend, warningTextAlpha);
 
 for(i = 0; i < stripeNum + 2; i++)
 	{
