@@ -1,6 +1,29 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+script_execute(states_array[warningPhase]);
+
+//iterate the stripes horizontally indefinitely
+if (runningStripes)
+	{
+		stripeX += 3;
+		
+		if (stripeX >= stripeWidth)
+			{
+				stripeX = 0;
+			}
+	}
+
+if (image_yscale <= .1)
+	{
+		image_alpha = 0;
+	}
+else
+	{
+		image_alpha = 1;
+	}
+
+/*
 //Intro
 if (time < duration && warningPhase == 0)
 	{
@@ -101,3 +124,4 @@ else
 	{
 		image_alpha = 1;
 	}
+*/

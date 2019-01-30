@@ -1,7 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+states_array[0] = scr_warningIntro; //Intro
+states_array[1] = scr_warningOpening; //Opening
+states_array[2] = scr_warningText; //Hold/Text
+states_array[3] = scr_warningClose; //Close
+states_array[4] = scr_warningExit; //Exit
+warningArray = array_length_1d(states_array);
+
 time = 0;
+altTime = 0;
 startX = global.view_w/2;
 startY = global.view_h/2;
 startWidth = 0;

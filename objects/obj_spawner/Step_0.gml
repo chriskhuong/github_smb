@@ -9,6 +9,13 @@ dist = 400;
 
 if(instance_number(obj_enemyParent) < 1)
 	{
+		/*
+		if (!once)
+			{
+				instance_create_depth(x, y, depth, obj_waveNum);
+				once = true;
+			}
+		*/
 		if (wave <= 3)
 			{
 				for (var i = 0; i < enemiesNum; i++)

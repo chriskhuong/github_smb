@@ -3,8 +3,9 @@
 
 // how many will spawn, this is used in the alarm event
 enemiesNum = 10;
-wave = 1;
+wave = 0;
 dist = 1184;
+once = false;
 // how often they will spawn
 spawnRate = room_speed * 60;
 // trigger the alram to spawn the enemies the first time
