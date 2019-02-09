@@ -1,6 +1,6 @@
 #region Behavior
 
-duration = room_speed/4;			//change the variable here for any vairance in state speeds
+duration = room_speed;			//change the variable here for any vairance in state speeds
 //phaseCounter = room_speed/4;	//change the variable here for any vairance in time between states
 
 if (time < duration)

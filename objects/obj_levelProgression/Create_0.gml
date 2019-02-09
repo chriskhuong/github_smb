@@ -81,6 +81,7 @@ var levelCount = 3;// This number will deal with how many levels we are going to
 var clusterCount = 4;
 levelName = [];
 levelImage = [];
+levelRoom = [];
 levelNeeds = [];
 levelXPos = [];
 clusterXPos = [];
@@ -95,9 +96,12 @@ for(i = 0; i < clusterCount; i++)
 	{
 		levelName[f] = "Level " + string(f);
 		levelNeeds[f] = f;
+		//levelRoom[f] = global.roomLevel[f+1]
 		levelXPos[f] = (f * 50) + clusterXPos[i];
 		var newLevel = instance_create_depth(levelXPos[f],levelYPos[i],100,obj_levels);
+		//var a = f++;
 		newLevel.myIndex = levelImage[i];
+		newLevel.levelRoom = global.roomLevel[f];
 		newLevel.levelName = levelName[f];
 		newLevel.levelId = f;
 		

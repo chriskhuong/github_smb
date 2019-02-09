@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-scr_viewFollow(obj_Player1, 0);
+instance_create_depth(x, y, depth, obj_Player1);
+
+obj_playerTracker.alarm[0] = 5;

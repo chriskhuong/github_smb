@@ -12,7 +12,7 @@ backout = false;
 aspect_ratio = display_get_width() / display_get_height();
 //this is our ideal width we are shooting for with our aspect ratio.
 ideal_width = round(ideal_height*aspect_ratio);
-
+var testID = 0;
 //Check for odd numbers
 if(ideal_width & 1)
 {
@@ -23,14 +23,14 @@ max_resolution = floor(display_get_width());
 
 //Loops through all the rooms and sets up the view needed for this to work across all rooms.
 //You do not need to enable views with this manually its all done here.
-for(var i = 1; i<= room_last;i++)
+/*for(var i = 1; i<= room_last;i++)
 {
 	if(room_exists(i))
 	{
-		room_set_view(i,0,true,0,0,ideal_width,ideal_height,0,0,ideal_width,ideal_height,0,0,0,0,obj_Player1);
+		room_set_view(i,0,true,0,0,ideal_width,ideal_height,0,0,ideal_width,ideal_height,0,0,0,0, obj_Player1);
 		room_set_view_enabled(i,true);
 	}
-}
+}*/
 //We resize the surface to scale with everything elseas well as the gui and window size.
 surface_resize(application_surface,ideal_width,ideal_height);
 display_set_gui_size(ideal_width,ideal_height);
