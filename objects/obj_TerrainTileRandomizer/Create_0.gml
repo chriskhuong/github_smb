@@ -84,7 +84,6 @@ if (room_type == 0)
 	TilemapWidth4 = tilemap_get_width(Layer4);
 	TilemapHeight4 = tilemap_get_height(Layer4);
 
-
 	var lay_id5 = layer_get_id("bg_Cliff"); 
 	Layer5 = layer_tilemap_get_id(lay_id5); 
 	TilemapWidth5 = tilemap_get_width(Layer5);

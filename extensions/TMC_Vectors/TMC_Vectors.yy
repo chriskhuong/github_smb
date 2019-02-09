@@ -377,5 +377,16 @@
     "packageID": "com.themojocollective.tmcvectors",
     "productID": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
     "sourcedir": "",
+    "tvosProps": false,
+    "tvosSystemFrameworkEntries": [
+        
+    ],
+    "tvosThirdPartyFrameworkEntries": [
+        
+    ],
+    "tvosclassname": null,
+    "tvosmaccompilerflags": null,
+    "tvosmaclinkerflags": null,
+    "tvosplistinject": null,
     "version": "3.0.1"
 }

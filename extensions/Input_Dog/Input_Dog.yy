@@ -199,5 +199,16 @@
     "packageID": "com.messhof.inputDog",
     "productID": "1CC19BDD3FEBFF198B83FD01CF43599E",
     "sourcedir": "",
+    "tvosProps": false,
+    "tvosSystemFrameworkEntries": [
+        
+    ],
+    "tvosThirdPartyFrameworkEntries": [
+        
+    ],
+    "tvosclassname": null,
+    "tvosmaccompilerflags": null,
+    "tvosmaclinkerflags": null,
+    "tvosplistinject": null,
     "version": "1.2.0"
 }

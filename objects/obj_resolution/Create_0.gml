@@ -27,7 +27,7 @@ for(var i = 1; i<= room_last;i++)
 {
 	if(room_exists(i))
 	{
-		room_set_view(i,0,true,0,0,ideal_width,ideal_height,0,0,ideal_width,ideal_height,0,0,0,0,-1);
+		room_set_view(i,0,true,0,0,ideal_width,ideal_height,0,0,ideal_width,ideal_height,0,0,0,0,obj_Player1);
 		room_set_view_enabled(i,true);
 	}
 }
@@ -50,3 +50,4 @@ if(max_resolution > 1080)
 		//window_set_size(res_width,res_height);
 		//obj_mainMenu.alarm[0] = 1;
 }
+//room_goto_next();
