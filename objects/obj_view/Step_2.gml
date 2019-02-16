@@ -5,4 +5,4 @@ camera_set_view_size(view_camera[0], global.view_w, global.view_h);
 //camera_set_view_pos(view_camera[0], global.view_x, global.view_y);
 camera_set_view_pos(view_camera[0], global.view_x, global.view_y);
 
-show_debug_message(string(global.view_w) + " " + string(global.view_h));
+//show_debug_message(string(global.view_w) + " " + string(global.view_h));

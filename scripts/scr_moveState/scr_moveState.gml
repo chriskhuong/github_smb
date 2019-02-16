@@ -10,6 +10,10 @@ myGunAlpha = 1;
 myArmAlpha = myGunAlpha;
 recoil = max(0, recoil - 1);	//returns the larger number into recoil
 
+var bbox_side;
+var l = layer_get_id("Collision");
+tilemap = layer_tilemap_get_id(l);
+
 #region Movement
 //Get direction
 dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
@@ -35,12 +39,14 @@ collision_zoneX = !place_free(x + hspd, y);
 collision_zoneY = !place_free(x, y + vspd);
 
 //Collision check if free
+
 if (place_free(hspd, vspd))
 	{
 		//Move
 		x = hspd;
 		y = vspd;
 	}
+
 else
 	{
 		var sweepInterval = 1;
@@ -61,7 +67,95 @@ else
 					}
 			}
 	}
+/*
+if (lengthdir_x(len, dir) > 0)
+	{
+		bbox_side = bbox_right;
+	}
+else
+	{
+		bbox_side = bbox_left;
+	}
+	
+if (tilemap_get_at_pixel(tilemap, bbox_side + lengthdir_x(len, dir), bbox_top) != 0 || tilemap_get_at_pixel(tilemap, bbox_side + lengthdir_x(len, dir), bbox_bottom) != 0)
+	{
+		if (lengthdir_x(len, dir) > 0)
+			{
+				x = x - (x mod 32) + 31 - (bbox_right - x - 2);
+			}
+		else
+			{
+				x = x - (x mod 32) - (bbox_left - x - 2);
+			}
+		hspd = x;
+	}
 
+if (lengthdir_y(len, dir) > 0)
+	{
+		bbox_side = bbox_bottom;
+	}
+else
+	{
+		bbox_side = bbox_top;
+	}
+	
+if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side + lengthdir_y(len, dir)) != 0 || tilemap_get_at_pixel(tilemap, bbox_right, bbox_side + lengthdir_y(len, dir)) != 0)
+	{
+		if (lengthdir_y(len, dir) > 0)
+			{
+				y = y - (y mod 32) + 31 - (bbox_bottom - y - 2);
+			}
+		else
+			{
+				y = y - (y mod 32) - (bbox_top - y - 2);
+			}
+		vspd = y;
+	}
+	
+
+/*
+if (lengthdir_y(len, dir) > 0)	//downward
+	{
+		var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
+		var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
+		
+		if (t1 != 0 || t2 != 0)
+			{
+				y = ((bbox_bottom & ~31) - 1) - sprite_bbox_bottom;
+			}
+	}
+if (lengthdir_y(len, dir) < 0)	//downward
+	{
+		var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
+		var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
+		
+		if (t1 != 0 || t2 != 0)
+			{
+				y = ((bbox_top + 32) & ~31) - sprite_bbox_top;
+			}
+	}
+
+if (lengthdir_x(len, dir) > 0)	//right
+	{
+		var t1 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
+		var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
+		
+		if (t1 != 0 || t2 != 0)
+			{
+				x = ((bbox_right & ~31) - 1) - sprite_bbox_right;
+			}
+	}
+if (lengthdir_x(len, dir) < 0)	//right
+	{
+		var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
+		var t2 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
+		
+		if (t1 != 0 || t2 != 0)
+			{
+				x = ((bbox_left + 32) & ~31) - sprite_bbox_left;
+			}
+	}
+*/
 #endregion
 
 #region Firing

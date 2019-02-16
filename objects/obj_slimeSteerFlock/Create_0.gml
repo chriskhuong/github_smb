@@ -25,7 +25,7 @@ states_array[sChase]	= scr_E_pathSteerChaseState;
 states_array[sStun]		= scr_E_stunSteerState;
 states_array[sDead]		= scr_E_deadState;
 
-state = sIdle;//scr_enemy_idleState;
+state = sChase;//scr_enemy_idleState;
 
 counter = 0;
 spd = 1.25;
@@ -55,3 +55,7 @@ timer = room_speed / 3;	//pathfinding update
 maxTimer = timer;
 
 once = false;
+
+//for specific collisions
+solid_obj = obj_collision;
+is_colliding = false;

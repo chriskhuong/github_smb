@@ -3,7 +3,10 @@
 if (other.id != creator)
     {
         other.hp -= damage;
-        
+        if (other.hp <= 0)
+			{
+				creatorid.ultCharge += 1;
+			}
         //Apply the knockback
         if (instance_exists(creator)) //if the creator exists
             {

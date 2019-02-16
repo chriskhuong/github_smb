@@ -5,7 +5,13 @@ myState = "ChaseSteer";
 movement = MOVE;
 max_speed = spd;
 target = instance_nearest(x, y, obj_playerParent);
+/*neighbor = instance_nearest(x, y, obj_slimeSteerFlock);
 
+if (path_get_length(neighbor.path) < path_get_length(path))
+	{
+		path = neighbor.path;
+	}
+*/
 var mx = target.x;
 var my = target.y + 35;
 
@@ -60,27 +66,6 @@ timer -= 1;
 #region Transition Trigger
 
 
-#endregion
-
-#region oldPath
-/*
-if (mp_grid_path(obj_grid.grid, path, x, y, mx, my, 1))
-	{
-		path_start(path, spd, path_action_stop, false);
-	}
-
-/*
-//Transition Triggers
-if(!collision_circle(x, y, 64, obj_Player, false, false))
-	{
-		state = states.idle;
-	}
-
-if(collision_circle(x, y, 32, obj_Player, false, false))
-	{
-		state = states.attack;
-	}
-*/
 #endregion
 
 #region Sprite

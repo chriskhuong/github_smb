@@ -10,7 +10,8 @@ max_speed = spd;
 steering = vect2(0,0);
 
 //## Steering Behaviours go below here ##//
-					
+			if (!is_colliding)
+				{
 					// Add like this. (First one doesn't need the vect_add)
 					//steering = vect_add(steering, sb_#behaviour#(argument,stuff,blah));
 					
@@ -25,9 +26,28 @@ steering = vect2(0,0);
 					steering = vect_add(steering, sb_separation_grid(3,grid_controller,3));
 					steering = vect_add(steering, sb_cohesion_grid(5,grid_controller,2));
 					steering=vect_add(steering,sb_avoid(obj_breakableParent,64,64,5));
-					steering=vect_add(steering,sb_avoid(obj_invisibleBoundary,64,64,5));
+					//steering=vect_add(steering,sb_avoid(obj_collision,64,64,5));
 					steering=vect_add(steering,sb_avoid(obj_solidParent,64,64,5));
+				}
+			else
+				{
+					// Add like this. (First one doesn't need the vect_add)
+					//steering = vect_add(steering, sb_#behaviour#(argument,stuff,blah));
 					
+					//steering = vect_add(steering, sb_seek(mouse_x, mouse_y, 1));
+					//steering = vect_add(steering, sb_seek_arrive(mouse_x,mouse_y,256,1));
+					steering = vect_add(steering, sb_wander(128,128,90,1));
+					//steering = vect_add(steering, sb_flee(mouse_x,mouse_y,1));
+					//steering = vect_add(steering, sb_pursuit(obj_master_drone,1));
+					//steering = vect_add(steering, sb_evade(obj_master_drone,1));
+					//steering = vect_add(steering, sb_path_loop(my_path,30,my_path_dir,1));
+					//steering = vect_add(steering, sb_alignment_grid(4,grid_controller,1));
+					//steering = vect_add(steering, sb_separation_grid(3,grid_controller,3));
+					//steering = vect_add(steering, sb_cohesion_grid(5,grid_controller,2));
+					//steering=vect_add(steering,sb_avoid(obj_breakableParent,64,64,5));
+					//steering=vect_add(steering,sb_avoid(obj_collision,64,64,5));
+					steering=vect_add(steering,sb_avoid(obj_solidParent,8,124,50));
+				}
 					//## Steering Behaviours go above here ##//
 					
 					//Limit steering by max_force
@@ -40,9 +60,18 @@ steering = vect2(0,0);
 					position = vect_add(position, velocity);
 					
 					//update xy
-					x = position[1];
-					y = position[2];
-
+					if (place_meeting(position[1], position[2], solid_obj))	//there's a collision
+						{
+							is_colliding = true;
+							position[1] = x;
+							position[2] = y;
+						}
+					else
+						{
+							is_colliding = false;
+							x = position[1];
+							y = position[2];
+						}
 //image_angle = vect_direction(velocity);
 
 #endregion
@@ -58,8 +87,8 @@ if (counter >= room_speed * 3)
 					state = sIdle;
 				
 				case 1:
+					randomize();
 					counter = 0;
-					
 				break;
 			}
 	}

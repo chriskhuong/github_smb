@@ -1,7 +1,10 @@
 if (other.id != creator)
     {
         other.hp -= 1;
-        
+        if (other.hp <= 0)
+			{
+				creatorid.ultCharge += 1;
+			}
         //Apply the knockback
         
         var dir = point_direction(0, 0, phy_speed_x, phy_speed_y); //gets the direction if the creator doesn't exist, just calculates from the object's current position

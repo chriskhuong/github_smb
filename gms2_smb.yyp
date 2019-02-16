@@ -2135,6 +2135,14 @@
             }
         },
         {
+            "Key": "2e30128f-9378-4cd0-8ba2-1ede0475c0ac",
+            "Value": {
+                "id": "37002547-68ec-4768-aed6-a39905aa178d",
+                "resourcePath": "sprites\\spr_collision\\spr_collision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e3dad12-f7ed-4e7b-8b98-e14f0531dcce",
             "Value": {
                 "id": "2dc88428-3ca4-4107-afa8-fa7a8b402919",
@@ -7607,6 +7615,14 @@
             }
         },
         {
+            "Key": "a4c7d628-a003-4d63-b369-fa8fcb4b3e64",
+            "Value": {
+                "id": "6575c652-a4cd-423d-a4c7-8d66ea65ca9b",
+                "resourcePath": "objects\\obj_collision\\obj_collision.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a4d149df-d50f-42ca-b55b-d92bd28fcff5",
             "Value": {
                 "id": "bdb23436-fbc7-4000-8e87-1facbae01f8d",
@@ -10844,6 +10860,14 @@
                 "id": "3d812b74-11ee-493b-b035-7e6e71d8ca31",
                 "resourcePath": "scripts\\scr_E_pathSteerChaseState\\scr_E_pathSteerChaseState.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "eeb9879d-d015-48a1-9b58-3c7180068adb",
+            "Value": {
+                "id": "f1998aab-c3e7-45fb-8a6e-f019b3de2045",
+                "resourcePath": "tilesets\\Collision\\Collision.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

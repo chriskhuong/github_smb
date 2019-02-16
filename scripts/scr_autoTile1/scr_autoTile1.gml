@@ -6,12 +6,6 @@ var _layerName = argument4;
 
 roomx = (room_width/gridSize);
 roomy = (room_height/gridSize);
-
-//butts = image[_currentXSection, _currentYSection];
-//tileX = (_currentXSection * sectionWidth) + (((_c - 1)mod sectionTilesX) * gridSize) + gridSize;
-//tileY = (_currentYSection * sectionHeight) + (floor((_c - 1) / sectionTilesX) * gridSize) + gridSize;
-//tilemap_set_at_pixel(_tileLayer, image[_currentXSection, _currentYSection], _currentXSection, _currentYSection);
-//image[_currentXSection, _currentYSection] = "";
 		
 for (i = 0; i < roomx; ++i)
 	{

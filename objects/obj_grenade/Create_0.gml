@@ -1,6 +1,7 @@
 ///temporary things
 creator = noone;
-
+creatorid = noone;
+damage = 50;
 z = 4;  //variable I'll be using for height
 zspeed = 8;
 zgrav = -0.5;
