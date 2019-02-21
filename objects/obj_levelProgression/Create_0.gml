@@ -79,8 +79,10 @@ for(j = 0; j < array_length_1d(levelName); j++) // loop for each level
 
 var levelCount = 3;// This number will deal with how many levels we are going to have (This includes shops).
 var clusterCount = 4;
+var level = 1;
 levelName = [];
 levelImage = [];
+levelNum = [];
 levelRoom = [];
 levelNeeds = [];
 levelXPos = [];
@@ -95,17 +97,17 @@ for(i = 0; i < clusterCount; i++)
 	for(f = 0; f < levelCount; f++)
 	{
 		levelName[f] = "Level " + string(f);
+		levelNum[f] = level;
 		levelNeeds[f] = f;
-		//levelRoom[f] = global.roomLevel[f+1]
 		levelXPos[f] = (f * 50) + clusterXPos[i];
 		var newLevel = instance_create_depth(levelXPos[f],levelYPos[i],100,obj_levels);
-		//var a = f++;
 		newLevel.myIndex = levelImage[i];
-		newLevel.levelRoom = global.roomLevel[f];
+		newLevel.levelRoom = global.levelRoom[f];
 		newLevel.levelName = levelName[f];
+		newLevel.levelNum = levelNum[f];
 		newLevel.levelId = f;
-		
-		show_debug_message("We made a level " + string(levelName[f]));
+		level++;
+		show_debug_message("We made a level " + string(levelNum[f]));
 		/*if(i == 0)
 		{
 			levelXPos[i] = ((i + 1) * 50);
@@ -116,7 +118,7 @@ for(i = 0; i < clusterCount; i++)
 		}*/
 	}
 }
-	
+
 
 #endregion
 

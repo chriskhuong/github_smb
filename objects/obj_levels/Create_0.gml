@@ -4,6 +4,7 @@
 image_speed = 0;
 myIndex = 0;
 // Initialize some things we will overwrite in obj_levelSpawner
+levelNum = 0;
 levelName = 0;	//could be drawn next to or on hover or something, just in case
 levelID = 0;	//unique level ID
 levelNeeds = -1;//array holding the unique ID of any necessary levels before this one

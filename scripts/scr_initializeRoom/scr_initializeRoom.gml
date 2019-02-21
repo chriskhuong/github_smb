@@ -3,7 +3,7 @@ randomize();
 
 gridSize = 32;	//size of the tiles in the rooms
 
-switch(global.roomNum)
+switch(global.levelNum)
 	{
 		case 1:
 			xSections = choose(2, 3);

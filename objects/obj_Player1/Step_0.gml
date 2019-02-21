@@ -4,7 +4,7 @@ var bbox_side;
 
 horiz = keyboard_check(vk_right) - keyboard_check(vk_left);
 vert = keyboard_check(vk_down) - keyboard_check(vk_up);
-
+/*
 if (horiz > 0)
 	{
 		bbox_side = bbox_right;
@@ -26,9 +26,9 @@ if (tilemap_get_at_pixel(tilemap, bbox_side+horiz, bbox_top) != 0) || (tilemap_g
 		}
 	horiz = 0;
 }
-
+*/
 x += horiz * 4;
-
+/*
 if (vert > 0)
 	{
 		bbox_side = bbox_bottom;
@@ -50,7 +50,7 @@ if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vert) != 0) || (tilemap_g
 		}
 	vert = 0;
 }
-
+*/
 y += vert * 4;
 
 //camera_set_view_pos(myCam,x-camera_get_view_width(myCam)/2,y-camera_get_view_height(myCam)/2);
