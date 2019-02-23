@@ -8,23 +8,24 @@ if(creator.state == sReload)
 				image = sprite_get_number(creator.weaponArray[creator.weapon, 18]) - 1;
 				imageSpeed = creator.myGunSpeed;
 				imageAnimation = (imageSpeed * image);
-				draw_sprite(spr_reloadCoolDownGrey,0,creator.x -15, creator.y - 45);
 				rCoolDown = true;
-				rCooltime = imageAnimation;
+				rCooltime = 0;
 			}
 
 		if(rCoolDown == true)
 			{
-				draw_sprite_part_ext(spr_reloadCoolDown,0,0,0,((sprite_get_width(spr_reloadCoolDown) / imageAnimation) * rCooltime),sprite_get_height(spr_reloadCoolDown),creator.x - 15, creator.y -60,image_xscale,image_yscale,-1,.6);	
-				if(rCooltime > 0)
-					{
-						rCooltime -= 1;
+				var reloadAnim = scr_ease_linear(imageAnimation,0,rCooltime,imageAnimation);
+				draw_sprite_ext(spr_reloadCoolDownGrey,0,creator.x -15, creator.y - 45,image_xscale,image_yscale,image_angle,image_blend,1);
+				draw_sprite_part_ext(spr_reloadCoolDown,0,0,0,(reloadAnim) ,sprite_get_height(spr_reloadCoolDown),creator.x - 15, creator.y -60,image_xscale,image_yscale,-1,.6);	
+				
+				rCooltime += 1;
 						//rCoolDown = false;
-					}
-				if(rCooltime < 1)
+					
+				if(rCooltime >= imageAnimation)
 					{
 						rCoolDown = false;
-						//rCooltime = imageAnimation;
+						rCooltime = 0;
+						imageAnimation = 0;
 					}
 			}
 	}

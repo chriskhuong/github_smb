@@ -7,7 +7,8 @@ switch(argument0)
 		case 0:
 		if(maxRes >= 1024)
 		{
-		obj_resolution.res_width = 1024;
+			obj_resolution.res_width = 1024;
+			obj_resolution.res_height = 576;
 		}
 		if (obj_resolution.res_width == maxRes)
 		{
@@ -19,7 +20,7 @@ switch(argument0)
 			window_set_fullscreen(false);
 		}
 		//surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
-		obj_mainMenu.alarm[0] = 1;
+				obj_resolution.alarm[0] = 1;
 		break;
 		case 1:
 		if(maxRes >= 1280)
@@ -36,7 +37,7 @@ switch(argument0)
 		{
 			window_set_fullscreen(false);
 		}	//surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
-		obj_mainMenu.alarm[0] = 1;
+		obj_resolution.alarm[0] = 1;
 		break;
 		case 2:
 		if(maxRes >= 1920)
@@ -53,7 +54,7 @@ switch(argument0)
 		{
 			window_set_fullscreen(false);
 		}	//surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
-		obj_mainMenu.alarm[0] = 1;
+		obj_resolution.alarm[0] = 1;
 		break;
 		case 3:
 		if(maxRes >= 2560)
@@ -70,7 +71,7 @@ switch(argument0)
 		{
 			window_set_fullscreen(false);
 		}	//surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
-		obj_mainMenu.alarm[0] = 1;
+		obj_resolution.alarm[0] = 1;
 		break;
 		case 4:
 		if(maxRes >= 3840)
@@ -81,13 +82,13 @@ switch(argument0)
 		}
 			if (obj_resolution.res_width == maxRes)
 		{
-			window_set_fullscreen(true);
+			//window_set_fullscreen(true);
 		}
 		else if(!(obj_resolution.res_width > maxRes))
 		{
-			window_set_fullscreen(false);
+			//window_set_fullscreen(false);
 		}	//surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
-		obj_mainMenu.alarm[0] = 1;
+		obj_resolution.alarm[0] = 1;
 		break;
 		
 		default:
