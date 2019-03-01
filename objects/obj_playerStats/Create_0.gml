@@ -54,4 +54,4 @@ room_start_action = NEW_ROOM;
 xCam = 0;
 yCam = 0;
 
-show_debug_message("Stats: " + string(num));
+//show_debug_message("Stats: " + string(num));
