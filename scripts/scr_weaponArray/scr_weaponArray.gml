@@ -59,12 +59,7 @@ weaponArray[0, 15] = noone; // the item
 weaponArray[0, 16] = noone; // the script for the item
 weaponArray[0, 17] = 0;	//spr_guns gun_index
 weaponArray[0, 18] = spr_reload_pistol;
-<<<<<<< HEAD
 weaponArray[0, 19] = spr_hud_pistol_reloadNEW;
-
-=======
-weaponArray[0, 19] = spr_reload_pistol;
->>>>>>> e65ba9b280ca2facd67fb2f26a625e16025f6250
 
 //obj_tempPlayer1.weaponArray[0, 8] = 1; //Damage output
 /*Temporary
