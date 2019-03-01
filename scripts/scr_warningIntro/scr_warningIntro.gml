@@ -6,7 +6,7 @@ duration = room_speed;			//change the variable here for any vairance in state sp
 if (time < duration)
 	{
 		stripeX = stripeStartX;
-		stripeX = scr_ease_out(time, stripeStartX, destX - stripeStartX, duration);
+		stripeX = scr_ease_linear(time, stripeStartX, destX - stripeStartX, duration);
 		time++;
 	}
 

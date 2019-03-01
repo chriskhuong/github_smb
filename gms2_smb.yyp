@@ -1303,6 +1303,14 @@
             }
         },
         {
+            "Key": "19e189df-16ec-4d21-8eef-41de88560375",
+            "Value": {
+                "id": "c641d61e-0cc9-4bbf-8f9b-29441cb70c8b",
+                "resourcePath": "sprites\\spr_hud_smg_reloadNEW\\spr_hud_smg_reloadNEW.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1a61b444-6900-493c-ae7a-53ea750165e3",
             "Value": {
                 "id": "1e85a4b7-6f4f-42eb-ac59-455e247cd849",
@@ -2348,6 +2356,14 @@
                 "id": "9a76fc21-9f20-4609-8eca-98d06a0c5e9c",
                 "resourcePath": "scripts\\tmc_vect_sub\\tmc_vect_sub.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3245ebb8-1be1-4f70-bb0c-c7dc65fbb501",
+            "Value": {
+                "id": "24dd8166-4119-43f3-b0eb-ef6f71994da3",
+                "resourcePath": "sprites\\spr_hud_pistol_reloadNEW\\spr_hud_pistol_reloadNEW.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4231,6 +4247,14 @@
             }
         },
         {
+            "Key": "5905a35d-aefb-4853-8686-4dbe380cfcf7",
+            "Value": {
+                "id": "6921c5d9-e950-42fa-81ca-91a7f7db0d0c",
+                "resourcePath": "sprites\\spr_hud_assault_reloadNEW\\spr_hud_assault_reloadNEW.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5908a1df-07b3-42d7-81f1-182eee4317df",
             "Value": {
                 "id": "2a453d19-b34f-4515-8e3d-043be5abe507",
@@ -4707,6 +4731,14 @@
             "Value": {
                 "id": "00bb1de6-7eab-4f5b-8d1f-563d5e0e63e6",
                 "resourcePath": "sprites\\spr_down_shoot_pistol\\spr_down_shoot_pistol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "654b6704-4fc2-4a88-b56c-f4a77d796410",
+            "Value": {
+                "id": "20659c6a-75a3-41ad-9b9b-7f7577b303e0",
+                "resourcePath": "sprites\\spr_hud_shotgun_reloadNEW\\spr_hud_shotgun_reloadNEW.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6151,6 +6183,14 @@
             }
         },
         {
+            "Key": "855b4318-8106-4e91-92d0-599a269d093b",
+            "Value": {
+                "id": "49892b1f-ccb8-4a6b-87f2-1de8aee1887f",
+                "resourcePath": "sprites\\spr_hud_sniper_reloadNEW\\spr_hud_sniper_reloadNEW.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "855c2912-793f-44fc-9feb-3a14b5dfc072",
             "Value": {
                 "id": "98088278-7261-4c9b-8bce-03ac1955c01a",
@@ -7500,6 +7540,14 @@
                 "id": "444f73d5-9f45-43ce-bc18-191df2dc376f",
                 "resourcePath": "objects\\obj_drawDisplayItem\\obj_drawDisplayItem.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a3b52f98-5271-410c-993d-151007e3f91a",
+            "Value": {
+                "id": "1171d2f4-4290-4454-932b-bc0980dc3db2",
+                "resourcePath": "sprites\\spr_hud_pistol2_reloadNEW\\spr_hud_pistol2_reloadNEW.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

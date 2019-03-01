@@ -4,7 +4,7 @@ coolDown = false;
 cooltime = 0;
 creator = noone;
 rCoolDown = false;
-rCooltime = 0;
+rCoolTime = 0;
 //False Stats
 maxHp = obj_Player.hp;
 hp = maxHp;

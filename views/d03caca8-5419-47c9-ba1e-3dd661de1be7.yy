@@ -42,11 +42,17 @@
         "fc094b7b-bfec-43a3-8d69-afe5a8c04f9f",
         "e86689c4-3cdf-452b-ab4c-daf28a972b7d",
         "1483735f-a689-4847-9320-c6e27690820e",
+        "3245ebb8-1be1-4f70-bb0c-c7dc65fbb501",
         "8fe8c6b9-ccfd-41c1-8a96-988ce67d58ab",
+        "a3b52f98-5271-410c-993d-151007e3f91a",
         "b46f413e-a9b2-4c40-af4d-23d70924a5a7",
+        "19e189df-16ec-4d21-8eef-41de88560375",
         "8b0f03cd-1ab2-4e52-a01a-ac76c6316547",
+        "5905a35d-aefb-4853-8686-4dbe380cfcf7",
         "f4576455-2fbe-494e-bd7c-a4e2199f079e",
-        "d5f502d7-db6b-478a-9ff3-80e678f32240"
+        "654b6704-4fc2-4a88-b56c-f4a77d796410",
+        "d5f502d7-db6b-478a-9ff3-80e678f32240",
+        "855b4318-8106-4e91-92d0-599a269d093b"
     ],
     "filterType": "GMSprite",
     "folderName": "GunStuff",

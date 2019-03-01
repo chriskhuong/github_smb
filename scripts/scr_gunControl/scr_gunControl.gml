@@ -18,8 +18,8 @@ if (myGunAngle < 315 && myGunAngle > 225)
 		myGunXScale = 1;
 		myGunYScale = 1;
         gunOver = true;
-		scr_IK(-1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 12, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 12, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)), -1);
-		scr_IK(1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 18, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 18, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)), 1);
+		scr_IK(-1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 12, myGunAngle) - lengthdir_y((myGunLenY-recoil), myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(((myGunLenX-recoil)-recoil) - 12, myGunAngle) + lengthdir_x((myGunLenY-recoil), myGunAngle)), -1);
+		scr_IK(1, 13, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 18, myGunAngle) - lengthdir_y((myGunLenY-recoil), myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(((myGunLenX-recoil)-recoil) - 18, myGunAngle) + lengthdir_x((myGunLenY-recoil), myGunAngle)), 1);
         //myGunIndex = 0;
     }
 else if (myGunAngle < 225 && myGunAngle > 135)
@@ -29,8 +29,8 @@ else if (myGunAngle < 225 && myGunAngle > 135)
 		myGunXScale = 1;
 		myGunYScale = -1;
 		gunOver = true;
-		scr_IK(1, -10, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 12, myGunAngle) - lengthdir_y(myGunLenY-5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 12, myGunAngle) + lengthdir_x(myGunLenY-5, myGunAngle)), -1);
-		scr_IK(1, 10, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 18, myGunAngle) - lengthdir_y(myGunLenY-5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 18, myGunAngle) + lengthdir_x(myGunLenY-5, myGunAngle)), 1);
+		scr_IK(1, -10, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 12, myGunAngle) - lengthdir_y((myGunLenY-recoil)-5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y((myGunLenX-recoil) - 12, myGunAngle) + lengthdir_x((myGunLenY-recoil)-5, myGunAngle)), -1);
+		scr_IK(1, 10, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 18, myGunAngle) - lengthdir_y((myGunLenY-recoil)-5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y((myGunLenX-recoil) - 18, myGunAngle) + lengthdir_x((myGunLenY-recoil)-5, myGunAngle)), 1);
         //myGunIndex = 0;
     }
 else if (myGunAngle < 135 && myGunAngle > 45)
@@ -40,8 +40,8 @@ else if (myGunAngle < 135 && myGunAngle > 45)
 		myGunXScale = 1;
 		myGunYScale = -1;
         gunOver = false;
-		scr_IK(1, -13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 12, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 12, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)), -1);
-		scr_IK(-1, -13, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 18, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 18, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle)), 1);
+		scr_IK(1, -13, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 12, myGunAngle) - lengthdir_y((myGunLenY-recoil), myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y((myGunLenX-recoil) - 12, myGunAngle) + lengthdir_x((myGunLenY-recoil), myGunAngle)), -1);
+		scr_IK(-1, -13, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 18, myGunAngle) - lengthdir_y((myGunLenY-recoil), myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y((myGunLenX-recoil) - 18, myGunAngle) + lengthdir_x((myGunLenY-recoil), myGunAngle)), 1);
         //myGunIndex = 0;
     }
 else
@@ -51,7 +51,7 @@ else
 		myGunXScale = 1;
 		myGunYScale = 1;
 		gunOver = true;
-		scr_IK(-1, 10, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 12, myGunAngle) - lengthdir_y(myGunLenY+5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 12, myGunAngle) + lengthdir_x(myGunLenY+5, myGunAngle)), -1);
-		scr_IK(-1, -10, 10, weaponArray[weapon, 6] + (lengthdir_x(myGunLenX - 18, myGunAngle) - lengthdir_y(myGunLenY+5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y(myGunLenX - 18, myGunAngle) + lengthdir_x(myGunLenY+5, myGunAngle)), 1);
+		scr_IK(-1, 10, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 12, myGunAngle) - lengthdir_y((myGunLenY-recoil)+5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y((myGunLenX-recoil) - 12, myGunAngle) + lengthdir_x((myGunLenY-recoil)+5, myGunAngle)), -1);
+		scr_IK(-1, -10, 10, weaponArray[weapon, 6] + (lengthdir_x((myGunLenX-recoil) - 18, myGunAngle) - lengthdir_y((myGunLenY-recoil)+5, myGunAngle)), weaponArray[weapon, 7] + (lengthdir_y((myGunLenX-recoil) - 18, myGunAngle) + lengthdir_x((myGunLenY-recoil)+5, myGunAngle)), 1);
         //myGunIndex = 0;
     }

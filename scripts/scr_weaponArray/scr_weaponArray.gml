@@ -1,6 +1,6 @@
 ///scr_weaponArray(character)
 
-argument0 = character;
+character = argument0;
 
 /*
 [i, 0] = Name
@@ -59,6 +59,7 @@ weaponArray[0, 15] = noone; // the item
 weaponArray[0, 16] = noone; // the script for the item
 weaponArray[0, 17] = 0;	//spr_guns gun_index
 weaponArray[0, 18] = spr_reload_pistol;
+weaponArray[0, 19] = spr_hud_pistol_reloadNEW;
 
 
 //obj_tempPlayer1.weaponArray[0, 8] = 1; //Damage output
@@ -90,6 +91,7 @@ switch(character){
         weaponArray[1, 16] = 3;  //Grenade Max
 		weaponArray[1, 17] = 1;
 		weaponArray[1, 18] = spr_reload_assault;
+		weaponArray[1, 19] = spr_hud_assault_reloadNEW;
         //obj_tempPlayer1.weaponArray[0, 8] = 2; //Damage output
         break;
         
@@ -116,6 +118,7 @@ switch(character){
 		weaponArray[1, 14] = 0;	//LenY
 		weaponArray[1, 17] = 4;
 		weaponArray[1, 18] = spr_reload_pistol2;
+		weaponArray[1, 19] = spr_hud_pistol2_reloadNEW;
         //obj_tempPlayer1.weaponArray[0, 8] = 1; //Damage output
         break;
 
@@ -142,6 +145,7 @@ switch(character){
 		weaponArray[1, 14] = 0;	//LenY
 		weaponArray[1, 17] = 3;
 		weaponArray[1, 18] = spr_reload_smg;
+		weaponArray[1, 19] = spr_hud_smg_reloadNEW;
         //obj_tempPlayer1.weaponArray[0, 8] = 2; //Damage output
         break;
         
@@ -170,6 +174,7 @@ switch(character){
         weaponArray[1, 16] = 0;  //Grenade Max    
 		weaponArray[1, 17] = 5;
 		weaponArray[1, 18] = spr_reload_sniper;
+		weaponArray[1, 19] = spr_hud_sniper_reloadNEW;
         break;
     
     case SEBASTIAN:
@@ -203,6 +208,7 @@ switch(character){
 		weaponArray[0, 1] = spr_left_shoot_pistol_new; //Sprite Index
 		weaponArray[0, 2] = spr_down_shoot_pistol_new; //Sprite Index
 		weaponArray[0, 18] = spr_sebastian_reload_pistol;
+		weaponArray[1, 19] = spr_hud_shotgun_reloadNEW;
         //obj_tempPlayer1.weaponArray[0, 8] = 3; //Damage output
         break;
 		
