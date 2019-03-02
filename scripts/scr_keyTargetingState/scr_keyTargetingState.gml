@@ -6,7 +6,7 @@
     
     /*****REMEMBER TO REFER TO THE TARGET'S STEP EVENT IN PROJECT_20*****/
 
-var rng = 90; //range from player
+var rng = weaponArray[weapon, 20]; //range from player
 var minRng = 40; //how close the cursor should get to the player
 var dir = point_direction(myTargetX, myTargetY, x, (y + 8));    //gets the direction
 var playDir = point_direction(0, 0, creator.xaxis, creator.yaxis);  //gets the player moving direction
@@ -49,16 +49,16 @@ if (creator.xaim == 0 && creator.yaim == 0 && creator.xaxis == 0 && creator.yaxi
 
 if (creator.xaim != 0 || creator.yaim != 0)
     {
-        myTargetAlpha += .7;
-        if (myTargetAlpha > 1)
+        myTargetAlpha += .1;
+        if (myTargetAlpha > myTargetAlphaMax)
             {
-                myTargetAlpha = 1;
+                myTargetAlpha = myTargetAlphaMax;
             }
     }
 
 else if (creator.xaim == 0 || creator.yaim == 0)
     {
-        myTargetAlpha -= .7;
+        myTargetAlpha -= .1;
         if (myTargetAlpha < 0)
             {
                 myTargetAlpha = 0;

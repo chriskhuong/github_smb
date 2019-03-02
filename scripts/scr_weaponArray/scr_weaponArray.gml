@@ -60,6 +60,8 @@ weaponArray[0, 16] = noone; // the script for the item
 weaponArray[0, 17] = 0;	//spr_guns gun_index
 weaponArray[0, 18] = spr_reload_pistol;
 weaponArray[0, 19] = spr_hud_pistol_reloadNEW;
+weaponArray[0, 20] = 60;	//crosshair distance
+weaponArray[0, 21] = spr_crosshair_pistol;	//crosshair sprite
 
 //obj_tempPlayer1.weaponArray[0, 8] = 1; //Damage output
 /*Temporary
@@ -91,6 +93,8 @@ switch(character){
 		weaponArray[1, 17] = 1;
 		weaponArray[1, 18] = spr_reload_assault;
 		weaponArray[1, 19] = spr_hud_assault_reloadNEW;
+		weaponArray[1, 20] = 100;	//crosshair distance
+		weaponArray[1, 21] = spr_crosshair_assault;	//crosshair sprite
         //obj_tempPlayer1.weaponArray[0, 8] = 2; //Damage output
         break;
         
@@ -118,6 +122,8 @@ switch(character){
 		weaponArray[1, 17] = 4;
 		weaponArray[1, 18] = spr_reload_pistol2;
 		weaponArray[1, 19] = spr_hud_pistol2_reloadNEW;
+		weaponArray[1, 20] = 60;	//crosshair distance
+		weaponArray[1, 21] = spr_crosshair_dual;	//crosshair sprite
         //obj_tempPlayer1.weaponArray[0, 8] = 1; //Damage output
         break;
 
@@ -145,6 +151,8 @@ switch(character){
 		weaponArray[1, 17] = 3;
 		weaponArray[1, 18] = spr_reload_smg;
 		weaponArray[1, 19] = spr_hud_smg_reloadNEW;
+		weaponArray[1, 20] = 60;	//crosshair distance
+		weaponArray[1, 21] = spr_crosshair_smg;	//crosshair sprite
         //obj_tempPlayer1.weaponArray[0, 8] = 2; //Damage output
         break;
         
@@ -174,6 +182,8 @@ switch(character){
 		weaponArray[1, 17] = 5;
 		weaponArray[1, 18] = spr_reload_sniper;
 		weaponArray[1, 19] = spr_hud_sniper_reloadNEW;
+		weaponArray[1, 20] = 180;	//crosshair distance
+		weaponArray[1, 21] = spr_crosshair_sniper;	//crosshair sprite
         break;
     
     case SEBASTIAN:
@@ -208,6 +218,8 @@ switch(character){
 		weaponArray[0, 2] = spr_down_shoot_pistol_new; //Sprite Index
 		weaponArray[0, 18] = spr_sebastian_reload_pistol;
 		weaponArray[1, 19] = spr_hud_shotgun_reloadNEW;
+		weaponArray[1, 20] = 60;	//crosshair distance
+		weaponArray[1, 21] = spr_crosshair_shotgun;	//crosshair sprite
         //obj_tempPlayer1.weaponArray[0, 8] = 3; //Damage output
         break;
 		

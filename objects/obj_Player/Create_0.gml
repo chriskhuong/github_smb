@@ -38,6 +38,7 @@ reloading = false;
 armL = -1;
 armR = 1;
 ultCharge = 0;
+pickup = false;
 
 //get character's information
 scr_characterData(character);
@@ -97,7 +98,8 @@ knockback = 10;
 
 myTargetX = x;
 myTargetY = y;
-myTargetAlpha = 1;
+myTargetAlpha = 0;
+myTargetAlphaMax = .5;
 
 #endregion
 

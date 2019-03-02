@@ -3367,6 +3367,14 @@
             }
         },
         {
+            "Key": "464626da-9d3f-422f-bf54-a452b360f212",
+            "Value": {
+                "id": "51a318e4-d91e-4eb3-944d-ef194c01932b",
+                "resourcePath": "sprites\\spr_crosshair_assault\\spr_crosshair_assault.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "464c5ea5-cfc3-4b48-925a-59083fe7244f",
             "Value": {
                 "id": "6a0a0a74-7e66-4734-bbae-2b007e4e0fc9",
@@ -3852,6 +3860,14 @@
                 "id": "d38019bb-762b-41a0-8a9b-4093df189a7e",
                 "resourcePath": "scripts\\pal_swap_index_palette\\pal_swap_index_palette.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5144f8da-8abd-4a3a-8b49-0509f0fbfd2b",
+            "Value": {
+                "id": "5a81166f-e947-405d-bd97-920312c90688",
+                "resourcePath": "sprites\\spr_crosshair_dual\\spr_crosshair_dual.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5567,6 +5583,14 @@
             }
         },
         {
+            "Key": "780400f0-bc09-4bc0-94de-b954c73a0eea",
+            "Value": {
+                "id": "06c1cf63-b03b-4fe6-b17b-51ad66dd501b",
+                "resourcePath": "sprites\\spr_crosshair_shotgun\\spr_crosshair_shotgun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "780d2547-9ca7-4466-8f68-70bbfbe04651",
             "Value": {
                 "id": "5cd2cad6-1f60-4c1f-b535-3ddc915fd946",
@@ -6715,6 +6739,14 @@
             "Value": {
                 "id": "043e94b9-b59e-42aa-9c12-9edde1fd3734",
                 "resourcePath": "sprites\\spr_mio_melee_side\\spr_mio_melee_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "91efb651-d3d5-4373-9426-1826d8efe884",
+            "Value": {
+                "id": "7e820468-2bb5-4b2d-bd59-6531a6a5a62e",
+                "resourcePath": "sprites\\spr_crosshair_sniper\\spr_crosshair_sniper.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8036,6 +8068,14 @@
                 "id": "697b9064-7a96-4c93-9243-bf18d57582b7",
                 "resourcePath": "scripts\\tmc_vec2_clamp_io\\tmc_vec2_clamp_io.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "acc080c2-bb34-4456-91b0-bd787b7da1b1",
+            "Value": {
+                "id": "5a97fe61-dc92-4c16-aeca-77eec8c77e8f",
+                "resourcePath": "sprites\\spr_crosshair\\spr_crosshair.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -9588,6 +9628,14 @@
                 "id": "e37db396-7231-4f37-bec5-52aa75ce9f9f",
                 "resourcePath": "views\\d0d755ad-ed41-4ca5-b84a-0a9b8d4972ca.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d1091a00-2d74-4332-8017-fae3962a93cd",
+            "Value": {
+                "id": "a258117c-4018-4a56-8317-8bc8482913f0",
+                "resourcePath": "sprites\\spr_crosshair_smg\\spr_crosshair_smg.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -11623,6 +11671,14 @@
             }
         },
         {
+            "Key": "fccbd45d-7341-4205-b7b1-3c95b1e9ed60",
+            "Value": {
+                "id": "9150da39-22e0-4ede-ad09-1be39abb4a0b",
+                "resourcePath": "sprites\\spr_crosshair_pistol\\spr_crosshair_pistol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fd1cb131-e622-4eb4-acaa-89ad8180c934",
             "Value": {
                 "id": "5e243b37-21f5-4f7a-a449-6bdf4576bcb3",
@@ -11772,6 +11828,14 @@
                 "id": "31720c4a-228f-4e64-90b5-5a94e1dc85c0",
                 "resourcePath": "rooms\\Prototype_LevelSelect\\Prototype_LevelSelect.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ff44baf4-3712-4002-baa5-d8b69949f3e9",
+            "Value": {
+                "id": "79fc79de-fea6-4aa4-aea5-c1b950c3c000",
+                "resourcePath": "sprites\\button_xbox_x\\button_xbox_x.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -33,3 +33,4 @@ scr_characterData(character);
 script_execute(states_array[state])
 script_execute(target_state);
 //show_debug_message(string(ultCharge))
+pickup = false;

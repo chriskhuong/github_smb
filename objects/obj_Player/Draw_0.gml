@@ -6,6 +6,12 @@
 	draw_text(x, y + 60, string(facing));
 	draw_text(x, y + 70, floor(image_index));
 	}
+
+if(pickup == true)
+	{
+		draw_sprite_ext(button_xbox_a, -1, x - (sprite_get_width(button_xbox_a)/4), y-50, .5, .5, image_angle, image_blend, image_alpha);
+	}
+
 //event_inherited();
 if (!alive)
 	{
@@ -126,9 +132,9 @@ pal_swap_reset();
 
 	if(room != rm_characterSelect)
 	{
-		draw_sprite_ext(spr_target, 0, myTargetX, myTargetY, image_xscale, image_yscale, image_angle, image_blend, myTargetAlpha);
+		draw_sprite_ext(weaponArray[weapon, 21], 0, myTargetX, myTargetY, image_xscale, image_yscale, image_angle, image_blend, myTargetAlpha);
 	}
-	
+
 
 ////SILHOUETTES
 if(silo == true)
