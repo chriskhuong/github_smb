@@ -2,6 +2,8 @@
 
 shot = true
 var bullet_spd = 10;
+var offsetNum = 8
+myGunDisplace = !myGunDisplace;
 
 //fuck...what am I even doing...
 var xforce = lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle);
@@ -12,8 +14,16 @@ if (shot)
 		shot = false;
 		alarm[10] = 0;
 	}
-	
-var p = instance_create_depth(myGunX + lengthdir_x(myGunLenX, myGunAngle) - lengthdir_y(myGunLenY, myGunAngle), myGunY + lengthdir_y(myGunLenX, myGunAngle) + lengthdir_x(myGunLenY, myGunAngle), depth, obj_tempBullet);
+if (!myGunDisplace)
+	{
+		offset = -offsetNum;
+	}
+else
+	{
+		offset = offsetNum;
+	}
+
+var p = instance_create_depth(myGunX + lengthdir_x((myGunLenX+offset), (myGunAngle-offset)) - lengthdir_y((myGunLenY+offset), (myGunAngle-offset)), myGunY + lengthdir_y((myGunLenX+offset), (myGunAngle-offset)) + lengthdir_x((myGunLenY+offset), (myGunAngle-offset)), depth, obj_tempBullet);
 p.creator = tag;
 p.creatorid = id;
 p.sprite_index = spr_shot_pistol;

@@ -107,6 +107,7 @@ myTargetAlphaMax = .5;
 
 myGunX = x + weaponArray[weapon, 6];
 myGunY = y + weaponArray[weapon, 7];
+myGunDisplace = true;
 
 myGunXScale = 1;
 myGunYScale = 1;

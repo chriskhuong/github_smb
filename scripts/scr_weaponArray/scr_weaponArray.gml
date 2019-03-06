@@ -105,8 +105,8 @@ switch(character){
         weaponArray[1, 0] = "Dual Pistols"; //Name
         weaponArray[1, 1] = spr_side_shoot_dual; //Sprite Index
         weaponArray[1, 2] = spr_down_shoot_dual; //Sprite Index
-        weaponArray[1, 3] = 5; //Rate of Fire
-        weaponArray[1, 4] = scr_pistol; //Ammo Index
+        weaponArray[1, 3] = 10; //Rate of Fire
+        weaponArray[1, 4] = scr_dualPistol; //Ammo Index
         weaponArray[1, 5] = 6; //Muzzle Offset //(for bullet creation)
         weaponArray[1, 6] = 0; //x Offset //(for gun placement)
         weaponArray[1, 7] = 12; //y Offset //(for gun placement)
