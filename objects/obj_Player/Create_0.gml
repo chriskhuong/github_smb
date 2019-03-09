@@ -39,6 +39,8 @@ armL = -1;
 armR = 1;
 ultCharge = 0;
 pickup = false;
+deathCounter = 100;
+revivalBump = 10;
 
 //get character's information
 scr_characterData(character);

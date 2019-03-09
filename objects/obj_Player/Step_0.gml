@@ -29,6 +29,7 @@ if (room == rm_characterSelect)
 
 depth = -y - 26;
 scr_characterData(character);
+//show_debug_message(string(scr_tile_place_meeting(x, y, "Tile_Collision")));
 
 script_execute(states_array[state])
 script_execute(target_state);
