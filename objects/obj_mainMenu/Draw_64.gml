@@ -1,11 +1,10 @@
 
 
 var gwidth = global.view_w, gheight = global.view_h;
-
+draw_set_font(global.fontText);
 var ds_grid = mainMenu_page[global.page], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
 var start_y = (gheight/2.3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x = gwidth/1.8;
-
 // Draw pause menu "backgound"
 var c = make_color_rgb(29,33,13);
 //draw_sprite(spr_titlescreen_background,0,0,0);
@@ -17,7 +16,7 @@ if(global.page == 2)
 	draw_sprite(spr_previewRevival,0,start_x/2,start_y/5);
 	if(menu_option[global.page] == 0)
 	{
-		draw_text(start_x,start_y, "Objective: Maid Brigade's military operations.");
+		draw_text(start_x,start_y, "Objective: Maid Brigade's military operations");
 		draw_text(start_x,start_y + 20, "Destroy all enemies.");
 	}
 	if(menu_option[global.page] == 1)
@@ -32,9 +31,10 @@ if(global.page == 2)
 	}
 }
 // Draw the elements on the left side
+draw_set_font(-1);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_right);
-
+draw_set_font(global.font2);
 var leftTextXPos = start_x - x_buffer * 3, leftTextYPos, xOff; 
 
 var yy = 0; repeat(ds_height)
@@ -65,6 +65,7 @@ yy= 0; repeat(ds_height)
 	switch(ds_grid[# 1, yy])
 	{
 		case mainMenu_element_type.shift:
+		//yy = res_text;
 		var current_val = ds_grid [# 3, yy];
 		var current_array = ds_grid[# 4,yy];
 		var left_shift = "<< ";
@@ -128,6 +129,6 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
-
+draw_set_font(-1);
 
 

@@ -6,39 +6,41 @@ var gwidth = global.view_width, gheight = global.view_height;
 
 var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
-var start_y = (gheight/1.8) - ((((ds_height-1)/2) * y_buffer)), start_x = gwidth/2.4;
+var start_y = (gheight/3.5), start_x = gwidth/2.4;
 
 // Draw pause menu "backgound"
 var c = c_gray;
 draw_set_alpha(1);
 draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
+draw_rectangle_color(start_x,start_y,ds_grid_width(ds_grid),ds_grid_height(ds_grid),c_blue,c_blue,c_blue,c_blue,true);
 draw_set_alpha(1);
 if(InputManager.paused && !global.allDead)
 {
 	xSpot = global.view_w/2;
-	draw_sprite(spr_pausescreen_header,0,xSpot,ySpot/4);	
+	draw_sprite(spr_pausescreen_header,0,xSpot,ySpot/3);	
 }
 
 if (global.allDead)
     {
-		xSpot = global.view_w/2;
-	draw_sprite(spr_missionfailed,0,xSpot,ySpot/3);	
+	xSpot = global.view_w/2;
+	draw_sprite(spr_missionfailed,0,xSpot,ySpot/4);	
 	obj_menu.menu_pages[0] = scr_create_menu_page(
-	[spr_gameover_buttons, menu_element_type.script_runner,scr_resume_game,2],
-	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]
+	["TRY AGAIN", menu_element_type.script_runner,scr_resume_game,2],
+	["MAIN MENU", menu_element_type.script_runner, scr_return_menu,4]
 );
 	}
 if(instance_exists(obj_menu) && !global.allDead)
 {
 	obj_menu.menu_pages[0] = scr_create_menu_page(
-	[spr_pausescreen_buttons,menu_element_type.script_runner, scr_resume_game,0],
-	[spr_pausescreen_buttons, menu_element_type.page_transfer, menu_page.settings,2],
-	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]
+	["RESUME",menu_element_type.script_runner, scr_resume_game,0],
+	["SETTINGS", menu_element_type.page_transfer, menu_page.settings,2],
+	["MAIN MENU", menu_element_type.script_runner, scr_return_menu,4]
 );
 }
 // Draw the elements on the left side
 draw_set_valign(fa_middle);
 draw_set_halign(fa_right);
+draw_set_font(global.font2);
 
 var leftTextXPos = start_x - x_buffer, leftTextYPos, xOff; 
 
@@ -53,8 +55,8 @@ var yy = 0; repeat(ds_height)
 		xOff = -(x_buffer/2);
 	}
 	var sprite_indexer = ds_grid_width(ds_grid) - 2;
-	draw_sprite(ds_grid[# 0, yy],ds_grid[# sprite_indexer, yy],leftTextXPos+xOff,leftTextYPos);
-	//draw_text_color(leftTextXPos+xOff,leftTextYPos, ds_grid[# 0, yy], c,c,c,c,1);
+	//draw_sprite(ds_grid[# 0, yy],ds_grid[# sprite_indexer, yy],leftTextXPos+xOff,leftTextYPos);
+	draw_text_color(leftTextXPos+xOff,leftTextYPos, ds_grid[# 0, yy], c,c,c,c,1);
 	yy++;	
 }
 // Draw the dividing Line
@@ -133,3 +135,4 @@ yy= 0; repeat(ds_height)
 }
 
 draw_set_valign(fa_top);
+draw_set_font(-1);

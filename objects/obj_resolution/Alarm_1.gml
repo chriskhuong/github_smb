@@ -7,6 +7,7 @@ ideal_width = 0; // we do not touch this since we caculate this in the code
 ideal_height = 576 // we want this for the standard 16:9 resolutions.
 res_width = ini_read_real("Variables","resWidth",0);
 res_height = ini_read_real("Variables","resHieght",576);
+windowed = ini_read_real("Variables","windowedMode",0);
 ini_close();
 creator = noone;
 backout = false;
@@ -45,6 +46,10 @@ if(res_width > 0)
 {
 		window_set_size(res_width,res_height);
 		alarm[0] = 1;
+}
+if(windowed == 0)
+{
+	window_set_fullscreen(true);	
 }
 if(max_resolution > 1080)
 {

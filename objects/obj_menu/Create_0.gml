@@ -6,7 +6,10 @@
 //Grabbing the view width and height we are using. 
 global.view_width = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
-
+ini_open("savedata.ini");
+windowed = ini_read_real("Variables","windowedMode",0);
+res_text = ini_read_real("Variables","currentResText",0);
+ini_close();
 // Makes these controls what you are using for the player
 /*We do not need these since Input manager will be taking over all inputs.
 global.key_revert = ord("M");
@@ -53,9 +56,9 @@ enum menu_element_type
 //	to your script from the step event.																		//
 */
 ds_menu_main = scr_create_menu_page(
-	[spr_pausescreen_buttons,menu_element_type.script_runner, scr_resume_game,0],
-	[spr_pausescreen_buttons, menu_element_type.page_transfer, menu_page.settings,2],
-	[spr_gameover_buttons, menu_element_type.script_runner, scr_return_menu,4]
+	["RESUME",menu_element_type.script_runner, scr_resume_game],
+	["SETTING", menu_element_type.page_transfer, menu_page.settings],
+	["MAIN MENU", menu_element_type.script_runner, scr_return_menu]
 );
 
 ds_settings = scr_create_menu_page(
@@ -80,8 +83,8 @@ ds_menu_difficulty = scr_create_menu_page(
 );
 
 ds_menu_graphics = scr_create_menu_page(
-	["RESOLUTION", menu_element_type.shift, scr_change_resolution, 0, ["384 x 216","768 x 432", "1152 x 648", "1536 x 874", "1920 x 1080"]],
-	["WINDOW MODE", menu_element_type.toggle, scr_change_window_mode, 1, ["FULLSCREEN", "WINDOWED"]],
+	["RESOLUTION", menu_element_type.shift, scr_change_resolution, windowed, ["384 x 216","768 x 432", "1152 x 648", "1536 x 874", "1920 x 1080"]],
+	["WINDOW MODE", menu_element_type.toggle, scr_change_window_mode, res_text, ["FULLSCREEN", "WINDOWED"]],
 	["BACK", menu_element_type.page_transfer, menu_page.settings]
 );
 
