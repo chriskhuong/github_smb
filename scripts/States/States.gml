@@ -17,6 +17,7 @@
 #macro sReload				13
 #macro sGrenade				14
 #macro sAbility				15
+#macro sGameOver			16
 
 //TARGET----------------------------
 #macro sMouse		0

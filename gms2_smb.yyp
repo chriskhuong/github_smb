@@ -2519,6 +2519,14 @@
             }
         },
         {
+            "Key": "3424ce7d-78fc-40f7-b1b2-f4c02bee07c4",
+            "Value": {
+                "id": "5ecfd776-69c9-48d9-aeb5-9530642ad56b",
+                "resourcePath": "objects\\obj_deadGhost\\obj_deadGhost.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3444762a-fc7f-4144-82e2-c448724503e5",
             "Value": {
                 "id": "68d7f74a-ad3c-4697-b611-a9abbdde122e",
@@ -2847,6 +2855,14 @@
             }
         },
         {
+            "Key": "3a830f06-010b-4436-a01c-3e7244504929",
+            "Value": {
+                "id": "9aba4a90-5b6e-4b86-855b-a35cdbc9ad41",
+                "resourcePath": "sprites\\spr_skeleton_naked_drawbone\\spr_skeleton_naked_drawbone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3abb0acf-64d3-448e-ba2f-28e407a92144",
             "Value": {
                 "id": "e25dd62e-79d8-4e10-992c-0adcbb29fa9c",
@@ -2924,6 +2940,14 @@
                 "id": "e70ea48b-402d-43b2-bf9d-2c2867b3cd7a",
                 "resourcePath": "scripts\\scr_heelsOfAgility\\scr_heelsOfAgility.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3cc5d0fb-f731-483f-8941-501499c12dee",
+            "Value": {
+                "id": "3065cd75-3871-4180-a6fd-2134bc48e028",
+                "resourcePath": "sprites\\spr_skeleton_armor_pieces\\spr_skeleton_armor_pieces.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3707,6 +3731,14 @@
             "Value": {
                 "id": "69be3324-6621-472c-930b-bc6e96dee795",
                 "resourcePath": "sprites\\spr_billy_lube\\spr_billy_lube.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4d8bc103-3f61-4bab-8d3d-08609a0f5a2e",
+            "Value": {
+                "id": "f43821fc-52e6-499f-a233-03dceae248aa",
+                "resourcePath": "sprites\\spr_skeleton_naked_melee\\spr_skeleton_naked_melee.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5275,6 +5307,14 @@
             "Value": {
                 "id": "53d85f0e-1d53-4c95-b121-25c17bdb1242",
                 "resourcePath": "scripts\\scr_hitStunState\\scr_hitStunState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "70f1ceac-f13f-4701-bf1f-96c0956a602c",
+            "Value": {
+                "id": "50ddf7a4-c749-4427-b941-77f32d2e7601",
+                "resourcePath": "scripts\\scr_gameOver\\scr_gameOver.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7383,6 +7423,14 @@
             }
         },
         {
+            "Key": "9ff475b6-ac72-483b-ba20-5f691efa30a2",
+            "Value": {
+                "id": "fd47aad8-53d8-406b-b2c4-cb82c1c150ab",
+                "resourcePath": "sprites\\spr_skeleton_broken_armor\\spr_skeleton_broken_armor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a02cf68c-8992-4070-a77a-e03d38ac0272",
             "Value": {
                 "id": "db468640-598c-422a-93a2-c03be4f3c4f7",
@@ -8067,6 +8115,14 @@
             "Value": {
                 "id": "233489fa-61eb-4746-84c9-25fae64a0591",
                 "resourcePath": "sprites\\spr_mio_idle_side\\spr_mio_idle_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ac0180f6-cf0b-4ba5-b3cb-3adb361f4060",
+            "Value": {
+                "id": "50456d34-2bac-4d28-a4f6-d658709c7974",
+                "resourcePath": "sprites\\spr_skeleton_naked_death\\spr_skeleton_naked_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9799,6 +9855,14 @@
             }
         },
         {
+            "Key": "d457a35e-df75-4299-b8cc-aa8f88f86452",
+            "Value": {
+                "id": "a6941b0c-4ded-4ca0-9b0c-a010b7e80cb7",
+                "resourcePath": "sprites\\spr_skeleton_naked_run\\spr_skeleton_naked_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d4916fab-c0bf-4ce8-9fe4-578e5c5dabf2",
             "Value": {
                 "id": "fca6de99-1041-4448-ac0e-5651e7ccee64",
@@ -10340,6 +10404,14 @@
                 "id": "31049e65-1b2e-4427-84ac-067b5b027330",
                 "resourcePath": "views\\e17bf922-999b-46e8-9995-efbada113416.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e1e34faa-2095-4dd8-a3a4-b14e7aff7898",
+            "Value": {
+                "id": "92abef14-ed13-45f8-b522-febed87012ef",
+                "resourcePath": "sprites\\spr_deathBar\\spr_deathBar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -11207,6 +11279,14 @@
             }
         },
         {
+            "Key": "f22e7b08-ef87-4543-a2f5-8539419ad3e1",
+            "Value": {
+                "id": "18f9f828-5d89-4f42-894b-4c1795e089a8",
+                "resourcePath": "sprites\\spr_skeleton_bone_pieces\\spr_skeleton_bone_pieces.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f2589916-55a0-4413-9169-7fef7fc18f7a",
             "Value": {
                 "id": "6738734e-f9c7-4407-ae10-b33b6785a05b",
@@ -11532,6 +11612,14 @@
                 "id": "d6bdc31e-48b8-4c0e-9975-36069ef66a72",
                 "resourcePath": "objects\\obj_heelsOfStrength\\obj_heelsOfStrength.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f8ddb48b-3842-44a1-95c2-b049f885b5c8",
+            "Value": {
+                "id": "d46b733c-4cef-48c8-b8a0-3e34910c748e",
+                "resourcePath": "sprites\\spr_skeleton_naked_idle\\spr_skeleton_naked_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -11917,6 +12005,7 @@
         "e590a660-36d5-490a-93e2-07ca1813e206",
         "b311ba5e-0dea-4af2-99f5-432aaed3dffd",
         "acdb0faa-d28a-4632-bcea-035bdcde2c5b",
+        "70f1ceac-f13f-4701-bf1f-96c0956a602c",
         "b6af5ac9-ff70-469c-af45-7c770d98265b",
         "9e0c8e42-f400-41fa-b8af-790892c08d0d",
         "2fa8788d-c697-455c-b462-717e2fb035ca",
@@ -12415,7 +12504,8 @@
         "74e30608-7777-445e-8730-f818291f5dce",
         "893a60d5-6cd0-49b4-b683-96dd14223cf9",
         "6e0a88ed-c709-4214-86dd-ff8c5f3db19d",
-        "350b49d4-f75c-4cde-89aa-f597da8aad6d"
+        "350b49d4-f75c-4cde-89aa-f597da8aad6d",
+        "cdfd0aa5-cf8e-435c-990f-e641910891a5"
     ],
     "tutorial": ""
 }

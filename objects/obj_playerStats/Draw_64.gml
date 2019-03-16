@@ -102,7 +102,7 @@ if(creator.state == sAbilityInfo && room == rm_characterSelect)
 
 if(creator.state == sCharacterSelect && room == rm_characterSelect)
 {
-	repeat(floor(hp/2))
+	repeat(floor(creator.hp/2))
 	{
 		if xFull == xoff*10
 		{
@@ -115,7 +115,7 @@ if(creator.state == sCharacterSelect && room == rm_characterSelect)
 }
 else if (room != rm_characterSelect)
 {
-	repeat(maxHp/2)
+	repeat(creator.maxHp/2)
 	{
 		if xEmpty == xoff*10
 		{
@@ -125,7 +125,7 @@ else if (room != rm_characterSelect)
 		draw_sprite(spr_hearts,2,(xSpot + xEmpty) - 10,ySpot - yEmpty - 8);
 		xEmpty += xoff;
 	}
-	repeat(floor(hp/2) + frac(hp/2)* 2)
+	repeat(floor(creator.hp/2) + frac(creator.hp/2)* 2)
 	{
 		if (xHalf >= xoff * 10)
 		{
@@ -135,7 +135,7 @@ else if (room != rm_characterSelect)
 		draw_sprite(spr_hearts,1,(xSpot +xHalf)-10,ySpot - yHalf - 8)
 		xHalf +=xoff;
 	}
-	repeat(floor(hp/2))
+	repeat(floor(creator.hp/2))
 	{
 		if xFull == xoff*10
 		{

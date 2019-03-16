@@ -5,6 +5,7 @@
 myState = "Ghost";
 myGunAlpha = 0;
 myArmAlpha = myGunAlpha;
+myTargetAlpha = myGunAlpha;
 silo = false;
 
 var rng = 15;	//range from body
@@ -17,13 +18,14 @@ if (alive)
 		deadBody.creator = id;
 		deadBody.sprite_index = special[character, DEAD];
 		deadBody.image_xscale = image_xscale;
-		//dead.image_index = 0;
+		deadBody.image_alpha = 1;
 		deadBody.image_speed = image_speed;
 		deadBody.start_height = start_height;
 		deadBody.start_width = start_width;
 		deadBody.start_yoffset = start_yoffset
 		dx = deadBody.x;
 		dy = deadBody.y;
+		deathNumber++;
 		alive = false;		
 		if (instance_exists(obj_playerTracker))
 			{
@@ -50,7 +52,8 @@ if (alive)
 		}
 	}
 
-	
+deathCounter -= (1 * deathNumber);
+
 var deadDir = point_direction(x, y, dx, dy);
 		
 if (point_distance(x,y, dx, dy) > rng)
@@ -97,6 +100,20 @@ y += vspd;
 #region Transition Triggers
 
 //NOTE: The transition here is in the moveState
+
+if (deathCounter < 0)
+	{
+		g = instance_create_depth(x, y, depth, obj_deadGhost);
+		g.image_xscale = image_xscale;
+		g.image_alpha = image_alpha;
+		g.sprite_index = special[character, GHOST];
+		g.image_speed = image_speed;
+		with(myArrow)
+			{
+				instance_destroy();
+			}
+		state = sGameOver;
+	}
 
 #endregion
 

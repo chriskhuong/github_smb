@@ -218,6 +218,7 @@ switch(character){
         break;
 }
 
+maxHp = hp;
 
 //Character Special Array
 //BRITNEY

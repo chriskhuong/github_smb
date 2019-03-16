@@ -5,3 +5,4 @@ pad = 45
 inner = 5;
 creator = noone;
 pointDir = 0;
+on = false;

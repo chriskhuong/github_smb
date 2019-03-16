@@ -10,10 +10,6 @@ myGunAlpha = 1;
 myArmAlpha = myGunAlpha;
 recoil = max(0, recoil - 1);	//returns the larger number into recoil
 
-var bbox_side;
-var l = layer_get_id("Collision");
-tilemap = layer_tilemap_get_id(l);
-
 #region Movement
 //Get direction
 dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
@@ -173,6 +169,7 @@ if (creator.attack_key)
 
 										alive = true;
 										silo = true;
+										deathCounter = maxDeathCounter;
 										myStats.hp = myStats.maxHp;
 										state = sMove;
 										with (deadBody)

@@ -1,13 +1,25 @@
 ///Control the stats
+/*
+if(creator.creator.dash_key && room == rm_SurvivalMode && hp != 0)
+	{
+		hp = 0;
+	}
+*/
+
 if(global.fullHealth && hp == 0)
 {
-	hp = maxHp;
+	creator.hp = creator.maxHp;
 }
-	if(hp <= 0)
-	{
-		creator.state = sGhost;
-	}
-
+/*
+if(hp <= 0)
+{
+	creator.state = sGhost;
+	if(creator.deathCounter < 0)
+		{
+			creator.state = sGameOver;
+		}
+}
+*/
 
 //stamina regen
 /*if (stamina < maxStamina && cooltime < 1)

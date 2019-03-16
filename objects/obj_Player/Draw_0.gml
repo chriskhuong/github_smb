@@ -43,6 +43,16 @@ if (room == rm_characterSelect)
 /// @description Insert description here
 // You can write your code in this editor	
 
+#region dying
+
+if (!alive && deathCounter > 0)
+	{
+		draw_sprite(spr_deathBar, 0, x - (sprite_get_width(spr_deathBar)/2), y + 32);
+		draw_sprite_ext(spr_deathBar, 1, x - (sprite_get_width(spr_deathBar)/2), y + 32, (deathCounter/2)/100, 1, image_angle, image_blend, image_alpha);
+	}
+
+#endregion
+
 if(state == sReload)
 	{
 		var gunUIReload = weaponArray[weapon, 19];

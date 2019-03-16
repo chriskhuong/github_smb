@@ -6,8 +6,8 @@ creator = noone;
 rCoolDown = false;
 rCoolTime = 0;
 //False Stats
-maxHp = obj_Player.hp;
-hp = maxHp;
+//maxHp = obj_Player.hp;
+//hp = maxHp;
 maxStamina = 10;
 stamina = maxStamina;
 p_lives = 3;

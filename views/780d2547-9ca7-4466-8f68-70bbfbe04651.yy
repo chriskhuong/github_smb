@@ -12,7 +12,15 @@
         "f8633e99-21f6-4605-b653-0817da306c6d",
         "a303a8d1-8c3a-49c1-ad71-1544f53f804b",
         "7e68e177-22d5-4d2f-9d4c-87c5f28fe61c",
-        "4f4c2df6-2173-4a41-8f71-cfefb45bbe5c"
+        "4f4c2df6-2173-4a41-8f71-cfefb45bbe5c",
+        "3cc5d0fb-f731-483f-8941-501499c12dee",
+        "f22e7b08-ef87-4543-a2f5-8539419ad3e1",
+        "9ff475b6-ac72-483b-ba20-5f691efa30a2",
+        "ac0180f6-cf0b-4ba5-b3cb-3adb361f4060",
+        "3a830f06-010b-4436-a01c-3e7244504929",
+        "f8ddb48b-3842-44a1-95c2-b049f885b5c8",
+        "4d8bc103-3f61-4bab-8d3d-08609a0f5a2e",
+        "d457a35e-df75-4299-b8cc-aa8f88f86452"
     ],
     "filterType": "GMSprite",
     "folderName": "skeleton",

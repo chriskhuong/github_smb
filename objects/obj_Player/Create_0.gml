@@ -13,6 +13,8 @@ creator = noone;
 
 tag = "player";
 alive = true;
+hp = 0;
+maxHp = hp;
 spd = 150;
 tarSpd = 2;
 hspd = 0;
@@ -32,14 +34,15 @@ weapons = 1;
 image_speed = .25;
 ability = ABILITY;
 ultimate = noone;	//...yet
-spd_buff = spd+1;
+ultCharge = 0;
 currency = 0;
 reloading = false;
 armL = -1;
 armR = 1;
-ultCharge = 0;
 pickup = false;
-deathCounter = 100;
+deathNumber = 0;
+deathCounter = 200;
+maxDeathCounter = deathCounter;
 revivalBump = 10;
 
 //get character's information
@@ -48,30 +51,28 @@ scr_weaponArray(character);
 var_sprite_width = sprite_get_width(character * 2);
 var_sprite_height = sprite_get_height(character * 2);
 
-states_array[sJoin]		= scr_playerJoinState;
-states_array[sSelect]	= scr_playerSelectState;
+#region States
+
+states_array[sJoin]				= scr_playerJoinState;
+states_array[sSelect]			= scr_playerSelectState;
 states_array[sCharacterSelect]	= scr_characterInfo;
-states_array[sLoadOutInfo]	= scr_loadOutInfo;
-states_array[sAbilityInfo]	= scr_abilityInfo;
-states_array[sMove]		= scr_moveState;
-states_array[sAttack]	= scr_attackState;
-states_array[sUltimate]	= -1;
-states_array[sStun]		= scr_hitStunState;
-states_array[sDead]		= -1;
-states_array[sGhost]	= scr_ghostState;
-states_array[sReload]	= scr_reloadState;
-						//special[character, ability];
-states_array[sAbility]	= scr_abilityState;
+states_array[sLoadOutInfo]		= scr_loadOutInfo;
+states_array[sAbilityInfo]		= scr_abilityInfo;
+states_array[sMove]				= scr_moveState;
+states_array[sAttack]			= scr_attackState;
+states_array[sUltimate]			= -1;
+states_array[sStun]				= scr_hitStunState;
+states_array[sDead]				= -1;
+states_array[sGhost]			= scr_ghostState;
+states_array[sReload]			= scr_reloadState;
+states_array[sAbility]			= scr_abilityState;
+states_array[sGameOver]			= scr_gameOver;
 
 //state machine
 target_state = scr_keyTargetingState;
 state = sJoin;
 
-sprite_bbox_left	= sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
-sprite_bbox_right	= sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
-sprite_bbox_top		= sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
-sprite_bbox_bottom	= sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
-
+#endregion
 
 #region silhouette and shadow
 
