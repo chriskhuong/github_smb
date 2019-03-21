@@ -11,6 +11,8 @@
 	ini_open("savedata.ini");
 windowed = ini_read_real("Variables","windowedMode",0);
 res_text = ini_read_real("Variables","currentResText",0);
+
+
 ini_close();
 enum mainMenu_page {
     main,
@@ -69,7 +71,7 @@ ds_menu_audio = scr_create_menu_page(
 
 
 ds_menu_graphics = scr_create_menu_page(
-	["RESOLUTION", mainMenu_element_type.shift, scr_change_resolution, res_text, ["1024 x 576","1280 x 720", "1920 x 1080", "2560 x 1440", "3840 x 2160"]],
+	["RESOLUTION", mainMenu_element_type.shift, scr_change_resolution, res_text, ["1024 X 576","1280 X 720", "1920 X 1080", "2560 X 1440", "3840 X 2160"]],
 	["WINDOW MODE", mainMenu_element_type.toggle, scr_change_window_mode, windowed, ["FULLSCREEN", "WINDOWED"]],
 	["BACK", mainMenu_element_type.page_transfer, mainMenu_page.settings]
 );

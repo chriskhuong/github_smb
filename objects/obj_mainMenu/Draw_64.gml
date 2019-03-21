@@ -1,10 +1,19 @@
 
 
 var gwidth = global.view_w, gheight = global.view_h;
+var buffer = 8;
 draw_set_font(global.fontText);
 var ds_grid = mainMenu_page[global.page], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
-var start_y = (gheight/2.3) - ((((ds_height-1)/2) * y_buffer)) + 100 , start_x = gwidth/1.8;
+var start_y = (gheight/2.3) - ((((ds_height-1)/2) * y_buffer)) + 125 , start_x = gwidth/1.7;
+var textBoxStartX = start_x - 20;
+var textBoxStartY = start_y - 10;
+var boxWidth =  400;
+var boxHeight = 100;
+var textBoxEndX = start_x + boxWidth;
+var textBoxEndY = start_y + boxHeight;
+var stringStartX = start_x + buffer;
+var stringStartY = start_y + buffer;
 // Draw pause menu "backgound"
 var c = make_color_rgb(29,33,13);
 //draw_sprite(spr_titlescreen_background,0,0,0);
@@ -12,22 +21,31 @@ if(global.page != 2)
 draw_sprite(spr_mainMenu,0,start_x/2.7,start_y/20);
 if(global.page == 2)
 {
+	//drawing the text box
+	if(menu_option[global.page] != 3)
+	{
+		draw_rectangle_color(textBoxStartX,textBoxStartY,textBoxEndX,textBoxEndY,c_gray,c_gray,c_gray,c_gray,false);
+		draw_rectangle_color(textBoxStartX,textBoxStartY,textBoxEndX,textBoxEndY,c_white,c_white,c_white,c_white,true);
+	}
 	//drawing the character selection screen
 	draw_sprite(spr_previewRevival,0,start_x/2,start_y/5);
 	if(menu_option[global.page] == 0)
 	{
-		draw_text(start_x,start_y, "Objective: Maid Brigade's military operations");
-		draw_text(start_x,start_y + 20, "Destroy all enemies.");
+		modeText = "Objective: Maid Brigade's military operations destroy all enemies."
+		stringHieght = string_height(modeText);
+		draw_text_ext(stringStartX,stringStartY, modeText,stringHieght,boxWidth);
 	}
 	if(menu_option[global.page] == 1)
 	{
-		draw_text(start_x,start_y, "Objective: Survive as long as you can in our");
-		draw_text(start_x,start_y + 20, "swarm of slimes.");	
+		modeText = "Objective: Survive as long as you can in our swarm of slimes."
+		stringHieght = string_height(modeText);
+		draw_text_ext(stringStartX,stringStartY, modeText,stringHieght,boxWidth);	
 	}
 		if(menu_option[global.page] == 2)
 	{
-		draw_text(start_x,start_y, "Objective: Battle against other players in our");
-		draw_text(start_x,start_y + 20, "PVP game.");	
+		modeText = "Objective: Battle against other players in our PVP game."
+		stringHieght = string_height(modeText);
+		draw_text_ext(stringStartX,stringStartY, modeText,stringHieght,boxWidth);
 	}
 }
 // Draw the elements on the left side
@@ -105,7 +123,7 @@ yy= 0; repeat(ds_height)
 		else {c1 = c_dkgray; c2 = c;}
 		
 		draw_text_color(rightTextXPosition,rightTextYPosition,"ON",c1,c1,c1,c1,1);
-		draw_text_color(rightTextXPosition + 32,rightTextYPosition,"OFF",c2,c2,c2,c2,1);
+		draw_text_color(rightTextXPosition + 32,rightTextYPosition," OFF",c2,c2,c2,c2,1);
 		break;
 		
 		case mainMenu_element_type.input:
