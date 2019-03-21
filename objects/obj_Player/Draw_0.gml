@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-	if(room != rm_characterSelect)
+if(room != rm_characterSelect)
 	{
 	draw_text(x, y + 50, myState);
 	draw_text(x, y + 60, string(facing));
@@ -8,6 +8,7 @@
 	}
 
 //event_inherited();
+/*
 if (!alive)
 	{
 		image_alpha = .75;
@@ -16,18 +17,19 @@ else
 	{
 		image_alpha = 1;
 	}
-	if(room == rm_characterSelect && state != sCharacterSelect)
+if(room == rm_characterSelect && state != sCharacterSelect)
 	{
 		image_alpha = 0;
 	}
-	
+*/
+
 if (room == rm_characterSelect)
 	{
 		if(room != rm_characterSelect)
-	{
-		draw_set_halign(fa_center);
-		draw_text(x, y + 30, special[character, NAME]);
-	}
+			{
+				draw_set_halign(fa_center);
+				draw_text(x, y + 30, special[character, NAME]);
+			}
 		
 	}
 
@@ -38,20 +40,21 @@ if (room == rm_characterSelect)
 	
 	}
 
-#region reloading
-
-/// @description Insert description here
-// You can write your code in this editor	
-
 #region dying
 
 if (!alive && deathCounter > 0)
 	{
 		draw_sprite(spr_deathBar, 0, x - (sprite_get_width(spr_deathBar)/2), y + 32);
-		draw_sprite_ext(spr_deathBar, 1, x - (sprite_get_width(spr_deathBar)/2), y + 32, (deathCounter/2)/100, 1, image_angle, image_blend, image_alpha);
+		draw_sprite_ext(spr_deathBar, 1, x - (sprite_get_width(spr_deathBar)/2), y + 32, (deathCounter/maxDeathCounter), 1, image_angle, image_blend, image_alpha);
 	}
 
 #endregion
+
+#region reloading
+
+/// @description Insert description here
+// You can write your code in this editor	
+
 
 if(state == sReload)
 	{

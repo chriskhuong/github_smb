@@ -65,6 +65,10 @@ timer -= 1;
 
 #region Transition Trigger
 
+if (target.alive == false)
+	{
+		state = sMove;
+	}
 
 #endregion
 

@@ -8,14 +8,14 @@ trueSpd = spd * secondsPassed;
 #endregion
 
 #region Pallet swap control /*NOTE - MODIFY THIS SO EACH IDIVIDUAL PLAYER CAN CONTROL THIS*/
-/*
+
 if (room == rm_characterSelect)
 	{
-		if(creator.grenade_key)
+		if(creator.active_items_key || creator.right_key)
 		    {
 				current_pal++;
 			}
-		if(creator.ult_key)
+		if(creator.switch_weapon || creator.left_key)
 		    {
 				current_pal--;
 			}
@@ -24,7 +24,7 @@ if (room == rm_characterSelect)
 		
 		myColor = pal_swap_get_pal_color(my_pal_sprite, current_pal, 1);
 	}
-*/
+
 #endregion
 
 depth = -y - 26;
@@ -42,7 +42,9 @@ if(creator.dash_key && room == rm_SurvivalMode && hp != 0)
 
 if(hp <= 0)
 	{
-		state = sGhost;
+		image_speed = 1;
+		image_index = 0;
+		state = sDead;
 	}
 
 pickup = false;

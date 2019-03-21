@@ -11,7 +11,7 @@ silo = false;
 var rng = 15;	//range from body
 
 #region Ghost limitations
-
+/*//THERE'S CODE AT THE BOTTOM
 if (alive)
 	{
 		deadBody = instance_create_depth(x, y, depth, obj_deadBody);
@@ -51,16 +51,17 @@ if (alive)
 					}
 		}
 	}
+*/
 
-deathCounter -= (1 * deathNumber);
 
-var deadDir = point_direction(x, y, dx, dy);
+var deadDir = point_direction(x, y, deadX, deadY);
 		
-if (point_distance(x,y, dx, dy) > rng)
+if (point_distance(x,y, deadX, deadY) > rng)
 	{
-		x = dx - lengthdir_x(rng, deadDir);
-		y = dy - lengthdir_y(rng, deadDir);
+		x = deadX - lengthdir_x(rng, deadDir);
+		y = deadY - lengthdir_y(rng, deadDir);
 	}
+
 
 #endregion
 
@@ -94,6 +95,8 @@ x += hspd;
 y += vspd;
 
 #endregion
+
+deathCounter -= (1 * deathNumber);
 
 #endregion
 

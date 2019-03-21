@@ -10,6 +10,7 @@ if(global.fullHealth && hp == 0)
 {
 	creator.hp = creator.maxHp;
 }
+
 /*
 if(hp <= 0)
 {

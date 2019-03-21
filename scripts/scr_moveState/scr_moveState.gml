@@ -162,25 +162,15 @@ if (creator.attack_key)
 		
         if (dead != noone)
             {
-                with (dead)
-                    {
-                        if (!alive)
-                            {
-
-										alive = true;
-										silo = true;
-										deathCounter = maxDeathCounter;
-										myStats.hp = myStats.maxHp;
-										state = sMove;
-										with (deadBody)
-											{
-												alarm[0] = 60;
-												alarm[1] = 30;
-											}
-                            }
-                    }
+				if (dead.alive == false)
+					{
+						x = dead.x;
+						y = dead.y - 16;
+						state = sReviving;
+						helping = dead;
+					}
 			}
-			#endregion
+		#endregion
 		
     }
 	
