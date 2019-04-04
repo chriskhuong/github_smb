@@ -1,7 +1,7 @@
 {
     "id": "5e3b1793-5a61-4d74-95fd-6909295c6b17",
     "modelName": "GMFont",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "font2",
     "AntiAlias": 1,
     "TTFName": "",
@@ -10,6 +10,7 @@
     "charset": 0,
     "first": 0,
     "fontName": "SMB Header",
+    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1437,8 +1438,9 @@
             }
         }
     ],
-    "image": null,
+    "hinting": 0,
     "includeTTF": false,
+    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         {
@@ -7715,6 +7717,8 @@
         }
     ],
     "last": 0,
+    "maintainGms1Font": false,
+    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,
