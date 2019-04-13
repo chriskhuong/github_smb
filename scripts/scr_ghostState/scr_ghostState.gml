@@ -104,7 +104,7 @@ deathCounter -= (1 * deathNumber);
 
 //NOTE: The transition here is in the moveState
 
-if (deathCounter < 0)
+if (deathCounter < 0 || deathNumber > (3/2))
 	{
 		g = instance_create_depth(x, y, depth, obj_deadGhost);
 		g.image_xscale = image_xscale;

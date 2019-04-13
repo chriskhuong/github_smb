@@ -40,11 +40,12 @@ if(creator.dash_key && room == rm_SurvivalMode && hp != 0)
 		hp = 0;
 	}
 
-if(hp <= 0)
+if(hp <= 0 && alive == true)
 	{
 		image_speed = 1;
 		image_index = 0;
 		state = sDead;
+		alive = false;
 	}
 
 pickup = false;
