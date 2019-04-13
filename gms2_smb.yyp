@@ -370,7 +370,7 @@
             "Key": "06aca9e3-ef0b-4fa8-a3a7-09e00ef66e17",
             "Value": {
                 "id": "6f04bb62-7913-47b3-aa71-fd3a05bcc372",
-                "resourcePath": "sprites\\spr_sebastian_reload_pistol_side\\spr_sebastian_reload_pistol_side.yy",
+                "resourcePath": "sprites\\spr_sebastian_reload_pistol\\spr_sebastian_reload_pistol.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8994,7 +8994,7 @@
             "Key": "c0546292-c939-4ebd-80b8-97a894416e23",
             "Value": {
                 "id": "28a10ea3-debb-4e6d-83be-3de53e23f137",
-                "resourcePath": "sprites\\spr_sebastian_reload_pistol\\spr_sebastian_reload_pistol.yy",
+                "resourcePath": "sprites\\spr_sebastian_reload_pistol_side\\spr_sebastian_reload_pistol_side.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -11322,7 +11322,7 @@
             "Key": "f165f9c9-8721-4d7e-bf24-fa14678ef5ba",
             "Value": {
                 "id": "f94b53a8-b419-4dce-8058-cb4087459647",
-                "resourcePath": "sprites\\spr_sebastian_reload_shotgun\\spr_sebastian_reload_shotgun.yy",
+                "resourcePath": "sprites\\spr_sebastian_reload_shotgun_side\\spr_sebastian_reload_shotgun_side.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -11346,7 +11346,7 @@
             "Key": "f1a250a2-2899-451c-82e4-a52c378cf81a",
             "Value": {
                 "id": "37a4bcb1-bd02-478b-bf70-4fd775300f27",
-                "resourcePath": "sprites\\spr_sebastian_reload_shotgun_side\\spr_sebastian_reload_shotgun_side.yy",
+                "resourcePath": "sprites\\spr_sebastian_reload_shotgun\\spr_sebastian_reload_shotgun.yy",
                 "resourceType": "GMSprite"
             }
         },
