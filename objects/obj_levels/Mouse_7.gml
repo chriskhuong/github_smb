@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (status == 1)	//can only select skill if it is available
+/*if (status == 1)	//can only select skill if it is available
 	{
 		//add any additional code here for selecting the level, i.e. you have to pay for the level or something
 		
@@ -36,4 +36,6 @@ if (status == 1)	//can only select skill if it is available
 					
 				// add any code here to save the changes
 			}
-	}
+	}*/
+	
+	status = 2;

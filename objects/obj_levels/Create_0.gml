@@ -2,12 +2,13 @@
 // You can write your code in this editor
 
 image_speed = 0;
+image_alpha = 1;
 myIndex = 0;
 // Initialize some things we will overwrite in obj_levelSpawner
 levelNum = 0;
 levelName = 0;	//could be drawn next to or on hover or something, just in case
 levelID = 0;	//unique level ID
-levelNeeds = -1;//array holding the unique ID of any necessary levels before this one
+//levelNeeds = -1;//array holding the unique ID of any necessary levels before this one
 needCount = 0;	//holds array_length_1d(levelNeeds)
 levelRoom = 0;
 

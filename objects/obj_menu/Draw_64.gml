@@ -54,7 +54,7 @@ var yy = 0; repeat(ds_height)
 		c = c_red;
 		xOff = -(x_buffer/2);
 	}
-	var sprite_indexer = ds_grid_width(ds_grid) - 2;
+	//var sprite_indexer = ds_grid_width(ds_grid) - 2;
 	//draw_sprite(ds_grid[# 0, yy],ds_grid[# sprite_indexer, yy],leftTextXPos+xOff,leftTextYPos);
 	draw_text_color(leftTextXPos+xOff,leftTextYPos, ds_grid[# 0, yy], c,c,c,c,1);
 	yy++;	

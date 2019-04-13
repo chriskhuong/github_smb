@@ -279,3 +279,5 @@ special[SEBASTIAN, STUN] = spr_sebastian_hurt;
 special[SEBASTIAN, GHOST] = spr_ghost_sebastian;
 special[SEBASTIAN, NAME] = "SEBASTIAN";
 special[SEBASTIAN, FACE] = 4;
+special[SEBASTIAN, ABILITYWINDOW0] = 8;
+special[SEBASTIAN, ABILITYWINDOW1] = 9;

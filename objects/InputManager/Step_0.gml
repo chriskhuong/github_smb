@@ -13,6 +13,7 @@ if(paused){
 	draw_sprite(spr_mainMenu,0,0,0)
 	instance_deactivate_all(1);
 	instance_activate_object(obj_menu);
+	instance_activate_object(obj_resolution);
 }else if (!paused){
     if(sprite_exists(screenShot)){
         sprite_delete(screenShot);

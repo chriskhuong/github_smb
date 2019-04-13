@@ -1,15 +1,16 @@
-/// @description Draw the lines
+/// @description Insert description here
+// You can write your code in this editor
 
-if (status == 0)
+switch (status)
 	{
-		draw_set_color(c_gray)
-	}
-	else
-	{
-		draw_set_color(c_black)
-	}
-	
-for (d = 0; d < needCount; d++) //loop through the cached lines we already have and draw them
-	{
-		draw_line_width(x, y, lineToX[d], lineToY[d], 2)
+		case 0:	//unavailable
+			draw_sprite_ext(spr_levelprogress_platforms, myIndex, x, y, 1, 1, image_angle, image_blend, image_alpha);
+			break;
+		case 1:	//available
+			draw_sprite_ext(spr_levelprogress_platforms, myIndex, x, y, 1, 1, image_angle, image_blend, image_alpha);
+			break;
+		case 2:
+			draw_sprite_ext(spr_levelprogress_platforms, myIndex, x, y, 1, 1, image_angle, image_blend, image_alpha);
+			draw_sprite(spr_levelprogress_clearedshine,-1,x,y);
+			break;
 	}

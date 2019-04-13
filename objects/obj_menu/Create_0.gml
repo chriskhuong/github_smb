@@ -83,8 +83,8 @@ ds_menu_difficulty = scr_create_menu_page(
 );
 
 ds_menu_graphics = scr_create_menu_page(
-	["RESOLUTION", menu_element_type.shift, scr_change_resolution, windowed, ["384 x 216","768 x 432", "1152 x 648", "1536 x 874", "1920 x 1080"]],
-	["WINDOW MODE", menu_element_type.toggle, scr_change_window_mode, res_text, ["FULLSCREEN", "WINDOWED"]],
+	["RESOLUTION", mainMenu_element_type.shift, scr_change_resolution, res_text, ["1024 X 576","1280 X 720", "1920 X 1080", "2560 X 1440", "3840 X 2160"]],
+	["WINDOW MODE", mainMenu_element_type.toggle, scr_change_window_mode, windowed, ["FULLSCREEN", "WINDOWED"]],
 	["BACK", menu_element_type.page_transfer, menu_page.settings]
 );
 
