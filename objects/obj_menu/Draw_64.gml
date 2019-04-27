@@ -2,17 +2,16 @@ var xSpot = (1 * ((global.view_w/2) / 2.5));
 var ySpot = (global.view_h - 64);
 if(!InputManager.paused) exit;
 
-var gwidth = global.view_width, gheight = global.view_height;
+var gwidth = global.view_w, gheight = global.view_h;
 
-var ds_grid = menu_pages[page], ds_height = ds_grid_height(ds_grid);
+var ds_grid = menu_pages[global.menuPage], ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32, x_buffer = 16;
-var start_y = (gheight/3.5), start_x = gwidth/2.4;
+var start_y = (gheight/1.9), start_x = gwidth/1.8;
 
 // Draw pause menu "backgound"
 var c = c_gray;
-draw_set_alpha(1);
+draw_set_alpha(.5);
 draw_rectangle_color(0,0,gwidth,gheight,c,c,c,c,false);
-draw_rectangle_color(start_x,start_y,ds_grid_width(ds_grid),ds_grid_height(ds_grid),c_blue,c_blue,c_blue,c_blue,true);
 draw_set_alpha(1);
 if(InputManager.paused && !global.allDead)
 {
@@ -49,7 +48,7 @@ var yy = 0; repeat(ds_height)
 	leftTextYPos = start_y + (yy*y_buffer);
 	c = c_white;
 	xOff = 0;
-	if(yy== menu_option[page])
+	if(yy== menu_option[global.menuPage])
 	{
 		c = c_red;
 		xOff = -(x_buffer/2);
@@ -83,9 +82,13 @@ yy= 0; repeat(ds_height)
 		if(current_val == array_length_1d(ds_grid[# 4, yy])-1) right_shift = "";
 		c = c_white;
 		
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.menuPage]) c = c_yellow;
 		
+		var testing = scr_split_function(current_array[current_val]," ")
+		if(real(testing[0]) <= obj_resolution.max_resolution)
 		draw_text_color(rightTextXPosition,rightTextYPosition,left_shift + current_array[current_val] + right_shift, c,c,c,c,1);
+		else
+		draw_text_color(rightTextXPosition,rightTextYPosition,left_shift + current_array[current_val] + right_shift, c_dkgray,c_dkgray,c_dkgray,c_dkgray,1);
 		break;
 		
 		case menu_element_type.slider:
@@ -96,7 +99,7 @@ yy= 0; repeat(ds_height)
 		c = c_white;
 		
 		draw_line_width(rightTextXPosition,rightTextYPosition,rightTextXPosition + len, rightTextYPosition,2);
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.menuPage]) c = c_yellow;
 		draw_circle_color(rightTextXPosition + (circle_pos*len),rightTextYPosition,4,c,c,false);
 		draw_text_color(rightTextXPosition + (len * 1.2), rightTextYPosition, string(floor(circle_pos*100))+"%",c,c,c,c,1);
 		break;
@@ -105,7 +108,7 @@ yy= 0; repeat(ds_height)
 		var current_val = ds_grid[# 3, yy];
 		var c1, c2;
 		c = c_white;
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.menuPage]) c = c_yellow;
 		
 		if(current_val == 0)  {c1 = c; c2 = c_dkgray;}
 		else {c1 = c_dkgray; c2 = c;}
@@ -126,7 +129,7 @@ yy= 0; repeat(ds_height)
 			default:		string_val = chr(current_val); break;
 		}
 		c = c_white;
-		if(inputting and yy == menu_option[page]) c = c_yellow;
+		if(inputting and yy == menu_option[global.menuPage]) c = c_yellow;
 		draw_text_color(rightTextXPosition,rightTextYPosition,string_val,c,c,c,c,1)
 		break;
 	}

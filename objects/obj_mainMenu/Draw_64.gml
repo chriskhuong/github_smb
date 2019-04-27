@@ -18,7 +18,8 @@ var stringStartY = start_y + buffer;
 var c = make_color_rgb(29,33,13);
 //draw_sprite(spr_titlescreen_background,0,0,0);
 if(global.page != 2)
-draw_sprite(spr_mainMenu,0,start_x/2.7,start_y/20);
+draw_sprite(spr_mainMenu,0,223.09,16.37);
+//show_debug_message("Start X:" + string(start_x/2.7) + "Start Y:" + string(start_y/20));
 if(global.page == 2)
 {
 	//drawing the text box
