@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "054998a1-b653-49eb-a4e2-e0bb0fc6e578",
+            "Value": {
+                "id": "52ed9157-0830-4fa6-b174-ec2088f9b0f1",
+                "resourcePath": "rooms\\rm_SurvivalMode4\\rm_SurvivalMode4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0552cb5c-6a90-4d82-8338-e874e1f27526",
             "Value": {
                 "id": "7fd0267f-7022-499a-8e51-385e436aeed0",
@@ -5991,6 +5999,14 @@
             }
         },
         {
+            "Key": "7dd261a3-7ca8-4bf6-92ff-40c078eebe70",
+            "Value": {
+                "id": "6e9a4891-31d4-4464-af37-6b1fde4d3b97",
+                "resourcePath": "sprites\\spr_slime_dead\\spr_slime_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7df75f23-c2e1-440b-83fe-aa0098eb57f9",
             "Value": {
                 "id": "8481b6e1-c86d-4fce-9c5a-623905f21220",
@@ -7847,6 +7863,14 @@
             }
         },
         {
+            "Key": "a54ea384-4195-451d-9f95-751857f1ad78",
+            "Value": {
+                "id": "3083d581-f62b-4796-a032-d7bd2b675aed",
+                "resourcePath": "rooms\\rm_SurvivalMode3\\rm_SurvivalMode3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a575ef24-3fe8-40ea-8c9c-57198676d3e3",
             "Value": {
                 "id": "d1e0dac1-411e-4ea2-842b-e54235dd2ffe",
@@ -8436,6 +8460,14 @@
                 "id": "967ddfb9-3416-41ec-a8fb-2e87071d30f2",
                 "resourcePath": "objects\\obj_slimeSteerFlock\\obj_slimeSteerFlock.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b2106778-e5d6-4bb0-afce-d74672ed0c3c",
+            "Value": {
+                "id": "f6f1157c-921e-40c9-bc3a-928116a3b3c6",
+                "resourcePath": "sprites\\spr_slime_guts\\spr_slime_guts.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
