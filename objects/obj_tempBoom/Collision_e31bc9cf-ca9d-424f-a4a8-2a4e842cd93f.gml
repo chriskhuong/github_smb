@@ -1,6 +1,6 @@
 ///Damage all lifeforms
 
-if (other.id != creator)
+if (other.id != creatorid)
     {
         other.hp -= damage;
         if (other.hp <= 0)
@@ -8,9 +8,9 @@ if (other.id != creator)
 				creatorid.ultCharge += 1;
 			}
         //Apply the knockback
-        if (instance_exists(creator)) //if the creator exists
+        if (instance_exists(creatorid)) //if the creator exists
             {
-                var dir = point_direction(creator.x, creator.y, other.x, other.y);  //gets the direction from the creator's x, y position TO the other object's x, y position
+                var dir = point_direction(creatorid.x, creatorid.y, other.x, other.y);  //gets the direction from the creator's x, y position TO the other object's x, y position
             }
         else //if the creator doesn't exist
             {

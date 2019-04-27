@@ -164,10 +164,27 @@ if (creator.attack_key)
             {
 				if (dead.alive == false)
 					{
-						x = dead.x;
-						y = dead.y - 16;
+						dead.revivalNum += 1;
 						state = sReviving;
 						helping = dead;
+						
+						show_debug_message(string(helping.revivalNum) + "reviving instances");
+						if (helping.revivalNum == 1)
+							{
+								x = helping.x;
+								y = helping.y - 16;
+							}
+						if (helping.revivalNum == 2)
+							{
+								x = helping.x + 16;
+								y = helping.y;
+							}
+						if (helping.revivalNum > 2)
+							{
+								x = helping.x - 16;
+								y = helping.y;
+							}
+						
 					}
 			}
 		#endregion

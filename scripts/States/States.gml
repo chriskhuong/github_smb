@@ -19,6 +19,7 @@
 #macro sAbility				15
 #macro sGameOver			16
 #macro sReviving			17
+#macro sSpawn				18
 
 //TARGET----------------------------
 #macro sMouse		0

@@ -44,6 +44,7 @@ deathNumber = 0;
 deathCounter = 200;
 maxDeathCounter = deathCounter;
 revivalBump = 10;
+revivalNum = 0;
 
 //get character's information
 scr_characterData(character);
@@ -58,6 +59,7 @@ states_array[sSelect]			= scr_playerSelectState;
 states_array[sCharacterSelect]	= scr_characterInfo;
 states_array[sLoadOutInfo]		= scr_loadOutInfo;
 states_array[sAbilityInfo]		= scr_abilityInfo;
+//states_array[sSpawn]			= scr_spawnState;
 states_array[sMove]				= scr_moveState;
 states_array[sAttack]			= scr_attackState;
 states_array[sUltimate]			= -1;

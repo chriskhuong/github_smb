@@ -47,5 +47,10 @@ if(hp <= 0 && alive == true)
 		state = sDead;
 		alive = false;
 	}
+	
+if(alive == true)
+	{
+		revivalNum = 0;
+	}
 
 pickup = false;
