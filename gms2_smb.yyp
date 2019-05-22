@@ -3087,6 +3087,14 @@
             }
         },
         {
+            "Key": "3ef1b9dd-02d5-4b2f-b951-3ee8af505810",
+            "Value": {
+                "id": "85600dd9-c21a-4ab2-8a22-0505fde86fa3",
+                "resourcePath": "sprites\\spr_sebastian_rescue\\spr_sebastian_rescue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f14259b-c80b-468a-a9a0-488d41177008",
             "Value": {
                 "id": "9e53517a-2dc8-49e5-a063-a1192be03480",
@@ -5903,6 +5911,14 @@
             }
         },
         {
+            "Key": "7c103525-2023-44a1-b776-efc0458b2475",
+            "Value": {
+                "id": "8d43a99b-5de8-4f6a-b95f-f0adc460eb9d",
+                "resourcePath": "sprites\\spr_britney_rescue\\spr_britney_rescue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c1ff11d-2969-4f09-bb83-aa0b538e27ff",
             "Value": {
                 "id": "1f9c6585-3530-4f6b-8a55-c728364cb6a7",
@@ -7503,6 +7519,14 @@
             }
         },
         {
+            "Key": "a0a38fda-a2e4-4094-b952-5727a7189eed",
+            "Value": {
+                "id": "ea88f789-0b39-478a-96ae-e03b32fad218",
+                "resourcePath": "sprites\\spr_mio_rescue\\spr_mio_rescue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a0aeb446-0161-46f3-a73f-ed4b897712c2",
             "Value": {
                 "id": "0d15fc3b-9793-41e8-aa98-343ad6a7076f",
@@ -7587,6 +7611,14 @@
             "Value": {
                 "id": "b4198ffc-bfe3-47b3-ab8b-4c2602b17eb4",
                 "resourcePath": "sprites\\ui_select_teapot\\ui_select_teapot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a1c994b7-db29-41d9-adf6-41b511b02597",
+            "Value": {
+                "id": "cd981244-e1e0-4b7f-86d5-f641ad3d2982",
+                "resourcePath": "sprites\\spr_jo_rescue\\spr_jo_rescue.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -10555,6 +10587,14 @@
             "Value": {
                 "id": "6a2e83b2-5ab3-4d05-bba6-6f2f6038e656",
                 "resourcePath": "sprites\\spr_orc4_idle\\spr_orc4_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e2ee8f2e-f3a0-4133-9b7f-81c740bb912d",
+            "Value": {
+                "id": "aac60f82-06fc-430f-973e-a65f8175fb50",
+                "resourcePath": "sprites\\spr_anna_rescue\\spr_anna_rescue.yy",
                 "resourceType": "GMSprite"
             }
         },
