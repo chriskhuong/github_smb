@@ -1,12 +1,12 @@
-/// @description scr_moveState()
+/// @description scr_rescueState()
 
 #region Behavior
 
-myState = "Revive";
+myState = "Rescue";
 attacked = false;
-movement = MOVE;
+movement = RESCUE;
 myGunIndex = 0;
-myGunAlpha = 1;
+myGunAlpha = 0;
 myArmAlpha = myGunAlpha;
 
 #endregion
@@ -78,6 +78,6 @@ if(helping.deathCounter <= 0)
 
 #region Sprite
 
-sprite_index = sprite[facing, movement];
+sprite_index = sprite[character, movement];
 
 #endregion

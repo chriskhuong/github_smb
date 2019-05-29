@@ -232,6 +232,7 @@ special[BRITNEY, NAME] = "BRITNEY";
 special[BRITNEY, FACE] = 0;
 special[BRITNEY, ABILITYWINDOW0] = 0;
 special[BRITNEY, ABILITYWINDOW1] = 1;
+special[BRITNEY, RESCUE] = spr_britney_rescue;
 
 //JO
 skill[JO, ABILITY] = scr_dashState;
@@ -245,6 +246,7 @@ special[JO, NAME] = "JO";
 special[JO, FACE] = 1;
 special[JO, ABILITYWINDOW0] = 2;
 special[JO, ABILITYWINDOW1] = 3;
+special[JO, RESCUE] = spr_jo_rescue;
 
 //MIO
 skill[MIO, ABILITY] = scr_ninjaState;
@@ -257,6 +259,7 @@ special[MIO, NAME] = "MIO";
 special[MIO, FACE] = 2;
 special[MIO, ABILITYWINDOW0] = 4;
 special[MIO, ABILITYWINDOW1] = 5;
+special[MIO, RESCUE] = spr_mio_rescue;
 
 //ANNA
 skill[ANNA, ABILITY] = scr_backhandState;  //change to backhand **TRY FIXING THIS SHIT SO WE DON'T NEED DUPLICATE SCRITPS**
@@ -269,6 +272,7 @@ special[ANNA, NAME] = "ANNA";
 special[ANNA, FACE] = 3;
 special[ANNA, ABILITYWINDOW0] = 6;
 special[ANNA, ABILITYWINDOW1] = 7;
+special[ANNA, RESCUE] = spr_anna_rescue;
 
 //SEBASTIAN
 skill[SEBASTIAN, ABILITY] = scr_shieldState;  //change to shield thing
@@ -281,3 +285,4 @@ special[SEBASTIAN, NAME] = "SEBASTIAN";
 special[SEBASTIAN, FACE] = 4;
 special[SEBASTIAN, ABILITYWINDOW0] = 8;
 special[SEBASTIAN, ABILITYWINDOW1] = 9;
+special[SEBASTIAN, RESCUE] = spr_sebastian_rescue;

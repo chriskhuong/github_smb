@@ -1,4 +1,4 @@
-///scr_ghostState()
+///scr_DeadState()
 
 #region Behavior
 
@@ -7,6 +7,7 @@ myGunAlpha = 0;
 myArmAlpha = myGunAlpha;
 myTargetAlpha = myGunAlpha;
 silo = false;
+alive = false;
 
 #endregion
 
@@ -33,7 +34,6 @@ if (image_index + 1 >= image_number)
 		deadX = deadBody.x;
 		deadY = deadBody.y;
 		deathNumber += .5;
-		alive = false;
 		state = sGhost;
 		
 		if (instance_exists(obj_playerTracker))

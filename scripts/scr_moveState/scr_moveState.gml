@@ -162,12 +162,19 @@ if (creator.attack_key)
 		
         if (dead != noone)
             {
-				if (dead.alive == false)
+				/*
+				with (dead)
+					{
+						if place_meeting
+						position_meeting
+					}*/
+				if (dead.alive == false && dead.creator != id)
 					{
 						//dead.revivalNum += 1;
-						state = sReviving;
+						state = sRescue;
 						helping = dead;
 						
+						/*
 						show_debug_message(string(helping.revivalNum) + "reviving instances");
 						if (helping.revivalNum < 1)
 							{
@@ -184,6 +191,7 @@ if (creator.attack_key)
 								x = helping.x - 24;
 								y = helping.y;
 							}
+						*/
 					}
 			}
 		#endregion

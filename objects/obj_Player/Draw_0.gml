@@ -41,13 +41,13 @@ if (room == rm_characterSelect)
 	}
 
 #region dying
-
+/*
 if (!alive && deathCounter > 0)
 	{
 		draw_sprite(spr_deathBar, 0, x - (sprite_get_width(spr_deathBar)/2), y + 32);
 		draw_sprite_ext(spr_deathBar, 1, x - (sprite_get_width(spr_deathBar)/2), y + 32, (deathCounter/maxDeathCounter), 1, image_angle, image_blend, image_alpha);
 	}
-
+*/
 #endregion
 
 #region reloading

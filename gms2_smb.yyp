@@ -5138,7 +5138,7 @@
             "Key": "6b9cefc5-aa78-4c01-95e9-dcb65939bdac",
             "Value": {
                 "id": "4a46d430-412a-4d7a-be3a-8a027baa4438",
-                "resourcePath": "scripts\\scr_revivingState\\scr_revivingState.yy",
+                "resourcePath": "scripts\\scr_rescueState\\scr_rescueState.yy",
                 "resourceType": "GMScript"
             }
         },

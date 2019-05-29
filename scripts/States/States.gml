@@ -18,7 +18,7 @@
 #macro sGrenade				14
 #macro sAbility				15
 #macro sGameOver			16
-#macro sReviving			17
+#macro sRescue				17
 #macro sSpawn				18
 
 //TARGET----------------------------

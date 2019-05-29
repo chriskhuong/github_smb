@@ -8,16 +8,18 @@ for(i=0; i<ds_list_size(inputs); i++)
 {
     var INPUT = ds_list_find_value(inputs,i);
     
-    // keyboard input
-    ds_map_replace(inputsDown, INPUT, inputdog_keyboard_check_direct(ds_map_find_value(customKeys, INPUT)));
-    
     // gamepad input
     if(gamepadSlot != -1)
     {   
         // i like to allow the keyboard to still work even when a gamepad is plugged in
-        var MAX = max(inputdog_down(INPUT,playerSlot), inputdog_check_gamepad_input(gamepadSlot, ds_map_find_value(customGamepadInputs,INPUT),directInput));
-        ds_map_replace(inputsDown, INPUT, MAX);
+        //var MAX = max(inputdog_down(INPUT,playerSlot), inputdog_check_gamepad_input(gamepadSlot, ds_map_find_value(customGamepadInputs,INPUT),directInput));
+        ds_map_replace(inputsDown, INPUT, inputdog_check_gamepad_input(gamepadSlot, ds_map_find_value(customGamepadInputs,INPUT),directInput));
     }
+	else
+	{
+		// keyboard input
+		ds_map_replace(inputsDown, INPUT, inputdog_keyboard_check_direct(ds_map_find_value(customKeys, INPUT)));
+	}
 }
 /*
 ///replays

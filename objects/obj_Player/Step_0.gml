@@ -34,12 +34,12 @@ depth = -y - 26;
 script_execute(states_array[state])
 script_execute(target_state);
 //show_debug_message(string(ultCharge))
-/*
+
 if(creator.dash_key && room == rm_SurvivalMode && hp != 0)
 	{
 		hp = 0;
 	}
-*/
+
 if(hp <= 0 && alive == true)
 	{
 		image_speed = 1;
