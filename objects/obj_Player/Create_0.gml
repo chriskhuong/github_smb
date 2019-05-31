@@ -45,6 +45,8 @@ deathCounter = 200;
 maxDeathCounter = deathCounter;
 revivalBump = 10;
 revivalNum = 0;
+invisible = false;
+itemCollisionList = ds_list_create();
 
 //get character's information
 scr_characterData(character);

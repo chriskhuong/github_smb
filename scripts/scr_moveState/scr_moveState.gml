@@ -37,6 +37,32 @@ collision_zoneY = !place_free(x, y + vspd);
 //Collision check if free
 scr_collision(hspd, vspd, "Tile_Collision");
 
+//item collision
+var num = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_ammo, false, true, itemCollisionList, true)
+if (num > 0)
+{
+	//show_debug_message("MY LIST HAS " + string(num) + " ITEMS");
+	
+	if (weaponArray[0, 10] != weaponArray[0, 12] || weaponArray[1, 10] != weaponArray[1, 12] || weaponArray[0, 8] != weaponArray[0, 11] || weaponArray[1, 8] != weaponArray[1, 11])
+		{
+			pickup = true;
+			if (creator.cancel)
+				{
+					weaponArray[0, 10] = weaponArray[0, 12];
+					weaponArray[1, 10] = weaponArray[1, 12];
+					weaponArray[0, 8] = weaponArray[0, 11];
+					weaponArray[1, 8] = weaponArray[1, 11];
+					instance_destroy(itemCollisionList[| 0]);
+					pickup = false;
+				}
+		}
+	else
+		{
+			pickup = false;
+		}
+}
+
+	
 #endregion
 
 #region Firing
@@ -150,29 +176,28 @@ if (creator.dash_key)   //remember to change this to whatever input you put spec
 
 if (creator.attack_key)
     {
-		state = sAttack;
-		
-		//Will probably scrap this VVV
-		
 		#region interaction with dead body
 		
-		var xdir = lengthdir_x(8, facing*90)
-        var ydir = lengthdir_y(8, facing*90)
+		var xdir = lengthdir_x(16, facing*90)
+        var ydir = lengthdir_y(16, facing*90)
         var dead = instance_place(x + xdir, y + ydir, obj_Player);
+		//var deadDistance = distance_to_point(dead.x, dead.y);
 		
         if (dead != noone)
             {
 				/*
 				with (dead)
 					{
-						if place_meeting
-						position_meeting
+						if (scr_collision(x, y - 16, "Tile_Collision"))
+							{
+								y += 32;
+							}
 					}*/
 				if (dead.alive == false && dead.creator != id)
 					{
 						//dead.revivalNum += 1;
-						state = sRescue;
 						helping = dead;
+						state = sRescue;
 						
 						/*
 						show_debug_message(string(helping.revivalNum) + "reviving instances");
@@ -194,8 +219,11 @@ if (creator.attack_key)
 						*/
 					}
 			}
+			else
+			{
+				state = sAttack;
+			}
 		#endregion
-		
     }
 	
 #endregion

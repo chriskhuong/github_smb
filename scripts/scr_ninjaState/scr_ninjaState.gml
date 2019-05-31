@@ -24,88 +24,88 @@ if (attacked == false)
 	{
 		//Create the dash effect    //var dash is a temporary variable
 		timeKeep = 0;
-		phase = false
+		invisible = false
 		image_index = 0;
 		attacked = true;
 	}
 
-if (phase == false && image_index > image_number - 1)
+if (invisible == false && image_index > image_number - 1)
 	{
-		phase = true;
+		invisible = true;
+		image_blend = c_purple;
 	}
 
-if (phase)
+if (invisible)
 	{
 		#region Movement
 
-//Get direction
-dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
-
-//Get the length
-if (creator.xaxis == 0 && creator.yaxis == 0)   //we're NOT moving
-    {
-        len = 0;
-        movement = IDLE;
-    }
-    
-else    //we're moving
-    {
-        len = trueSpd * 1.5;
-    }
-
-//Get the h and v speed
-
-//this fixes the speed of any  movement
-hspd = x + lengthdir_x(len, dir);
-vspd = y + lengthdir_y(len, dir);
-collision_zoneX = !place_free(x + hspd, y);
-collision_zoneY = !place_free(x, y + vspd);
-
-//Collision check if free
-if (place_free(hspd, vspd))
-	{
-		//Move
-		x = hspd;
-		y = vspd;
-	}
-else
-	{
-		var sweepInterval = 1;
+		//Get direction
+		dir = point_direction(0, 0, creator.xaxis, creator.yaxis);
 		
-		for (var angle = sweepInterval; angle <= 80; angle += sweepInterval)
+		//Get the length
+		if (creator.xaxis == 0 && creator.yaxis == 0)   //we're NOT moving
+		    {
+		        len = 0;
+		        movement = IDLE;
+		    }
+		    
+		else    //we're moving
+		    {
+		        len = trueSpd * 1.5;
+		    }
+		
+		//Get the h and v speed
+		
+		//this fixes the speed of any  movement
+		hspd = x + lengthdir_x(len, dir);
+		vspd = y + lengthdir_y(len, dir);
+		collision_zoneX = !place_free(x + hspd, y);
+		collision_zoneY = !place_free(x, y + vspd);
+		
+		//Collision check if free
+		if (place_free(hspd, vspd))
 			{
-				for (var multiplier = -1; multiplier <= 1; multiplier += 2)
+				//Move
+				x = hspd;
+				y = vspd;
+			}
+		else
+			{
+				var sweepInterval = 1;
+				
+				for (var angle = sweepInterval; angle <= 80; angle += sweepInterval)
 					{
-						var angleToCheck = dir + angle * multiplier;
-						hspd = x + lengthdir_x(len, angleToCheck);
-						vspd = y + lengthdir_y(len, angleToCheck);
-						if (place_free(hspd, vspd))
+						for (var multiplier = -1; multiplier <= 1; multiplier += 2)
 							{
-								x = hspd;
-								y = vspd;
-								exit;
+								var angleToCheck = dir + angle * multiplier;
+								hspd = x + lengthdir_x(len, angleToCheck);
+								vspd = y + lengthdir_y(len, angleToCheck);
+								if (place_free(hspd, vspd))
+									{
+										x = hspd;
+										y = vspd;
+										exit;
+									}
 							}
 					}
 			}
-	}
-
-
+		
+		
 #endregion
 	}
 
 #endregion
 
 #region Transition Triggers
-if (phase)
+if (invisible)
 	{
-		alive = false;
 		timeKeep++;
 		
 		show_debug_message(string(timeKeep));
 		
 		if (timeKeep >= timer)
 			{
-				alive = true;
+				image_blend = c_white;
 				state = sMove;
 			}
 	}
@@ -131,7 +131,7 @@ else if (facing == RIGHT)
 
 #endregion
 
-if (phase == true)
+if (invisible == true)
 	{
 		sprite_index = sprite[facing, movement];
 	}

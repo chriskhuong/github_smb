@@ -65,7 +65,7 @@ timer -= 1;
 
 #region Transition Trigger
 
-if (target.alive == false)
+if (target.alive == false || target.invisible == true)
 	{
 		state = sMove;
 	}

@@ -23,7 +23,8 @@ if(hit)
 	}
 
 #endregion
-
+//if instance_exists(helping)
+//{
 #region Reviving
 
 if (creator.attack_key)
@@ -73,11 +74,11 @@ if(helping.deathCounter <= 0)
 	}
 
 #endregion
-
+//}
 #endregion
 
 #region Sprite
 
-sprite_index = sprite[character, movement];
+sprite_index = special[character, movement];
 
 #endregion

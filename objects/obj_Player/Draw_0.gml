@@ -8,8 +8,8 @@ if(room != rm_characterSelect)
 	}
 
 //event_inherited();
-/*
-if (!alive)
+
+if (!alive)// || invisible)
 	{
 		image_alpha = .75;
 	}
@@ -21,7 +21,6 @@ if(room == rm_characterSelect && state != sCharacterSelect)
 	{
 		image_alpha = 0;
 	}
-*/
 
 if (room == rm_characterSelect)
 	{
@@ -41,13 +40,13 @@ if (room == rm_characterSelect)
 	}
 
 #region dying
-/*
+
 if (!alive && deathCounter > 0)
 	{
 		draw_sprite(spr_deathBar, 0, x - (sprite_get_width(spr_deathBar)/2), y + 32);
 		draw_sprite_ext(spr_deathBar, 1, x - (sprite_get_width(spr_deathBar)/2), y + 32, (deathCounter/maxDeathCounter), 1, image_angle, image_blend, image_alpha);
 	}
-*/
+
 #endregion
 
 #region reloading
@@ -240,7 +239,7 @@ else if(room != rm_characterSelect)
 
 pal_swap_reset();
 
-if(pickup == true)
+if(pickup)
 	{
 		draw_sprite_ext(button_xbox_b, -1, x - (sprite_get_width(button_xbox_a)/4), y-50, .5, .5, image_angle, image_blend, image_alpha);
 	}
@@ -270,3 +269,7 @@ if(silo == true)
 		gpu_set_colorwriteenable(true, true, true, true);
 		gpu_set_blendenable(true);
 	}
+/*
+//COLLOSION BOX
+draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_green, c_green, c_green, c_green, true);
+*/

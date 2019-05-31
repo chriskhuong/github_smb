@@ -1,6 +1,6 @@
 ///Damage all lifeforms
 
-if (other.id != creatorid)
+if (other.id != creatorid && creator != noone)
     {
         other.hp -= damage;
         if (other.hp <= 0)
