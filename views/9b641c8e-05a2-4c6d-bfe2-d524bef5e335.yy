@@ -6,7 +6,7 @@
     "children": [
         "1881168f-2ef2-47e8-a9cd-0d72b0b30187"
     ],
-    "filterType": "root",
+    "filterType": "user",
     "folderName": "Sprites",
     "isDefaultView": false,
     "localisedFolderName": ""

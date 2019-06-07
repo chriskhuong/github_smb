@@ -1,7 +1,7 @@
 ///Move %10 towards the player
 var xTo, yTo;
 
-if (instance_exists(obj_playerTracker))
+if (follow && instance_exists(obj_playerTracker))
     {
         move_towards_point(obj_playerTracker.x, obj_playerTracker.y, 0)
         xTo = obj_playerTracker.x;

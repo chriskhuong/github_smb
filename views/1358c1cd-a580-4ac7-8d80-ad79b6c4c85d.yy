@@ -8,7 +8,9 @@
         "74e263e7-bae6-45c6-a3ef-9cae2570d3c8",
         "aab2230a-0027-4f99-8230-1895b62df53f",
         "9bc276f6-394b-44f3-ac20-1935b10d7d1f",
-        "a4c7d628-a003-4d63-b369-fa8fcb4b3e64"
+        "a4c7d628-a003-4d63-b369-fa8fcb4b3e64",
+        "4a5c83ec-fae7-4299-98f1-5ee944d0a81f",
+        "26282606-e3f3-4366-a59f-1eacaad5233c"
     ],
     "filterType": "GMObject",
     "folderName": "Testing",

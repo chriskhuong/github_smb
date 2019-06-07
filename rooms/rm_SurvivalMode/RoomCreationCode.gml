@@ -1,4 +1,4 @@
-with(obj_Player)
+/*with(obj_Player)
 	{
 			if(confirmed)
 				{
@@ -20,3 +20,4 @@ with(obj_Player)
 					instance_destroy();
 				}
 	}
+*/

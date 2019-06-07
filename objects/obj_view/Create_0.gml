@@ -2,13 +2,14 @@
 shake = 0;
 cam_scale = 1;
 max_scale = 2;
+follow = false;
 
-//cam_distance = 96; //WTF is this even for??
 instance_create_depth(x, y, depth, obj_playerTracker);
+alarm[0] = room_speed;
 
-if (instance_exists(obj_playerTracker))
+if (instance_exists(obj_spawnZone))
     {
-        x = obj_playerTracker.x;
-        y = obj_playerTracker.y;
+        x = obj_spawnZone.x;
+        y = obj_spawnZone.y;
     }
 

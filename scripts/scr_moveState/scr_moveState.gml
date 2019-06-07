@@ -40,27 +40,32 @@ scr_collision(hspd, vspd, "Tile_Collision");
 //item collision
 var num = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_ammo, false, true, itemCollisionList, true)
 if (num > 0)
-{
-	//show_debug_message("MY LIST HAS " + string(num) + " ITEMS");
-	
-	if (weaponArray[0, 10] != weaponArray[0, 12] || weaponArray[1, 10] != weaponArray[1, 12] || weaponArray[0, 8] != weaponArray[0, 11] || weaponArray[1, 8] != weaponArray[1, 11])
-		{
-			pickup = true;
-			if (creator.cancel)
-				{
-					weaponArray[0, 10] = weaponArray[0, 12];
-					weaponArray[1, 10] = weaponArray[1, 12];
-					weaponArray[0, 8] = weaponArray[0, 11];
-					weaponArray[1, 8] = weaponArray[1, 11];
-					instance_destroy(itemCollisionList[| 0]);
-					pickup = false;
-				}
-		}
-	else
-		{
-			pickup = false;
-		}
-}
+	{
+		show_debug_message("MY LIST HAS " + string(num) + " ITEMS");
+		
+		if (weaponArray[0, 10] != weaponArray[0, 12] || weaponArray[1, 10] != weaponArray[1, 12] || weaponArray[0, 8] != weaponArray[0, 11] || weaponArray[1, 8] != weaponArray[1, 11])
+			{
+				pickup = true;
+				if (creator.cancel)
+					{
+						weaponArray[0, 10] = weaponArray[0, 12];
+						weaponArray[1, 10] = weaponArray[1, 12];
+						weaponArray[0, 8] = weaponArray[0, 11];
+						weaponArray[1, 8] = weaponArray[1, 11];
+						instance_destroy(itemCollisionList[| 0]);
+						pickup = false;
+					}
+			}
+		else
+			{
+				pickup = false;
+			}
+	}
+else
+	{
+		ds_list_clear(itemCollisionList);
+	}
+
 
 	
 #endregion

@@ -13,13 +13,13 @@
         "450627eb-d37d-4119-97be-a627df0f5354",
         "5f613669-36e6-45f0-94c6-9253c643faeb",
         "42f03492-7c4e-46d2-b3e9-69c1f9cc7935",
-        "43a57292-2777-4e6c-9251-7e54fb7a27af",
         "afad32b8-6258-42f8-8d7e-fb5d4a9d82ac",
         "fa0ede77-ed30-4191-9363-33dd8bfd46b1",
         "32bff715-9ccc-48bb-81a2-6799003669c8",
         "6735cbf2-0e5b-496c-9786-c5f666d2d786",
         "e2ee8f2e-f3a0-4133-9b7f-81c740bb912d",
-        "561e6bb3-3cc3-4cff-ba99-f0097824db31"
+        "561e6bb3-3cc3-4cff-ba99-f0097824db31",
+        "43a57292-2777-4e6c-9251-7e54fb7a27af"
     ],
     "filterType": "GMSprite",
     "folderName": "anna",

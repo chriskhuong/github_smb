@@ -1,4 +1,4 @@
-with(InputManager)
+/*with(InputManager)
 	{
 		var xSpot = ((playerSlot) * ((global.view_w/2) / 2.5));
 		var ySpot = (global.view_h/2);
@@ -9,3 +9,4 @@ with(InputManager)
 		pO.char = playerSlot;
 		pO.keyboard = false;
 	}
+*/

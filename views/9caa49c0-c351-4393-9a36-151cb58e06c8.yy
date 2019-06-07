@@ -6,7 +6,7 @@
     "children": [
         "4da4cfca-7c2e-4333-b2ac-d17232775b92"
     ],
-    "filterType": "root",
+    "filterType": "user",
     "folderName": "Objects",
     "isDefaultView": false,
     "localisedFolderName": ""

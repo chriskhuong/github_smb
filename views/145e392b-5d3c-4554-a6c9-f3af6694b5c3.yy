@@ -13,14 +13,14 @@
         "88dc348a-e885-4b5e-8064-a5f9db64f2a6",
         "44eea760-8f67-440d-8303-2f45848377da",
         "9b04c6be-7f14-42ba-87b1-971d155d1199",
-        "3bf7e977-3e0f-4549-b812-df876d2c4a8a",
         "d86ba658-d6f1-4e21-b0b5-5d49321268b9",
         "f7c327f4-f009-44d9-ba2b-7da6f6a0b349",
         "9c79bcc0-43fb-46a2-90e9-84d1510fa85a",
         "a5790fc7-4c94-4f4f-8f79-3ac91321f51e",
         "340f277f-526d-47c3-9a5b-68e6e4963fa6",
         "a1c994b7-db29-41d9-adf6-41b511b02597",
-        "f13c7565-3df0-49be-91a5-ae9b936b7852"
+        "f13c7565-3df0-49be-91a5-ae9b936b7852",
+        "3bf7e977-3e0f-4549-b812-df876d2c4a8a"
     ],
     "filterType": "GMSprite",
     "folderName": "jo",
