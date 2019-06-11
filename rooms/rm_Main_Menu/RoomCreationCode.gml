@@ -4,7 +4,7 @@ global.font2 = font_add_sprite_ext(spr_text2, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456
 global.fontText = font_add_sprite_ext(spr_text,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789: ",true, -1);
 global.debugPCMap = ds_map_create();	
 //Loop through all the objects that need to be created and check if they exist. If they dont make it.
-var arrayOfPresistantObjs = [obj_mainMenu,obj_resolution,obj_holdPages,InputForPlayer4,InputForPlayer3,InputForPlayer2,InputForPlayer1,obj_palette_manager]
+var arrayOfPresistantObjs = [obj_mainMenu,obj_resolution,obj_holdPages,InputForPlayer4,InputForPlayer3,InputForPlayer2,InputForPlayer1,obj_palette_manager,obj_SurvivalController]
 for (var i = array_length_1d(arrayOfPresistantObjs) - 1; i > -1; i--;)
    {
 	if (instance_number(arrayOfPresistantObjs[i]) < 1)

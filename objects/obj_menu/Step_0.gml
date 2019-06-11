@@ -50,12 +50,12 @@ if(inputting)
 		break;
 		case menu_element_type.input:
 		var kk = keyboard_lastkey
-		if(kk != vk_enter)
+/*		if(kk != vk_enter)
 		{
 			if(kk != ds_grid[# 3, menu_option[global.menuPage]]) audio_play_sound(snd_charSelect,1,false); // audio
 			ds_grid[# 3, menu_option[global.menuPage]] = kk;
 			variable_global_set(ds_grid[# 2, menu_option[global.menuPage]],kk);
-		}
+		}*/
 		break;
 		
 	}
@@ -77,12 +77,26 @@ if(ochange != 0)
 
 if(inputConfirm)
 {
-	
 	switch(ds_grid[# 1, menu_option[global.menuPage]])
 	{
-		case menu_element_type.script_runner: script_execute(ds_grid[# 2, menu_option[global.menuPage]],ds_grid[# 0, menu_option[global.menuPage]]);
-		break;
-		case menu_element_type.page_transfer: global.menuPage = ds_grid[# 2, menu_option[global.menuPage]]; break;
+		case menu_element_type.script_runner: 
+		var test = ds_grid[# 0,menu_option[global.menuPage]];
+		if(test != "CONTROLS") {
+			script_execute(ds_grid[# 2, menu_option[global.menuPage]],ds_grid[# 0, menu_option[global.menuPage]]);
+			break;
+		}
+		else break;
+		case menu_element_type.page_transfer: 
+		var test = ds_grid[# 0,menu_option[global.menuPage]];
+		if(test != "CONTROLS")
+		{
+			global.menuPage = ds_grid[# 2, menu_option[global.menuPage]];
+			break;
+		}
+		else
+		{
+			break;	
+		}
 		case menu_element_type.shift: script_execute(ds_grid[# 2, menu_option[global.menuPage]]);
 		case menu_element_type.slider: if(inputting) script_execute(ds_grid[# 2, menu_option[global.menuPage]],ds_grid[# 3, menu_option[global.menuPage]],ds_grid[# 0, menu_option[global.menuPage]]);
 		case menu_element_type.toggle:	if(inputting) script_execute(ds_grid[# 2, menu_option[global.menuPage]],ds_grid[# 3, menu_option[global.menuPage]]);
@@ -100,6 +114,7 @@ if(inputCancel)
 	{
 		switch(global.menuPage)
 	{
+		case 0: InputManager.paused = false; inputting = false; break;
 		case 2: global.menuPage = 1 inputting = false; break;
 		case 3:	global.menuPage = 1 inputting = false; break;
 		case 4: global.menuPage = 1 inputting = false; break;

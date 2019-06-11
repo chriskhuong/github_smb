@@ -4767,6 +4767,14 @@
             }
         },
         {
+            "Key": "632e17d1-aaa3-45b4-993e-b82083933a65",
+            "Value": {
+                "id": "eb4a8c94-6a99-459d-9616-a335d583fbf2",
+                "resourcePath": "sprites\\spr_kill_counter_box\\spr_kill_counter_box.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "633c6015-a444-4e5d-9176-92d22ee9f5c3",
             "Value": {
                 "id": "cbdc00da-63ee-4deb-846a-a0625ed5627d",

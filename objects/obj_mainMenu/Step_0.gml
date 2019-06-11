@@ -45,13 +45,13 @@ if(inputting)
 		}
 		break;
 		case mainMenu_element_type.input:
-		var kk = keyboard_lastkey
+		/*var kk = keyboard_lastkey
 		if(kk != vk_enter)
 		{
 			if(kk != ds_grid[# 3, menu_option[global.page]]) audio_play_sound(snd_charSelect,1,false); // audio
 			ds_grid[# 3, menu_option[global.page]] = kk;
 			variable_global_set(ds_grid[# 2, menu_option[global.page]],kk);
-		}
+		}*/
 		break;
 		
 	}
@@ -66,20 +66,33 @@ if(ochange != 0)
 		
 		if(menu_option[global.page] > ds_height-1) { menu_option[global.page] = 0; }
 		if(menu_option[global.page] < 0) { menu_option[global.page] = ds_height - 1; }
-		audio_play_sound(snd_charSelect,1,false);
+		//if(ochange)audio_play_sound(snd_charSelect,1,false);
 		// play audio
 	}	
 }
-
+var yy = 0; repeat(ds_height)
+{
+	yy++;	
+}
 
 if(inputConfirm)
 {
-	
+	//var test = ds_grid[# 2, menu_option[global.menuPage]];	
 	switch(ds_grid[# 1, menu_option[global.page]])
 	{
-		case mainMenu_element_type.script_runner: script_execute(ds_grid[# 2, menu_option[global.page]],ds_grid[# 0, menu_option[global.page]]);
+		
+		case mainMenu_element_type.script_runner: var test = ds_grid[# 0,menu_option[global.page]]if(test != "CONTROLS") {script_execute(ds_grid[# 2, menu_option[global.page]],ds_grid[# 0, menu_option[global.page]]); break}
+		else
 		break;
-		case mainMenu_element_type.page_transfer: global.page = ds_grid[# 2, menu_option[global.page]]; break;
+		case mainMenu_element_type.page_transfer: var test = ds_grid[# 0,menu_option[global.page]]if(test != "CONTROLS")
+		{
+			global.page = ds_grid[# 2, menu_option[global.page]]; 
+			break;
+		} 
+		else 
+		{
+			break;
+		}
 		case mainMenu_element_type.shift: script_execute(ds_grid[# 2, menu_option[global.page]]);
 		case mainMenu_element_type.slider: if(inputting) script_execute(ds_grid[# 2, menu_option[global.page]],ds_grid[# 3, menu_option[global.page]],ds_grid[# 0, menu_option[global.page]]);
 		case mainMenu_element_type.toggle:	if(inputting) script_execute(ds_grid[# 2, menu_option[global.page]],ds_grid[# 3, menu_option[global.page]]);
