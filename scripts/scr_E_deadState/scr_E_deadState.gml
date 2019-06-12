@@ -18,7 +18,29 @@ dead.image_speed = image_speed;
 dead.image_alpha = 1;
 dead.alarm[0] = 120;
 dead.alarm[1] = 60;
+
 instance_destroy();
+with(obj_Player)
+{
+	if(instance_exists(obj_tempBullet))
+	{
+		if(obj_tempBullet.creatorid == myStats.creator)
+		{
+		 myStats.creator.killCounter += 1;
+		}
+	}
+	else if(myStats.creator.attacked)
+	{
+		myStats.creator.killCounter += 1;
+	}
+	else if(instance_exists(obj_tempBoom))
+	{
+		if(obj_tempBoom.creatorid == myStats.creator)
+		{
+			myStats.creator.killCounter += 1;
+		}
+	}
+}
 
 #endregion
 

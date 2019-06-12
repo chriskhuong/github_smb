@@ -61,9 +61,40 @@ var yy = 0; repeat(ds_height)
 	leftTextYPos = start_y + (yy*y_buffer);
 	c = c_white;
 	xOff = 0;
+	//var try = menu_option[global.page];
 	if(yy == menu_option[global.page])
 	{
 		c = c_red;
+		xOff = -(x_buffer/2);
+	}
+	if(global.page == 1 && yy == 2)
+	{
+		c = c_dkgray;
+		//xOff = -(x_buffer/2);
+	}
+	if(yy == menu_option[global.page] && global.page == 1 && yy == 2)
+	{
+		c = c_dkgray;
+		xOff = -(x_buffer/2);
+	}
+		if(global.page == 0 && yy == 2)
+	{
+		c = c_dkgray;
+		//xOff = -(x_buffer/2);
+	}
+	if(yy == menu_option[global.page] && global.page == 0 && yy == 2)
+	{
+		c = c_dkgray;
+		xOff = -(x_buffer/2);
+	}
+		if(global.page == 2 && (yy == 2 || yy == 0))
+	{
+		c = c_dkgray;
+		//xOff = -(x_buffer/2);
+	}
+	if(yy == menu_option[global.page] && global.page == 2 && (yy == 2 || yy = 0))
+	{
+		c = c_dkgray;
 		xOff = -(x_buffer/2);
 	}
 	draw_text_color(leftTextXPos+xOff,leftTextYPos, ds_grid[# 0, yy], c,c,c,c,1);

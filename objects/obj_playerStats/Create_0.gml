@@ -20,7 +20,7 @@ num = 0;
 alive = true;
 //depth = -500000;
 alarm[11] = 1;
-
+killCounter = 0;
 
 view_zoom = 1;
 view_maxZoom = 10;

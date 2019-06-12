@@ -273,6 +273,18 @@ else if (room != rm_characterSelect)
 #endregion
 #endregion
 
-
+if(room != rm_characterSelect)
+{
+	draw_set_font(global.fontAmmo);
+	draw_set_color(c_dkgray);
+	draw_set_alpha(.5);
+	draw_rectangle(xSpot - 50,ySpot - 40,xSpot + 10, ySpot - 15, false);
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	draw_set_color(c_red);
+	draw_text(xSpot - 40, ySpot - 35, string(creator.killCounter));
+	draw_set_color(c_white);
+	draw_set_font(-1);
+}
 
 
