@@ -14,7 +14,8 @@
         "611c9adf-f4ab-4741-8c01-59e48590e098",
         "95699b68-3ddb-482d-a5a5-ac61a1f2cfb3",
         "a4a46bd9-776f-47a0-8960-d4018affb9ec",
-        "94342bf7-2c38-46f0-ae31-5dcb4444c685"
+        "94342bf7-2c38-46f0-ae31-5dcb4444c685",
+        "386b5bc5-9c03-4821-bd5b-e9eb8f5779da"
     ],
     "filterType": "GMSprite",
     "folderName": "Prototype_Sprites",
