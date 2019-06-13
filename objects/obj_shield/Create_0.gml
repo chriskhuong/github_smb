@@ -11,7 +11,7 @@ if (creator != noone)
     {
         x = creator.x + lengthdir_x(rng, creator.myGunAngle);
         y = creator.y + lengthdir_y(rng, creator.myGunAngle);
+		image_angle = creator.myGunAngle;
     }
 
 alarm[0] = room_speed * 5;
-

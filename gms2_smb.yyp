@@ -1223,6 +1223,14 @@
             }
         },
         {
+            "Key": "17da7795-ea7a-42b2-87e6-e4a1cfc2022d",
+            "Value": {
+                "id": "8f273d83-3541-481f-b740-caeaa3491042",
+                "resourcePath": "sprites\\spr_slime_spawn\\spr_slime_spawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17f2097f-b36c-4bec-879b-0532cf93656a",
             "Value": {
                 "id": "e26cd60c-6ed9-454f-bca6-29b280a14047",
@@ -6767,6 +6775,14 @@
             }
         },
         {
+            "Key": "8d88eb5d-c15c-458f-85f8-ecbf17dcda28",
+            "Value": {
+                "id": "c5eecb6b-efdc-4c0f-b181-f5d2e2cf76f6",
+                "resourcePath": "scripts\\scr_E_spawnState\\scr_E_spawnState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8e0b42bc-7f50-40d8-b9fb-d5673e351e2a",
             "Value": {
                 "id": "ea83295c-084c-496a-9224-ec1c8cfbfcfa",
@@ -12290,6 +12306,7 @@
         "b2e99350-44fc-44c5-90ab-9756a354c340",
         "77b9acc2-3412-42ea-93f0-236cb62ada2f",
         "d40b0e48-5948-4f49-a228-d3aeb36ec82a",
+        "8d88eb5d-c15c-458f-85f8-ecbf17dcda28",
         "3a118e91-ad14-4cbc-a713-8c8fc94f7412",
         "ee7db634-313f-4429-90a3-3db8e7a9d46a",
         "87051c0a-b47b-4127-ae73-5798c3878df0",

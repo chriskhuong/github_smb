@@ -31,6 +31,7 @@ if (attacked == false)
 
 if (invisible == false && image_index > image_number - 1)
 	{
+		transparency = TGHOST;
 		invisible = true;
 		image_blend = c_purple;
 	}
@@ -106,6 +107,7 @@ if (invisible)
 		if (timeKeep >= timer)
 			{
 				image_blend = c_white;
+				invisible = false;
 				state = sMove;
 			}
 	}

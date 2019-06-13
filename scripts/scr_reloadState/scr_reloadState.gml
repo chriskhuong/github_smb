@@ -7,6 +7,7 @@ myStats.can_shoot = false;
 attacked = false;
 movement = MOVE;
 reloading = true;
+transparency = TALIVE;
 
 myGunSprite = weaponArray[weapon, 18];
 myGunFinal = sprite_get_number(weaponArray[weapon, 18]);

@@ -4,7 +4,7 @@ var hspd = argument0;
 var vspd = argument1;
 var tileLayer = argument2;
 
-if (place_free(hspd, vspd) && !scr_tile_place_meeting(hspd, vspd, tileLayer))
+if (place_free(hspd, vspd+8) && !scr_tile_place_meeting(hspd, vspd+8, tileLayer))
 	{
 		//Move
 		x = hspd;
@@ -22,7 +22,7 @@ else
 						var angleToCheck = dir + angle * multiplier;
 						hspd = x + lengthdir_x(len, angleToCheck);
 						vspd = y + lengthdir_y(len, angleToCheck);
-						if (place_free(hspd, vspd) && !scr_tile_place_meeting(hspd, vspd, tileLayer))
+						if (place_free(hspd, vspd+8) && !scr_tile_place_meeting(hspd, vspd+8, tileLayer))
 							{
 								x = hspd;
 								y = vspd;

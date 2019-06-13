@@ -16,6 +16,8 @@ if (room == rm_characterSelect)
 	
 else
 	{
+		playerCount = 0;
+		playersDead = 0;
 		
 		with(obj_Player)
 			{
@@ -33,7 +35,8 @@ else
 
 				with(thisPlayer)
 					{
-						state = sMove;
+						state = sSpawn;
+						image_index = 0;
 						if(instance_exists(obj_spawnZone))
 							{
 								x = irandom_range(obj_spawnZone.x - obj_spawnZone.sprite_width/2, obj_spawnZone.x + obj_spawnZone.sprite_width/2);
@@ -48,7 +51,7 @@ else
 					}
 			}
 		
-		count = ds_list_size(players);
+		playerCount = ds_list_size(players);
 		
-		show_debug_message(string(count));
+		show_debug_message(string(playerCount));
 	}

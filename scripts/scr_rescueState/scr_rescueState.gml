@@ -8,6 +8,7 @@ movement = RESCUE;
 myGunIndex = 0;
 myGunAlpha = 0;
 myArmAlpha = myGunAlpha;
+transparency = TALIVE;
 
 #endregion
 

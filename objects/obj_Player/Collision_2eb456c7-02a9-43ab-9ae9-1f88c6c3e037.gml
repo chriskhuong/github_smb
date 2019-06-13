@@ -1,14 +1,14 @@
 ///Collect experience
 
-if (myStats.hp < myStats.maxHp)
+if (hp < maxHp)
 	{
 		pickup = true;
 		if(creator.cancel)
 			{
-				myStats.hp += 2;
-					if (myStats.hp > myStats.maxHp)
+				hp += 2;
+					if (hp > maxHp)
 						{
-							myStats.hp = myStats.maxHp;
+							hp = maxHp;
 						}
 				with (other)
 					{

@@ -1,6 +1,6 @@
 var xSpot = (1 * ((global.view_w/2) / 2.5));
 var ySpot = (global.view_h - 64);
-if(!InputManager.paused) exit;
+if(!InputManager.paused && !global.allDead) exit;
 
 var gwidth = global.view_w, gheight = global.view_h;
 

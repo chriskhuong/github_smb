@@ -1,17 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(InputManager.paused)
-{
-inputUp = global.activeObject.up_pressed;
-inputDown = global.activeObject.down_pressed;
-inputRight = global.activeObject.right_pressed;
-inputLeft = global.activeObject.left_pressed;
-inputCancel = global.activeObject.cancel;
-inputConfirm = global.activeObject.attack_key;
-}
-
-if(!InputManager.paused) exit;
-
+if(!global.allDead)
+	{
+		if(InputManager.paused)
+		{
+		inputUp = global.activeObject.up_pressed;
+		inputDown = global.activeObject.down_pressed;
+		inputRight = global.activeObject.right_pressed;
+		inputLeft = global.activeObject.left_pressed;
+		inputCancel = global.activeObject.cancel;
+		inputConfirm = global.activeObject.attack_key;
+		}
+		
+		if(!InputManager.paused) exit;
+	}
+else
+	{
+		inputUp = InputForPlayer1.up_pressed || InputForPlayer2.up_pressed || InputForPlayer3.up_pressed || InputForPlayer4.up_pressed;
+		inputDown = InputForPlayer1.down_pressed || InputForPlayer2.down_pressed || InputForPlayer3.down_pressed || InputForPlayer4.down_pressed;
+		inputRight = InputForPlayer1.right_pressed || InputForPlayer2.right_pressed || InputForPlayer3.right_pressed || InputForPlayer4.right_pressed;
+		inputLeft = InputForPlayer1.left_pressed || InputForPlayer2.left_pressed || InputForPlayer3.left_pressed || InputForPlayer4.left_pressed;
+		inputCancel = InputForPlayer1.cancel || InputForPlayer2.cancel || InputForPlayer3.cancel || InputForPlayer4.cancel;
+		inputConfirm = InputForPlayer1.attack_key || InputForPlayer2.attack_key || InputForPlayer3.attack_key || InputForPlayer4.attack_key;
+	}
 
 var ds_grid = menu_pages[global.menuPage], ds_height = ds_grid_height(ds_grid);
 

@@ -8,6 +8,7 @@ myArmAlpha = myGunAlpha;
 myTargetAlpha = myGunAlpha;
 silo = false;
 alive = false;
+transparency = TALIVE;
 
 #endregion
 
@@ -40,6 +41,7 @@ if (image_index + 1 >= image_number)
 			{
 				obj_playerTracker.alarm[0] = 1;
 			}
+#region Old
 		/*
 		var dead = 0;		
 		for(var hello = 0; hello < instance_number(obj_Player); hello++)
@@ -61,6 +63,7 @@ if (image_index + 1 >= image_number)
 					}
 			}
 		*/
+#endregion
 	}
 
 #endregion

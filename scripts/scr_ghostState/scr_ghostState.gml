@@ -7,6 +7,7 @@ myGunAlpha = 0;
 myArmAlpha = myGunAlpha;
 myTargetAlpha = myGunAlpha;
 silo = false;
+transparency = TGHOST;
 
 var rng = 15;	//range from body
 
@@ -103,8 +104,10 @@ deathCounter -= (1 * deathNumber);
 #region Transition Triggers
 
 //NOTE: The transition here is in the moveState
-
-if (deathCounter < 0 || deathNumber > (3/2))
+//divided 3 by 2 because on death
+//we only increment by .5 so the death bar 
+//depeletes at a reasonable rate
+if (deathCounter < 0 || deathNumber > (3/2)) 
 	{
 		g = instance_create_depth(x, y, depth, obj_deadGhost);
 		g.image_xscale = image_xscale;
@@ -114,6 +117,11 @@ if (deathCounter < 0 || deathNumber > (3/2))
 		with(myArrow)
 			{
 				instance_destroy();
+			}
+		with(obj_SurvivalController)
+			{
+				playersDead++;
+				event_user(0);
 			}
 		state = sGameOver;
 	}

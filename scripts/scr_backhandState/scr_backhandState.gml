@@ -5,6 +5,7 @@
 mystate = "Slam"
 movement = ATTACK; //ATTACK
 myGunAlpha = 0;
+transparency = TALIVE;
 var once = false;
 
 var attack_x = 0;

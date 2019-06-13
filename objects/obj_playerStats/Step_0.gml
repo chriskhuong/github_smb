@@ -6,7 +6,7 @@ if(creator.creator.dash_key && room == rm_SurvivalMode && hp != 0)
 	}
 */
 
-if(global.fullHealth && hp == 0)
+if(global.fullHealth && creator.hp == 0)
 {
 	creator.hp = creator.maxHp;
 }

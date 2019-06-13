@@ -7,6 +7,7 @@ myGunAlpha = 0;
 myArmAlpha = myGunAlpha;
 image_speed = 2;
 movement = ATTACK
+transparency = TALIVE;
 
 var attack_x = 0;
 var attack_y = 0;

@@ -2,9 +2,10 @@ if (other.tag != creator)
     {
 		bulletdmg = 1;
         other.hp -= bulletdmg;
-		if (other.hp <= 0)
+		if (other.hp <= 0 && other.tag == "enemy")
 			{
 				creatorid.ultCharge += 1;
+				//creatorid.killCounter += 1;
 			}
         //Apply the knockback
         

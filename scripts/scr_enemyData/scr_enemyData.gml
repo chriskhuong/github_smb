@@ -3,6 +3,9 @@ argument0 = character;
 switch(character)
 	{
 		case SLIME:
+			//spawn
+			sprite[character, SPAWN] = spr_slime_spawn;
+		
 			//moving
 			sprite[character, MOVE] = spr_slime_run_side;
 			

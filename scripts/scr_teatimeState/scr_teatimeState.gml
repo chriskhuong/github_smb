@@ -5,6 +5,7 @@
 myState = "TeaTime";
 movement = MOVE;
 myGunAlpha = 0;
+transparency = TALIVE;
 image_speed = 1;
 
 if (attacked == false)

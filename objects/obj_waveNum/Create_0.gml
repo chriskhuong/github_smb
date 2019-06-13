@@ -17,7 +17,7 @@ duration = room_speed;
 waveText = -1;
 waveTextAlpha = 0;
 wavePhase = 0;
-phaseCounter = room_speed*3;
+phaseCounter = room_speed*2;
 maxPhaseCount = phaseCounter;
 
 

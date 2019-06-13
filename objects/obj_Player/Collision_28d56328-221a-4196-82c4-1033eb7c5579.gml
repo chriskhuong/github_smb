@@ -18,6 +18,7 @@
     default: 
 	break;
 }*/
+/*
 weaponArray[0,14] = other.this_active;
 weaponArray[0,15] = other.thisScript;
 script_execute(scr_revertEnhancements);
@@ -28,3 +29,4 @@ script_execute(scr_revertEnhancements);
 			instance_destroy();		
 		}
 	
+*/

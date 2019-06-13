@@ -3,8 +3,14 @@
 #region Behavior
 
 //NOTE: YA DEAD SON!
-instance_destroy();
-
+//instance_destroy();
+//instance_deactivate_object(myStats);
+//instance_deactivate_object(id);
+transparency = TGAMEOVER;
+with(myArrow)
+	{
+		instance_destroy();
+	}
 #endregion
 
 #region Transition Triggers

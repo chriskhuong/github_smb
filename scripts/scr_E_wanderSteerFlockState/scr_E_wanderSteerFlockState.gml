@@ -6,6 +6,19 @@ movement = MOVE;
 counter += 1;
 max_speed = spd;
 
+if(instance_exists(obj_playerParent))
+	{
+		target = instance_nearest(x, y, obj_playerParent);
+		if (target.alive)
+			{
+				targetDistance = distance_to_object(target)
+			}
+	}
+else
+	{
+		target = noone;
+	}
+
 // reset steering
 steering = vect2(0,0);
 
@@ -60,7 +73,7 @@ steering = vect2(0,0);
 					position = vect_add(position, velocity);
 					
 					//update xy
-					if (place_meeting(position[1], position[2], solid_obj))	//there's a collision
+					if (place_meeting(position[1], position[2], solid_obj) || scr_tile_place_meeting(position[1], position[2], "Tile_Collision"))	//there's a collision
 						{
 							is_colliding = true;
 							position[1] = x;
@@ -91,6 +104,10 @@ if (counter >= room_speed * 3)
 					counter = 0;
 				break;
 			}
+	}
+if (target.alive && targetDistance < sight)
+	{
+		state = sChase;
 	}
 
 #endregion

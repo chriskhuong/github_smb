@@ -1,14 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(room != rm_characterSelect)
+/*if(room != rm_characterSelect)
 	{
 	draw_text(x, y + 50, myState);
 	draw_text(x, y + 60, string(facing));
 	draw_text(x, y + 70, floor(image_index));
 	}
-
+*/
 //event_inherited();
 
+switch(transparency)
+	{
+		case TALIVE:
+			image_alpha = 1;
+			break;
+		case TGHOST:
+			image_alpha = .75;
+			break
+		case TGAMEOVER:
+			image_alpha = 0;
+	}
+/*
 if (!alive)// || invisible)
 	{
 		image_alpha = .75;
@@ -17,6 +29,7 @@ else
 	{
 		image_alpha = 1;
 	}
+*/
 if(room == rm_characterSelect && state != sCharacterSelect)
 	{
 		image_alpha = 0;
@@ -241,7 +254,11 @@ pal_swap_reset();
 
 if(pickup)
 	{
-		draw_sprite_ext(button_xbox_b, -1, x - (sprite_get_width(button_xbox_a)/4), y-50, .5, .5, image_angle, image_blend, image_alpha);
+		draw_sprite_ext(button_xbox_b, -1, x - (sprite_get_width(button_xbox_b)/4), y-50, .5, .5, image_angle, image_blend, image_alpha);
+	}
+if(state == sRescue)
+	{
+		draw_sprite_ext(button_xbox_a, -1, x - (sprite_get_width(button_xbox_a)/4), y-50, .5, .5, image_angle, image_blend, image_alpha);
 	}
 
 if(room != rm_characterSelect)

@@ -4,16 +4,12 @@
 myState = "ChaseSteer";
 movement = MOVE;
 max_speed = spd;
-target = instance_nearest(x, y, obj_playerParent);
-/*neighbor = instance_nearest(x, y, obj_slimeSteerFlock);
 
-if (path_get_length(neighbor.path) < path_get_length(path))
+if (target != noone)
 	{
-		path = neighbor.path;
+		var mx = target.x;
+		var my = target.y + 35;
 	}
-*/
-var mx = target.x;
-var my = target.y + 35;
 
 steering = vect2(0, 0);
 
@@ -67,6 +63,7 @@ timer -= 1;
 
 if (target.alive == false || target.invisible == true)
 	{
+		target = noone;
 		state = sMove;
 	}
 
@@ -74,15 +71,17 @@ if (target.alive == false || target.invisible == true)
 
 #region Sprite
 sprite_index = sprite[character, movement];
-dir = point_direction(target.x, target.y, x, y);
-
-if (dir < 270 && dir > 90)
+if (target != noone)
 	{
-		image_xscale = -1;
-	}
-else
-	{
-		image_xscale = 1;
-	}
-	
+		dir = point_direction(target.x, target.y, x, y);
+		
+		if (dir < 270 && dir > 90)
+			{
+				image_xscale = -1;
+			}
+		else
+			{
+				image_xscale = 1;
+			}
+	}	
 #endregion

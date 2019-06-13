@@ -19,6 +19,7 @@
 #macro ABILITYWINDOW1 11
 #macro CHARATERLOCATOR 12
 #macro RESCUE 13
+#macro SPAWN 14
 #macro GUNONE 0
 #macro GUNTWO 1
 #macro GRENADE 3
@@ -40,3 +41,8 @@
 #macro BEHOLDER 7
 #macro ORC 8
 #macro GOBLIN 9
+
+//transparency levels
+#macro TALIVE 0
+#macro TGHOST 1
+#macro TGAMEOVER 2

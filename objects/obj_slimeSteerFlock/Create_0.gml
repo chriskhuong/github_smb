@@ -24,11 +24,12 @@ states_array[sChase]	= scr_E_pathSteerChaseState;
 //states_array[sChase]	= scr_E_chaseState;
 states_array[sStun]		= scr_E_stunSteerState;
 states_array[sDead]		= scr_E_deadState;
+states_array[sSpawn]	= scr_E_spawnState;
 
-state = sChase;//scr_enemy_idleState;
+state = sSpawn;//scr_enemy_idleState;
 
 counter = 0;
-spd = 1.25;
+//spd = random_range(1, 10);
 dir = irandom_range(0, 359);
 //alarm[0] = room_speed * irandom_range(1, 3);    //grants enemy stop and go wandering
 sight = 9999;    //enemy sight range
@@ -57,5 +58,5 @@ maxTimer = timer;
 once = false;
 
 //for specific collisions
-solid_obj = obj_collision;
+solid_obj = obj_solidParent;
 is_colliding = false;

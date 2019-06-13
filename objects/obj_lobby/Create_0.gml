@@ -1,6 +1,6 @@
 /// @description Initialize the player lobby and player number.... maybe
 
-show_debug_overlay(true);
+//show_debug_overlay(true);
 
 cam = camera_get_active();
 ready = false;

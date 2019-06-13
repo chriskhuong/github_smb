@@ -9,6 +9,7 @@ myGunIndex = 0;
 myGunAlpha = 1;
 myArmAlpha = myGunAlpha;
 recoil = max(0, recoil - 1);	//returns the larger number into recoil
+transparency = TALIVE;
 
 #region Movement
 //Get direction
@@ -56,16 +57,12 @@ if (num > 0)
 						pickup = false;
 					}
 			}
-		else
-			{
-				pickup = false;
-			}
 	}
 else
 	{
 		ds_list_clear(itemCollisionList);
+		pickup = false;
 	}
-
 
 	
 #endregion

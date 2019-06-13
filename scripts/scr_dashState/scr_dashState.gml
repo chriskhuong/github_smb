@@ -6,6 +6,7 @@ myState = "Dash";
 movement = MOVE;
 myGunAlpha = 0;
 image_speed = 2;
+transparency = TALIVE;
 
 if (attacked == false)
 	{

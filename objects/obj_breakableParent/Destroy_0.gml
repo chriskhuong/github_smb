@@ -12,3 +12,4 @@ d.image_speed = 0;
 d.image_index = i;
 }
 
+mp_grid_clear_rectangle(obj_grid.grid, bbox_left, bbox_top, bbox_right, bbox_bottom);

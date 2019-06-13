@@ -4,6 +4,7 @@
 
 myState = "Stun"
 movement = STUN;
+transparency = TALIVE;
 
 len = scr_approach(len, 0, 1);
 

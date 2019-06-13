@@ -45,7 +45,7 @@ if (phaseCounter <= 0)
 		
 		altTime = 0;
 		time = 0;
-		phaseCounter = maxPhaseCount;	//change this for adjustments between phases
+		phaseCounter = maxPhaseCount/2;	//change this for adjustments between phases
 	}
 
 

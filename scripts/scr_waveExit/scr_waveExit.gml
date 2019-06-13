@@ -1,6 +1,6 @@
 #region Behavior
 
-duration = room_speed;			//change the variable here for any vairance in state speeds
+duration = room_speed/2;			//change the variable here for any vairance in state speeds
 
 ////Exit
 if (time < duration)
