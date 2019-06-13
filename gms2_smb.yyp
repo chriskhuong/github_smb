@@ -2807,6 +2807,14 @@
             }
         },
         {
+            "Key": "386b5bc5-9c03-4821-bd5b-e9eb8f5779da",
+            "Value": {
+                "id": "84926c96-e87c-4152-aceb-c1be994832ce",
+                "resourcePath": "sprites\\spr_effect_Wave\\spr_effect_Wave.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38c75274-9176-4571-ab2b-0909ba4704c7",
             "Value": {
                 "id": "fe64a7db-2b34-4916-a116-6ff028335530",
@@ -5460,6 +5468,14 @@
                 "id": "d30bdb16-b1c0-48a2-b8df-34f319022e0f",
                 "resourcePath": "scripts\\tmc_vect_mult\\tmc_vect_mult.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "716b07e3-99af-462b-8666-c8b1a99fca1d",
+            "Value": {
+                "id": "c5c0aa6b-de81-4ee1-af6f-505d706d9e4c",
+                "resourcePath": "objects\\obj_teatime_particles\\obj_teatime_particles.yy",
+                "resourceType": "GMObject"
             }
         },
         {
