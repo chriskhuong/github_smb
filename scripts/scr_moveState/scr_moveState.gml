@@ -42,7 +42,7 @@ scr_collision(hspd, vspd, "Tile_Collision");
 var num = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_ammo, false, true, itemCollisionList, true)
 if (num > 0)
 	{
-		show_debug_message("MY LIST HAS " + string(num) + " ITEMS");
+		//show_debug_message("MY LIST HAS " + string(num) + " ITEMS");
 		
 		if (weaponArray[0, 10] != weaponArray[0, 12] || weaponArray[1, 10] != weaponArray[1, 12] || weaponArray[0, 8] != weaponArray[0, 11] || weaponArray[1, 8] != weaponArray[1, 11])
 			{
@@ -199,6 +199,7 @@ if (creator.attack_key)
 					{
 						//dead.revivalNum += 1;
 						helping = dead;
+						image_index = 0;
 						state = sRescue;
 						
 						/*

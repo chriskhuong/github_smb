@@ -13,7 +13,6 @@ if (room == rm_characterSelect)
 				pO.keyboard = false;
 			}
 	}
-	
 else
 	{
 		playerCount = 0;
@@ -35,6 +34,8 @@ else
 
 				with(thisPlayer)
 					{
+						ultCharge = 0;
+						killCounter = 0;
 						state = sSpawn;
 						image_index = 0;
 						if(instance_exists(obj_spawnZone))
@@ -50,8 +51,17 @@ else
 						myArrow.image_index = special[character, FACE];
 					}
 			}
-		
+			
 		playerCount = ds_list_size(players);
 		
 		show_debug_message(string(playerCount));
+	}
+
+
+if (room != roomInit && room != _display_init && room != rm_Main_Menu && room != rm_characterSelect)
+	{
+		alarm[0] = room_speed;
+		seconds = 0;
+		minutes = 0;
+		showTime = true;
 	}

@@ -5,7 +5,6 @@ max_scale = 2;
 follow = false;
 
 instance_create_depth(x, y, depth, obj_playerTracker);
-alarm[0] = room_speed;
 
 if (instance_exists(obj_spawnZone))
     {

@@ -58,6 +58,11 @@ if (creator.attack_key)
 
 if(helping.deathCounter >= helping.maxDeathCounter)
 	{
+		with(obj_SurvivalController)
+			{
+				playersDead--;
+				event_user(0);
+			}
 		helping.alive = true;
 		helping.silo = true;
 		helping.hp = floor(maxHp/2)

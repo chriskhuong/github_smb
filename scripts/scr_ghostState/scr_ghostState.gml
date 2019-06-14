@@ -97,7 +97,7 @@ y += vspd;
 
 #endregion
 
-deathCounter -= (1 * deathNumber);
+deathCounter -= (.5 * deathNumber);
 
 #endregion
 
@@ -107,7 +107,7 @@ deathCounter -= (1 * deathNumber);
 //divided 3 by 2 because on death
 //we only increment by .5 so the death bar 
 //depeletes at a reasonable rate
-if (deathCounter < 0 || deathNumber > (3/2)) 
+if (deathCounter < 0)// || deathNumber > (3/2)) 
 	{
 		g = instance_create_depth(x, y, depth, obj_deadGhost);
 		g.image_xscale = image_xscale;
@@ -118,11 +118,11 @@ if (deathCounter < 0 || deathNumber > (3/2))
 			{
 				instance_destroy();
 			}
-		with(obj_SurvivalController)
-			{
-				playersDead++;
-				event_user(0);
-			}
+		//with(obj_SurvivalController)
+		//	{
+		//		playersDead++;
+		//		event_user(0);
+		//	}
 		state = sGameOver;
 	}
 

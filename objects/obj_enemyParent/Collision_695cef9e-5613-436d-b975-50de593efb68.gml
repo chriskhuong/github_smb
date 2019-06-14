@@ -1,9 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (instance_exists(other) && myOnce == false)
+if (instance_exists(other) && other.state != sStun)
 	{
-		myOnce = true;
-		alarm[0] = 15;
 		if (other.alive == true && other.invisible == false && other.hit == false)
 			{	
 				other.hit = true;

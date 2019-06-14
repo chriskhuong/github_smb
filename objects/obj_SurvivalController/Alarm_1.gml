@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-follow = true;
+alarm[1] = room_speed/2;
+showTime = !showTime;

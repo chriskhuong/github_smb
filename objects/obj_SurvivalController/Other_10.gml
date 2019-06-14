@@ -24,6 +24,8 @@ for(var hello = 0; hello < instance_number(obj_Player); hello++)
 if(playersDead == playerCount)
 	{
 		global.allDead = true;
+		countUp = false;
+		alarm[1] = 1;
 		/*
 		for (i = 0; i < ds_list_size(players); i++)
 			{	

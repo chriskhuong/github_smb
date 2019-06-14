@@ -35,7 +35,24 @@ if (image_index + 1 >= image_number)
 		deadX = deadBody.x;
 		deadY = deadBody.y;
 		deathNumber += .5;
-		state = sGhost;
+		with(obj_SurvivalController)
+			{
+				playersDead++;
+				event_user(0);
+			}
+		if (global.allDead == false)
+			{
+				state = sGhost;
+			}
+		else
+			{
+				g = instance_create_depth(x, y, depth, obj_deadGhost);
+				g.image_xscale = image_xscale;
+				g.image_alpha = image_alpha;
+				g.sprite_index = special[character, GHOST];
+				g.image_speed = image_speed;
+				state = sGameOver;
+			}
 		
 		if (instance_exists(obj_playerTracker))
 			{

@@ -51,6 +51,7 @@ if(global.allDead)
 			//hp = maxHp;
 			//alive = true;
 		}
+	audio_stop_all();
 	room_restart();
 	global.allDead = false;
 }

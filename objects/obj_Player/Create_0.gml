@@ -49,7 +49,6 @@ invisible = false;
 killCounter = 0;
 transparency = TALIVE;
 itemCollisionList = ds_list_create();
-healthItemList = ds_list_create();
 
 //get character's information
 scr_characterData(character);

@@ -35,6 +35,7 @@ if (phaseCounter <= 0)
 			}
 		else
 			{
+				obj_SurvivalController.countUp = true;
 				instance_destroy();
 			}
 		time = 0;
