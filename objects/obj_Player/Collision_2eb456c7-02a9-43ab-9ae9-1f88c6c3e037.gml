@@ -6,6 +6,10 @@ if (hp < maxHp)
 		if(creator.cancel)
 			{
 				hp += maxHp;
+				if (hp >= maxHp)
+					{
+						hp = maxHp;
+					}
 				with (other)
 					{
 						instance_destroy();

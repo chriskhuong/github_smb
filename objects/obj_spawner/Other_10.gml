@@ -11,31 +11,37 @@ if (instance_exists(obj_SurvivalController))
 	}
 
 for (var i = 0; i < enemiesNum; i++)
-					{
-						randomize();
-						
-						var spawnDistX = random_range(250, 400);
-						var spawnDistY = random_range(250, 420);
-						var angle = random_range(0, 360);
-						var xPos = x + (cos(angle)*spawnDistX);// - ((dist/2)*cos(random(pi*2))));
-						var yPos = y + (sin(angle)*spawnDistY);// - ((dist/2)*sin(random(pi*2))));
-						
-						var enemy = instance_create_depth(xPos, yPos, depth, obj_slimeSteerFlock);
-						
-						with (enemy)
-							{
-								while (!place_free(x, y))
-									{
-										x = x + (cos(random(pi*2)));
-										y = y + (sin(random(pi*2)));
-									}
-							}
-					}
-if (wave < 10)
 	{
-		wave += 1;
+		randomize();
+		
+		var spawnDistX = random_range(250, 400);
+		var spawnDistY = random_range(250, 420);
+		var angle = random_range(0, 360);
+		var xPos = x + (cos(angle)*spawnDistX);// - ((dist/2)*cos(random(pi*2))));
+		var yPos = y + (sin(angle)*spawnDistY);// - ((dist/2)*sin(random(pi*2))));
+		
+		var enemy = instance_create_depth(xPos, yPos, depth, obj_slimeSteerFlock);
+		
+		with (enemy)
+			{
+				while (!place_free(x, y))
+					{
+						x = x + (cos(random(pi*2)));
+						y = y + (sin(random(pi*2)));
+					}
+			}
+	}
+
+wave += 1;
+	
+if (wave < 5)
+	{
 		enemiesNum *= wave;
 		floor(enemiesNum);
+	}
+if (enemiesNum >= 30)
+	{
+		enemiesNum = 30;
 	}
 //dist = 400;
 

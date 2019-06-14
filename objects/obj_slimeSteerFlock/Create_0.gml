@@ -52,8 +52,9 @@ my_path_dir = 1;
 grid_controller = obj_flock_grid_ds;
 cellSize = grid_controller.cellSize;
 
-timer = room_speed / 3;	//pathfinding update
+timer = room_speed;	//pathfinding update
 maxTimer = timer;
+timer = irandom_range(0, room_speed);
 
 once = false;
 
