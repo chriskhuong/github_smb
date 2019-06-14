@@ -26,12 +26,13 @@ if (len == 0)   //locks our dash to 90 degrees IF we're not moving
 len = trueSpd * 4;
 
 //this fixes the speed of any angular movement
-hspd = lengthdir_x(len, dir);
-vspd = lengthdir_y(len, dir);
+hspd = x + lengthdir_x(len, dir);
+vspd = y + lengthdir_y(len, dir);
+collision_zoneX = !place_free(x + hspd, y);
+collision_zoneY = !place_free(x, y + vspd);
 
-//Move
-x += hspd;
-y += vspd;
+//Collision check if free
+scr_collision(hspd, vspd, "Tile_Collision");
 
 #endregion
 

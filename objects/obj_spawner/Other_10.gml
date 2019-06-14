@@ -12,7 +12,17 @@ if (instance_exists(obj_SurvivalController))
 
 for (var i = 0; i < enemiesNum; i++)
 					{
-						with (instance_create_depth(x + (dist*cos(random(pi*2))), y + (dist*sin(random(pi*2))), depth, obj_slimeSteerFlock))
+						randomize();
+						
+						var spawnDistX = random_range(250, 400);
+						var spawnDistY = random_range(250, 420);
+						var angle = random_range(0, 360);
+						var xPos = x + (cos(angle)*spawnDistX);// - ((dist/2)*cos(random(pi*2))));
+						var yPos = y + (sin(angle)*spawnDistY);// - ((dist/2)*sin(random(pi*2))));
+						
+						var enemy = instance_create_depth(xPos, yPos, depth, obj_slimeSteerFlock);
+						
+						with (enemy)
 							{
 								while (!place_free(x, y))
 									{

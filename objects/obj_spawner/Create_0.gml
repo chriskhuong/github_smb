@@ -5,7 +5,7 @@
 enemiesNum = 5;
 playerCount = 1;
 wave = 1;
-dist = 400;
+dist = 300;
 once = false;
 // how often they will spawn
 spawnRate = room_speed * 60;

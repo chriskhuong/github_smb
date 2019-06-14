@@ -6,19 +6,6 @@ movement = MOVE;
 counter += 1;
 max_speed = spd;
 
-if(instance_exists(obj_playerParent))
-	{
-		target = instance_nearest(x, y, obj_playerParent);
-		if (target.alive)
-			{
-				targetDistance = distance_to_object(target)
-			}
-	}
-else
-	{
-		target = noone;
-	}
-
 // reset steering
 steering = vect2(0,0);
 
@@ -28,7 +15,7 @@ steering = vect2(0,0);
 					// Add like this. (First one doesn't need the vect_add)
 					//steering = vect_add(steering, sb_#behaviour#(argument,stuff,blah));
 					
-					//steering = vect_add(steering, sb_seek(mouse_x, mouse_y, 1));
+					steering = vect_add(steering, sb_seek((obj_spawner.x + random_range(-300, 300)), (obj_spawner.y + random_range(-300, 300)), 2));
 					//steering = vect_add(steering, sb_seek_arrive(mouse_x,mouse_y,256,1));
 					steering = vect_add(steering, sb_wander(256,128,180,0.5));
 					//steering = vect_add(steering, sb_flee(mouse_x,mouse_y,1));
@@ -105,10 +92,15 @@ if (counter >= room_speed * 3)
 				break;
 			}
 	}
-if (target.alive && targetDistance < sight)
+	
+var inst = instance_nearest(x, y, obj_playerParent);
+
+if (inst.alive && inst.invisible == false && distance_to_object(inst) < sight)
 	{
+		target = inst;
 		state = sChase;
 	}
+
 
 #endregion
 

@@ -64,32 +64,7 @@ if (invisible)
 		collision_zoneY = !place_free(x, y + vspd);
 		
 		//Collision check if free
-		if (place_free(hspd, vspd))
-			{
-				//Move
-				x = hspd;
-				y = vspd;
-			}
-		else
-			{
-				var sweepInterval = 1;
-				
-				for (var angle = sweepInterval; angle <= 80; angle += sweepInterval)
-					{
-						for (var multiplier = -1; multiplier <= 1; multiplier += 2)
-							{
-								var angleToCheck = dir + angle * multiplier;
-								hspd = x + lengthdir_x(len, angleToCheck);
-								vspd = y + lengthdir_y(len, angleToCheck);
-								if (place_free(hspd, vspd))
-									{
-										x = hspd;
-										y = vspd;
-										exit;
-									}
-							}
-					}
-			}
+		scr_collision(hspd, vspd, "Tile_Collision");
 		
 		
 #endregion

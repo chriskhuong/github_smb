@@ -66,6 +66,7 @@ if(helping.deathCounter >= helping.maxDeathCounter)
 		helping.alive = true;
 		helping.silo = true;
 		helping.hp = floor(maxHp/2)
+		helping.rescue = false;
 		helping.state = sMove;
 		with(helping.deadBody)
 			{

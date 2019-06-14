@@ -7,6 +7,7 @@ myGunAlpha = 0;
 myArmAlpha = myGunAlpha;
 myTargetAlpha = myGunAlpha;
 silo = false;
+rescue = true;
 transparency = TGHOST;
 
 var rng = 15;	//range from body
@@ -123,6 +124,7 @@ if (deathCounter < 0)// || deathNumber > (3/2))
 		//		playersDead++;
 		//		event_user(0);
 		//	}
+		//rescue = false;
 		state = sGameOver;
 	}
 

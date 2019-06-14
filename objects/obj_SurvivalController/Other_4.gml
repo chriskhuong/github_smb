@@ -43,7 +43,12 @@ else
 								x = irandom_range(obj_spawnZone.x - obj_spawnZone.sprite_width/2, obj_spawnZone.x + obj_spawnZone.sprite_width/2);
 								y = irandom_range(obj_spawnZone.y - obj_spawnZone.sprite_height/2, obj_spawnZone.y + obj_spawnZone.sprite_height/2);
 							}
-							
+						//reset ammo
+						weaponArray[0, 10] = weaponArray[0, 12];
+						weaponArray[1, 10] = weaponArray[1, 12];
+						weaponArray[0, 8] = weaponArray[0, 11];
+						weaponArray[1, 8] = weaponArray[1, 11];
+						//reset arrow
 						myArrow = instance_create_depth(x, y, -5000, obj_indicator);
 						myArrow.creator = id;
 						myArrow.image_speed = 0;

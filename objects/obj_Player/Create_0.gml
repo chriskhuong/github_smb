@@ -40,6 +40,7 @@ reloading = false;
 armL = -1;
 armR = 1;
 pickup = false;
+rescue = false;
 deathNumber = 0;
 deathCounter = 200;
 maxDeathCounter = deathCounter;

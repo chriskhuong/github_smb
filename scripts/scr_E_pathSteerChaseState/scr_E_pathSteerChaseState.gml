@@ -30,9 +30,41 @@ steering=vect_add(steering,sb_avoid(obj_solidParent,64,64,5));
 //steering = vect_add(steering, sb_evade(obj_master_drone,1));
 if (timer <= 0)
 	{
-		if (mp_grid_path(obj_grid.grid, path, x, y, mx, my, 1))
+		var inst = instance_nearest(x, y, obj_playerParent);
+
+		if (inst.alive && inst.invisible == false && distance_to_object(inst) < sight)
 			{
-				steering = vect_add(steering, sb_path_loop(path,30,my_path_dir,1));
+				target = inst;
+				//state = sChase;
+			}
+		else
+			{
+				var _num = instance_number(obj_playerParent);
+				for(var i = 0; i < _num; i++)
+					{
+						var inst = instance_find(obj_playerParent, i);
+						
+						if (inst.alive && inst.invisible == false)
+							{
+								target = inst;
+							}
+						else
+							{
+								target = noone;
+							}
+					}
+			}
+		
+		if (instance_exists(target))
+			{
+				if (mp_grid_path(obj_grid.grid, path, x, y, mx, my, 1))
+					{
+						steering = vect_add(steering, sb_path_loop(path,30,my_path_dir,1));
+					}
+			}
+		else
+			{
+				state = choose(sIdle, sMove);
 			}
 		timer = maxTimer;
 	}
@@ -52,8 +84,19 @@ velocity = vect_truncate(vect_add(velocity, steering), spd);
 //Add velocity to position
 position = vect_add(position, velocity);
 
-x = position[1];
-y = position[2];
+//update xy
+if (place_meeting(position[1], position[2], solid_obj) || scr_tile_place_meeting(position[1], position[2], "Tile_Collision"))	//there's a collision
+	{
+		is_colliding = true;
+		position[1] = x;
+		position[2] = y;
+	}
+else
+	{
+		is_colliding = false;
+		x = position[1];
+		y = position[2];
+	}
 
 timer -= 1;
 
@@ -61,11 +104,6 @@ timer -= 1;
 
 #region Transition Trigger
 
-if (target.alive == false || target.invisible == true)
-	{
-		target = noone;
-		state = sMove;
-	}
 
 #endregion
 

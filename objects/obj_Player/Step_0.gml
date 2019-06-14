@@ -25,7 +25,7 @@ if (room == rm_characterSelect)
 	}
 
 #endregion
-show_debug_message(string(killCounter));
+
 depth = -y - 26;
 //scr_characterData(character); //I don't think there's a need to update this every frame. Doesn't make sense
 //show_debug_message(string(scr_tile_place_meeting(x, y, "Tile_Collision")));

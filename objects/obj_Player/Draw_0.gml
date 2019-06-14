@@ -256,7 +256,7 @@ if(pickup)
 	{
 		draw_sprite_ext(button_xbox_b, -1, x - (sprite_get_width(button_xbox_b)/4), y-50, .5, .5, image_angle, image_blend, image_alpha);
 	}
-if(state == sRescue)
+if(rescue)
 	{
 		draw_sprite_ext(button_xbox_a, -1, x - (sprite_get_width(button_xbox_a)/4), y-50, .5, .5, image_angle, image_blend, image_alpha);
 	}
